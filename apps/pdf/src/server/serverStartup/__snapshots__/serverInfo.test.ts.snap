@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`serverInfo > returns the correct information 1`] = `
+{
+  "appShortVersion": "0A1-6C-D0B",
+  "appVersion": "0a16cd0b6555fe13d797e27132293c62aababe95",
+  "opts": {
+    "autoReload": {
+      "versionCheckIntervalSeconds": 30,
+    },
+    "isDevelopment": false,
+    "jwt": {
+      "audience": "TrackOps Depart MGB",
+      "canSign": true,
+      "issuer": "Qnamic RailOpt",
+      "publicKey": "-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzcOhd+Cw+Eg+ligpUiwP
+YEPp3Nv1qQAxiX8RN9k0uTc9X/4elzdp49CBCuE2Np7dv/FYkRekX/VqPw0oRxDm
+PLqZyQEU2BUUTeJThesQS9v695F2Dst/qcU3VDuxdp2yA8MMRSa5ZyVa6ne3ifI/
+N6hLFxJa06KOB01b+ZtydhPWkUfEjaXqgEgwdJlNA8vJJ1j3eX47tpTcrgIvSrjb
+/FPuB2B46ScLZdXQMHlRGH1zWxPAnE/1pubxHNmmwq8p9imJVYw729cMNLd/En8B
+fGOIUk49Obw2xNhvG35a5Sua4QuLjhI7btJvl5BHMEKLuErn+UcDR5RMmwa/wypU
+lLmAo0axIZNdePXuNdE6uZA/JfcLETMlZB3cGN3UQl+FaimTy4RGeSkUjYbzPodt
+Nap0jn6dU+mDIEtvTPgl3xFSKrKJU8DJZSH3kq0U7pN29RZjhpOlXuQBmcOl2GV3
+xD2qwKiu3JuHaAdImzaRsvn1X/LIDSa0jQeVbU1gFyZBFb3jsWwmVhOtcDU7jJZ1
+fdsVLadbSA1BfpOeX1oK8/HBJuHTza6sw/q6/rRBPtIjWsjVycZYxz6tIKlOSOM2
+GdMY3hOWJZKuwezMVIznUdE9+HpZLG1T2d0Dr65nYbRact+eThY/u9aov5B7X2hs
+Hre+2JKpRv6RpodQN0Zm1AkCAwEAAQ==
+-----END PUBLIC KEY-----
+",
+    },
+    "mockAuthProvider": true,
+    "qnamicFrontendOpts": {
+      "allowedRedirectHosts": [
+        "localhost",
+      ],
+      "defaultRedirectUrl": "https://localhost:8002/test-app",
+    },
+  },
+  "optsShortVersion": "6D9-CB-EE9",
+  "optsVersion": "6d9cbee92dbbd0d14f332794e39b8275765af5354d68e8dd029dd3e15486f15d",
+  "version": "0a16cd0b6555fe13d797e27132293c62aababe95-6d9cbee92dbbd0d14f332794e39b8275765af5354d68e8dd029dd3e15486f15d",
+}
+`;

@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="invoice.css" media="print" rel="stylesheet" />
+    <link href="invoice.css" rel="stylesheet" />
+    <link href="../common/roboto/400.css" rel="stylesheet" />
+    <link href="../common/roboto-slab/300.css" rel="stylesheet" />
+    <!-- <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script> -->
+    <!-- <link href="interface.css" rel="stylesheet" /> -->
+
+    <title>Invoice</title>
+    <meta name="description" content="Invoice demo sample" />
+  </head>
+
+  <body>
+    <section id="invoice">
+      <div class="title">Stoop Metallbau</div>
+      <div class="company">
+        <div class="row">
+          <div>STOOP METALLBAU AG</div>
+        </div>
+        <div class="row">
+          <div>Huebwisstrasse 11</div>
+          <div>8117 Fällanden</div>
+        </div>
+        <div class="row">
+          <div>Tel 044 826 00 44</div>
+          <div>Fax 044 826 06 44</div>
+        </div>
+        <div class="row">
+          <div>Zürher Kantonalbank</div>
+          <div>8010 Zürich</div>
+        </div>
+        <div class="row">
+          <div>MWST</div>
+          <div>CHE-110.423.236 MWST</div>
+        </div>
+        <div class="row">
+          <div>E-Mail</div>
+          <div class="lowercase">
+            <a href="mailto:stoop@stoopmetallbau.ch">stoop@stoopmetallbau.ch</a>
+          </div>
+        </div>
+        <div class="row">
+          <div>Homepage</div>
+          <div class="lowercase">
+            <a href="https://stoop@stoopmetallbau.ch">www.stoopmetallbau.ch</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="to-address">
+        <div>{{ to.name }}</div>
+        <div>{{ to.address }}</div>
+        <div>{{ to.zip }} {{ to.city }}</div>
+      </div>
+
+      <div class="date">
+        <div>Fällanden, {{ date }}</div>
+      </div>
+
+      <h2>Offerte {{ quote.id }}</h2>
+      <hr />
+      <p>
+        Wir danken Ihnen für Ihre Anfrage, und gestatten uns, Ihnen nachstehende
+        Offerte zu unterbreiten.
+      </p>
+
+      <div class="project">
+        {{#each project}}
+        <div class="row">
+          <div class="key">
+            <div><strong>{{ this.key }}</strong></div>
+          </div>
+          <div class="value">{{ this.value }}</div>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="items">
+        {{#each items}}
+        <div class="row">
+          <div class="item">
+            <strong>Pos. 01 - {{ this.pos }}</strong>
+            <div class="markdown">{{{ this.text }}}</div>
+          </div>
+          <div class="price">{{ this.price }}</div>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="summary">
+        <div class="row">
+          <div>Total</div>
+          <div>{{ total.subtotal }}</div>
+        </div>
+        <div class="row">
+          <div>+ MWSt 8.1%</div>
+          <div>{{ total.mwst }}</div>
+        </div>
+        <div class="row total">
+          <div>Rechnungsbetrag, netto</div>
+          <div class="border-top">{{ total.total }}</div>
+        </div>
+      </div>
+
+      {{#each textAfterTotal}}
+      <div class="markdown no-break-inside">{{{ this }}}</div>
+      {{/each}}
+
+      <div class="footer">
+        <div class="conditions">
+          <div>
+            <strong>Konditionen:</strong>
+          </div>
+          <div>30 Tage netto, inkl. MWSt 8.1%</div>
+          <div>
+            Bitte verwenden Sie den beiliegenden EZS mit der ESR-Nummer.
+          </div>
+          <div>Ungerechtfertigte Abzüge werden nachbelastet.</div>
+          <div>IBAN CH97 0483 5062 2988 0100 0</div>
+          <div>Besten Dank für Ihren Auftrag.</div>
+        </div>
+        <div class="signature">
+          <div>Freundliche Grüsse</div>
+          <img src="../common/signature-felix.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section id="qrbill">
+      <div class="qrcode">{{{qrBillSvg}}}</div>
+    </section>
+  </body>
+</html>

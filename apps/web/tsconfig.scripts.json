@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./.buildcache/scripts",
+    "lib": ["esnext"],
+    "module": "CommonJS"
+  },
+  "exclude": ["build"]
+}

@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`prettyJson > formats a complex json file 1`] = `
+"{
+ "a": {
+  "b": {
+   "c": [
+    1,
+    2
+   ]
+  },
+  "d": "bla bla bla",
+  "e": null
+ }
+}"
+`;
+
+exports[`prettyJson > formats a simple json file 1`] = `
+"{
+ "a": 1,
+ "b": 2
+}"
+`;

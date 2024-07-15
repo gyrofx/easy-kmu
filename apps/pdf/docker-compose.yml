@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  worklog:
+    build: .
+    image: nightfury5432/worklog:latest
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: worklog.aq1.ch
+      VIRTUAL_PORT: 80
+      LETSENCRYPT_HOST: worklog.aq1.ch
+      LETSENCRYPT_EMAIL: info@aq1.ch
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - 6379:6379

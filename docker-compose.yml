@@ -1,0 +1,46 @@
+version: '3.5'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+
+    restart: unless-stopped
+    environment:
+      HTTPS: 'true'
+      SSL_CRT_FILE: /certs/server-cert.pem
+      SSL_KEY_FILE: /certs/server-key.pem
+
+      EKMU_WEB_SESSION_SECRET: 9a280dd66357bdae61b08830d34833753a153c3caf519c4e32c9856d63922a75cdc644f081bd2c5d632a02af6d65e369ca33352a7746ad363d87c787f1aedc1c
+
+      EKMU_WEB_REDIS_URL: redis://redis:6379
+      EKMU_PDF_SERVICE_URL: http://pdf:8081
+      EKMU_FILE_STORAGE_PATH: /files
+
+      EKMU_WEB_AUTH_SECRET: xzy
+      EKMU_WEB_AUTH0_DOMAIN: xzy.auth0.com
+      EKMU_WEB_AUTH0_CLIENT_ID: xyz
+      EKMU_WEB_AUTH0_REDIRECT_URL: https://worklog.localhost:3000/
+      EKMU_WEB_AUTH0_CLIENT_SECRET: xyz
+    ports:
+      - 8080:8080
+
+    volumes:
+      - ./apps/web/certs:/certs
+      - ./apps/web/files:/files
+
+  pdf:
+    build:
+      context: .
+      dockerfile: apps/pdf/Dockerfile
+    restart: unless-stopped
+    environment:
+      HTTPS: 'false'
+      SSL_CRT_FILE: /certs/server-cert.pem
+      SSL_KEY_FILE: /certs/server-key.pem
+
+      EKMU_PDF_REDIS_URL: redis://redis:6379
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped

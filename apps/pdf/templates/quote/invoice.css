@@ -1,0 +1,253 @@
+@font-face {
+  font-family: Pacifico;
+  src: url(pacifico.ttf);
+}
+@font-face {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  src: url(sourcesanspro-regular.otf);
+}
+@font-face {
+  font-family: Source Sans Pro;
+  font-weight: 700;
+  src: url(sourcesanspro-bold.otf);
+}
+
+
+
+@page invoicePage {
+  /* font-family: Roboto; */
+  margin: 2cm;
+  @bottom-left {
+    /* color: #1ee494;
+    content: '♥ Thank you!'; */
+  }
+  @bottom-right {
+    /* color: #a9a;
+    content: 'contact@courtbouillon.org | courtbouillon.org';
+    font-size: 9pt; */
+  }
+
+  @bottom-left {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+
+  @bottom-center {
+    content: string(title);
+    text-transform: uppercase;
+  }
+}
+
+
+@page qrbillPage {
+  /* font-family: Pacifico; */
+  margin: 2cm;
+  @bottom-left {
+    /* color: #1ee494;
+    content: '♥ Thank you!'; */
+  }
+
+}
+
+#invoice {
+  page: invoicePage;
+}
+
+#qrbill {
+  page: qrbillPage;
+}
+
+html {
+  color: #14213d;
+  font-family: Source Sans Pro;
+  font-size: 11pt;
+  line-height: 1.6;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  /* color: #1ee494; */
+  /* font-family: Pacifico; */
+  font-size: 36pt;
+  margin: 0;
+}
+
+#company {
+  /* font-size: 16pt;
+  font-weight: 700; */
+  width: 40%;
+}
+
+#company .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#to {
+  margin-top: 1cm;
+  margin-left: 12cm;
+
+}
+
+td {
+  text-align: left;
+}
+
+aside {
+  display: flex;
+  margin: 2em 0 4em;
+}
+aside address {
+  font-style: normal;
+  white-space: pre-line;
+}
+aside address#from {
+  color: #a9a;
+  flex: 1;
+}
+aside address#to {
+  text-align: right;
+}
+
+table#details {
+  /* position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0; */
+}
+
+table#details tr {
+  width: 10cm;
+}
+
+
+table#details th:first-of-type, table#details td:first-of-type {
+  width: 25%;
+}
+
+table.items th {
+  border-bottom: .2mm solid #a9a;
+  color: #a9a;
+  font-size: 10pt;
+  font-weight: 400;
+  padding-bottom: .25cm;
+  text-transform: uppercase;
+}
+
+table.items td {
+  padding-top: 7mm;
+}
+
+ table.items tr {
+  break-inside: avoid;
+}
+
+table.items td.item {
+  width: 80%;
+  /* /* break-inside: avoid; * */
+}
+
+table.items td.price {
+  vertical-align: top;
+}
+
+/* table.items td:last-of-type {
+  color: #1ee494;
+  font-weight: bold;
+  text-align: right;
+} */
+
+
+
+table.items th, table.items td {
+  /* text-align: center; */
+}
+table.items th:first-of-type, table.items td:first-of-type {
+  text-align: left;
+}
+table.items th:last-of-type, table.items td:last-of-type {
+  text-align: right;
+}
+
+ .items {
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ .items .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5cm;
+  page-break-inside: avoid;
+ }
+
+ .items .row .item {
+  width: 70%;
+ }
+
+ .items .row .price {
+  vertical-align: top;
+  text-align: right;
+ }
+
+
+#summary{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2cm;
+  break-inside: avoid;
+
+ }
+
+#summary .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.1cm;
+  page-break-inside: avoid;
+ }
+
+#summary .row div:first-of-type {
+  width: 70%;
+ }
+
+#summary .row div:first-of-type {
+  vertical-align: top;
+  text-align: right;
+ }
+
+.border-top {
+  border-top: #14213d 1px solid;
+ }
+
+
+
+table#total {
+  margin-left: 12cm;
+  margin-top: 2cm;
+}
+
+table#total th:first-of-type, table#total td:first-of-type {
+  text-align: left;
+  width: 60%;
+}
+
+table#total th:last-of-type, table#total td:last-of-type {
+  text-align: right;
+}
+
+table#total tr:last-of-type td:last-of-type {
+  border-top: #14213d 1px solid;
+  border-bottom: #14213d 1px solid;
+}
+
+.footer {
+  position: fixed;
+    bottom: 20px;
+    left:0px;
+    width:100%;
+    background:gray;
+}
+

@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`initOptsInternal > works with the default environment 1`] = `
+{
+  "auth": {
+    "auth0": {
+      "audience": "https://worklog.aq1.ch",
+      "clientId": "1234567890",
+      "domain": "odimeter.example.com",
+      "redirectUrl": "http://localhost:3000",
+      "scope": "openid profile email",
+    },
+  },
+  "host": "",
+  "https": {
+    "enabled": false,
+  },
+  "isDevelopment": true,
+  "isProduction": false,
+  "isTest": false,
+  "port": 8080,
+  "redisUrl": "redis://localhost:6379",
+  "session": {
+    "secret": "UAbzjdfPoiIKMKRiragYQR6USOBTntfouQEOm1kmZzUqpjOK7ZSSeKKlLa7Ho29JRfwe1UJhy2z",
+  },
+}
+`;

@@ -1,0 +1,29 @@
+{
+  "name": "kmu",
+  "private": true,
+  "repository": "https://github.com/gyrofx/esay-kmu",
+  "license": "MIT",
+  "contributors": [
+    "Felix Eichenberger <felix.eichenberger@gmail.com>"
+  ],
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:pkgs": "turbo dev --filter=\"./packages/*\"",
+    "lint": "turbo lint",
+    "format": "turbo format"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "turbo": "^2.0.3",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": ">=20"
+  }
+}

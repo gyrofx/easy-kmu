@@ -1,0 +1,30 @@
+version: '3.5'
+services:
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    volumes:
+      - ./:/backup
+    environment:
+      POSTGRES_USER: worklog
+      POSTGRES_PASSWORD: worklog
+      POSTGRES_DB: worklog
+  worklog:
+    build: .
+    image: worklog
+    restart: unless-stopped
+    environment:
+      WORKLOG_SESSION_SECRET: 9a280dd66357bdae61b08830d34833753a153c3caf519c4e32c9856d63922a75cdc644f081bd2c5d632a02af6d65e369ca33352a7746ad363d87c787f1aedc1c
+      WORKLOG_AUTH0_DOMAIN: dev-ricgntwq.us.auth0.com
+      WORKLOG_AUTH0_CLIENT_ID: l9I5zWvfGKgI14VO8Tc6r56PMPCm5VkR
+      WORKLOG_REDIS_URL: redis://redis:6379
+      DATABASE_URL: "postgresql://worklog:worklog@db:5432/worklog"
+    ports:
+      - 8081:8081

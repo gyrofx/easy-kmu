@@ -1,0 +1,183 @@
+@page invoicePage {
+  margin: 2cm;
+
+  @bottom-right {
+    content: "Unsere AGB finden Sie auf unserer Website: www.stoopmetallbau.ch";
+    font-size: 8pt;
+  }
+
+  @bottom-left {
+    content: "Seite " counter(page) "/" counter(pages);
+    font-size: 8pt;
+  }
+}
+
+@page qrbillPage {
+  margin-top: 2cm;
+  margin-bottom: 1cm;
+  margin-left: 2cm;
+  margin-right: 2cm;
+  @bottom-left {
+  }
+}
+
+#invoice {
+  page: invoicePage;
+}
+
+#qrbill {
+  page: qrbillPage;
+}
+
+html {
+  color: #14213d;
+  font-family: Source Sans Pro;
+  font-size: 10pt;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.company {
+  font-size: 8pt;
+  width: 40%;
+  text-transform: uppercase;
+  font-family: Roboto Slab;
+}
+
+.title {
+  font-size: 30pt;
+  font-family: Roboto Slab;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.company .lowercase {
+  text-transform: lowercase;
+}
+
+.company .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company .row div {
+  margin-top: -0.1cm;
+}
+
+.to-address {
+  margin-top: 0.5cm;
+  margin-left: 10cm;
+}
+
+.date {
+  margin-top: 1cm;
+  margin-left: 10cm;
+}
+
+.project {
+  break-inside: avoid;
+}
+
+.project .row {
+  display: flex;
+}
+
+.project .row .key {
+  width: 3cm;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.items .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5cm;
+  break-inside: avoid;
+}
+
+.items .row .item {
+  width: 70%;
+}
+
+.items .row .price {
+  vertical-align: top;
+  text-align: right;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2cm;
+  break-inside: avoid;
+}
+
+.summary .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.1cm;
+  page-break-inside: avoid;
+}
+
+.summary .row div:first-of-type {
+  width: 70%;
+}
+
+.summary .row div:first-of-type {
+  vertical-align: top;
+  text-align: right;
+}
+
+.summary .row.total div {
+  font-weight: 700;
+  padding-top: 0.2cm;
+}
+
+.footer {
+  break-inside: avoid;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .conditions {
+  width: 50%;
+}
+
+.footer .signature {
+  width: 50%;
+  margin-top: 1cm;
+  margin-left: 1cm;
+}
+
+.footer .signature img {
+  height: 1.5cm;
+  margin-top: 0.5cm;
+}
+
+.qrcode {
+  margin-top: 14cm;
+}
+
+.markdown {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.markdown p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.border-top {
+  border-top: #14213d 1px solid;
+}
+
+.no-break-inside {
+  break-inside: avoid;
+}
