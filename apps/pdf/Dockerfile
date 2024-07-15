@@ -38,17 +38,15 @@ WORKDIR /app
 
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome
 
-RUN groupadd -r -g 10001 pdfservice && useradd -r -u 10001 -g pdfservice -G audio,video pdfservice \
-  && mkdir -p /home/pdfservice  \
-  && chown -R pdfservice:pdfservice /home/pdfservice \
-  && chown -R pdfservice:pdfservice /app
 
-USER pdfservice
+
 
 COPY --from=install-prod /app/node_modules node_modules
 COPY --from=build /app/apps/pdf/dist /app
 COPY --from=build /app/node_modules/@easy-kmu/common node_modules/@easy-kmu/common
 COPY apps/pdf/templates/ /app/templates
+COPY apps/pdf/bin /app/bin
+RUN mkdir -p /app/templates/common/ && cp -r /app/node_modules/@fontsource/* /app/templates/common/
 RUN mv index.js index.mjs
 RUN mv index.js.map index.mjs.map
 # COPY ./src/server /app/src/server
@@ -59,6 +57,15 @@ RUN mv index.js.map index.mjs.map
 # COPY ./tsconfig.json /app
 # COPY ./tsconfig.node.json /app
 COPY ./apps/pdf/docker/entrypoint.sh /app/docker/
+
+
+RUN groupadd -r -g 10001 pdfservice && useradd -r -u 10001 -g pdfservice -G audio,video pdfservice \
+  && mkdir -p /home/pdfservice  \
+  && chown -R pdfservice:pdfservice /home/pdfservice
+# && chown -R pdfservice:pdfservice /app
+
+USER pdfservice
+
 # COPY ./prisma /app/
 ENTRYPOINT [ "/app/docker/entrypoint.sh" ]
 
