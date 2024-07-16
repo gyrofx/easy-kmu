@@ -2,13 +2,13 @@ name: Create and publish a Docker image web
 
 on:
   push:
-    branches: ["master", "feature/*"]
+    branches: ["main", "feature/*"]
   pull_request:
-    branches: ["master"]
+    branches: ["main"]
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: easy-kmu-web
+  IMAGE_NAME: ekmu-web
 
 jobs:
   build-and-push-image:
