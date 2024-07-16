@@ -1,4 +1,4 @@
-import { unknownAsError } from '@easy-kmu/common/src/utils/errors'
+import { unknownAsError } from '@easy-kmu/common'
 import { logger } from '@/server/logging/logger'
 import IORedis, { type Pipeline, type Redis, type RedisOptions } from 'ioredis'
 

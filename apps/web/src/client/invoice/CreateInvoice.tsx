@@ -23,7 +23,7 @@ import { produce } from 'immer'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { Snippet, CreateInvoice } from '@/common/invoice/CreateInvoice'
-import { move } from '@/common/utils/array'
+import { move } from '@easy-kmu/common'
 import { apiClient } from '@/client/api/client'
 
 interface InvoiceState {

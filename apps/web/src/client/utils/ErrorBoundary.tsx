@@ -1,7 +1,7 @@
 import { Alert, AlertTitle, Button } from '@mui/material'
-import { Component, ErrorInfo } from 'react'
+import { Component, type ErrorInfo } from 'react'
 import { t } from '@/client/i18n/t'
-import { ErrorWithDetails } from '@/client/utils/errors'
+import type { ErrorWithDetails } from '@/client/utils/errors'
 
 interface ErrorBoundaryState {
   hasError: boolean

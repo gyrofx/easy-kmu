@@ -1,4 +1,4 @@
-import { SessionData } from '@/common/userAuth/SessionData'
+import type { SessionData } from '@/common/userAuth/SessionData'
 
 export interface SessionState {
   signedIn: boolean

@@ -13,12 +13,12 @@ export default defineConfig({
     globals: true,
     mockReset: true,
     include: ['**/__tests__/**/*{test,spec}.?(c|m)[jt]s?(x)', '**/?(*.){test,spec}.?(c|m)[jt]s?(x)'],
-    setupFiles: ['src/setupTests.ts'],
-    coverage: {
-      reporter: process.env.CI ? ['text', 'text-summary', 'html', 'lcov', 'cobertura'] : undefined,
-      provider: 'v8',
-    },
-    reporters: process.env.CI ? ['default', 'html', 'junit'] : undefined,
+    // setupFiles: ['src/setupTests.ts'],
+    // coverage: {
+    //   reporter: process.env.CI ? ['text', 'text-summary', 'html', 'lcov', 'cobertura'] : undefined,
+    //   provider: 'v8',
+    // },
+    // reporters: process.env.CI ? ['default', 'html', 'junit'] : undefined,
 
     outputFile: {
       junit: 'test-report/junit.xml',
