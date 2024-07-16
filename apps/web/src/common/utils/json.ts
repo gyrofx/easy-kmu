@@ -14,15 +14,15 @@ export function createRedactedObject<T>(object: T): T {
   return object === undefined
     ? undefined
     : object === null
-    ? null
-    : typeof object === 'string'
-    ? object
-    : JSON.parse(redactedStringify(object))
+      ? null
+      : typeof object === 'string'
+        ? object
+        : JSON.parse(redactedStringify(object))
 }
 
 function redactedStringify(object: unknown) {
   return JSON.stringify(object, (key, value) =>
-    redactedKeys.includes(key) ? redactedPlaceholder : value
+    redactedKeys.includes(key) ? redactedPlaceholder : value,
   )
 }
 

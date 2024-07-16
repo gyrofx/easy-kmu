@@ -29,7 +29,7 @@ describe('filterObject', () => {
   it('filters by key and value', () => {
     const keys = ['a', 'b']
     expect(
-      filterObject(obj, (key: string, value: any) => keys.includes(key) && typeof value === 'number')
+      filterObject(obj, (key: string, value: any) => keys.includes(key) && typeof value === 'number'),
     ).toEqual({
       a: 10,
     })

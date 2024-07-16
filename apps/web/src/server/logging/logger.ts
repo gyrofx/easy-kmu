@@ -11,8 +11,8 @@ export function initLogger(config: 'production' | 'development' | 'test' = 'prod
     config === 'production'
       ? createProductionLogger()
       : config === 'test'
-      ? createTestLogger()
-      : createDevelopmentLogger()
+        ? createTestLogger()
+        : createDevelopmentLogger()
 }
 
 export function uninitializeLogger() {

@@ -25,15 +25,16 @@ describe('parseOrUndefined', () => {
 
   it('parses a simple json string to a string', () => {
     expect(
-      parseOrUndefined(JSON.stringify(JSON.stringify({ a: 1, b: 2 }).slice(0, 8)))
+      parseOrUndefined(JSON.stringify(JSON.stringify({ a: 1, b: 2 }).slice(0, 8))),
     ).toMatchInlineSnapshot(`"{"a":1,""`)
   })
 })
 
 describe('createRedactedObject', () => {
   it('redacts a password field', () => {
-    expect(createRedactedObject({ uid: 'abcd1234', password: 'should be censored' }))
-      .toMatchInlineSnapshot(`
+    expect(
+      createRedactedObject({ uid: 'abcd1234', password: 'should be censored' }),
+    ).toMatchInlineSnapshot(`
         {
           "password": "[REDACTED]",
           "uid": "abcd1234",
@@ -42,8 +43,9 @@ describe('createRedactedObject', () => {
   })
 
   it('redacts the display name', () => {
-    expect(createRedactedObject({ uid: 'abcd1234', displayName: 'should be censored' }))
-      .toMatchInlineSnapshot(`
+    expect(
+      createRedactedObject({ uid: 'abcd1234', displayName: 'should be censored' }),
+    ).toMatchInlineSnapshot(`
         {
           "displayName": "[REDACTED]",
           "uid": "abcd1234",
@@ -56,7 +58,7 @@ describe('createRedactedObject', () => {
       createRedactedObject([
         { uid: 'abcd1234', password: 'should be censored' },
         { uid: 'xyz', password: 'should also be censored' },
-      ])
+      ]),
     ).toMatchInlineSnapshot(`
       [
         {
@@ -72,8 +74,9 @@ describe('createRedactedObject', () => {
   })
 
   it('redacts a password field in a nested object', () => {
-    expect(createRedactedObject({ uid: 'abcd1234', data: { password: 'should be censored' } }))
-      .toMatchInlineSnapshot(`
+    expect(
+      createRedactedObject({ uid: 'abcd1234', data: { password: 'should be censored' } }),
+    ).toMatchInlineSnapshot(`
         {
           "data": {
             "password": "[REDACTED]",
@@ -93,7 +96,7 @@ describe('createRedactedObject', () => {
 
   it('does not redact a string', () => {
     expect(createRedactedObject('this is not a password')).toMatchInlineSnapshot(
-      `"this is not a password"`
+      `"this is not a password"`,
     )
   })
 })

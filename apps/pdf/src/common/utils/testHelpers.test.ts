@@ -14,7 +14,7 @@ describe('catchErrorForTest', () => {
             },
           }),
         })
-      })
+      }),
     ).toMatchInlineSnapshot(`
       {
         "cause": {
@@ -56,9 +56,9 @@ describe('catchErrorForTestAsync', () => {
                 innerErrorDetailKeyB: 'inner errorDetailValueB',
               },
             }),
-          })
+          }),
         )
-      })
+      }),
     ).resolves.toMatchInlineSnapshot(`
       {
         "cause": {

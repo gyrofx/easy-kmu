@@ -8,7 +8,7 @@ export function zodParse<T extends z.ZodTypeAny>(schema: T, object: unknown): z.
 
 export function zodParseAndLogInvalidObject<T extends z.ZodTypeAny>(
   schema: T,
-  object: unknown
+  object: unknown,
 ): z.infer<T> {
   return zodParseInternal(schema, object, { logInvalidObject: true })
 }
@@ -16,7 +16,7 @@ export function zodParseAndLogInvalidObject<T extends z.ZodTypeAny>(
 function zodParseInternal<T extends z.ZodTypeAny>(
   schema: T,
   object: unknown,
-  options: { logInvalidObject: boolean }
+  options: { logInvalidObject: boolean },
 ): z.infer<T> {
   const result = schema.safeParse(object)
   if (result.success) return result.data
@@ -27,7 +27,7 @@ function zodParseInternal<T extends z.ZodTypeAny>(
 function objectWithErrorDetailsAndInvalidObject(
   cause: z.ZodError<unknown>,
   invalidObject: unknown,
-  { logInvalidObject }: { logInvalidObject: boolean }
+  { logInvalidObject }: { logInvalidObject: boolean },
 ) {
   return new ErrorWithDetails(`zod failed to parse object: ${cause.message}`, {
     details: {

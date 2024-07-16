@@ -3,7 +3,7 @@ import { sleep } from './timeout'
 export function retryNtimesWithSleep<T>(
   retries: number,
   fn: () => Promise<T>,
-  waitMillis: number
+  waitMillis: number,
 ): Promise<T> {
   return retryNtimes(retries, async () => {
     try {

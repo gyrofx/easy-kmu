@@ -5,7 +5,7 @@ export function withTimeout<T>(promise: Promise<T>, ms: number) {
 
 function timeOut<T>(ms: number) {
   return new Promise<T>((_resolve, reject) =>
-    setTimeout(() => reject(new Error(`timeout reached after ${ms}ms`)), ms)
+    setTimeout(() => reject(new Error(`timeout reached after ${ms}ms`)), ms),
   )
 }
 

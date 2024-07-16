@@ -3,17 +3,17 @@ import { removeAccentsAndSpecialCharacters, splitTrimTruthy, summarizeStringTo }
 describe('summarizeStringTo', () => {
   it.each([1, 10, 100, 199, 200, 201, 202, 203, 204, 300, 1000, 10000])(
     'summarizes a string of length %s to 200 characters',
-    (length) => expect(summarizeStringTo(generateStringOfLength(length), 200)).toMatchSnapshot()
+    (length) => expect(summarizeStringTo(generateStringOfLength(length), 200)).toMatchSnapshot(),
   )
 
   it.each([1, 10, 100, 199, 200, 201, 202, 203, 204, 300, 1000, 10000])(
     'summarizes a string of length %s to 250 characters',
-    (length) => expect(summarizeStringTo(generateStringOfLength(length), 250)).toMatchSnapshot()
+    (length) => expect(summarizeStringTo(generateStringOfLength(length), 250)).toMatchSnapshot(),
   )
 
   it.each([1, 10, 100, 199, 200, 201, 202, 203, 204, 300, 1000, 10000])(
     'throws an error if an invalid length is supplied with a string of length %s',
-    (length) => expect(() => summarizeStringTo(generateStringOfLength(length), 150)).toThrow()
+    (length) => expect(() => summarizeStringTo(generateStringOfLength(length), 150)).toThrow(),
   )
 })
 

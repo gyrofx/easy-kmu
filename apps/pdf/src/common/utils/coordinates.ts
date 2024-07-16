@@ -17,10 +17,10 @@ export function extractCoordinates(data: unknown): Coordinate[] {
   return Array.isArray(data)
     ? data.flatMap(extractCoordinates)
     : isCoordinate(data)
-    ? [data]
-    : data && typeof data === 'object'
-    ? extractCoordinates(Object.values(data))
-    : []
+      ? [data]
+      : data && typeof data === 'object'
+        ? extractCoordinates(Object.values(data))
+        : []
 }
 
 export function isCoordinate(data: unknown): data is Coordinate {

@@ -1,7 +1,7 @@
-import { createInvoiceTest } from "@/server/pdf/createInvoice";
+import { createInvoiceTest } from '@/server/pdf/createInvoice'
 
 async function main() {
-	createInvoiceTest();
+  createInvoiceTest()
 }
 
-main().catch(console.error);
+main().catch(console.error)

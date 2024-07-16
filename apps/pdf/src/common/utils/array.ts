@@ -27,11 +27,11 @@ export function isAtLeastLength<T>(array: T[], length: 9): array is [T, T, T, T,
 export function isAtLeastLength<T>(array: T[], length: 10): array is [T, T, T, T, T, T, T, T, T, T] & T[]
 export function isAtLeastLength<T>(
   array: T[],
-  length: 11
+  length: 11,
 ): array is [T, T, T, T, T, T, T, T, T, T, T] & T[]
 export function isAtLeastLength<T>(
   array: T[],
-  length: 12
+  length: 12,
 ): array is [T, T, T, T, T, T, T, T, T, T, T, T] & T[]
 export function isAtLeastLength<T>(array: T[], length: number): array is NonemptyArray<T> {
   return array.length >= length
@@ -88,7 +88,7 @@ export function neighbors<T>(array: readonly T[]): [T, T][] {
 
 export function findObjectAndIndex<T>(
   array: T[],
-  predicate: (value: T, index: number, obj: T[]) => unknown
+  predicate: (value: T, index: number, obj: T[]) => unknown,
 ): [T | undefined, number] {
   const index = array.findIndex(predicate)
   return [array[index], index]
