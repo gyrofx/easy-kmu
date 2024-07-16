@@ -1,4 +1,4 @@
-import { Server as HttpServer } from 'http'
-import { Server as HttpsServer } from 'https'
+import type { Server as HttpServer } from 'node:http'
+import type { Server as HttpsServer } from 'node:https'
 
 export type NodeServer = HttpsServer | HttpServer

@@ -1,5 +1,5 @@
 import { formatJson } from './formatJson'
-import { LogEntry } from './logger'
+import type { LogEntry } from './logger'
 
 describe('formatPretty', () => {
   it('formats a log entry as a JSON string', () => {

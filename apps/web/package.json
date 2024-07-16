@@ -19,6 +19,7 @@
     "build:client:preview": "vite preview",
     "test": "TZ=UTC vitest",
     "lint": "biome lint --apply ./src && tsc --noEmit",
+    "lint:unsafe": "biome lint --write  --unsafe ./src && tsc --noEmit",
     "lint:check": "biome lint ./src",
     "format": "biome format --write ./src",
     "format:check": "biome format --check ./src",

@@ -1,4 +1,4 @@
-import { SpyInstance, vi } from 'vitest'
+import { type SpyInstance, vi } from 'vitest'
 import { initLogger, logger, uninitializeLogger } from './logger'
 
 beforeAll(() => {

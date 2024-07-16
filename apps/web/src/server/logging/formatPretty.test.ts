@@ -1,5 +1,5 @@
 import { formatPretty } from './formatPretty'
-import { LogEntry } from './logger'
+import type { LogEntry } from './logger'
 
 describe('formatPretty', () => {
   it('formats a LogEntry', () => {

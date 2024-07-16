@@ -1,5 +1,5 @@
 import { initOptsInternal } from '@/server/config/opts'
-import { writeFileSync } from 'fs'
+import { writeFileSync } from 'node:fs'
 import { dirSync, type DirResult } from 'tmp'
 
 const defaultWebServerEnv = {

@@ -1,11 +1,11 @@
-import fs from 'fs'
-import { URL } from 'url'
+import fs from 'node:fs'
+import { URL } from 'node:url'
 
 import { trim } from 'lodash'
-import { parseInt10 } from '@/common/utils/number'
-import { NonemptyArray, isNonempty } from '@/common/utils/array'
-import { ErrorWithDetails } from '@/common/utils/errors'
-import { splitTrimTruthy } from '@/common/utils/string'
+import { parseInt10 } from '@easy-kmu/common/src/utils/number'
+import { type NonemptyArray, isNonempty } from '@easy-kmu/common/src/utils/array'
+import { ErrorWithDetails } from '@easy-kmu/common/src/utils/errors'
+import { splitTrimTruthy } from '@easy-kmu/common/src/utils/string'
 
 export function optionalEnvBoolean(field: string, defaultValue: boolean, env: Environment): boolean {
   const raw = env[field]

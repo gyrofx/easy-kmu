@@ -1,6 +1,6 @@
-import { inspect } from 'util'
+import { inspect } from 'node:util'
 import { isEmpty } from 'lodash'
-import { LogEntry, LogLevel } from '@/server/logging/logger'
+import type { LogEntry, LogLevel } from '@/server/logging/logger'
 
 export function formatPretty(logEntry: LogEntry) {
   const { level, timestamp, details, id } = logEntry

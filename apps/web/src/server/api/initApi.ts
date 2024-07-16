@@ -80,7 +80,6 @@ export function initApi(app: Express) {
           'Content-Type': 'application/json',
         },
         dispatcher: httpsAgent,
-        // biome-ignore lint/suspicious/noExplicitAny: unknown property dispatcher
       } as any)
 
       if (responose.status !== 200) {

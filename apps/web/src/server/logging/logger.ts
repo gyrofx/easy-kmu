@@ -1,7 +1,7 @@
-import { inspect } from 'util'
+import { inspect } from 'node:util'
 import { formatJson } from './formatJson'
 import { formatPretty } from './formatPretty'
-import { errorToPlainObject } from '@/common/utils/errors'
+import { errorToPlainObject } from '@easy-kmu/common/src/utils/errors'
 
 let internalLogger: ConfiguredLogger | undefined
 

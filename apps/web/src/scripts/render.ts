@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs'
+import { readFileSync } from 'node:fs'
 import puppeteer from 'puppeteer'
 ;(async () => {
   console.log(puppeteer.defaultArgs)
