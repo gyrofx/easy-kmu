@@ -47,3 +47,13 @@ services:
 
     ports:
       - 6379:6379
+
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ekmu
+      POSTGRES_PASSWORD: ekmu
+      POSTGRES_DB: ekmu

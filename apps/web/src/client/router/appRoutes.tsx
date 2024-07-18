@@ -5,6 +5,7 @@ import { ErrorBoundary } from '@/client/utils/ErrorBoundary'
 import { Navigate } from 'react-router-dom'
 // import { useAuth0 } from '@auth0/auth0-react'
 // import { LinearProgress } from '@mui/material'
+import { Contacts } from '@/client/contacts/Contacts'
 
 export function appRoutes() {
   return [
@@ -19,6 +20,10 @@ export function appRoutes() {
         {
           ...routes.invoice,
           element: <CreateInvoiceForm />,
+        },
+        {
+          ...routes.contacts,
+          element: <Contacts />,
         },
         {
           ...routes.about,

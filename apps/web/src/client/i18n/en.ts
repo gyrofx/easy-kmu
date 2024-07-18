@@ -8,6 +8,7 @@ export const en: I18n = {
     home: 'Übericht',
     about: 'About',
     invoice: 'Invoices',
+    contacts: 'Contacts',
     settings: 'Settings',
     signIn: 'Anmelden',
   },

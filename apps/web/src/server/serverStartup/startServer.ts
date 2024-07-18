@@ -15,6 +15,7 @@ import type { Express } from 'express'
 import { serverInitRedis } from '@/server/redis/initRedis'
 // import { initOpenIdConnect } from '@/server/auth/initOpenIdConnect'
 import { initApi } from '@/server/api/initApi'
+import { initPrisma } from '@/server/db/prisma'
 
 export async function startServer() {
   initConfiguredLogger()
@@ -37,6 +38,7 @@ async function startServerInner() {
   initBodyParserMiddleware(app)
   // initOpenIdConnect(app)
   initApi(app)
+  initPrisma()
   // initSessionManager(app)
   // initServerInfo(app)
   initStaticFiles(app)

@@ -25,6 +25,14 @@ export const routes = {
     title: t().routes.invoice,
   },
 
+  contacts: {
+    path: '/contacts' as const,
+    icon: <Info />,
+    text: t().routes.contacts,
+    maxWidth: 'md' as const,
+    title: t().routes.contacts,
+  },
+
   about: {
     path: '/about' as const,
     icon: <Info />,

@@ -7,11 +7,14 @@ import './index.css'
 import { ServerInfoContextProvider } from '@/client/serverInfo/useServerInfo'
 import { appRoutes } from '@/client/router/appRoutes'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
+
+const queryClient = new QueryClient()
 
 const createRouter = () => createBrowserRouter(appRoutes())
 
@@ -24,13 +27,15 @@ const root = createRoot(container)
 
 root.render(
   <StrictMode>
-    <ServerInfoContextProvider>
-      <AuthProvider>
-        <CssBaseline />
-        <ThemeProvider theme={theme}>
-          <RouterProvider router={createRouter()} />
-        </ThemeProvider>
-      </AuthProvider>
-    </ServerInfoContextProvider>
+    <QueryClientProvider client={queryClient}>
+      <ServerInfoContextProvider>
+        <AuthProvider>
+          <CssBaseline />
+          <ThemeProvider theme={theme}>
+            <RouterProvider router={createRouter()} />
+          </ThemeProvider>
+        </AuthProvider>
+      </ServerInfoContextProvider>
+    </QueryClientProvider>
   </StrictMode>,
 )

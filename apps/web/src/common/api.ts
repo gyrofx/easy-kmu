@@ -1,6 +1,7 @@
 import { createInvoiceSchema } from '@/common/invoice/CreateInvoice'
 import { initContract } from '@ts-rest/core'
 import { z } from 'zod'
+import { zodContact } from '@/common/contact/contact'
 
 export const contract = initContract()
 
@@ -28,5 +29,18 @@ export const api = contract.router({
     method: 'GET',
     path: '/files/:id',
     responses: { 200: z.unknown() },
+  },
+
+  createOrUpdateContact: {
+    method: 'POST',
+    path: '/api/create-or-update-contact',
+    body: zodContact,
+    responses: { 200: zodContact },
+  },
+
+  listContacts: {
+    method: 'GET',
+    path: '/api/listContacts',
+    responses: { 200: z.array(zodContact) },
   },
 })

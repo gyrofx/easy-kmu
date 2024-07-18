@@ -12,6 +12,7 @@ import { format } from 'date-fns'
 import { de } from 'date-fns/locale'
 import { opts } from '@/server/config/opts'
 import { join } from 'node:path'
+import { readContacts, createOrUpdateContact } from '@/server/contact/contactDb'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -113,6 +114,16 @@ export function initApi(app: Express) {
       } catch (error) {
         return { status: 404, body: { error: 'Not found' } }
       }
+    },
+
+    listContacts: async () => {
+      const contacts = await readContacts()
+      return { status: 200, body: contacts }
+    },
+
+    createOrUpdateContact: async ({ body }) => {
+      console.log('createOrUpdateContact', { body })
+      return { status: 200, body: await createOrUpdateContact(body) }
     },
   })
 
