@@ -1,88 +1,41 @@
-import { useQuery } from 'react-query'
 import { apiClient } from '@/client/api/client'
-import { Box, Button, IconButton, Typography } from '@mui/material'
-import 'react-data-grid/lib/styles.css'
-
-import DataGrid, {
-  SelectCellFormatter,
-  SelectColumn,
-  textEditor,
-  useRowSelection,
-  type Column,
-  type SortColumn,
-} from 'react-data-grid'
-import { Add, Close, ContentCopy, Delete, Edit, Info } from '@mui/icons-material'
-import { useMemo, useState } from 'react'
-import type { KeysOfType } from '@easy-kmu/common'
+import { AddContactDialog } from '@/client/contacts/CreateOrUpdateContactDialog'
 import type { Contact } from '@/common/contact/contact'
-import { useDialog } from '@/client/utils/useDialog'
-import { AddContactDialog } from '@/client/contacts/AddContactDialog'
-
-const columns = [
-  // { key: 'id', name: 'ID' },
-  SelectColumn,
-  { key: 'comapny', name: 'Firma', frozen: true },
-  { key: 'firstName', name: 'firstName', frozen: true },
-  { key: 'lastName', name: 'lastName', frozen: true },
-  { key: 'salutation', name: 'salutation' },
-  { key: 'address', name: 'address' },
-  { key: 'zipCode', name: 'zipCode' },
-  { key: 'city', name: 'city' },
-]
-
-function rowKeyGetter(row: any) {
-  return row.id
-}
-
-type Comparator = (a: Contact, b: Contact) => number
-type Colums = KeysOfType<Contact, any>
-
-function getComparator(sortColumn: Colums): Comparator {
-  switch (sortColumn) {
-    case 'salutation':
-    case 'firstName':
-    case 'lastName':
-    case 'city':
-    case 'country':
-    case 'company':
-    case 'address':
-      return (a, b) => {
-        return a[sortColumn].localeCompare(b[sortColumn])
-      }
-    case 'id':
-      return (a, b) => {
-        return a[sortColumn] - b[sortColumn]
-      }
-    default:
-      throw new Error(`unsupported sortColumn: "${sortColumn}"`)
-  }
-}
+import { Add, Close, ContentCopy, Delete, Edit, Info } from '@mui/icons-material'
+import { Box, Button, IconButton, Paper, TextField, Typography } from '@mui/material'
+import {
+  type MRT_ColumnDef,
+  type MRT_RowSelectionState,
+  MaterialReactTable,
+  getMRT_RowSelectionHandler,
+  useMaterialReactTable,
+} from 'material-react-table'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { useQuery } from 'react-query'
+import { useDebounce } from 'react-use'
+import './ContactGrid.css'
+import { useSortingWithSearchParams } from '@/client/utils/dataGrid'
+import { useDialogWithData } from '@/client/utils/useDialogWithData'
+import { isLength } from '@easy-kmu/common'
 
 export function Contacts() {
   const query = useQuery({ queryKey: ['contacts'], queryFn: apiClient.listContacts })
-  const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
+  // const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
 
-  const [selectedRows, setSelectedRows] = useState((): ReadonlySet<number> => new Set())
   const [showSidebar, setShowSidebar] = useState(false)
-  const dialog = useDialog()
+  const dialog = useDialogWithData<Contact>()
 
-  const sortedRows = useMemo((): readonly Contact[] => {
-    if (!query.data?.body) return []
-    if (sortColumns.length === 0) return query.data?.body
+  const [selectedRows, setSelectedRows] = useState<Contact[]>([])
+  const [globalFilter, setGlobalFilter] = useState<string>('')
+  const [globalFilterDebounced, setGlobalFilterDebounced] = useState<string>('')
 
-    return [...query.data.body].sort((a, b) => {
-      for (const sort of sortColumns) {
-        const comparator = getComparator(sort.columnKey)
-        const compResult = comparator(a, b)
-        if (compResult !== 0) {
-          return sort.direction === 'ASC' ? compResult : -compResult
-        }
-      }
-      return 0
-    })
-  }, [query.data?.body, sortColumns])
+  useDebounce(() => void setGlobalFilterDebounced(globalFilter), 700, [globalFilter])
 
-  const gridWithInPercent = showSidebar ? 70 : 100
+  const clearSelectionCallbackRef = useRef<() => void>()
+
+  function registerClearSelectionCallback(callback: () => void) {
+    clearSelectionCallbackRef.current = callback
+  }
 
   if (!query.data?.body) return <div>Loading...</div>
 
@@ -90,10 +43,10 @@ export function Contacts() {
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
         <Typography variant="h3" sx={{ my: 2 }}>
-          Contacts
+          Kontakte
         </Typography>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <IconButton color="primary" onClick={() => dialog.open()}>
+          <IconButton color="primary" onClick={() => dialog.open(defaultContact())}>
             <Add />
           </IconButton>
           <IconButton color="primary" onClick={() => setShowSidebar(!showSidebar)}>
@@ -102,92 +55,202 @@ export function Contacts() {
         </Box>
       </Box>
       {dialog.isOpen && <AddContactDialog dialog={dialog} />}
-      <Box sx={{ display: 'flex', flexDirection: 'row', border: 1, height: '50px' }}>
-        {selectedRows.size > 0 && (
-          <>
-            <IconButton
-              color="primary"
-              onClick={() => {
-                console.log('close', selectedRows)
-              }}
-            >
-              <Close />
-            </IconButton>
-            <Typography sx={{ m: 1, mr: 4 }} variant="body1">
-              {selectedRows.size} selected
-            </Typography>
-            <IconButton
-              color="primary"
-              onClick={() => {
-                console.log('delete', selectedRows)
-              }}
-            >
-              <Edit />
-            </IconButton>
-
-            <IconButton
-              color="primary"
-              onClick={() => {
-                console.log('delete', selectedRows)
-              }}
-            >
-              <Delete />
-            </IconButton>
-
-            <IconButton
-              color="primary"
-              onClick={() => {
-                console.log('delete', selectedRows)
-              }}
-            >
-              <ContentCopy />
-            </IconButton>
-          </>
-        )}
-        {selectedRows.size === 0 && (
-          <>
-            <Typography variant="body1">Filter</Typography>
-          </>
-        )}
-      </Box>
-      {query.data && (
-        <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'row' }}>
-          <Box sx={{ width: `${gridWithInPercent}%` }}>
-            <DataGrid
-              className="fill-grid-XXXXX"
-              columns={columns}
-              rows={sortedRows}
-              rowKeyGetter={rowKeyGetter}
-              defaultColumnOptions={{
-                sortable: true,
-                resizable: true,
-              }}
-              selectedRows={selectedRows}
-              onSelectedRowsChange={setSelectedRows}
-              sortColumns={sortColumns}
-              onSortColumnsChange={setSortColumns}
-              rowHeight={50}
-              onSelectedCellChange={(cell) => {
-                console.log('onSelectedCellChange', cell)
-              }}
-            />
-          </Box>
-          {showSidebar && (
-            <Box sx={{ mx: 2, mt: 1 }}>
-              {selectedRows.size > 0 && (
-                <>
-                  <Typography variant="h4">
-                    {sortedRows.find(({ id }) => id === selectedRows.values().next().value)?.firstName}
-                  </Typography>
-                </>
-              )}
-              {selectedRows.size === 0 && (
-                <Typography variant="body1">Kein Kontakt ausgewählt</Typography>
-              )}
+      <Paper sx={{ display: 'flex', flexDirection: 'row', height: '70px', my: 2, p: 2 }}>
+        {isLength(selectedRows, 1) && (
+          <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+            <Box sx={{ mr: 2 }}>
+              <Button
+                variant="outlined"
+                startIcon={<Close />}
+                onClick={clearSelectionCallbackRef.current}
+              >
+                Selektion aufheben
+              </Button>
             </Box>
+
+            <Box>
+              <Button
+                variant="outlined"
+                startIcon={<Edit />}
+                onClick={() => {
+                  console.log('edit', selectedRows[0])
+                  dialog.open(selectedRows[0])
+                }}
+              >
+                Bearbeiten
+              </Button>
+            </Box>
+
+            <Box>
+              <Button variant="outlined" startIcon={<ContentCopy />}>
+                Duplzieren
+              </Button>
+            </Box>
+
+            <Box>
+              <Button variant="outlined" startIcon={<Delete />} color="error">
+                Löschen
+              </Button>
+            </Box>
+          </Box>
+        )}
+        {selectedRows.length === 0 && (
+          <>
+            <TextField
+              label="Search"
+              variant="outlined"
+              size="small"
+              sx={{ width: '500px', mb: 2 }}
+              onChange={(ev) => setGlobalFilter(ev.target.value)}
+            />
+          </>
+        )}
+      </Paper>
+      {query.data && (
+        <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'row', gap: 2, width: 1 }}>
+          <ContactGrid
+            data={query.data?.body}
+            onRowSelectionChange={setSelectedRows}
+            globalFilter={globalFilterDebounced}
+            registerClearSelectionCallback={registerClearSelectionCallback}
+          />
+          {showSidebar && (
+            <Paper sx={{ display: 'flex', flexDirection: 'row', my: 0, p: 2, width: '500px' }}>
+              {selectedRows.length > 0 && (
+                <Typography variant="h4">
+                  {selectedRows[0]?.firstName} {selectedRows[0]?.lastName}
+                </Typography>
+              )}
+              {selectedRows.length === 0 && (
+                <Typography variant="h4">Kein Kontakt ausgewählt</Typography>
+              )}
+            </Paper>
           )}
         </Box>
       )}
+    </Box>
+  )
+}
+
+function defaultContact(): Contact {
+  return {
+    company: '',
+    firstName: '',
+    lastName: '',
+    address: '',
+    zipCode: '',
+    city: '',
+
+    createdAt: '',
+    updatedAt: '',
+  }
+}
+
+function ContactGrid({
+  data,
+  globalFilter,
+  onRowSelectionChange,
+  registerClearSelectionCallback,
+}: {
+  data: Contact[]
+  globalFilter: string
+  onRowSelectionChange: (selected: Contact[]) => void
+  registerClearSelectionCallback: (callback: () => void) => void
+}) {
+  const [sorting, setSorting] = useSortingWithSearchParams()
+  const [rowSelection, setRowSelection] = useState<MRT_RowSelectionState>({})
+
+  const columns = useMemo<MRT_ColumnDef<Contact>[]>(
+    () => [
+      {
+        accessorKey: 'company', //simple recommended way to define a column
+        header: 'Firma',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+      {
+        accessorKey: 'firstName', //simple recommended way to define a column
+        header: 'Vorname',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+      {
+        accessorKey: 'lastName', //simple recommended way to define a column
+        header: 'Nachname',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+      {
+        accessorKey: 'address', //simple recommended way to define a column
+        header: 'Adrersse',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+      {
+        accessorKey: 'zipCode', //simple recommended way to define a column
+        header: 'PLZ',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+      {
+        accessorKey: 'city', //simple recommended way to define a column
+        header: 'Ort',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+    ],
+    [],
+  )
+
+  registerClearSelectionCallback(() => setRowSelection({}))
+
+  const table = useMaterialReactTable({
+    columns,
+    data, //must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
+    enableRowSelection: true, //enable some features
+    muiTableBodyRowProps: ({ row, staticRowIndex, table }) => ({
+      onClick: (event) => getMRT_RowSelectionHandler({ row, staticRowIndex, table })(event), //import this helper function from material-react-table
+      sx: { cursor: 'pointer' },
+    }),
+    enableMultiRowSelection: false,
+    enableColumnOrdering: false, //enable a feature for all columns
+    enableGlobalFilter: true, //turn off a feature
+    globalFilterFn: 'contains',
+
+    enableFullScreenToggle: false,
+    enableDensityToggle: false,
+    enableTopToolbar: false,
+
+    enableRowVirtualization: true,
+
+    muiTableContainerProps: {
+      // TODO: find a better way to set the height
+      sx: { height: 'calc(100vh - 375px)' },
+    },
+
+    onSortingChange: setSorting,
+
+    onRowSelectionChange: setRowSelection,
+
+    state: {
+      sorting,
+      density: 'compact',
+      rowSelection,
+      globalFilter,
+      columnPinning: { left: ['company', 'firstName', 'lastName'], right: [] },
+    },
+
+    layoutMode: 'grid',
+  })
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  useEffect(() => {
+    onRowSelectionChange(table.getSelectedRowModel().rows.map((row) => row.original))
+  }, [rowSelection, onRowSelectionChange, table])
+
+  return (
+    <Box sx={{ width: 1 }}>
+      <MaterialReactTable table={table} />
     </Box>
   )
 }

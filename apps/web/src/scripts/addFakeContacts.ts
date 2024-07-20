@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import { initPrisma } from '@/server/db/prisma'
-import { createOrUpdateContact } from '@/server/contact/contactDb'
+import { createOrUpdateContact } from '@/server/contact/db/createOrUpdateContact'
 
 async function main() {
   initPrisma()

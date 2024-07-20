@@ -1,25 +1,16 @@
-import { useState } from 'react'
-
-import {
-  Dialog,
-  Button,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  TextField,
-  Box,
-} from '@mui/material'
-import type { UseDialog } from '@/client/utils/useDialog'
+import { Dialog, Button, DialogTitle, DialogContent, DialogActions, TextField, Box } from '@mui/material'
 import type { Contact } from '@/common/contact/contact'
 import { persist } from 'zustand/middleware'
 import { create } from 'zustand'
 import { apiClient } from '@/client/api/client'
+import { useEffect } from 'react'
+import type { UseDialogWithData } from '@/client/utils/useDialogWithData'
+import { useMutation, useQueryClient } from 'react-query'
 
-export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
-  const [open, setOpen] = useState(false)
+export function AddContactDialog({ dialog }: { dialog: UseDialogWithData<Contact> }) {
   const {
     contact,
+    setInitialContact,
     setAdditional1,
     setAdditional2,
     setAddress,
@@ -32,20 +23,28 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
     clear,
   } = useContactStore()
 
-  const handleClickOpen = () => {
-    setOpen(true)
-  }
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  useEffect(() => {
+    if (dialog.data) setInitialContact(dialog.data)
+  }, [])
+
+  const queryClient = useQueryClient()
+  const mutation = useMutation({
+    mutationFn: (newContact: Contact) => {
+      return apiClient.createOrUpdateContact({ body: newContact })
+    },
+    onSuccess: () => {
+      clear()
+      handleClose()
+      queryClient.invalidateQueries({ queryKey: ['contacts'] })
+    },
+  })
 
   const handleClose = () => {
     dialog.close()
   }
 
-  const save = async () => {
-    console.log('save', contact)
-    await apiClient.createOrUpdateContact({ body: contact })
-    clear()
-    handleClose()
-  }
+  const save = async () => void mutation.mutate(contact)
 
   return (
     <Dialog
@@ -55,15 +54,10 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
         component: 'form',
       }}
     >
-      <DialogTitle>Neuer Kontakt</DialogTitle>
+      <DialogTitle>{dialogTitle(contact)}</DialogTitle>
       <DialogContent>
-        <DialogContentText>
-          To subscribe to this website, please enter your email address here. We will send updates
-          occasionally.
-        </DialogContentText>
         <TextField
           autoFocus
-          // required
           margin="dense"
           label="Firma"
           type="text"
@@ -74,7 +68,6 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
         />
         <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
           <TextField
-            required
             margin="dense"
             name="email"
             label="Vorname"
@@ -85,7 +78,6 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
             onChange={(event) => setFirtName(event.target.value)}
           />
           <TextField
-            required
             margin="dense"
             name="email"
             label="Nachanme"
@@ -96,28 +88,28 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
             onChange={(event) => setLastName(event.target.value)}
           />
         </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+          <TextField
+            margin="dense"
+            label="Zusatz 1"
+            type="text"
+            fullWidth
+            variant="standard"
+            value={contact.additional1}
+            onChange={(event) => setAdditional1(event.target.value)}
+          />
+          <TextField
+            margin="dense"
+            label="Zusatz 2"
+            type="text"
+            fullWidth
+            variant="standard"
+            value={contact.additional2}
+            onChange={(event) => setAdditional2(event.target.value)}
+          />
+        </Box>
         <TextField
-          // required
-          margin="dense"
-          label="Zusatz 1"
-          type="text"
-          fullWidth
-          variant="standard"
-          value={contact.additional1}
-          onChange={(event) => setAdditional1(event.target.value)}
-        />
-        <TextField
-          // required
-          margin="dense"
-          label="Zusatz 2"
-          type="text"
-          fullWidth
-          variant="standard"
-          value={contact.additional2}
-          onChange={(event) => setAdditional2(event.target.value)}
-        />
-        <TextField
-          // required
+          required
           margin="dense"
           label="Adresse"
           type="text"
@@ -127,7 +119,6 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
           onChange={(event) => setAddress(event.target.value)}
         />
         <TextField
-          // required
           margin="dense"
           label="Postfach"
           type="text"
@@ -138,6 +129,7 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
         />
         <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
           <TextField
+            sx={{ width: '30%' }}
             required
             margin="dense"
             name="email"
@@ -162,15 +154,26 @@ export function AddContactDialog({ dialog }: { dialog: UseDialog }) {
         </Box>
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleClose}>Cancel</Button>
-        <Button onClick={save}>Subscribe</Button>
+        <Button onClick={handleClose}>Abbrechen</Button>
+        <Button onClick={save}>{buttonOkText(contact)}</Button>
       </DialogActions>
     </Dialog>
   )
 }
 
+function dialogTitle({ id }: { id?: string }) {
+  if (id) return 'Kontakt bearbeiten'
+  return 'Neuer Kontakt'
+}
+
+function buttonOkText({ id }: { id?: string }) {
+  if (id) return 'Aktualisieren'
+  return 'Hinzufügen'
+}
+
 interface ContactState {
   contact: Contact
+  setInitialContact: (contact: Contact) => void
   setCompany: (value: string) => void
   setFirtName: (value: string) => void
   setLastName: (value: string) => void
@@ -187,6 +190,7 @@ const useContactStore = create(
   persist<ContactState>(
     (set) => ({
       contact: emptyContact(),
+      setInitialContact: (contact: Contact) => set((state) => ({ ...state, contact })),
       setCompany: (company: string) =>
         set((state) => ({ ...state, contact: { ...state.contact, company } })),
       setFirtName: (firstName: string) =>
@@ -217,9 +221,14 @@ function emptyContact(): Contact {
   return {
     firstName: '',
     lastName: '',
+    additional1: '',
+    additional2: '',
     address: '',
     zipCode: '',
     city: '',
+    company: '',
+    pobox: '',
+    country: '',
 
     createdAt: '',
     updatedAt: '',

@@ -24,6 +24,9 @@ model Contact {
   notes       String?
 
   persons Person[]
+
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz(6)
 }
 
 model Person {
