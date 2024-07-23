@@ -1,7 +1,10 @@
 import { createInvoiceSchema } from '@/common/invoice/CreateInvoice'
 import { initContract } from '@ts-rest/core'
 import { z } from 'zod'
-import { zodContact } from '@/common/contact/contact'
+import { zodProjectObject } from '@/common/models/projectObject'
+import { zodContact, zodCreateOrUpdateContact } from '@/common/models/contact'
+import { zodCreateOrUpdateProject, zodProject } from '@/common/models/project'
+import { zodEmployee } from '@/common/models/employee'
 
 export const contract = initContract()
 
@@ -34,13 +37,38 @@ export const api = contract.router({
   createOrUpdateContact: {
     method: 'POST',
     path: '/api/create-or-update-contact',
-    body: zodContact,
+    body: zodCreateOrUpdateContact,
     responses: { 200: zodContact },
   },
 
   listContacts: {
     method: 'GET',
-    path: '/api/listContacts',
+    path: '/api/list-contacts',
     responses: { 200: z.array(zodContact) },
+  },
+
+  listProjectObjects: {
+    method: 'GET',
+    path: '/api/list-project-objects',
+    responses: { 200: z.array(zodProjectObject) },
+  },
+
+  listProjects: {
+    method: 'GET',
+    path: '/api/list-projects',
+    responses: { 200: z.array(zodProject) },
+  },
+
+  createOrUpdateProject: {
+    method: 'POST',
+    path: '/api/create-or-update-project',
+    body: zodCreateOrUpdateProject,
+    responses: { 200: zodProject },
+  },
+
+  listEmployees: {
+    method: 'GET',
+    path: '/api/list-employees',
+    responses: { 200: z.array(zodEmployee) },
   },
 })

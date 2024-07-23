@@ -2,6 +2,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator drizzle {
+  provider = "drizzle-prisma-generator"
+  output   = "./drizzle" // Where to put generated Drizle tables
+}
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
@@ -25,6 +30,11 @@ model Contact {
 
   persons Person[]
 
+  customers               Project[] @relation("customers")
+  constructionManagements Project[] @relation("constructionManagements")
+  architects              Project[] @relation("architects")
+  builders                Project[] @relation("builders")
+
   createdAt DateTime @default(now()) @db.Timestamptz(6)
   updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz(6)
 }
@@ -42,4 +52,73 @@ model Person {
 
   contactId String
   contact   Contact @relation(fields: [contactId], references: [id])
+}
+
+model Project {
+  id          String @id @default(uuid())
+  name        String
+  description String @default("")
+  notes       String @default("")
+
+  // Auftraggeber
+  customerContactId               String
+  customer                        Contact @relation("customers", fields: [customerContactId], references: [id])
+  // Objektadresse
+  objectId                        String
+  object                          Object  @relation(fields: [objectId], references: [id])
+  // Bauleitung
+  constructionManagementContactId String
+  constructionManagement          Contact @relation("constructionManagements", fields: [constructionManagementContactId], references: [id])
+  // Architekt
+  architectContactId              String
+  architect                       Contact @relation("architects", fields: [architectContactId], references: [id])
+  // Bauherr
+  builderContactId                String
+  builder                         Contact @relation("builders", fields: [builderContactId], references: [id])
+
+  // Material
+  material       String   @default("")
+  // Montage
+  assembly       String   @default("")
+  // Oberfläche:
+  surface        String   @default("")
+  // Brandschutz
+  fireProtection String   @default("")
+  // EN-1090
+  en1090         String   @default("")
+  // Termin
+  deadline       DateTime @default(now()) @db.Timestamptz(6)
+
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz(6)
+}
+
+model Object {
+  id String @id @default(uuid())
+
+  // Objekt-Adresse
+  address String
+  zipCode String
+  city    String
+  country String @default("")
+
+  // Stockwerk
+  floor String @default("")
+
+  // Wohnung
+  appartement String @default("")
+
+  // - Objekt-Beschrieb wie Liegenschaft, Geschäftsliegenschaft, Villa, EFH, REFH, MFH
+
+  // - Werkstatt-Auftrag (dies gibt es, wenn z. Bsp. ein Gartenbauer, oder
+  // Baumeister, etc. auf Kom. etwas bei uns bestellt und abholt, ohne
+  // dass wir je auf die Baustelle (Objekt) gehen müssen
+  workshopOrder String @default("")
+
+  notes String @default("")
+
+  projects Project[]
+
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz(6)
 }

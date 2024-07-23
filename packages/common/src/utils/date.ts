@@ -1,3 +1,7 @@
+import type { Nominal } from 'nominal'
+import { zodISODateString } from 'utils/zodHelper'
+import { zodParse } from 'utils/zodParse'
+
 export function timeZoneExists(timeZone: string) {
   if (!timeZone) return false
 
@@ -7,4 +11,13 @@ export function timeZoneExists(timeZone: string) {
   } catch {
     return false
   }
+}
+
+export type IsoDateString = Nominal<string, 'IsoDateString'>
+
+export function IsoDateString(dateOrString: string | Date): IsoDateString {
+  if (typeof dateOrString === 'string') {
+    return zodParse(zodISODateString(), dateOrString) as IsoDateString
+  }
+  return dateOrString.toISOString() as IsoDateString
 }

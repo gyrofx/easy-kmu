@@ -4,6 +4,7 @@ it('exports the same modules', () => {
   expect(Object.keys(index).sort()).toMatchInlineSnapshot(`
     [
       "ErrorWithDetails",
+      "IsoDateString",
       "allOrNone",
       "assertNonNullish",
       "catchErrorForTest",

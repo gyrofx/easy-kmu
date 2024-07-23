@@ -35,7 +35,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "prisma"],
+  "include": ["src", "drizzle.config.js", "../../packages/common/src/nominal.ts"],
   "exclude": ["build", "build-server"], // "src/server"
   "references": [{ "path": "./tsconfig.node.json" }]
 }

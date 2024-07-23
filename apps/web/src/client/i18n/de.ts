@@ -6,7 +6,9 @@ export const de = {
   routes: {
     home: 'Übericht',
     invoice: 'Rechnungen',
+    projects: 'Projekte',
     contacts: 'Kontakte',
+    objects: 'Objekte',
     about: 'Technische Informationen',
     settings: 'Settings',
     signIn: 'Anmelden',

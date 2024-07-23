@@ -7,8 +7,10 @@ export const en: I18n = {
   routes: {
     home: 'Übericht',
     about: 'About',
+    projects: 'Projects',
     invoice: 'Invoices',
     contacts: 'Contacts',
+    objects: 'Objects',
     settings: 'Settings',
     signIn: 'Anmelden',
   },

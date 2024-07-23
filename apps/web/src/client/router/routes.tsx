@@ -25,12 +25,44 @@ export const routes = {
     title: t().routes.invoice,
   },
 
+  projects: {
+    path: '/projects' as const,
+    icon: <Info />,
+    text: t().routes.projects,
+    maxWidth: 'md' as const,
+    title: t().routes.projects,
+  },
+
+  project: {
+    path: '/project/:id' as const,
+    icon: <Info />,
+    text: t().routes.projects,
+    maxWidth: 'md' as const,
+    title: t().routes.projects,
+  },
+
+  addProjects: {
+    path: '/add-projects' as const,
+    icon: <Info />,
+    text: t().routes.projects,
+    maxWidth: 'md' as const,
+    title: t().routes.projects,
+  },
+
   contacts: {
     path: '/contacts' as const,
     icon: <Info />,
     text: t().routes.contacts,
     maxWidth: 'md' as const,
     title: t().routes.contacts,
+  },
+
+  objects: {
+    path: '/objects' as const,
+    icon: <Info />,
+    text: t().routes.objects,
+    maxWidth: 'md' as const,
+    title: t().routes.objects,
   },
 
   about: {

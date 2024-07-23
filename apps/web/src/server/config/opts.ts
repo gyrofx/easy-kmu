@@ -33,6 +33,7 @@ export function initOptsInternal(env: NodeJS.ProcessEnv) {
     auth: parseAuthOpts(env),
     session: sessionOpts(env),
     redisUrl: requiredEnvString('EKMU_WEB_REDIS_URL', env),
+    databaseUrl: requiredEnvString('EKMU_WEB_DATABASE_URL', env),
     pdfService: parsePdfService(env),
     fileStorage: parseFileStorage(env),
   }
@@ -83,6 +84,7 @@ export interface Opts {
   readonly session: SessionOpts
   readonly auth: AuthOpts
   readonly redisUrl: string
+  readonly databaseUrl: string
   readonly pdfService: PdfServiceOpts
   readonly fileStorage: FileStorageOpts
 }

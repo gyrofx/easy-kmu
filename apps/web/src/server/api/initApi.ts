@@ -12,8 +12,12 @@ import { format } from 'date-fns'
 import { de } from 'date-fns/locale'
 import { opts } from '@/server/config/opts'
 import { join } from 'node:path'
-import { createOrUpdateContact } from '../contact/db/createOrUpdateContact'
-import { listContacts } from '../contact/db/listContacts'
+import { createOrUpdateContact } from '../models/contact/db/createOrUpdateContact'
+import { listContacts } from '../models/contact/db/listContacts'
+import { listProjectObjects } from '@/server/models/projectObject/db/listProjectObjects'
+import { listProjects } from '@/server/models/project/db/listProject'
+import { listEmployees } from '@/server/models/employee/db/listEmployees'
+import { createOrUpdateProject } from '@/server/models/project/db/createOrUpdateProject'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -124,6 +128,26 @@ export function initApi(app: Express) {
 
     createOrUpdateContact: async ({ body }) => {
       return { status: 200, body: await createOrUpdateContact(body) }
+    },
+
+    listProjectObjects: async () => {
+      const objects = await listProjectObjects()
+      return { status: 200, body: objects }
+    },
+
+    listProjects: async () => {
+      const projects = await listProjects()
+      return { status: 200, body: projects }
+    },
+
+    createOrUpdateProject: async ({ body }) => {
+      const project = await createOrUpdateProject(body)
+      return { status: 200, body: project }
+    },
+
+    listEmployees: async () => {
+      const employees = await listEmployees()
+      return { status: 200, body: employees }
     },
   })
 

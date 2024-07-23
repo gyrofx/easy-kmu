@@ -1,6 +1,5 @@
 import { apiClient } from '@/client/api/client'
-import { AddContactDialog } from '@/client/contacts/CreateOrUpdateContactDialog'
-import type { Contact } from '@/common/contact/contact'
+import { AddContactDialog } from '@/client/domain/contacts/CreateOrUpdateContactDialog'
 import { Add, Close, ContentCopy, Delete, Edit, Info } from '@mui/icons-material'
 import { Box, Button, IconButton, Paper, TextField, Typography } from '@mui/material'
 import {
@@ -17,13 +16,14 @@ import './ContactGrid.css'
 import { useSortingWithSearchParams } from '@/client/utils/dataGrid'
 import { useDialogWithData } from '@/client/utils/useDialogWithData'
 import { isLength } from '@easy-kmu/common'
+import type { Contact } from '@/common/models/contact'
 
 export function Contacts() {
   const query = useQuery({ queryKey: ['contacts'], queryFn: apiClient.listContacts })
   // const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
 
   const [showSidebar, setShowSidebar] = useState(false)
-  const dialog = useDialogWithData<Contact>()
+  const dialog = useDialogWithData<Contact | undefined>()
 
   const [selectedRows, setSelectedRows] = useState<Contact[]>([])
   const [globalFilter, setGlobalFilter] = useState<string>('')
@@ -46,7 +46,7 @@ export function Contacts() {
           Kontakte
         </Typography>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <IconButton color="primary" onClick={() => dialog.open(defaultContact())}>
+          <IconButton color="primary" onClick={() => dialog.open(undefined)}>
             <Add />
           </IconButton>
           <IconButton color="primary" onClick={() => setShowSidebar(!showSidebar)}>
@@ -130,20 +130,6 @@ export function Contacts() {
       )}
     </Box>
   )
-}
-
-function defaultContact(): Contact {
-  return {
-    company: '',
-    firstName: '',
-    lastName: '',
-    address: '',
-    zipCode: '',
-    city: '',
-
-    createdAt: '',
-    updatedAt: '',
-  }
 }
 
 function ContactGrid({
