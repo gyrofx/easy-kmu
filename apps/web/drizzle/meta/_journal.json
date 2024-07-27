@@ -5,50 +5,15 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1721577215318,
-      "tag": "0000_yielding_switch",
+      "when": 1722067428737,
+      "tag": "0000_absent_gravity",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "7",
-      "when": 1721590489249,
-      "tag": "0001_reflective_mastermind",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1721590788877,
-      "tag": "0002_chemical_mantis",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1721590959888,
-      "tag": "0003_faulty_apocalypse",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1721591004425,
-      "tag": "0004_previous_daimon_hellstrom",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "7",
-      "when": 1721624297063,
-      "tag": "0005_breezy_marrow",
-      "breakpoints": true
-    },
-    {
-      "idx": 6,
-      "version": "7",
-      "when": 1721678774202,
-      "tag": "0006_clammy_beast",
+      "when": 1722071576066,
+      "tag": "0001_massive_black_knight",
       "breakpoints": true
     }
   ]

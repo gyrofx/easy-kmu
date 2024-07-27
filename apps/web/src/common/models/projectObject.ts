@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-export interface ProjectObject {
+export interface CreateOrUpdateObject {
   id?: string
 
   address: string
@@ -11,11 +11,16 @@ export interface ProjectObject {
   appartement: string
   workshopOrder: string
   notes: string
+}
+
+export interface ProjectObject extends CreateOrUpdateObject {
+  id?: string
+
   createdAt: string
   updatedAt: string
 }
 
-export const zodProjectObject = z.object({
+export const zodCreateOrUpdateObject = z.object({
   id: z.string().optional(),
 
   address: z.string(),
@@ -26,6 +31,11 @@ export const zodProjectObject = z.object({
   appartement: z.string(),
   workshopOrder: z.string(),
   notes: z.string(),
+})
+
+export const zodProjectObject = zodCreateOrUpdateObject.extend({
+  id: z.string(),
+
   createdAt: z.string(),
   updatedAt: z.string(),
 })

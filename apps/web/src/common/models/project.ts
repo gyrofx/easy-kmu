@@ -12,17 +12,21 @@ export interface Project {
 
   customerContactId?: string
   customer?: ContactWithId
+  customerPersonsInCharge: string[]
 
   objectId?: string
 
   constructionManagementContactId?: string
   constructionManagement?: ContactWithId
+  constructionManagementPersonsInCharge: string[]
 
   architectContactId?: string
   architect?: ContactWithId
+  architectPersonsInCharge: string[]
 
   builderContactId?: string
   builder?: ContactWithId
+  builderPersonsInCharge: string[]
 
   clerkEmployeeId: string
   clerk: Employee
@@ -56,6 +60,7 @@ export const zodCreateOrUpdateProject = z.object({
   notes: z.string(),
 
   customerContactId: z.string().optional(),
+  customerPersonsInCharge: z.array(z.string()),
 
   objectId: z.string().optional(),
 
@@ -84,6 +89,7 @@ export const zodProject = z.object({
 
   customerContactId: z.string().optional(),
   customer: zodContact.optional(),
+  ustomerPersonsInCharge: z.array(z.string()),
 
   objectId: z.string().optional(),
 

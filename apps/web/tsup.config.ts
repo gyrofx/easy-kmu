@@ -6,5 +6,5 @@ export default defineConfig({
   sourcemap: true,
   clean: false,
   outDir: 'build-server',
-  format: ['esm'],
+  format: ['cjs', 'esm'],
 })

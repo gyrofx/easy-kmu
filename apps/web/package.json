@@ -5,11 +5,10 @@
   "license": "MIT",
   "private": true,
   "homepage": "./",
-  "type": "module",
   "scripts": {
     "dev": "yarn start",
     "start": "TZ=UTC concurrently --prefix name --prefix-colors \"yellow,magenta\" --names \"🔙🔚,🕸️\" \"yarn run dev:server\" \"yarn run dev:client\"",
-    "dev:server": "yarn tsup --tsconfig tsconfig.server.json --watch --onSuccess \"node build-server/index.js\" src/server/index.ts",
+    "dev:server": "yarn tsup --tsconfig tsconfig.server.json --watch --onSuccess \"node build-server/index.mjs\" src/server/index.ts",
     "dev:client": "wait-on -l https://ekmu.localhost:8080 && PORT=3000 vite",
     "monitor:redis": "redis-cli monitor",
     "build": "NODE_ENV=production INLINE_RUNTIME_CHUNK=false yarn run build-raw",
@@ -33,7 +32,7 @@
     "buildinfo:update": "yarn run src/scripts/updateBuildInfo.ts",
     "certs:all": "yarn run certs:server",
     "certs:server": "mkdir -p certs && mkcert -key-file certs/server-key.pem -cert-file certs/server-cert.pem ekmu.localhost localhost",
-    "scripts:addFakeContectsData": "yarn run tsx src/scripts/addFakeContacts.ts"
+    "scripts:importTestdata": "yarn run tsx src/scripts/importTestdata.ts"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",

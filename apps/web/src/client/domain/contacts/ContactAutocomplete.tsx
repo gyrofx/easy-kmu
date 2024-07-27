@@ -1,18 +1,23 @@
 import type { Contact } from '@/common/models/contact'
-import { Autocomplete, Box, TextField, Typography } from '@mui/material'
+import { Autocomplete, Box, type SxProps, TextField, type Theme, Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
 
 export function ContactAutocomplete({
+  value,
   contacts,
   label,
   onContactChange,
+  sx,
 }: {
+  value: string | undefined
   contacts: Contact[]
   label: string
   onContactChange: (contact: Contact | undefined) => void
+  sx?: SxProps<Theme>
 }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [filteredData, setFilteredData] = useState<Contact[]>([])
+  const [selcetedContact, setSelectedContact] = useState<Contact | null>(null)
 
   useEffect(() => {
     if (searchQuery.length < 3) setFilteredData([])
@@ -28,8 +33,17 @@ export function ContactAutocomplete({
     }
   }, [contacts, searchQuery])
 
+  useEffect(() => {
+    if (value) {
+      const contact = contacts.find((contact) => contact.id === value) || null
+      setSelectedContact(contact)
+      console.log('setSelectedContact', contact)
+    }
+  }, [value, contacts])
+
   return (
     <Autocomplete
+      sx={sx}
       options={filteredData}
       filterOptions={(x) => x}
       noOptionsText="Keine Ergebnisse. Bitte Suche eingeben"
@@ -47,6 +61,7 @@ export function ContactAutocomplete({
           </Box>
         )
       }}
+      value={selcetedContact}
       onChange={(_event, contact) => {
         onContactChange(contact ? contact : undefined)
       }}

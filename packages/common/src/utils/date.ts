@@ -1,6 +1,8 @@
+import { isValid, parseISO } from 'date-fns'
 import type { Nominal } from 'nominal'
 import { zodISODateString } from 'utils/zodHelper'
 import { zodParse } from 'utils/zodParse'
+import { z } from 'zod'
 
 export function timeZoneExists(timeZone: string) {
   if (!timeZone) return false
@@ -21,3 +23,9 @@ export function IsoDateString(dateOrString: string | Date): IsoDateString {
   }
   return dateOrString.toISOString() as IsoDateString
 }
+
+function isIsoDateString(isoDateString: string): isoDateString is IsoDateString {
+  return isValid(parseISO(isoDateString))
+}
+
+export const zodIsoDateString = z.string().refine(isIsoDateString)

@@ -80,3 +80,12 @@ export class ErrorWithDetails extends Error {
     return `${this.name}: ${this.message} ${JSON.stringify(this.details)}`
   }
 }
+
+export class HttpError extends Error {
+  readonly statusCode: number
+
+  constructor(message: string, statusCode: number) {
+    super(message)
+    this.statusCode = statusCode
+  }
+}

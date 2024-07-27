@@ -1,8 +1,9 @@
-import type { IsoDateString } from '@easy-kmu/common'
+import { zodIsoDateString, type IsoDateString } from '@easy-kmu/common'
 import { z } from 'zod'
+import type { AssertTrue, IsExact } from 'conditional-type-checks'
 
-export interface Employee {
-  id?: string
+export interface CreateOrupdateEmployee {
+  id: string
 
   firstName: string
   lastName: string
@@ -11,16 +12,17 @@ export interface Employee {
   phone2: string
 
   notes: string
+}
+
+export interface Employee extends CreateOrupdateEmployee {
+  id: string
 
   createdAt: IsoDateString
   updatedAt: IsoDateString
 }
 
-export interface EmployeeWithId extends Employee {
-  id: string
-}
-
-export const zodEmployeeCreate = z.object({
+export const zodEmployeeCreateOrUpdate = z.object({
+  id: z.string().optional(),
   firstName: z.string(),
   lastName: z.string(),
   email: z.string(),
@@ -30,8 +32,10 @@ export const zodEmployeeCreate = z.object({
   notes: z.string(),
 })
 
-export const zodEmployee = zodEmployeeCreate.extend({
-  id: z.string().optional(),
-  createdAt: z.string(),
-  updatedAt: z.string(),
+export const zodEmployee = zodEmployeeCreateOrUpdate.extend({
+  id: z.string(),
+  createdAt: zodIsoDateString,
+  updatedAt: zodIsoDateString,
 })
+
+export type TypeTest = AssertTrue<IsExact<z.infer<typeof zodEmployee>, Employee>>

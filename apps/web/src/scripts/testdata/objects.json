@@ -1,0 +1,7002 @@
+[
+    {
+        "address": "Knoblauchweg 76b",
+        "zipCode": "3322",
+        "city": "Monthey",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bierkellerweg 58c",
+        "zipCode": "4558",
+        "city": "Mendrisio",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Knoblauchweg 42b",
+        "zipCode": "8351",
+        "city": "Brig-Glis",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Birkenweg 54c",
+        "zipCode": "6469",
+        "city": "Uster",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ogimatte 33b",
+        "zipCode": "5489",
+        "city": "Grenchen",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rennweg 76a",
+        "zipCode": "8042",
+        "city": "Winterthur",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rämistrasse 5",
+        "zipCode": "5448",
+        "city": "Lugano",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Knoblauchweg 3",
+        "zipCode": "7471",
+        "city": "Langenthal",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Dorfstrasse 82",
+        "zipCode": "2218",
+        "city": "Steffisburg",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rennweg 1",
+        "zipCode": "8185",
+        "city": "Neuenburg",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Kirchweg 244",
+        "zipCode": "8417",
+        "city": "Wetzikon",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 96a",
+        "zipCode": "1742",
+        "city": "Wetzikon",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Lindenhofweg 62a",
+        "zipCode": "0624",
+        "city": "Wil",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 990",
+        "zipCode": "7081",
+        "city": "Meyrin",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Trittligasse 60c",
+        "zipCode": "3669",
+        "city": "La Chaux-de-Fonds",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Dorfstrasse 414",
+        "zipCode": "3418",
+        "city": "Adliswil",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Vorstadt 51a",
+        "zipCode": "9967",
+        "city": "Glarus Nord",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hauptstrasse 40b",
+        "zipCode": "5056",
+        "city": "Schaffhausen",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Vorstadt 97",
+        "zipCode": "7626",
+        "city": "Bern",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Endingerstrasse 62c",
+        "zipCode": "8504",
+        "city": "Zug",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Honiggasse 8",
+        "zipCode": "3774",
+        "city": "St. Gallen",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 40b",
+        "zipCode": "2779",
+        "city": "Freiburg",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Trittligasse 27b",
+        "zipCode": "9079",
+        "city": "Steffisburg",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Katzenplatz 46c",
+        "zipCode": "0981",
+        "city": "Brig-Glis",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Schulstrasse 13",
+        "zipCode": "7809",
+        "city": "Kreuzlingen",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 74b",
+        "zipCode": "7900",
+        "city": "Opfikon",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Augustinergasse 80c",
+        "zipCode": "6303",
+        "city": "Locarno",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Amthausstrasse 77",
+        "zipCode": "2076",
+        "city": "Glarus Nord",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 52a",
+        "zipCode": "5255",
+        "city": "Thalwil",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulhausstrasse 33c",
+        "zipCode": "8677",
+        "city": "Meyrin",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rämistrasse 403",
+        "zipCode": "9259",
+        "city": "Glarus Nord",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hirschengraben 313",
+        "zipCode": "1825",
+        "city": "Schlieren",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Amthausstrasse 18",
+        "zipCode": "8974",
+        "city": "Kloten",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Vorstadt 301",
+        "zipCode": "8407",
+        "city": "Glarus Nord",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Birkenweg 70a",
+        "zipCode": "6222",
+        "city": "Küsnacht",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 60",
+        "zipCode": "6846",
+        "city": "Frauenfeld",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Birkenweg 69",
+        "zipCode": "5688",
+        "city": "Liestal",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 52b",
+        "zipCode": "8026",
+        "city": "Freienbach",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Dorfstrasse 55c",
+        "zipCode": "2418",
+        "city": "Küsnacht",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 26b",
+        "zipCode": "2399",
+        "city": "Thun",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Schulstrasse 162",
+        "zipCode": "9403",
+        "city": "Genf",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Honiggasse 82c",
+        "zipCode": "0013",
+        "city": "Muttenz",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Elefantenbach 539",
+        "zipCode": "9353",
+        "city": "Chur",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Knoblauchweg 3",
+        "zipCode": "8347",
+        "city": "Richterswil",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 925",
+        "zipCode": "9291",
+        "city": "Langenthal",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hirschengraben 380",
+        "zipCode": "7700",
+        "city": "Monthey",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Elefantenbach 42",
+        "zipCode": "3793",
+        "city": "Emmen",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Katzenplatz 311",
+        "zipCode": "8315",
+        "city": "Basel",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Endingerstrasse 2",
+        "zipCode": "6305",
+        "city": "Horw",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 6",
+        "zipCode": "1687",
+        "city": "Wettingen",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Oberdorfstrasse 307",
+        "zipCode": "4246",
+        "city": "Regensdorf",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Uraniastrasse 36",
+        "zipCode": "3685",
+        "city": "Pully",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Rosenweg 47b",
+        "zipCode": "1411",
+        "city": "Emmen",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Trittligasse 33",
+        "zipCode": "2626",
+        "city": "St. Gallen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 812",
+        "zipCode": "4232",
+        "city": "Dietikon",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Dorfstrasse 30a",
+        "zipCode": "5329",
+        "city": "Rheinfelden",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Vorstadt 12b",
+        "zipCode": "0935",
+        "city": "Grenchen",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 51c",
+        "zipCode": "0441",
+        "city": "Onex",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Oberdorfstrasse 22b",
+        "zipCode": "8513",
+        "city": "Steffisburg",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Uraniastrasse 15a",
+        "zipCode": "1240",
+        "city": "Baden",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 3",
+        "zipCode": "7959",
+        "city": "Reinach",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Columbusstrasse 85a",
+        "zipCode": "8196",
+        "city": "Vevey",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Hauptstrasse 21a",
+        "zipCode": "0171",
+        "city": "Küsnacht",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Rennweg 3",
+        "zipCode": "1793",
+        "city": "Reinach",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bierkellerweg 34a",
+        "zipCode": "9534",
+        "city": "Martigny",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 345",
+        "zipCode": "2904",
+        "city": "Opfikon",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Endingerstrasse 62",
+        "zipCode": "7309",
+        "city": "Zürich",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulhausstrasse 34c",
+        "zipCode": "6715",
+        "city": "Versoix",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Ogimatte 64c",
+        "zipCode": "8124",
+        "city": "Stäfa",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Amthausstrasse 80b",
+        "zipCode": "8116",
+        "city": "Ostermundigen",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Bahnhofstrasse 37c",
+        "zipCode": "5193",
+        "city": "Martigny",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rosenweg 18a",
+        "zipCode": "5835",
+        "city": "Wallisellen",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 88",
+        "zipCode": "4805",
+        "city": "Binningen",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rennweg 12a",
+        "zipCode": "4053",
+        "city": "Brig-Glis",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 74",
+        "zipCode": "7519",
+        "city": "Horgen",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 32a",
+        "zipCode": "0066",
+        "city": "Val-de-Ruz",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Birkenweg 93a",
+        "zipCode": "5205",
+        "city": "Burgdorf",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Glockengasse 88c",
+        "zipCode": "4994",
+        "city": "Val-de-Ruz",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Glockengasse 368",
+        "zipCode": "9964",
+        "city": "Dübendorf",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 518",
+        "zipCode": "2164",
+        "city": "Oftringen",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Augustinergasse 55a",
+        "zipCode": "2827",
+        "city": "Zürich",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bahnhofstrasse 76a",
+        "zipCode": "7842",
+        "city": "Opfikon",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Elefantenbach 647",
+        "zipCode": "9878",
+        "city": "Freienbach",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rosenweg 405",
+        "zipCode": "3491",
+        "city": "Dübendorf",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Augustinergasse 422",
+        "zipCode": "1879",
+        "city": "Wettingen",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 54b",
+        "zipCode": "3184",
+        "city": "Opfikon",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Knoblauchweg 421",
+        "zipCode": "6892",
+        "city": "Wil",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hauptstrasse 77c",
+        "zipCode": "8384",
+        "city": "Riehen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bahnhofstrasse 94a",
+        "zipCode": "2015",
+        "city": "Horw",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 1",
+        "zipCode": "9924",
+        "city": "Kloten",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Lindenhofweg 217",
+        "zipCode": "7117",
+        "city": "Volketswil",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Uraniastrasse 67",
+        "zipCode": "2501",
+        "city": "Wohlen",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ödhus 6",
+        "zipCode": "6403",
+        "city": "Cham",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 118",
+        "zipCode": "7921",
+        "city": "Neuenburg",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hirschengraben 83a",
+        "zipCode": "4490",
+        "city": "Olten",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Endingerstrasse 6",
+        "zipCode": "0519",
+        "city": "Küsnacht",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hauptstrasse 5",
+        "zipCode": "1034",
+        "city": "Oftringen",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Schulhausstrasse 90b",
+        "zipCode": "6351",
+        "city": "Vevey",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Amthausstrasse 73",
+        "zipCode": "5365",
+        "city": "Wädenswil",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Knoblauchweg 48b",
+        "zipCode": "9726",
+        "city": "Pully",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 37c",
+        "zipCode": "4446",
+        "city": "Cham",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Elefantenbach 5",
+        "zipCode": "0627",
+        "city": "Herisau",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Industriestrasse 10a",
+        "zipCode": "1235",
+        "city": "Herisau",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Glockengasse 1",
+        "zipCode": "2609",
+        "city": "Kreuzlingen",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 26c",
+        "zipCode": "4765",
+        "city": "Illnau-Effretikon",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hauptstrasse 75c",
+        "zipCode": "0454",
+        "city": "Kloten",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 441",
+        "zipCode": "5035",
+        "city": "Genf",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Katzenplatz 46b",
+        "zipCode": "7628",
+        "city": "Vernier",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Elefantenbach 92b",
+        "zipCode": "3175",
+        "city": "Zürich",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hirschengraben 17",
+        "zipCode": "8389",
+        "city": "Einsiedeln",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Knoblauchweg 47",
+        "zipCode": "3939",
+        "city": "Sitten",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 2",
+        "zipCode": "9362",
+        "city": "St. Gallen",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Dorfstrasse 65c",
+        "zipCode": "2651",
+        "city": "Arbon",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 8",
+        "zipCode": "1475",
+        "city": "Kreuzlingen",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 93b",
+        "zipCode": "1649",
+        "city": "Glarus Nord",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bierkellerweg 9",
+        "zipCode": "6742",
+        "city": "Binningen",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Kirchweg 77b",
+        "zipCode": "1995",
+        "city": "Winterthur",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Dorfstrasse 52c",
+        "zipCode": "2108",
+        "city": "Basel",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 5",
+        "zipCode": "6232",
+        "city": "Neuenburg",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Augustinergasse 36b",
+        "zipCode": "1056",
+        "city": "Mendrisio",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Kirchweg 51a",
+        "zipCode": "8743",
+        "city": "Zürich",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Sihlfeldstrasse 13",
+        "zipCode": "2662",
+        "city": "Steffisburg",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Dorfstrasse 4",
+        "zipCode": "5172",
+        "city": "Wädenswil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Knoblauchweg 82a",
+        "zipCode": "7554",
+        "city": "Solothurn",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Dorfstrasse 85",
+        "zipCode": "4065",
+        "city": "Renens",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulstrasse 11a",
+        "zipCode": "4862",
+        "city": "Kloten",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bahnhofstrasse 36a",
+        "zipCode": "2624",
+        "city": "Glarus Nord",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulstrasse 97b",
+        "zipCode": "4866",
+        "city": "Küsnacht",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Bahnhofstrasse 400",
+        "zipCode": "3611",
+        "city": "Burgdorf",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Glockengasse 8",
+        "zipCode": "7527",
+        "city": "Adliswil",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Honiggasse 34c",
+        "zipCode": "8421",
+        "city": "Versoix",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Honiggasse 477",
+        "zipCode": "4203",
+        "city": "Freienbach",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Katzenplatz 19",
+        "zipCode": "2115",
+        "city": "Lancy",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 209",
+        "zipCode": "3815",
+        "city": "Liestal",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Bahnhofstrasse 23c",
+        "zipCode": "5777",
+        "city": "Lugano",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 484",
+        "zipCode": "3902",
+        "city": "Lyss",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Elefantenbach 22",
+        "zipCode": "9890",
+        "city": "Burgdorf",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 4",
+        "zipCode": "6295",
+        "city": "Gossau",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 60b",
+        "zipCode": "0711",
+        "city": "Brig-Glis",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Knoblauchweg 56b",
+        "zipCode": "9235",
+        "city": "Baden",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Endingerstrasse 49a",
+        "zipCode": "1447",
+        "city": "Opfikon",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Uraniastrasse 34b",
+        "zipCode": "6364",
+        "city": "Siders",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 20b",
+        "zipCode": "4224",
+        "city": "Wallisellen",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 16",
+        "zipCode": "1744",
+        "city": "Thônex",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 1",
+        "zipCode": "1579",
+        "city": "Kriens",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bahnhofstrasse 46a",
+        "zipCode": "7542",
+        "city": "Neuenburg",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 97c",
+        "zipCode": "4480",
+        "city": "Pully",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Elefantenbach 308",
+        "zipCode": "7262",
+        "city": "Adliswil",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hirschengraben 45c",
+        "zipCode": "6900",
+        "city": "Brig-Glis",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Endingerstrasse 56",
+        "zipCode": "5331",
+        "city": "Horgen",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 20b",
+        "zipCode": "0881",
+        "city": "Horgen",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 66b",
+        "zipCode": "8155",
+        "city": "Siders",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 32",
+        "zipCode": "6501",
+        "city": "Riehen",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Honiggasse 2",
+        "zipCode": "4788",
+        "city": "Morges",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rämistrasse 552",
+        "zipCode": "5329",
+        "city": "Schwyz",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulstrasse 85a",
+        "zipCode": "9063",
+        "city": "Stäfa",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Uraniastrasse 20",
+        "zipCode": "3070",
+        "city": "Montreux",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Birkenweg 33",
+        "zipCode": "8959",
+        "city": "Köniz",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Endingerstrasse 23a",
+        "zipCode": "0916",
+        "city": "Onex",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 10a",
+        "zipCode": "3864",
+        "city": "Glarus Nord",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rennweg 90",
+        "zipCode": "8772",
+        "city": "Chur",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Dorfstrasse 455",
+        "zipCode": "4873",
+        "city": "Schlieren",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Melonenstrasse 3",
+        "zipCode": "1096",
+        "city": "Rheinfelden",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 32a",
+        "zipCode": "6210",
+        "city": "Genf",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Oberdorfstrasse 592",
+        "zipCode": "7283",
+        "city": "Brig-Glis",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bierkellerweg 47",
+        "zipCode": "5886",
+        "city": "Pully",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bierkellerweg 95b",
+        "zipCode": "6153",
+        "city": "Freienbach",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ödhus 26b",
+        "zipCode": "3100",
+        "city": "Frauenfeld",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Elefantenbach 22b",
+        "zipCode": "6588",
+        "city": "Arbon",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Ogimatte 874",
+        "zipCode": "1046",
+        "city": "Wohlen",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Sihlfeldstrasse 76c",
+        "zipCode": "8421",
+        "city": "Illnau-Effretikon",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ogimatte 14",
+        "zipCode": "9721",
+        "city": "Ostermundigen",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Trittligasse 52",
+        "zipCode": "3308",
+        "city": "Locarno",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulstrasse 28",
+        "zipCode": "7239",
+        "city": "Chur",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 2",
+        "zipCode": "5870",
+        "city": "Wädenswil",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Amthausstrasse 56b",
+        "zipCode": "8347",
+        "city": "Vernier",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hirschengraben 8",
+        "zipCode": "8923",
+        "city": "Sitten",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rennweg 5",
+        "zipCode": "9720",
+        "city": "Schlieren",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Honiggasse 86c",
+        "zipCode": "1353",
+        "city": "Zug",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Sihlfeldstrasse 54b",
+        "zipCode": "1048",
+        "city": "Schaffhausen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Kirchweg 41c",
+        "zipCode": "2620",
+        "city": "Dübendorf",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 172",
+        "zipCode": "5625",
+        "city": "Rapperswil-Jona",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Elefantenbach 59c",
+        "zipCode": "2667",
+        "city": "Regensdorf",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Knoblauchweg 88",
+        "zipCode": "7557",
+        "city": "Freiburg",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Ödhus 786",
+        "zipCode": "1895",
+        "city": "Ostermundigen",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Knoblauchweg 53",
+        "zipCode": "0681",
+        "city": "Burgdorf",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Honiggasse 43b",
+        "zipCode": "1821",
+        "city": "Küsnacht",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Lindenhofweg 60b",
+        "zipCode": "8096",
+        "city": "Wettingen",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 2",
+        "zipCode": "3486",
+        "city": "Binningen",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Dorfstrasse 797",
+        "zipCode": "2062",
+        "city": "Thun",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Lindenhofweg 6",
+        "zipCode": "9739",
+        "city": "Freiburg",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Hauptstrasse 83",
+        "zipCode": "4694",
+        "city": "Nyon",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ödhus 5",
+        "zipCode": "8000",
+        "city": "Volketswil",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Ogimatte 70c",
+        "zipCode": "8405",
+        "city": "Horw",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 94c",
+        "zipCode": "4691",
+        "city": "St. Gallen",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Trittligasse 92a",
+        "zipCode": "9569",
+        "city": "Schwyz",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Augustinergasse 45",
+        "zipCode": "5266",
+        "city": "Genf",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Melonenstrasse 1",
+        "zipCode": "3900",
+        "city": "Freienbach",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulhausstrasse 55a",
+        "zipCode": "6856",
+        "city": "Bellinzona",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Augustinergasse 6",
+        "zipCode": "1540",
+        "city": "Liestal",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Trittligasse 23",
+        "zipCode": "3908",
+        "city": "Horgen",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Kirchweg 65c",
+        "zipCode": "1447",
+        "city": "Baden",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Augustinergasse 75b",
+        "zipCode": "8390",
+        "city": "Wetzikon",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Vorstadt 67b",
+        "zipCode": "9683",
+        "city": "Thônex",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Bahnhofstrasse 17b",
+        "zipCode": "3454",
+        "city": "Lugano",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Glockengasse 45",
+        "zipCode": "0478",
+        "city": "Biel/Bienne",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Vorstadt 14",
+        "zipCode": "3599",
+        "city": "Lancy",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Schulstrasse 21c",
+        "zipCode": "9167",
+        "city": "Lyss",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 3",
+        "zipCode": "0838",
+        "city": "Mendrisio",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ogimatte 38b",
+        "zipCode": "5958",
+        "city": "Schwyz",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rämistrasse 19a",
+        "zipCode": "3281",
+        "city": "Kloten",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 43b",
+        "zipCode": "5227",
+        "city": "Gossau",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rosenweg 32",
+        "zipCode": "0564",
+        "city": "St. Gallen",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Ödhus 69a",
+        "zipCode": "6967",
+        "city": "Glarus Nord",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Bierkellerweg 190",
+        "zipCode": "7632",
+        "city": "Langenthal",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 27c",
+        "zipCode": "7514",
+        "city": "Olten",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Glockengasse 44",
+        "zipCode": "9680",
+        "city": "Onex",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hirschengraben 81a",
+        "zipCode": "9299",
+        "city": "Stäfa",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 21",
+        "zipCode": "6255",
+        "city": "Genf",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rennweg 87a",
+        "zipCode": "8755",
+        "city": "Steffisburg",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rosenweg 9",
+        "zipCode": "5886",
+        "city": "Opfikon",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 68c",
+        "zipCode": "4464",
+        "city": "Arbon",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hauptstrasse 99b",
+        "zipCode": "6622",
+        "city": "Lancy",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 76",
+        "zipCode": "4975",
+        "city": "Luzern",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Dorfstrasse 65a",
+        "zipCode": "6147",
+        "city": "Rheinfelden",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Honiggasse 7",
+        "zipCode": "7524",
+        "city": "Biel/Bienne",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Columbusstrasse 85b",
+        "zipCode": "5338",
+        "city": "Lugano",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Industriestrasse 23a",
+        "zipCode": "0190",
+        "city": "Sitten",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Endingerstrasse 77",
+        "zipCode": "0781",
+        "city": "Bern",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulhausstrasse 45c",
+        "zipCode": "2904",
+        "city": "Martigny",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rennweg 331",
+        "zipCode": "3336",
+        "city": "Emmen",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Birkenweg 72",
+        "zipCode": "6454",
+        "city": "Herisau",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rämistrasse 549",
+        "zipCode": "0599",
+        "city": "Lyss",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Schulstrasse 49c",
+        "zipCode": "7222",
+        "city": "Montreux",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Endingerstrasse 48a",
+        "zipCode": "4281",
+        "city": "Versoix",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bierkellerweg 3",
+        "zipCode": "0596",
+        "city": "Bellinzona",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Hirschengraben 40",
+        "zipCode": "2956",
+        "city": "Kloten",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Rämistrasse 155",
+        "zipCode": "6654",
+        "city": "Chur",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hauptstrasse 620",
+        "zipCode": "0159",
+        "city": "Binningen",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulstrasse 778",
+        "zipCode": "5123",
+        "city": "Arbon",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Hauptstrasse 22b",
+        "zipCode": "6065",
+        "city": "St. Gallen",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Birkenweg 37",
+        "zipCode": "4929",
+        "city": "Schlieren",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 44c",
+        "zipCode": "2407",
+        "city": "Köniz",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 4",
+        "zipCode": "9541",
+        "city": "Frauenfeld",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Columbusstrasse 59",
+        "zipCode": "0661",
+        "city": "Locarno",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rosenweg 74b",
+        "zipCode": "0123",
+        "city": "Herisau",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Endingerstrasse 65b",
+        "zipCode": "3043",
+        "city": "Küsnacht",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Kirchweg 47a",
+        "zipCode": "4210",
+        "city": "Wallisellen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Augustinergasse 80c",
+        "zipCode": "7533",
+        "city": "Thônex",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rosenweg 42",
+        "zipCode": "0494",
+        "city": "Cham",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hauptstrasse 369",
+        "zipCode": "7599",
+        "city": "Gossau",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Melonenstrasse 77c",
+        "zipCode": "0381",
+        "city": "Horw",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulhausstrasse 20b",
+        "zipCode": "7990",
+        "city": "Langenthal",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Knoblauchweg 871",
+        "zipCode": "7265",
+        "city": "Olten",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rennweg 944",
+        "zipCode": "2798",
+        "city": "Volketswil",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Trittligasse 93c",
+        "zipCode": "2084",
+        "city": "Grenchen",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Sihlfeldstrasse 2",
+        "zipCode": "3102",
+        "city": "Val-de-Ruz",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Elefantenbach 68a",
+        "zipCode": "0240",
+        "city": "Lancy",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Honiggasse 96c",
+        "zipCode": "4925",
+        "city": "Meilen",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rämistrasse 56a",
+        "zipCode": "9326",
+        "city": "Schlieren",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Trittligasse 67b",
+        "zipCode": "8505",
+        "city": "Sitten",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 75a",
+        "zipCode": "4332",
+        "city": "Neuenburg",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Ogimatte 74a",
+        "zipCode": "7416",
+        "city": "Pully",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 2",
+        "zipCode": "0491",
+        "city": "Liestal",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 10",
+        "zipCode": "6645",
+        "city": "Dübendorf",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Ogimatte 22a",
+        "zipCode": "0105",
+        "city": "Herisau",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Melonenstrasse 60",
+        "zipCode": "2111",
+        "city": "Lugano",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Amthausstrasse 39c",
+        "zipCode": "4691",
+        "city": "Wetzikon",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Schulhausstrasse 65c",
+        "zipCode": "8953",
+        "city": "Vevey",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 62c",
+        "zipCode": "6552",
+        "city": "Wettingen",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Schulhausstrasse 22b",
+        "zipCode": "0064",
+        "city": "Renens",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 58b",
+        "zipCode": "5362",
+        "city": "Solothurn",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Columbusstrasse 33",
+        "zipCode": "0955",
+        "city": "Chur",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Columbusstrasse 87a",
+        "zipCode": "5980",
+        "city": "Schaffhausen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Dorfstrasse 33c",
+        "zipCode": "6075",
+        "city": "Bülach",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Katzenplatz 27",
+        "zipCode": "2416",
+        "city": "Wil",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Glockengasse 55c",
+        "zipCode": "2801",
+        "city": "Montreux",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Vorstadt 40a",
+        "zipCode": "8718",
+        "city": "Wetzikon",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Amthausstrasse 93b",
+        "zipCode": "9803",
+        "city": "Muttenz",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Endingerstrasse 496",
+        "zipCode": "5399",
+        "city": "Pully",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bierkellerweg 72",
+        "zipCode": "7319",
+        "city": "Grenchen",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Katzenplatz 43a",
+        "zipCode": "7480",
+        "city": "Brig-Glis",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Dorfstrasse 553",
+        "zipCode": "5923",
+        "city": "Stäfa",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 15b",
+        "zipCode": "8818",
+        "city": "Horgen",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Kirchweg 91c",
+        "zipCode": "5879",
+        "city": "Einsiedeln",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rämistrasse 97",
+        "zipCode": "6218",
+        "city": "Zug",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Augustinergasse 25c",
+        "zipCode": "4278",
+        "city": "Dietikon",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 7",
+        "zipCode": "5973",
+        "city": "Muri bei Bern",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Columbusstrasse 68b",
+        "zipCode": "6796",
+        "city": "Dietikon",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Melonenstrasse 34b",
+        "zipCode": "2062",
+        "city": "Val-de-Ruz",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulstrasse 42a",
+        "zipCode": "3573",
+        "city": "St. Gallen",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Katzenplatz 24c",
+        "zipCode": "0310",
+        "city": "Vevey",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 4",
+        "zipCode": "2002",
+        "city": "Thônex",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulstrasse 50",
+        "zipCode": "7257",
+        "city": "Wettingen",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Lindenhofweg 33b",
+        "zipCode": "5501",
+        "city": "Nyon",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Kirchweg 75b",
+        "zipCode": "2365",
+        "city": "Kloten",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Bierkellerweg 61c",
+        "zipCode": "9989",
+        "city": "Einsiedeln",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 65",
+        "zipCode": "2805",
+        "city": "Kriens",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Uraniastrasse 90",
+        "zipCode": "4264",
+        "city": "Renens",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Amthausstrasse 32a",
+        "zipCode": "9104",
+        "city": "Onex",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rennweg 21c",
+        "zipCode": "9652",
+        "city": "Wettingen",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Birkenweg 63c",
+        "zipCode": "3811",
+        "city": "Cham",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Dorfstrasse 6",
+        "zipCode": "7072",
+        "city": "Thônex",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Dorfstrasse 24a",
+        "zipCode": "2068",
+        "city": "Wetzikon",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Birkenweg 86c",
+        "zipCode": "8278",
+        "city": "Regensdorf",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Endingerstrasse 10a",
+        "zipCode": "0212",
+        "city": "Olten",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Knoblauchweg 39",
+        "zipCode": "6477",
+        "city": "Renens",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 89b",
+        "zipCode": "5782",
+        "city": "Vevey",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Lindenhofweg 6",
+        "zipCode": "7567",
+        "city": "Meyrin",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 53a",
+        "zipCode": "0543",
+        "city": "Allschwil",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Lindenhofweg 545",
+        "zipCode": "3685",
+        "city": "Morges",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 92",
+        "zipCode": "7282",
+        "city": "Herisau",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hirschengraben 53",
+        "zipCode": "8579",
+        "city": "Mendrisio",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 6",
+        "zipCode": "6455",
+        "city": "Horgen",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Trittligasse 914",
+        "zipCode": "2001",
+        "city": "Burgdorf",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 5",
+        "zipCode": "7684",
+        "city": "Lyss",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 937",
+        "zipCode": "5805",
+        "city": "Ostermundigen",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 223",
+        "zipCode": "6323",
+        "city": "Horgen",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 82c",
+        "zipCode": "6117",
+        "city": "Dübendorf",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bierkellerweg 41c",
+        "zipCode": "6204",
+        "city": "Illnau-Effretikon",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 5",
+        "zipCode": "6884",
+        "city": "Wohlen",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 72a",
+        "zipCode": "8147",
+        "city": "Val-de-Ruz",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 73a",
+        "zipCode": "8196",
+        "city": "Bellinzona",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Augustinergasse 52",
+        "zipCode": "2252",
+        "city": "Montreux",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Melonenstrasse 7",
+        "zipCode": "3583",
+        "city": "Locarno",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Dorfstrasse 370",
+        "zipCode": "4821",
+        "city": "Lancy",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Glockengasse 875",
+        "zipCode": "0259",
+        "city": "Onex",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Birkenweg 66a",
+        "zipCode": "9817",
+        "city": "Wettingen",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Elefantenbach 53",
+        "zipCode": "0347",
+        "city": "Sitten",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Bahnhofstrasse 4",
+        "zipCode": "9812",
+        "city": "Biel/Bienne",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Amthausstrasse 542",
+        "zipCode": "2743",
+        "city": "Liestal",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 91a",
+        "zipCode": "3804",
+        "city": "Lausanne",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Ogimatte 44c",
+        "zipCode": "2299",
+        "city": "Basel",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Bierkellerweg 63c",
+        "zipCode": "6977",
+        "city": "Olten",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Endingerstrasse 604",
+        "zipCode": "2867",
+        "city": "Lugano",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Lindenhofweg 89c",
+        "zipCode": "4124",
+        "city": "Renens",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bahnhofstrasse 7",
+        "zipCode": "4974",
+        "city": "Regensdorf",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Honiggasse 1",
+        "zipCode": "1369",
+        "city": "Genf",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Melonenstrasse 25c",
+        "zipCode": "3744",
+        "city": "Chur",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Uraniastrasse 11a",
+        "zipCode": "8502",
+        "city": "Volketswil",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Endingerstrasse 51b",
+        "zipCode": "3797",
+        "city": "Glarus Nord",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Schulstrasse 390",
+        "zipCode": "6624",
+        "city": "Langenthal",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rennweg 33b",
+        "zipCode": "4332",
+        "city": "La Chaux-de-Fonds",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Melonenstrasse 83",
+        "zipCode": "2114",
+        "city": "Val-de-Ruz",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Schulstrasse 9",
+        "zipCode": "1416",
+        "city": "Regensdorf",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Amthausstrasse 93",
+        "zipCode": "7802",
+        "city": "Steffisburg",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Uraniastrasse 8",
+        "zipCode": "3511",
+        "city": "Herisau",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Amthausstrasse 57",
+        "zipCode": "7418",
+        "city": "Pully",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Amthausstrasse 87",
+        "zipCode": "2892",
+        "city": "Lugano",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Uraniastrasse 5",
+        "zipCode": "8686",
+        "city": "Binningen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Lindenhofweg 645",
+        "zipCode": "1142",
+        "city": "Muttenz",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rämistrasse 427",
+        "zipCode": "0377",
+        "city": "Lugano",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 128",
+        "zipCode": "9510",
+        "city": "Emmen",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 51c",
+        "zipCode": "8400",
+        "city": "Montreux",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Uraniastrasse 77a",
+        "zipCode": "5918",
+        "city": "Schwyz",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bierkellerweg 27c",
+        "zipCode": "5359",
+        "city": "Locarno",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 71c",
+        "zipCode": "6104",
+        "city": "Nyon",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulstrasse 2",
+        "zipCode": "5110",
+        "city": "Montreux",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 49b",
+        "zipCode": "2460",
+        "city": "Arbon",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rosenweg 47b",
+        "zipCode": "1861",
+        "city": "Schlieren",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Lindenhofweg 87",
+        "zipCode": "9951",
+        "city": "Zürich",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Columbusstrasse 90b",
+        "zipCode": "3408",
+        "city": "Cham",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 56c",
+        "zipCode": "5301",
+        "city": "Locarno",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rosenweg 85",
+        "zipCode": "5271",
+        "city": "Opfikon",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Melonenstrasse 3",
+        "zipCode": "7782",
+        "city": "Wettingen",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 71",
+        "zipCode": "8321",
+        "city": "Kriens",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Trittligasse 775",
+        "zipCode": "4388",
+        "city": "Baden",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bierkellerweg 94a",
+        "zipCode": "5948",
+        "city": "Muri bei Bern",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 72a",
+        "zipCode": "1563",
+        "city": "Emmen",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Trittligasse 7",
+        "zipCode": "4844",
+        "city": "Herisau",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bahnhofstrasse 95a",
+        "zipCode": "0140",
+        "city": "La Chaux-de-Fonds",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Honiggasse 750",
+        "zipCode": "6791",
+        "city": "Zürich",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Glockengasse 44b",
+        "zipCode": "1428",
+        "city": "Riehen",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ogimatte 9",
+        "zipCode": "4867",
+        "city": "Chur",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Columbusstrasse 6",
+        "zipCode": "2279",
+        "city": "Baden",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 17a",
+        "zipCode": "0313",
+        "city": "Schlieren",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Hirschengraben 70b",
+        "zipCode": "8849",
+        "city": "Carouge",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 61c",
+        "zipCode": "4675",
+        "city": "Wil",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Endingerstrasse 50c",
+        "zipCode": "3645",
+        "city": "Glarus Nord",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Rennweg 53b",
+        "zipCode": "1793",
+        "city": "Stäfa",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ogimatte 67",
+        "zipCode": "9259",
+        "city": "Wohlen",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulhausstrasse 81b",
+        "zipCode": "7902",
+        "city": "Wettingen",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 19c",
+        "zipCode": "3998",
+        "city": "Rapperswil-Jona",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Schulstrasse 30",
+        "zipCode": "8557",
+        "city": "Morges",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Kirchweg 8",
+        "zipCode": "1083",
+        "city": "Bülach",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 33c",
+        "zipCode": "3517",
+        "city": "Köniz",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Melonenstrasse 7",
+        "zipCode": "0339",
+        "city": "Bern",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Knoblauchweg 7",
+        "zipCode": "3680",
+        "city": "Genf",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Birkenweg 50c",
+        "zipCode": "5157",
+        "city": "Frauenfeld",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Katzenplatz 11",
+        "zipCode": "5717",
+        "city": "Wettingen",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Dorfstrasse 148",
+        "zipCode": "2530",
+        "city": "Glarus Nord",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hirschengraben 3",
+        "zipCode": "7127",
+        "city": "Volketswil",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rämistrasse 16a",
+        "zipCode": "1871",
+        "city": "Herisau",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 73",
+        "zipCode": "4515",
+        "city": "Olten",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rosenweg 16c",
+        "zipCode": "5614",
+        "city": "Richterswil",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ödhus 35",
+        "zipCode": "2073",
+        "city": "Renens",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Endingerstrasse 23b",
+        "zipCode": "5235",
+        "city": "Wohlen",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 520",
+        "zipCode": "8746",
+        "city": "Locarno",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Dorfstrasse 759",
+        "zipCode": "0702",
+        "city": "Martigny",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Lindenhofweg 48c",
+        "zipCode": "6476",
+        "city": "Uster",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulhausstrasse 43a",
+        "zipCode": "0367",
+        "city": "Horgen",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Lindenhofweg 114",
+        "zipCode": "1514",
+        "city": "Luzern",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Trittligasse 218",
+        "zipCode": "2631",
+        "city": "Winterthur",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rennweg 82",
+        "zipCode": "4406",
+        "city": "Köniz",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Augustinergasse 711",
+        "zipCode": "7126",
+        "city": "St. Gallen",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Ödhus 69b",
+        "zipCode": "2190",
+        "city": "Oftringen",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 21a",
+        "zipCode": "9894",
+        "city": "Dübendorf",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Birkenweg 7",
+        "zipCode": "1078",
+        "city": "Pratteln",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rosenweg 11",
+        "zipCode": "7307",
+        "city": "Genf",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Ödhus 80b",
+        "zipCode": "9656",
+        "city": "Nyon",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Columbusstrasse 841",
+        "zipCode": "5392",
+        "city": "Glarus Nord",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rennweg 18c",
+        "zipCode": "0155",
+        "city": "Lyss",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 61c",
+        "zipCode": "1017",
+        "city": "Genf",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 87b",
+        "zipCode": "8642",
+        "city": "Emmen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 70",
+        "zipCode": "3527",
+        "city": "Regensdorf",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ödhus 9",
+        "zipCode": "4540",
+        "city": "Lyss",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Amthausstrasse 74b",
+        "zipCode": "8037",
+        "city": "Muttenz",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Hauptstrasse 1",
+        "zipCode": "6498",
+        "city": "Morges",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Industriestrasse 896",
+        "zipCode": "6242",
+        "city": "Schlieren",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Kirchweg 447",
+        "zipCode": "9457",
+        "city": "Opfikon",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Melonenstrasse 83a",
+        "zipCode": "3965",
+        "city": "Steffisburg",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Elefantenbach 36b",
+        "zipCode": "0014",
+        "city": "Gossau",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ogimatte 38a",
+        "zipCode": "2989",
+        "city": "Horw",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Amthausstrasse 74b",
+        "zipCode": "5302",
+        "city": "La Chaux-de-Fonds",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 76b",
+        "zipCode": "5766",
+        "city": "Baden",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Katzenplatz 15b",
+        "zipCode": "0984",
+        "city": "Stäfa",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulstrasse 3",
+        "zipCode": "5022",
+        "city": "Carouge",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Dorfstrasse 648",
+        "zipCode": "3105",
+        "city": "Basel",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bierkellerweg 54b",
+        "zipCode": "2907",
+        "city": "Thun",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Lindenhofweg 613",
+        "zipCode": "2518",
+        "city": "Glarus Nord",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 42b",
+        "zipCode": "1149",
+        "city": "Grenchen",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 46b",
+        "zipCode": "9202",
+        "city": "Biel/Bienne",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 911",
+        "zipCode": "8104",
+        "city": "Glarus Nord",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Ödhus 20b",
+        "zipCode": "2184",
+        "city": "Freiburg",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ödhus 86",
+        "zipCode": "8937",
+        "city": "Pully",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Vorstadt 63a",
+        "zipCode": "6919",
+        "city": "Steffisburg",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Dorfstrasse 52c",
+        "zipCode": "9709",
+        "city": "Langenthal",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rennweg 278",
+        "zipCode": "4502",
+        "city": "Wetzikon",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 9",
+        "zipCode": "3053",
+        "city": "Steffisburg",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Elefantenbach 6",
+        "zipCode": "1544",
+        "city": "Chur",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Ogimatte 4",
+        "zipCode": "7840",
+        "city": "Zürich",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Lindenhofweg 3",
+        "zipCode": "4872",
+        "city": "Meilen",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Oberdorfstrasse 4",
+        "zipCode": "4912",
+        "city": "Arbon",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Ogimatte 5",
+        "zipCode": "8921",
+        "city": "Volketswil",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 25",
+        "zipCode": "8533",
+        "city": "Herisau",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulstrasse 29",
+        "zipCode": "8951",
+        "city": "Kreuzlingen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rämistrasse 74b",
+        "zipCode": "4800",
+        "city": "Thalwil",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Hauptstrasse 26a",
+        "zipCode": "8251",
+        "city": "Riehen",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Hauptstrasse 530",
+        "zipCode": "4422",
+        "city": "Meilen",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Hirschengraben 300",
+        "zipCode": "4350",
+        "city": "Küsnacht",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Ödhus 18a",
+        "zipCode": "5648",
+        "city": "Reinach",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 18",
+        "zipCode": "7531",
+        "city": "Pratteln",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 91b",
+        "zipCode": "4608",
+        "city": "Köniz",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Katzenplatz 622",
+        "zipCode": "7059",
+        "city": "Wettingen",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rosenweg 14b",
+        "zipCode": "7800",
+        "city": "Kloten",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rosenweg 53a",
+        "zipCode": "3663",
+        "city": "Biel/Bienne",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bierkellerweg 78",
+        "zipCode": "7356",
+        "city": "Frauenfeld",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Endingerstrasse 72a",
+        "zipCode": "5940",
+        "city": "Olten",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 58b",
+        "zipCode": "9219",
+        "city": "Aarau",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Endingerstrasse 9",
+        "zipCode": "3860",
+        "city": "Wohlen",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ogimatte 6",
+        "zipCode": "8120",
+        "city": "Vevey",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 75",
+        "zipCode": "5401",
+        "city": "Neuenburg",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Honiggasse 94b",
+        "zipCode": "5743",
+        "city": "Vevey",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Columbusstrasse 64b",
+        "zipCode": "3296",
+        "city": "Siders",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rosenweg 96b",
+        "zipCode": "3975",
+        "city": "Wetzikon",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Dorfstrasse 13c",
+        "zipCode": "9889",
+        "city": "Wohlen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Elefantenbach 807",
+        "zipCode": "0847",
+        "city": "Chur",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 78b",
+        "zipCode": "1065",
+        "city": "Chur",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Lindenhofweg 14a",
+        "zipCode": "1042",
+        "city": "Nyon",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Hauptstrasse 157",
+        "zipCode": "6357",
+        "city": "Lancy",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 9",
+        "zipCode": "2487",
+        "city": "Köniz",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Honiggasse 87b",
+        "zipCode": "8743",
+        "city": "Rapperswil-Jona",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 8",
+        "zipCode": "7301",
+        "city": "Bülach",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Uraniastrasse 486",
+        "zipCode": "1862",
+        "city": "Meyrin",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 5",
+        "zipCode": "2372",
+        "city": "Neuenburg",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Lindenhofweg 1",
+        "zipCode": "5909",
+        "city": "Horw",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 67c",
+        "zipCode": "1049",
+        "city": "Winterthur",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Ogimatte 5",
+        "zipCode": "5750",
+        "city": "Yverdon-les-Bains",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Dorfstrasse 53a",
+        "zipCode": "2490",
+        "city": "Baar",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 48c",
+        "zipCode": "1658",
+        "city": "Freiburg",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Oberdorfstrasse 48a",
+        "zipCode": "0659",
+        "city": "Baden",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Honiggasse 58c",
+        "zipCode": "1554",
+        "city": "Stäfa",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hauptstrasse 7",
+        "zipCode": "5198",
+        "city": "Emmen",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Endingerstrasse 3",
+        "zipCode": "0574",
+        "city": "Grenchen",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Ogimatte 46",
+        "zipCode": "9692",
+        "city": "Stäfa",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Trittligasse 68b",
+        "zipCode": "2575",
+        "city": "Wil",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 96",
+        "zipCode": "1705",
+        "city": "Stäfa",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 20b",
+        "zipCode": "3950",
+        "city": "Luzern",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rosenweg 15a",
+        "zipCode": "3913",
+        "city": "Lancy",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bahnhofstrasse 553",
+        "zipCode": "8177",
+        "city": "Thalwil",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 39",
+        "zipCode": "4335",
+        "city": "Muttenz",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Augustinergasse 54a",
+        "zipCode": "5948",
+        "city": "Bulle",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 887",
+        "zipCode": "2442",
+        "city": "Kriens",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 340",
+        "zipCode": "9633",
+        "city": "Montreux",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ogimatte 560",
+        "zipCode": "4551",
+        "city": "Lyss",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 652",
+        "zipCode": "1128",
+        "city": "Thônex",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Glockengasse 48a",
+        "zipCode": "3817",
+        "city": "Zürich",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rämistrasse 69",
+        "zipCode": "7048",
+        "city": "Adliswil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Endingerstrasse 82",
+        "zipCode": "0602",
+        "city": "Lancy",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Bahnhofstrasse 8",
+        "zipCode": "0501",
+        "city": "Rheinfelden",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Katzenplatz 55b",
+        "zipCode": "0858",
+        "city": "Burgdorf",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Elefantenbach 10a",
+        "zipCode": "2665",
+        "city": "Wallisellen",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Oberdorfstrasse 2",
+        "zipCode": "8314",
+        "city": "Steffisburg",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Industriestrasse 513",
+        "zipCode": "9626",
+        "city": "Glarus Nord",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bierkellerweg 26",
+        "zipCode": "8306",
+        "city": "Dietikon",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hirschengraben 96a",
+        "zipCode": "8494",
+        "city": "La Chaux-de-Fonds",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 4",
+        "zipCode": "6418",
+        "city": "Baar",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Melonenstrasse 36c",
+        "zipCode": "6700",
+        "city": "Reinach",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hirschengraben 16c",
+        "zipCode": "9807",
+        "city": "Zug",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Trittligasse 23c",
+        "zipCode": "5898",
+        "city": "Montreux",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Birkenweg 97a",
+        "zipCode": "4022",
+        "city": "Burgdorf",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Amthausstrasse 8",
+        "zipCode": "8352",
+        "city": "Neuenburg",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hirschengraben 40c",
+        "zipCode": "4007",
+        "city": "Yverdon-les-Bains",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Trittligasse 569",
+        "zipCode": "0008",
+        "city": "Pully",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulstrasse 4",
+        "zipCode": "3731",
+        "city": "Frauenfeld",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rosenweg 43a",
+        "zipCode": "3318",
+        "city": "Luzern",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Vorstadt 67",
+        "zipCode": "4175",
+        "city": "Thun",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rennweg 657",
+        "zipCode": "3943",
+        "city": "Küsnacht",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hirschengraben 155",
+        "zipCode": "0859",
+        "city": "Mendrisio",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rämistrasse 52",
+        "zipCode": "7184",
+        "city": "Genf",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Oberdorfstrasse 1",
+        "zipCode": "4257",
+        "city": "Kriens",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 9",
+        "zipCode": "0482",
+        "city": "Freienbach",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Hirschengraben 607",
+        "zipCode": "4151",
+        "city": "Thônex",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Lindenhofweg 39a",
+        "zipCode": "5164",
+        "city": "Adliswil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Rennweg 89b",
+        "zipCode": "6805",
+        "city": "Nyon",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Honiggasse 37",
+        "zipCode": "1191",
+        "city": "Martigny",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Elefantenbach 26b",
+        "zipCode": "4807",
+        "city": "Volketswil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 51",
+        "zipCode": "7356",
+        "city": "Cham",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Glockengasse 85c",
+        "zipCode": "7037",
+        "city": "Einsiedeln",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ödhus 77b",
+        "zipCode": "5402",
+        "city": "Basel",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 37c",
+        "zipCode": "0676",
+        "city": "St. Gallen",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Vorstadt 17",
+        "zipCode": "3047",
+        "city": "Muttenz",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hauptstrasse 79b",
+        "zipCode": "0116",
+        "city": "Schwyz",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 978",
+        "zipCode": "4043",
+        "city": "Einsiedeln",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Industriestrasse 27",
+        "zipCode": "2667",
+        "city": "Martigny",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Honiggasse 59c",
+        "zipCode": "2109",
+        "city": "Freienbach",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rämistrasse 249",
+        "zipCode": "8264",
+        "city": "Onex",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 62b",
+        "zipCode": "3961",
+        "city": "Liestal",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 38c",
+        "zipCode": "9569",
+        "city": "Renens",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Schulstrasse 21a",
+        "zipCode": "7326",
+        "city": "Bülach",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Birkenweg 664",
+        "zipCode": "2718",
+        "city": "Grenchen",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Industriestrasse 88c",
+        "zipCode": "1202",
+        "city": "Rheinfelden",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Elefantenbach 9",
+        "zipCode": "5845",
+        "city": "Richterswil",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 3",
+        "zipCode": "1090",
+        "city": "Lugano",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Schulstrasse 9",
+        "zipCode": "8416",
+        "city": "Meyrin",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Honiggasse 64",
+        "zipCode": "5105",
+        "city": "Neuenburg",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bierkellerweg 758",
+        "zipCode": "9208",
+        "city": "Bellinzona",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 50a",
+        "zipCode": "9749",
+        "city": "Vevey",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rosenweg 91c",
+        "zipCode": "7736",
+        "city": "Horw",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Uraniastrasse 87",
+        "zipCode": "3241",
+        "city": "Locarno",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Honiggasse 7",
+        "zipCode": "7189",
+        "city": "Siders",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 12c",
+        "zipCode": "6297",
+        "city": "Olten",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Birkenweg 99",
+        "zipCode": "9457",
+        "city": "Zug",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Elefantenbach 27",
+        "zipCode": "0674",
+        "city": "Lugano",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Honiggasse 6",
+        "zipCode": "3828",
+        "city": "Bellinzona",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Melonenstrasse 94a",
+        "zipCode": "2115",
+        "city": "Binningen",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Dorfstrasse 960",
+        "zipCode": "6239",
+        "city": "Val-de-Ruz",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Ödhus 3",
+        "zipCode": "8203",
+        "city": "Siders",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rosenweg 13c",
+        "zipCode": "4021",
+        "city": "Wetzikon",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Trittligasse 97c",
+        "zipCode": "4611",
+        "city": "Dübendorf",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Kirchweg 60c",
+        "zipCode": "5466",
+        "city": "Langenthal",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Honiggasse 81b",
+        "zipCode": "4880",
+        "city": "Monthey",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 89a",
+        "zipCode": "8399",
+        "city": "Thalwil",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 47b",
+        "zipCode": "6634",
+        "city": "Vernier",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Vorstadt 19c",
+        "zipCode": "0674",
+        "city": "Siders",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Vorstadt 33b",
+        "zipCode": "2341",
+        "city": "Monthey",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hauptstrasse 50",
+        "zipCode": "7650",
+        "city": "Horw",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rennweg 36",
+        "zipCode": "2718",
+        "city": "Volketswil",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 27b",
+        "zipCode": "8143",
+        "city": "Volketswil",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Dorfstrasse 311",
+        "zipCode": "5854",
+        "city": "Lugano",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 29a",
+        "zipCode": "6741",
+        "city": "Winterthur",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Industriestrasse 24",
+        "zipCode": "0403",
+        "city": "Dietikon",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 58c",
+        "zipCode": "4283",
+        "city": "Stäfa",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hirschengraben 341",
+        "zipCode": "2559",
+        "city": "Horgen",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Augustinergasse 81a",
+        "zipCode": "0239",
+        "city": "Schwyz",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 65a",
+        "zipCode": "9866",
+        "city": "Herisau",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 4",
+        "zipCode": "1720",
+        "city": "Adliswil",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 7",
+        "zipCode": "7445",
+        "city": "Val-de-Ruz",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Vorstadt 84",
+        "zipCode": "9286",
+        "city": "Burgdorf",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Kirchweg 813",
+        "zipCode": "0891",
+        "city": "Illnau-Effretikon",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Lindenhofweg 72a",
+        "zipCode": "9091",
+        "city": "Morges",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 13b",
+        "zipCode": "1124",
+        "city": "Meyrin",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulstrasse 21a",
+        "zipCode": "7024",
+        "city": "Versoix",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bierkellerweg 96",
+        "zipCode": "6755",
+        "city": "Binningen",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Honiggasse 618",
+        "zipCode": "3093",
+        "city": "Carouge",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Amthausstrasse 87",
+        "zipCode": "0179",
+        "city": "Thônex",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 317",
+        "zipCode": "2968",
+        "city": "Langenthal",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Endingerstrasse 68a",
+        "zipCode": "5742",
+        "city": "Vernier",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Vorstadt 33",
+        "zipCode": "2983",
+        "city": "Versoix",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 68a",
+        "zipCode": "0379",
+        "city": "Rheinfelden",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Uraniastrasse 146",
+        "zipCode": "6274",
+        "city": "Genf",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 641",
+        "zipCode": "0893",
+        "city": "Küsnacht",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Trittligasse 8",
+        "zipCode": "6225",
+        "city": "Mendrisio",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 354",
+        "zipCode": "8452",
+        "city": "Dietikon",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Hirschengraben 717",
+        "zipCode": "8065",
+        "city": "Brig-Glis",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hauptstrasse 57",
+        "zipCode": "4981",
+        "city": "St. Gallen",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 229",
+        "zipCode": "7024",
+        "city": "Luzern",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 7",
+        "zipCode": "8096",
+        "city": "Mendrisio",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ödhus 24a",
+        "zipCode": "2781",
+        "city": "Opfikon",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Columbusstrasse 46a",
+        "zipCode": "1029",
+        "city": "Baar",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Uraniastrasse 20a",
+        "zipCode": "2042",
+        "city": "Bern",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Industriestrasse 32a",
+        "zipCode": "5065",
+        "city": "Thônex",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Industriestrasse 1",
+        "zipCode": "6319",
+        "city": "Langenthal",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 50",
+        "zipCode": "4852",
+        "city": "Reinach",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Ogimatte 208",
+        "zipCode": "4588",
+        "city": "Val-de-Ruz",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Dorfstrasse 12b",
+        "zipCode": "6908",
+        "city": "Arbon",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Hauptstrasse 646",
+        "zipCode": "6561",
+        "city": "Frauenfeld",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Trittligasse 58a",
+        "zipCode": "5715",
+        "city": "Oftringen",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 744",
+        "zipCode": "9781",
+        "city": "Vevey",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hirschengraben 67a",
+        "zipCode": "2721",
+        "city": "Pratteln",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Amthausstrasse 89c",
+        "zipCode": "9618",
+        "city": "Oftringen",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Trittligasse 73",
+        "zipCode": "4959",
+        "city": "Wettingen",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 5",
+        "zipCode": "1950",
+        "city": "Horgen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Trittligasse 63c",
+        "zipCode": "3021",
+        "city": "Basel",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Kirchweg 90a",
+        "zipCode": "7327",
+        "city": "Nyon",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Augustinergasse 44c",
+        "zipCode": "9196",
+        "city": "Meilen",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rämistrasse 9",
+        "zipCode": "2266",
+        "city": "Thun",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rämistrasse 37c",
+        "zipCode": "0498",
+        "city": "Liestal",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Birkenweg 42c",
+        "zipCode": "2609",
+        "city": "Gossau",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Lindenhofweg 18c",
+        "zipCode": "6453",
+        "city": "La Chaux-de-Fonds",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 98c",
+        "zipCode": "0506",
+        "city": "Horw",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 561",
+        "zipCode": "3136",
+        "city": "Frauenfeld",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Trittligasse 39c",
+        "zipCode": "0597",
+        "city": "Burgdorf",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bierkellerweg 43",
+        "zipCode": "1133",
+        "city": "Baar",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Lindenhofweg 602",
+        "zipCode": "3401",
+        "city": "Pully",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Oberdorfstrasse 17",
+        "zipCode": "7335",
+        "city": "Thalwil",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Trittligasse 72",
+        "zipCode": "9778",
+        "city": "Richterswil",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Glockengasse 42b",
+        "zipCode": "5730",
+        "city": "Schwyz",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 6",
+        "zipCode": "6795",
+        "city": "Stäfa",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Ogimatte 18a",
+        "zipCode": "8632",
+        "city": "Uster",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Endingerstrasse 6",
+        "zipCode": "8940",
+        "city": "Vernier",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Endingerstrasse 79b",
+        "zipCode": "0062",
+        "city": "Mendrisio",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Amthausstrasse 55a",
+        "zipCode": "6793",
+        "city": "Ostermundigen",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Lindenhofweg 55a",
+        "zipCode": "1059",
+        "city": "Aarau",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rosenweg 2",
+        "zipCode": "0216",
+        "city": "Carouge",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Melonenstrasse 5",
+        "zipCode": "8989",
+        "city": "Wil",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Dorfstrasse 4",
+        "zipCode": "2578",
+        "city": "Wetzikon",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Glockengasse 26a",
+        "zipCode": "2062",
+        "city": "Solothurn",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Uraniastrasse 1",
+        "zipCode": "5533",
+        "city": "Allschwil",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Oberdorfstrasse 19c",
+        "zipCode": "1353",
+        "city": "Vernier",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 19b",
+        "zipCode": "8175",
+        "city": "Genf",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Knoblauchweg 89c",
+        "zipCode": "2537",
+        "city": "Horgen",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Vorstadt 8",
+        "zipCode": "9519",
+        "city": "Baden",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bierkellerweg 42c",
+        "zipCode": "0427",
+        "city": "Versoix",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Lindenhofweg 91c",
+        "zipCode": "9954",
+        "city": "Zürich",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 688",
+        "zipCode": "6821",
+        "city": "Opfikon",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Lindenhofweg 80",
+        "zipCode": "9161",
+        "city": "Lausanne",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 29c",
+        "zipCode": "1587",
+        "city": "Volketswil",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Honiggasse 6",
+        "zipCode": "2074",
+        "city": "Oftringen",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Lindenhofweg 45b",
+        "zipCode": "3516",
+        "city": "Freiburg",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Kirchweg 13a",
+        "zipCode": "5608",
+        "city": "Locarno",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulhausstrasse 31",
+        "zipCode": "1970",
+        "city": "Vernier",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Columbusstrasse 19a",
+        "zipCode": "9752",
+        "city": "Schwyz",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 8",
+        "zipCode": "0377",
+        "city": "Bülach",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 23c",
+        "zipCode": "4695",
+        "city": "La Chaux-de-Fonds",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Dorfstrasse 1",
+        "zipCode": "6935",
+        "city": "Neuenburg",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Amthausstrasse 97b",
+        "zipCode": "0457",
+        "city": "Wettingen",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Schulstrasse 523",
+        "zipCode": "2302",
+        "city": "Thalwil",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Birkenweg 70",
+        "zipCode": "8943",
+        "city": "Bern",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Ödhus 630",
+        "zipCode": "1175",
+        "city": "Küsnacht",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Columbusstrasse 88c",
+        "zipCode": "4778",
+        "city": "Steffisburg",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Dorfstrasse 16b",
+        "zipCode": "9492",
+        "city": "Schwyz",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rämistrasse 736",
+        "zipCode": "7477",
+        "city": "Pratteln",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Rosenweg 80b",
+        "zipCode": "2895",
+        "city": "Monthey",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Honiggasse 42b",
+        "zipCode": "3041",
+        "city": "Morges",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Columbusstrasse 48",
+        "zipCode": "9500",
+        "city": "Nyon",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 855",
+        "zipCode": "3366",
+        "city": "Dietikon",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Knoblauchweg 4",
+        "zipCode": "0366",
+        "city": "Thun",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bierkellerweg 97",
+        "zipCode": "8003",
+        "city": "Nyon",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Kirchweg 8",
+        "zipCode": "9039",
+        "city": "Herisau",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 171",
+        "zipCode": "8141",
+        "city": "Onex",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 220",
+        "zipCode": "8156",
+        "city": "Meyrin",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rennweg 8",
+        "zipCode": "0647",
+        "city": "Aarau",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Industriestrasse 681",
+        "zipCode": "3116",
+        "city": "Kreuzlingen",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Trittligasse 45b",
+        "zipCode": "9765",
+        "city": "Horw",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 82",
+        "zipCode": "4183",
+        "city": "Genf",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Lindenhofweg 4",
+        "zipCode": "3841",
+        "city": "Kriens",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Augustinergasse 4",
+        "zipCode": "1056",
+        "city": "Onex",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 33",
+        "zipCode": "3521",
+        "city": "Sitten",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Amthausstrasse 2",
+        "zipCode": "6526",
+        "city": "Mendrisio",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Melonenstrasse 898",
+        "zipCode": "9286",
+        "city": "Locarno",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Endingerstrasse 32a",
+        "zipCode": "0311",
+        "city": "Grenchen",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Bierkellerweg 93b",
+        "zipCode": "5716",
+        "city": "Thônex",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 95a",
+        "zipCode": "2724",
+        "city": "Meilen",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 70c",
+        "zipCode": "1790",
+        "city": "Glarus Nord",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Hauptstrasse 7",
+        "zipCode": "4050",
+        "city": "Wettingen",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 69",
+        "zipCode": "4296",
+        "city": "Zürich",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Katzenplatz 68a",
+        "zipCode": "4931",
+        "city": "Meilen",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hirschengraben 1",
+        "zipCode": "3145",
+        "city": "Rheinfelden",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rämistrasse 723",
+        "zipCode": "1850",
+        "city": "Kriens",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rosenweg 59a",
+        "zipCode": "7780",
+        "city": "Gossau",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bahnhofstrasse 94c",
+        "zipCode": "1285",
+        "city": "Carouge",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Trittligasse 51b",
+        "zipCode": "7891",
+        "city": "Wil",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hirschengraben 26",
+        "zipCode": "3601",
+        "city": "Wallisellen",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Melonenstrasse 64b",
+        "zipCode": "2683",
+        "city": "Oftringen",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Lindenhofweg 23a",
+        "zipCode": "3254",
+        "city": "Neuenburg",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Dorfstrasse 579",
+        "zipCode": "3283",
+        "city": "Wettingen",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 15b",
+        "zipCode": "8808",
+        "city": "Genf",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ogimatte 74a",
+        "zipCode": "4551",
+        "city": "Liestal",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Lindenhofweg 66b",
+        "zipCode": "1818",
+        "city": "Vevey",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Industriestrasse 66b",
+        "zipCode": "8116",
+        "city": "Opfikon",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rennweg 4",
+        "zipCode": "6265",
+        "city": "Basel",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 39",
+        "zipCode": "9955",
+        "city": "St. Gallen",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Lindenhofweg 87c",
+        "zipCode": "5076",
+        "city": "Grenchen",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Lindenhofweg 4",
+        "zipCode": "6359",
+        "city": "Einsiedeln",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rämistrasse 15a",
+        "zipCode": "1584",
+        "city": "Neuenburg",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 32a",
+        "zipCode": "6142",
+        "city": "St. Gallen",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Katzenplatz 84b",
+        "zipCode": "9014",
+        "city": "Adliswil",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Dorfstrasse 38c",
+        "zipCode": "7334",
+        "city": "Stäfa",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Endingerstrasse 53b",
+        "zipCode": "4040",
+        "city": "Allschwil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bierkellerweg 152",
+        "zipCode": "2090",
+        "city": "Val-de-Ruz",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Uraniastrasse 22a",
+        "zipCode": "1599",
+        "city": "Rheinfelden",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Trittligasse 45b",
+        "zipCode": "4767",
+        "city": "Luzern",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Birkenweg 28c",
+        "zipCode": "9533",
+        "city": "Neuenburg",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulhausstrasse 336",
+        "zipCode": "0990",
+        "city": "Horgen",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Augustinergasse 7",
+        "zipCode": "4792",
+        "city": "Horgen",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 93c",
+        "zipCode": "7090",
+        "city": "Regensdorf",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 6",
+        "zipCode": "9534",
+        "city": "Stäfa",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 65a",
+        "zipCode": "0211",
+        "city": "Küsnacht",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Trittligasse 76c",
+        "zipCode": "1939",
+        "city": "Binningen",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Katzenplatz 597",
+        "zipCode": "2908",
+        "city": "Binningen",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Ogimatte 32a",
+        "zipCode": "9796",
+        "city": "Köniz",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Kirchweg 342",
+        "zipCode": "3704",
+        "city": "Mendrisio",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rennweg 74c",
+        "zipCode": "1943",
+        "city": "Riehen",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 95c",
+        "zipCode": "0497",
+        "city": "Frauenfeld",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Hirschengraben 325",
+        "zipCode": "7695",
+        "city": "Val-de-Ruz",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Honiggasse 45a",
+        "zipCode": "9559",
+        "city": "Mendrisio",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Hirschengraben 45b",
+        "zipCode": "8636",
+        "city": "Martigny",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 21",
+        "zipCode": "7701",
+        "city": "Binningen",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Trittligasse 71b",
+        "zipCode": "2041",
+        "city": "Lausanne",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Industriestrasse 85c",
+        "zipCode": "5041",
+        "city": "Zürich",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 59c",
+        "zipCode": "2578",
+        "city": "Aarau",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 922",
+        "zipCode": "3356",
+        "city": "Mendrisio",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rosenweg 40c",
+        "zipCode": "5932",
+        "city": "Küsnacht",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Endingerstrasse 32c",
+        "zipCode": "8987",
+        "city": "Aarau",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Honiggasse 16a",
+        "zipCode": "9525",
+        "city": "Baden",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 25c",
+        "zipCode": "9749",
+        "city": "Langenthal",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 29a",
+        "zipCode": "1645",
+        "city": "Brig-Glis",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 59",
+        "zipCode": "9209",
+        "city": "Arbon",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rosenweg 25",
+        "zipCode": "1714",
+        "city": "Riehen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 2",
+        "zipCode": "0090",
+        "city": "Montreux",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rämistrasse 92a",
+        "zipCode": "4925",
+        "city": "Liestal",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Lindenhofweg 802",
+        "zipCode": "2016",
+        "city": "Volketswil",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Lindenhofweg 32",
+        "zipCode": "3024",
+        "city": "Val-de-Ruz",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Columbusstrasse 56c",
+        "zipCode": "7045",
+        "city": "Binningen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Oberdorfstrasse 34",
+        "zipCode": "6402",
+        "city": "Opfikon",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Amthausstrasse 2",
+        "zipCode": "9943",
+        "city": "Wallisellen",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 3",
+        "zipCode": "8763",
+        "city": "Monthey",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 377",
+        "zipCode": "4720",
+        "city": "Emmen",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 330",
+        "zipCode": "8583",
+        "city": "Mendrisio",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rämistrasse 9",
+        "zipCode": "4851",
+        "city": "Stäfa",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Knoblauchweg 62",
+        "zipCode": "9730",
+        "city": "Bülach",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Augustinergasse 3",
+        "zipCode": "4842",
+        "city": "Baden",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 1",
+        "zipCode": "3179",
+        "city": "Vevey",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 35",
+        "zipCode": "6835",
+        "city": "Schaffhausen",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Columbusstrasse 2",
+        "zipCode": "4948",
+        "city": "Monthey",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Ogimatte 3",
+        "zipCode": "2387",
+        "city": "Dübendorf",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rämistrasse 50a",
+        "zipCode": "9677",
+        "city": "Genf",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Industriestrasse 67b",
+        "zipCode": "7101",
+        "city": "Meilen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 71c",
+        "zipCode": "9220",
+        "city": "Zug",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Trittligasse 8",
+        "zipCode": "7796",
+        "city": "Emmen",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Columbusstrasse 79",
+        "zipCode": "6067",
+        "city": "Arbon",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Uraniastrasse 3",
+        "zipCode": "9086",
+        "city": "Thônex",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rennweg 80",
+        "zipCode": "1478",
+        "city": "Wädenswil",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Uraniastrasse 62c",
+        "zipCode": "7045",
+        "city": "Lancy",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Endingerstrasse 7",
+        "zipCode": "3497",
+        "city": "Chur",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Oberdorfstrasse 89",
+        "zipCode": "6551",
+        "city": "Volketswil",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Hauptstrasse 42b",
+        "zipCode": "0855",
+        "city": "Opfikon",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 63a",
+        "zipCode": "4985",
+        "city": "Köniz",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Bierkellerweg 8",
+        "zipCode": "4583",
+        "city": "Thalwil",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rennweg 24c",
+        "zipCode": "1202",
+        "city": "Monthey",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 9",
+        "zipCode": "2415",
+        "city": "Kriens",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Schulstrasse 22b",
+        "zipCode": "2950",
+        "city": "Freienbach",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Endingerstrasse 63b",
+        "zipCode": "0206",
+        "city": "Bern",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Lindenhofweg 5",
+        "zipCode": "2869",
+        "city": "Thônex",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rosenweg 485",
+        "zipCode": "6136",
+        "city": "Thônex",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Kirchweg 94c",
+        "zipCode": "6660",
+        "city": "Wallisellen",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bierkellerweg 918",
+        "zipCode": "6296",
+        "city": "Renens",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Augustinergasse 751",
+        "zipCode": "6363",
+        "city": "Thônex",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Columbusstrasse 976",
+        "zipCode": "3621",
+        "city": "Versoix",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 82a",
+        "zipCode": "1463",
+        "city": "Allschwil",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Amthausstrasse 738",
+        "zipCode": "0180",
+        "city": "Schaffhausen",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Elefantenbach 56b",
+        "zipCode": "3902",
+        "city": "Adliswil",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Uraniastrasse 531",
+        "zipCode": "3338",
+        "city": "Pully",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Columbusstrasse 82b",
+        "zipCode": "2568",
+        "city": "Yverdon-les-Bains",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Dorfstrasse 324",
+        "zipCode": "4866",
+        "city": "Vernier",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Augustinergasse 239",
+        "zipCode": "1135",
+        "city": "Wohlen",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Ogimatte 55a",
+        "zipCode": "6080",
+        "city": "Thun",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Sihlfeldstrasse 7",
+        "zipCode": "0786",
+        "city": "Martigny",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 88a",
+        "zipCode": "4916",
+        "city": "Oftringen",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Rosenweg 64a",
+        "zipCode": "8284",
+        "city": "Montreux",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Augustinergasse 88a",
+        "zipCode": "6896",
+        "city": "Wädenswil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Birkenweg 42c",
+        "zipCode": "7364",
+        "city": "Thalwil",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Amthausstrasse 22",
+        "zipCode": "4297",
+        "city": "Reinach",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bierkellerweg 23c",
+        "zipCode": "2043",
+        "city": "Langenthal",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Glockengasse 47a",
+        "zipCode": "6060",
+        "city": "Meilen",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Endingerstrasse 296",
+        "zipCode": "6232",
+        "city": "Küsnacht",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Knoblauchweg 12c",
+        "zipCode": "7423",
+        "city": "Allschwil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Uraniastrasse 3",
+        "zipCode": "2797",
+        "city": "Onex",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Glockengasse 89b",
+        "zipCode": "9336",
+        "city": "Riehen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Melonenstrasse 6",
+        "zipCode": "1262",
+        "city": "Meyrin",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 19a",
+        "zipCode": "2871",
+        "city": "Steffisburg",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Uraniastrasse 15b",
+        "zipCode": "6227",
+        "city": "Zürich",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Glockengasse 53a",
+        "zipCode": "3864",
+        "city": "Vevey",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Schulhausstrasse 77b",
+        "zipCode": "0414",
+        "city": "Lancy",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Ödhus 103",
+        "zipCode": "9434",
+        "city": "Onex",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Columbusstrasse 81c",
+        "zipCode": "4356",
+        "city": "Uster",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 1",
+        "zipCode": "8370",
+        "city": "Zug",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Vorstadt 17c",
+        "zipCode": "5034",
+        "city": "Vevey",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Vorstadt 221",
+        "zipCode": "9253",
+        "city": "Winterthur",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Industriestrasse 156",
+        "zipCode": "9018",
+        "city": "Küsnacht",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 4",
+        "zipCode": "3849",
+        "city": "Carouge",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 52",
+        "zipCode": "8433",
+        "city": "Cham",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Ogimatte 49b",
+        "zipCode": "5612",
+        "city": "Uster",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Hirschengraben 12a",
+        "zipCode": "2345",
+        "city": "Illnau-Effretikon",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rosenweg 91a",
+        "zipCode": "1498",
+        "city": "Locarno",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Rämistrasse 1",
+        "zipCode": "0825",
+        "city": "Biel/Bienne",
+        "buildingType": "EFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 75",
+        "zipCode": "4407",
+        "city": "Arbon",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 13b",
+        "zipCode": "6827",
+        "city": "Dübendorf",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Melonenstrasse 227",
+        "zipCode": "7526",
+        "city": "Val-de-Ruz",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Honiggasse 188",
+        "zipCode": "5468",
+        "city": "Meilen",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rosenweg 8",
+        "zipCode": "8700",
+        "city": "Lausanne",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Rennweg 85a",
+        "zipCode": "1507",
+        "city": "Val-de-Ruz",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Glockengasse 32a",
+        "zipCode": "0561",
+        "city": "Vevey",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Industriestrasse 281",
+        "zipCode": "7760",
+        "city": "Steffisburg",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Columbusstrasse 570",
+        "zipCode": "5732",
+        "city": "Richterswil",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Columbusstrasse 877",
+        "zipCode": "9003",
+        "city": "Zürich",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Hauptstrasse 46c",
+        "zipCode": "7659",
+        "city": "Thônex",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Uraniastrasse 39c",
+        "zipCode": "1548",
+        "city": "Adliswil",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Hirschengraben 90a",
+        "zipCode": "4705",
+        "city": "Stäfa",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 9",
+        "zipCode": "6943",
+        "city": "Emmen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rämistrasse 569",
+        "zipCode": "3099",
+        "city": "Thun",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bierkellerweg 94c",
+        "zipCode": "1335",
+        "city": "Meyrin",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bahnhofstrasse 95a",
+        "zipCode": "3492",
+        "city": "Küsnacht",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Melonenstrasse 51b",
+        "zipCode": "8918",
+        "city": "Bulle",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Lindenhofweg 49",
+        "zipCode": "5429",
+        "city": "Solothurn",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Columbusstrasse 350",
+        "zipCode": "3939",
+        "city": "St. Gallen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Columbusstrasse 9",
+        "zipCode": "3656",
+        "city": "Winterthur",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Katzenplatz 60",
+        "zipCode": "9889",
+        "city": "Baden",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Ödhus 61b",
+        "zipCode": "3983",
+        "city": "Liestal",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Industriestrasse 77",
+        "zipCode": "7927",
+        "city": "Lausanne",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 11c",
+        "zipCode": "6203",
+        "city": "Freiburg",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Industriestrasse 186",
+        "zipCode": "5053",
+        "city": "Langenthal",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Glockengasse 71c",
+        "zipCode": "4803",
+        "city": "Baar",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rämistrasse 32a",
+        "zipCode": "2849",
+        "city": "Langenthal",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Hauptstrasse 178",
+        "zipCode": "0942",
+        "city": "Kreuzlingen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Augustinergasse 76a",
+        "zipCode": "7180",
+        "city": "Emmen",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rennweg 96a",
+        "zipCode": "7645",
+        "city": "Einsiedeln",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Industriestrasse 303",
+        "zipCode": "7611",
+        "city": "Kreuzlingen",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Vorstadt 44",
+        "zipCode": "2562",
+        "city": "Wil",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Ödhus 82c",
+        "zipCode": "7452",
+        "city": "Solothurn",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Birkenweg 5",
+        "zipCode": "7969",
+        "city": "Rapperswil-Jona",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 418",
+        "zipCode": "2185",
+        "city": "St. Gallen",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Vorstadt 47c",
+        "zipCode": "1198",
+        "city": "Wil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 85b",
+        "zipCode": "0900",
+        "city": "Richterswil",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Augustinergasse 115",
+        "zipCode": "3287",
+        "city": "Ostermundigen",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Rämistrasse 92a",
+        "zipCode": "1952",
+        "city": "Langenthal",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 25b",
+        "zipCode": "7587",
+        "city": "Martigny",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Augustinergasse 440",
+        "zipCode": "1277",
+        "city": "Volketswil",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Ödhus 25",
+        "zipCode": "8031",
+        "city": "Carouge",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Oberdorfstrasse 2",
+        "zipCode": "3899",
+        "city": "Thalwil",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Oberdorfstrasse 51b",
+        "zipCode": "7529",
+        "city": "Meilen",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Industriestrasse 8",
+        "zipCode": "2472",
+        "city": "Bellinzona",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Hauptstrasse 43c",
+        "zipCode": "1914",
+        "city": "Muri bei Bern",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 9",
+        "zipCode": "4143",
+        "city": "Wettingen",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Endingerstrasse 4",
+        "zipCode": "5002",
+        "city": "Freienbach",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Columbusstrasse 41c",
+        "zipCode": "4225",
+        "city": "Zürich",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Columbusstrasse 3",
+        "zipCode": "3885",
+        "city": "Horw",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Glockengasse 491",
+        "zipCode": "7082",
+        "city": "Monthey",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rennweg 849",
+        "zipCode": "1430",
+        "city": "Carouge",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Elefantenbach 64c",
+        "zipCode": "5644",
+        "city": "Frauenfeld",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Uraniastrasse 8",
+        "zipCode": "4869",
+        "city": "Glarus Nord",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rennweg 2",
+        "zipCode": "7076",
+        "city": "Bülach",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Columbusstrasse 46b",
+        "zipCode": "7482",
+        "city": "Basel",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Dorfstrasse 98a",
+        "zipCode": "8026",
+        "city": "Cham",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rosenweg 2",
+        "zipCode": "3816",
+        "city": "Horgen",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Amthausstrasse 12b",
+        "zipCode": "7616",
+        "city": "Burgdorf",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Knoblauchweg 61c",
+        "zipCode": "4625",
+        "city": "Meyrin",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Hauptstrasse 66a",
+        "zipCode": "5901",
+        "city": "Baar",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Endingerstrasse 727",
+        "zipCode": "7132",
+        "city": "Regensdorf",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rämistrasse 1",
+        "zipCode": "4921",
+        "city": "Emmen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 68",
+        "zipCode": "9729",
+        "city": "Wetzikon",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rämistrasse 93b",
+        "zipCode": "7790",
+        "city": "Brig-Glis",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulhausstrasse 902",
+        "zipCode": "8793",
+        "city": "Yverdon-les-Bains",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Ogimatte 46a",
+        "zipCode": "4685",
+        "city": "Chur",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulstrasse 6",
+        "zipCode": "7095",
+        "city": "Bern",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rämistrasse 585",
+        "zipCode": "7460",
+        "city": "Muri bei Bern",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Elefantenbach 88b",
+        "zipCode": "5418",
+        "city": "Ostermundigen",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Schulhausstrasse 14b",
+        "zipCode": "2001",
+        "city": "Adliswil",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Uraniastrasse 2",
+        "zipCode": "7471",
+        "city": "Vevey",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Columbusstrasse 581",
+        "zipCode": "9578",
+        "city": "Monthey",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 19b",
+        "zipCode": "1377",
+        "city": "Nyon",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Columbusstrasse 76b",
+        "zipCode": "1695",
+        "city": "Rheinfelden",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Elefantenbach 4",
+        "zipCode": "8092",
+        "city": "Brig-Glis",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Bahnhofstrasse 50c",
+        "zipCode": "7772",
+        "city": "Meilen",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Hirschengraben 934",
+        "zipCode": "2645",
+        "city": "Renens",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Lindenhofweg 24c",
+        "zipCode": "4873",
+        "city": "Richterswil",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Katzenplatz 243",
+        "zipCode": "0222",
+        "city": "Stäfa",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Birkenweg 112",
+        "zipCode": "0750",
+        "city": "Pully",
+        "buildingType": "Villa",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Bierkellerweg 11c",
+        "zipCode": "9314",
+        "city": "Baar",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Rennweg 42a",
+        "zipCode": "2880",
+        "city": "Uster",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 12",
+        "zipCode": "4241",
+        "city": "Emmen",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bierkellerweg 30c",
+        "zipCode": "8369",
+        "city": "Pully",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Katzenplatz 92",
+        "zipCode": "5533",
+        "city": "Freienbach",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Oberdorfstrasse 95c",
+        "zipCode": "5819",
+        "city": "Meilen",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Uraniastrasse 26",
+        "zipCode": "9990",
+        "city": "Uster",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Birkenweg 92c",
+        "zipCode": "2132",
+        "city": "Schwyz",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bahnhofstrasse 26",
+        "zipCode": "3870",
+        "city": "Genf",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Dorfstrasse 70c",
+        "zipCode": "6366",
+        "city": "Uster",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Knoblauchweg 22",
+        "zipCode": "0056",
+        "city": "Meilen",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Rosenweg 36c",
+        "zipCode": "6257",
+        "city": "Steffisburg",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Katzenplatz 32b",
+        "zipCode": "3460",
+        "city": "Binningen",
+        "buildingType": "MFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Bahnhofstrasse 930",
+        "zipCode": "7241",
+        "city": "Stäfa",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Honiggasse 71",
+        "zipCode": "6425",
+        "city": "Adliswil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Dorfstrasse 92",
+        "zipCode": "9522",
+        "city": "Lugano",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Amthausstrasse 95",
+        "zipCode": "5073",
+        "city": "Baar",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Dorfstrasse 509",
+        "zipCode": "2947",
+        "city": "Neuenburg",
+        "buildingType": "MFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Rämistrasse 24",
+        "zipCode": "6951",
+        "city": "Genf",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Hauptstrasse 71",
+        "zipCode": "6201",
+        "city": "Glarus Nord",
+        "buildingType": "REFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Katzenplatz 877",
+        "zipCode": "8360",
+        "city": "Stäfa",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Bierkellerweg 307",
+        "zipCode": "3051",
+        "city": "Carouge",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Augustinergasse 6",
+        "zipCode": "4823",
+        "city": "Solothurn",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Uraniastrasse 1",
+        "zipCode": "8213",
+        "city": "Vevey",
+        "buildingType": "MFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Schulstrasse 23c",
+        "zipCode": "6559",
+        "city": "Wallisellen",
+        "buildingType": "REFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Glockengasse 97b",
+        "zipCode": "5270",
+        "city": "Muttenz",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Knoblauchweg 59a",
+        "zipCode": "2902",
+        "city": "St. Gallen",
+        "buildingType": "MFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Endingerstrasse 17",
+        "zipCode": "8994",
+        "city": "Wil",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Industriestrasse 49",
+        "zipCode": "2322",
+        "city": "Winterthur",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Elefantenbach 96",
+        "zipCode": "5701",
+        "city": "Schlieren",
+        "buildingType": "Villa",
+        "floor": "EG"
+    },
+    {
+        "address": "Lindenhofweg 1",
+        "zipCode": "6350",
+        "city": "Richterswil",
+        "buildingType": "EFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Hirschengraben 86b",
+        "zipCode": "5105",
+        "city": "Rapperswil-Jona",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Katzenplatz 30c",
+        "zipCode": "9899",
+        "city": "Frauenfeld",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Columbusstrasse 24c",
+        "zipCode": "6624",
+        "city": "Richterswil",
+        "buildingType": "Villa",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulhausstrasse 80c",
+        "zipCode": "6379",
+        "city": "Yverdon-les-Bains",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 96b",
+        "zipCode": "9219",
+        "city": "Steffisburg",
+        "buildingType": "EFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Oberdorfstrasse 22c",
+        "zipCode": "7291",
+        "city": "Horw",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Endingerstrasse 97b",
+        "zipCode": "1960",
+        "city": "Luzern",
+        "buildingType": "REFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Uraniastrasse 89b",
+        "zipCode": "5706",
+        "city": "Richterswil",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hirschengraben 18c",
+        "zipCode": "9441",
+        "city": "Schwyz",
+        "buildingType": "MFH",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Kirchweg 45",
+        "zipCode": "6923",
+        "city": "Uster",
+        "buildingType": "REFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Endingerstrasse 40c",
+        "zipCode": "0672",
+        "city": "Thônex",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Elefantenbach 75a",
+        "zipCode": "6701",
+        "city": "Olten",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rennweg 3",
+        "zipCode": "7326",
+        "city": "Lausanne",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Columbusstrasse 86c",
+        "zipCode": "5142",
+        "city": "Wil",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Vorstadt 11",
+        "zipCode": "0852",
+        "city": "Wettingen",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Elefantenbach 19",
+        "zipCode": "0411",
+        "city": "Bern",
+        "buildingType": "Liegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Bierkellerweg 72",
+        "zipCode": "7823",
+        "city": "Regensdorf",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Sihlfeldstrasse 11",
+        "zipCode": "9304",
+        "city": "Steffisburg",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Lindenhofweg 32a",
+        "zipCode": "2655",
+        "city": "Herisau",
+        "buildingType": "REFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Hirschengraben 543",
+        "zipCode": "7853",
+        "city": "Bülach",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Ogimatte 28b",
+        "zipCode": "3582",
+        "city": "Genf",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Trittligasse 2",
+        "zipCode": "5470",
+        "city": "Martigny",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Bahnhofstrasse 169",
+        "zipCode": "5763",
+        "city": "Thônex",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 175",
+        "zipCode": "8137",
+        "city": "Rapperswil-Jona",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Uraniastrasse 171",
+        "zipCode": "5489",
+        "city": "Opfikon",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Oberdorfstrasse 99c",
+        "zipCode": "8583",
+        "city": "Meilen",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rosenweg 83a",
+        "zipCode": "6590",
+        "city": "Onex",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Amthausstrasse 45",
+        "zipCode": "4253",
+        "city": "Baden",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Industriestrasse 92",
+        "zipCode": "4044",
+        "city": "Val-de-Ruz",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Sihlfeldstrasse 806",
+        "zipCode": "4641",
+        "city": "Aarau",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Vorstadt 44",
+        "zipCode": "3139",
+        "city": "Onex",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Honiggasse 541",
+        "zipCode": "6692",
+        "city": "Steffisburg",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Columbusstrasse 42b",
+        "zipCode": "9581",
+        "city": "Burgdorf",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Trittligasse 36a",
+        "zipCode": "7146",
+        "city": "Freienbach",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Melonenstrasse 19c",
+        "zipCode": "5251",
+        "city": "Grenchen",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Uraniastrasse 2",
+        "zipCode": "3085",
+        "city": "St. Gallen",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Vorstadt 44a",
+        "zipCode": "7108",
+        "city": "Allschwil",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Oberdorfstrasse 524",
+        "zipCode": "8246",
+        "city": "Einsiedeln",
+        "buildingType": "EFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Honiggasse 33a",
+        "zipCode": "6902",
+        "city": "Küsnacht",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Trittligasse 85c",
+        "zipCode": "8119",
+        "city": "Schwyz",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Ogimatte 97c",
+        "zipCode": "4222",
+        "city": "Val-de-Ruz",
+        "buildingType": "REFH",
+        "floor": "EG"
+    },
+    {
+        "address": "Columbusstrasse 29c",
+        "zipCode": "8963",
+        "city": "Vevey",
+        "buildingType": "Liegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Schulstrasse 52",
+        "zipCode": "5675",
+        "city": "Schwyz",
+        "buildingType": "Liegenschaft",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Birkenweg 66b",
+        "zipCode": "7991",
+        "city": "Monthey",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Amthausstrasse 10c",
+        "zipCode": "4220",
+        "city": "Horw",
+        "buildingType": "Villa",
+        "floor": "2. Sock"
+    },
+    {
+        "address": "Amthausstrasse 19",
+        "zipCode": "8851",
+        "city": "Bülach",
+        "buildingType": "Villa",
+        "floor": "UG"
+    },
+    {
+        "address": "Melonenstrasse 13b",
+        "zipCode": "7806",
+        "city": "Herisau",
+        "buildingType": "Villa",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Hauptstrasse 887",
+        "zipCode": "5190",
+        "city": "Rapperswil-Jona",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Elefantenbach 8",
+        "zipCode": "9672",
+        "city": "Adliswil",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Industriestrasse 37a",
+        "zipCode": "6015",
+        "city": "Volketswil",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Schulhausstrasse 56a",
+        "zipCode": "8470",
+        "city": "Pratteln",
+        "buildingType": "Liegenschaft",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Industriestrasse 25c",
+        "zipCode": "3115",
+        "city": "Lausanne",
+        "buildingType": "REFH",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Ödhus 48a",
+        "zipCode": "1716",
+        "city": "Bellinzona",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Schulhausstrasse 86a",
+        "zipCode": "1395",
+        "city": "Yverdon-les-Bains",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Kirchweg 69b",
+        "zipCode": "0585",
+        "city": "Lyss",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Industriestrasse 586",
+        "zipCode": "7991",
+        "city": "Gossau",
+        "buildingType": "EFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Birkenweg 99a",
+        "zipCode": "9819",
+        "city": "Versoix",
+        "buildingType": "MFH",
+        "floor": "2. UG"
+    },
+    {
+        "address": "Rosenweg 11a",
+        "zipCode": "8754",
+        "city": "Martigny",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Rennweg 62c",
+        "zipCode": "0387",
+        "city": "Küsnacht",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Elefantenbach 40",
+        "zipCode": "6955",
+        "city": "Meilen",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "3. Stock"
+    },
+    {
+        "address": "Endingerstrasse 34c",
+        "zipCode": "0957",
+        "city": "Thalwil",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Sihlfeldstrasse 3",
+        "zipCode": "0214",
+        "city": "Aarau",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Vorstadt 69b",
+        "zipCode": "0144",
+        "city": "Schaffhausen",
+        "buildingType": "EFH",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Hirschengraben 528",
+        "zipCode": "9535",
+        "city": "Wil",
+        "buildingType": "Villa",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Rämistrasse 10",
+        "zipCode": "2468",
+        "city": "Baden",
+        "buildingType": "Liegenschaft",
+        "floor": "UG"
+    },
+    {
+        "address": "Amthausstrasse 489",
+        "zipCode": "0175",
+        "city": "Baden",
+        "buildingType": "Liegenschaft",
+        "floor": "EG"
+    },
+    {
+        "address": "Sihlfeldstrasse 8",
+        "zipCode": "8320",
+        "city": "Liestal",
+        "buildingType": "Liegenschaft",
+        "floor": "1. Stock"
+    },
+    {
+        "address": "Knoblauchweg 69",
+        "zipCode": "0905",
+        "city": "Wallisellen",
+        "buildingType": "MFH",
+        "floor": "1. UG"
+    },
+    {
+        "address": "Knoblauchweg 90",
+        "zipCode": "0777",
+        "city": "Wil",
+        "buildingType": "EFH",
+        "floor": "UG"
+    },
+    {
+        "address": "Birkenweg 26c",
+        "zipCode": "1225",
+        "city": "Martigny",
+        "buildingType": "Geschäftsliegenschaft",
+        "floor": "UG"
+    }
+]

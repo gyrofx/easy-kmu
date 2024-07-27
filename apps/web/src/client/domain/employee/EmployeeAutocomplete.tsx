@@ -1,4 +1,4 @@
-import type { EmployeeWithId } from '@/common/models/employee'
+import type { Employee } from '@/common/models/employee'
 import { Autocomplete, Box, TextField, Typography } from '@mui/material'
 
 export function EmployeeAutocomplete({
@@ -6,9 +6,9 @@ export function EmployeeAutocomplete({
   label,
   onChange,
 }: {
-  employees: EmployeeWithId[]
+  employees: Employee[]
   label: string
-  onChange: (employee: EmployeeWithId | undefined) => void
+  onChange: (employee: Employee | undefined) => void
 }) {
   return (
     <Autocomplete
@@ -41,7 +41,7 @@ export function EmployeeAutocomplete({
   )
 }
 
-function Option({ employee }: { employee: EmployeeWithId }) {
+function Option({ employee }: { employee: Employee }) {
   const { firstName, lastName } = employee
 
   return (
@@ -53,6 +53,6 @@ function Option({ employee }: { employee: EmployeeWithId }) {
   )
 }
 
-function optionLabel(employee: EmployeeWithId) {
+function optionLabel(employee: Employee) {
   return `${employee.firstName} ${employee.lastName}`
 }

@@ -1,5 +1,5 @@
 import { relations, sql } from 'drizzle-orm'
-import { jsonb, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
+import { integer, jsonb, pgEnum, pgSequence, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
 
 export const contacts = pgTable('contact', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
@@ -25,8 +25,12 @@ export const contacts = pgTable('contact', {
 
 export type SelectContact = typeof contacts.$inferSelect
 
+export const projectState = pgEnum('projectState', ['draft', 'offerd', 'rejected', 'accepted', 'done'])
+
 export const projects = pgTable('project', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
+  projectNumber: integer('projectNumber').generatedAlwaysAsIdentity({ startWith: 1000 }),
+  state: projectState('state').notNull().default('draft'),
   name: text('name').notNull(),
   description: text('description').notNull().default(''),
   notes: text('notes').notNull().default(''),
@@ -56,12 +60,12 @@ export const projectObjects = pgTable('projectObject', {
   address: text('address').notNull(),
   zipCode: text('zipCode').notNull(),
   city: text('city').notNull(),
-  country: text('country').default(''),
-  floor: text('floor').default(''),
-  type: text('type').default(''),
-  appartement: text('appartement').default(''),
-  workshopOrder: text('workshopOrder').default(''),
-  notes: text('notes').default(''),
+  country: text('country').notNull().default(''),
+  floor: text('floor').notNull().default(''),
+  type: text('type').notNull().default(''),
+  appartement: text('appartement').notNull().default(''),
+  workshopOrder: text('workshopOrder').notNull().default(''),
+  notes: text('notes').notNull().default(''),
   createdAt: timestamp('createdAt', { precision: 3 }).notNull().defaultNow(),
   updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
 })
@@ -79,6 +83,8 @@ export const employees = pgTable('employee', {
   createdAt: timestamp('createdAt', { precision: 3 }).notNull().defaultNow(),
   updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
 })
+
+export type SelectEmployee = typeof employees.$inferSelect
 
 export const contactRelations = relations(contacts, ({ many }) => ({
   customers: many(projects, {
@@ -135,7 +141,7 @@ export const projectObjectRelations = relations(projectObjects, ({ many }) => ({
 }))
 
 export const employeesRelations = relations(employees, ({ many }) => ({
-  projects: many(employees, {
+  projects: many(projects, {
     relationName: 'projectClerkToEmployee',
   }),
 }))

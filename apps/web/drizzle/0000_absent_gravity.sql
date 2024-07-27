@@ -1,33 +1,39 @@
+DO $$ BEGIN
+ CREATE TYPE "public"."projectState" AS ENUM('draft', 'offerd', 'rejected', 'accepted', 'done');
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "contact" (
 	"id" text PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"salutation" text,
-	"gender" text,
-	"company" text,
-	"firstName" text NOT NULL,
-	"lastName" text NOT NULL,
-	"additional1" text,
-	"additional2" text,
+	"salutation" text DEFAULT '' NOT NULL,
+	"gender" text DEFAULT '' NOT NULL,
+	"company" text DEFAULT '' NOT NULL,
+	"firstName" text DEFAULT '' NOT NULL,
+	"lastName" text DEFAULT '' NOT NULL,
+	"additional1" text DEFAULT '' NOT NULL,
+	"additional2" text DEFAULT '' NOT NULL,
 	"address" text NOT NULL,
 	"zipCode" text NOT NULL,
 	"city" text NOT NULL,
-	"country" text,
-	"pobox" text,
-	"notes" text,
+	"country" text DEFAULT '' NOT NULL,
+	"pobox" text DEFAULT '' NOT NULL,
+	"notes" text DEFAULT '' NOT NULL,
+	"persons" jsonb DEFAULT '[]'::jsonb NOT NULL,
 	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
 	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
-CREATE TABLE IF NOT EXISTS "person" (
+CREATE TABLE IF NOT EXISTS "employee" (
 	"id" text PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"name" text NOT NULL,
-	"description" text,
-	"phone1" text,
-	"phone2" text,
-	"fax" text,
-	"email" text,
-	"website" text,
-	"notes" text,
-	"contactId" text NOT NULL
+	"firstName" text NOT NULL,
+	"lastName" text NOT NULL,
+	"phone1" text DEFAULT '' NOT NULL,
+	"phone2" text DEFAULT '' NOT NULL,
+	"email" text DEFAULT '' NOT NULL,
+	"notes" text DEFAULT '' NOT NULL,
+	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
+	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "projectObject" (
@@ -35,40 +41,38 @@ CREATE TABLE IF NOT EXISTS "projectObject" (
 	"address" text NOT NULL,
 	"zipCode" text NOT NULL,
 	"city" text NOT NULL,
-	"country" text NOT NULL,
-	"floor" text NOT NULL,
-	"appartement" text NOT NULL,
-	"workshopOrder" text NOT NULL,
-	"notes" text NOT NULL,
+	"country" text DEFAULT '',
+	"floor" text DEFAULT '',
+	"type" text DEFAULT '',
+	"appartement" text DEFAULT '',
+	"workshopOrder" text DEFAULT '',
+	"notes" text DEFAULT '',
 	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
 	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "project" (
 	"id" text PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"projectNumber" integer GENERATED ALWAYS AS IDENTITY (sequence name "project_projectNumber_seq" INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START WITH 1000 CACHE 1),
+	"state" "projectState" DEFAULT 'draft' NOT NULL,
 	"name" text NOT NULL,
-	"description" text NOT NULL,
-	"notes" text NOT NULL,
-	"customerContactId" text NOT NULL,
-	"objectId" text NOT NULL,
-	"constructionManagementContactId" text NOT NULL,
-	"architectContactId" text NOT NULL,
-	"builderContactId" text NOT NULL,
-	"material" text NOT NULL,
-	"assembly" text NOT NULL,
-	"surface" text NOT NULL,
-	"fireProtection" text NOT NULL,
-	"en1090" text NOT NULL,
-	"deadline" timestamp (3) DEFAULT now() NOT NULL,
+	"description" text DEFAULT '' NOT NULL,
+	"notes" text DEFAULT '' NOT NULL,
+	"customerContactId" text,
+	"objectId" text,
+	"constructionManagementContactId" text,
+	"architectContactId" text,
+	"builderContactId" text,
+	"material" text DEFAULT '' NOT NULL,
+	"assembly" text DEFAULT '' NOT NULL,
+	"surface" text DEFAULT '' NOT NULL,
+	"fireProtection" text DEFAULT '' NOT NULL,
+	"en1090" text DEFAULT '' NOT NULL,
+	"deadline" timestamp (3) DEFAULT now(),
+	"clerkEmployeeId" text NOT NULL,
 	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
 	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
 );
---> statement-breakpoint
-DO $$ BEGIN
- ALTER TABLE "person" ADD CONSTRAINT "person_contactId_contact_id_fk" FOREIGN KEY ("contactId") REFERENCES "public"."contact"("id") ON DELETE no action ON UPDATE no action;
-EXCEPTION
- WHEN duplicate_object THEN null;
-END $$;
 --> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "project" ADD CONSTRAINT "project_customerContactId_contact_id_fk" FOREIGN KEY ("customerContactId") REFERENCES "public"."contact"("id") ON DELETE no action ON UPDATE no action;
@@ -96,6 +100,12 @@ END $$;
 --> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "project" ADD CONSTRAINT "project_builderContactId_contact_id_fk" FOREIGN KEY ("builderContactId") REFERENCES "public"."contact"("id") ON DELETE no action ON UPDATE no action;
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
+DO $$ BEGIN
+ ALTER TABLE "project" ADD CONSTRAINT "project_clerkEmployeeId_employee_id_fk" FOREIGN KEY ("clerkEmployeeId") REFERENCES "public"."employee"("id") ON DELETE no action ON UPDATE no action;
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;

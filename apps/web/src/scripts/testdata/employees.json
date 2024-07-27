@@ -1,0 +1,37 @@
+[
+    {
+        "firstName": "Joseph",
+        "lastName": "Kessler",
+        "email": "Verena_Kaufmann29@example.net",
+        "phone1": "+41(39) 534 51 70",
+        "phone2": "+41(90) 766 53 07"
+    },
+    {
+        "firstName": "Doris",
+        "lastName": "Stöckli",
+        "email": "Klaus_Stockli@example.net",
+        "phone1": "+41(14) 263 07 38",
+        "phone2": "+41(97) 861 71 63"
+    },
+    {
+        "firstName": "Johann",
+        "lastName": "Vogel",
+        "email": "Barbara1@example.org",
+        "phone1": "+41(19) 920 67 73",
+        "phone2": "+41(04) 856 83 61"
+    },
+    {
+        "firstName": "Massimo",
+        "lastName": "Fuchs",
+        "email": "Francois81@example.net",
+        "phone1": "+41(00) 655 91 50",
+        "phone2": "+41(05) 074 13 75"
+    },
+    {
+        "firstName": "Erika",
+        "lastName": "Ziegler",
+        "email": "David_Marti@example.com",
+        "phone1": "+41(31) 435 75 33",
+        "phone2": "+41(30) 778 05 82"
+    }
+]

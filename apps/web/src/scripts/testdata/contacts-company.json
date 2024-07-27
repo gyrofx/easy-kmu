@@ -1,0 +1,6002 @@
+[
+    {
+        "company": "Wagner und Partner",
+        "address": "Melonenstrasse 82a",
+        "zipCode": "7482",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Suter AG",
+        "address": "Trittligasse 3",
+        "zipCode": "8116",
+        "city": "Bulle"
+    },
+    {
+        "company": "Fankhauser-Hartmann",
+        "address": "Rosenweg 73a",
+        "zipCode": "6738",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Fischer, Gross und Stettler",
+        "address": "Oberdorfstrasse 1",
+        "zipCode": "9693",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Burri, Bauer und Bernasconi",
+        "address": "Endingerstrasse 92c",
+        "zipCode": "6413",
+        "city": "Vernier"
+    },
+    {
+        "company": "Arnold, Rüegg und Bühler",
+        "address": "Augustinergasse 13c",
+        "zipCode": "3655",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Bieri und Partner",
+        "address": "Melonenstrasse 88a",
+        "zipCode": "9977",
+        "city": "Arbon"
+    },
+    {
+        "company": "Hasler-Steinmann",
+        "address": "Katzenplatz 6",
+        "zipCode": "9460",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Geiger-Blum",
+        "address": "Rennweg 2",
+        "zipCode": "0498",
+        "city": "Horw"
+    },
+    {
+        "company": "Jost GmbH",
+        "address": "Bierkellerweg 77",
+        "zipCode": "9829",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Sidler-Benz",
+        "address": "Rämistrasse 265",
+        "zipCode": "3735",
+        "city": "Monthey"
+    },
+    {
+        "company": "Hotz, Martin und Eugster",
+        "address": "Dorfstrasse 97a",
+        "zipCode": "0817",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Steffen-Siegrist",
+        "address": "Columbusstrasse 15b",
+        "zipCode": "4656",
+        "city": "Horgen"
+    },
+    {
+        "company": "Mayer-Kohler",
+        "address": "Ödhus 20a",
+        "zipCode": "4141",
+        "city": "La Chaux-de-Fonds"
+    },
+    {
+        "company": "Gloor-Bolliger",
+        "address": "Honiggasse 72b",
+        "zipCode": "8768",
+        "city": "Thônex"
+    },
+    {
+        "company": "Ritter & Co.",
+        "address": "Glockengasse 81",
+        "zipCode": "6713",
+        "city": "La Chaux-de-Fonds"
+    },
+    {
+        "company": "Bolliger Inc.",
+        "address": "Oberdorfstrasse 6",
+        "zipCode": "3963",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Wirz und Partner",
+        "address": "Lindenhofweg 230",
+        "zipCode": "3363",
+        "city": "Lugano"
+    },
+    {
+        "company": "Frick Gruppe",
+        "address": "Ödhus 403",
+        "zipCode": "9953",
+        "city": "Gossau"
+    },
+    {
+        "company": "Schenk GmbH",
+        "address": "Endingerstrasse 89",
+        "zipCode": "8951",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Frey-Winkler",
+        "address": "Kirchweg 20",
+        "zipCode": "6401",
+        "city": "Lyss"
+    },
+    {
+        "company": "Roos und Söhne",
+        "address": "Rosenweg 22a",
+        "zipCode": "1312",
+        "city": "Gossau"
+    },
+    {
+        "company": "Stöckli-Ackermann",
+        "address": "Schulhausstrasse 79a",
+        "zipCode": "0614",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Hirt, Mettler und Schuler",
+        "address": "Oberdorfstrasse 67c",
+        "zipCode": "4632",
+        "city": "Herisau"
+    },
+    {
+        "company": "Widmer und Partner",
+        "address": "Melonenstrasse 18c",
+        "zipCode": "2704",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Thommen, Blum und Wegmann",
+        "address": "Vorstadt 54",
+        "zipCode": "1936",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Schneider-Lutz",
+        "address": "Melonenstrasse 9",
+        "zipCode": "9720",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Hauser, Stauffer und Hess",
+        "address": "Birkenweg 9",
+        "zipCode": "6420",
+        "city": "Kriens"
+    },
+    {
+        "company": "Amrein-Stadelmann",
+        "address": "Ogimatte 18c",
+        "zipCode": "6896",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Zimmermann und Söhne",
+        "address": "Endingerstrasse 64",
+        "zipCode": "4526",
+        "city": "Basel"
+    },
+    {
+        "company": "Bosshard, Albrecht und Albrecht",
+        "address": "Lindenhofweg 50a",
+        "zipCode": "3764",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Kessler-Lutz",
+        "address": "Kirchweg 87",
+        "zipCode": "5997",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Ritter-Maier",
+        "address": "Glockengasse 45b",
+        "zipCode": "6526",
+        "city": "Locarno"
+    },
+    {
+        "company": "Mäder & Co.",
+        "address": "Bierkellerweg 22",
+        "zipCode": "6968",
+        "city": "Köniz"
+    },
+    {
+        "company": "Bachmann, Meili und Siegrist",
+        "address": "Lindenhofweg 22a",
+        "zipCode": "0483",
+        "city": "Ostermundigen"
+    },
+    {
+        "company": "Lüthi-Beck",
+        "address": "Trittligasse 23",
+        "zipCode": "1146",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Isler, Lanz und Bucher",
+        "address": "Glockengasse 54c",
+        "zipCode": "8163",
+        "city": "Chur"
+    },
+    {
+        "company": "Spörri GmbH",
+        "address": "Lindenhofweg 38c",
+        "zipCode": "3851",
+        "city": "Versoix"
+    },
+    {
+        "company": "Schweizer, Bucher und Roos",
+        "address": "Industriestrasse 73c",
+        "zipCode": "4139",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Iten und Partner",
+        "address": "Schulhausstrasse 44a",
+        "zipCode": "4263",
+        "city": "Reinach"
+    },
+    {
+        "company": "Kessler LLC",
+        "address": "Endingerstrasse 932",
+        "zipCode": "4638",
+        "city": "Reinach"
+    },
+    {
+        "company": "Imhof und Partner",
+        "address": "Birkenweg 228",
+        "zipCode": "8051",
+        "city": "Bulle"
+    },
+    {
+        "company": "Schaller-Lüscher",
+        "address": "Lindenhofweg 55",
+        "zipCode": "2856",
+        "city": "Bülach"
+    },
+    {
+        "company": "Lüscher, Lutz und Hofer",
+        "address": "Ödhus 211",
+        "zipCode": "0777",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Portmann-Bär",
+        "address": "Vorstadt 34",
+        "zipCode": "3494",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Stöckli und Söhne",
+        "address": "Dorfstrasse 36c",
+        "zipCode": "3843",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Vogt, Lang und Stucki",
+        "address": "Birkenweg 2",
+        "zipCode": "4285",
+        "city": "Morges"
+    },
+    {
+        "company": "Hermann AG",
+        "address": "Vorstadt 4",
+        "zipCode": "2195",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Steiner GmbH",
+        "address": "Rosenweg 612",
+        "zipCode": "7664",
+        "city": "Monthey"
+    },
+    {
+        "company": "Ammann, Thommen und Furrer",
+        "address": "Melonenstrasse 5",
+        "zipCode": "1351",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Leu GmbH",
+        "address": "Kirchweg 377",
+        "zipCode": "7019",
+        "city": "La Chaux-de-Fonds"
+    },
+    {
+        "company": "Kunz, Vogt und Blum",
+        "address": "Bahnhofstrasse 26b",
+        "zipCode": "8818",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Marti, Schärer und Lüthi",
+        "address": "Hauptstrasse 52a",
+        "zipCode": "6006",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Brunner-Bolliger",
+        "address": "Kirchweg 98a",
+        "zipCode": "9618",
+        "city": "Chur"
+    },
+    {
+        "company": "Ammann GmbH",
+        "address": "Schulstrasse 140",
+        "zipCode": "4768",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Wirz-Senn",
+        "address": "Trittligasse 78a",
+        "zipCode": "3830",
+        "city": "Onex"
+    },
+    {
+        "company": "Martin-Widmer",
+        "address": "Bierkellerweg 16c",
+        "zipCode": "9613",
+        "city": "Martigny"
+    },
+    {
+        "company": "Grob und Partner",
+        "address": "Rämistrasse 7",
+        "zipCode": "1347",
+        "city": "Binningen"
+    },
+    {
+        "company": "Steiger, Meister und Zehnder",
+        "address": "Amthausstrasse 961",
+        "zipCode": "6014",
+        "city": "Luzern"
+    },
+    {
+        "company": "Vogt, Schenk und Bolliger",
+        "address": "Uraniastrasse 55",
+        "zipCode": "5794",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Favre-Probst",
+        "address": "Schulstrasse 631",
+        "zipCode": "1400",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Portmann-Fuchs",
+        "address": "Glockengasse 41c",
+        "zipCode": "8545",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Herzog und Partner",
+        "address": "Lindenhofweg 75b",
+        "zipCode": "4178",
+        "city": "Sitten"
+    },
+    {
+        "company": "Gut, Hofmann und Schaub",
+        "address": "Knoblauchweg 42b",
+        "zipCode": "0180",
+        "city": "Thun"
+    },
+    {
+        "company": "Meili AG",
+        "address": "Knoblauchweg 94a",
+        "zipCode": "8899",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Schoch GmbH",
+        "address": "Elefantenbach 15b",
+        "zipCode": "3225",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Senn, Zingg und Bieri",
+        "address": "Lindenhofweg 41",
+        "zipCode": "1359",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Huber, Forster und Senn",
+        "address": "Hirschengraben 17c",
+        "zipCode": "2422",
+        "city": "Cham"
+    },
+    {
+        "company": "Walter-Schenk",
+        "address": "Industriestrasse 90c",
+        "zipCode": "3380",
+        "city": "Kreuzlingen"
+    },
+    {
+        "company": "Furrer, Hofer und Bättig",
+        "address": "Sihlfeldstrasse 25c",
+        "zipCode": "6100",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Schärer, Maier und Sidler",
+        "address": "Melonenstrasse 76c",
+        "zipCode": "3768",
+        "city": "Herisau"
+    },
+    {
+        "company": "Steiner Gruppe",
+        "address": "Katzenplatz 10b",
+        "zipCode": "4309",
+        "city": "Locarno"
+    },
+    {
+        "company": "Leunberger & Co.",
+        "address": "Katzenplatz 6",
+        "zipCode": "7618",
+        "city": "Bülach"
+    },
+    {
+        "company": "Schweizer-Bühlmann",
+        "address": "Schulstrasse 33",
+        "zipCode": "9454",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Schwarz-Lehmann",
+        "address": "Industriestrasse 86b",
+        "zipCode": "5085",
+        "city": "Allschwil"
+    },
+    {
+        "company": "Michel, Aebi und Thommen",
+        "address": "Rosenweg 912",
+        "zipCode": "4179",
+        "city": "Monthey"
+    },
+    {
+        "company": "Lanz und Söhne",
+        "address": "Bierkellerweg 12",
+        "zipCode": "6190",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Stucki LLC",
+        "address": "Schulstrasse 35b",
+        "zipCode": "8414",
+        "city": "Martigny"
+    },
+    {
+        "company": "Weber und Partner",
+        "address": "Rennweg 44c",
+        "zipCode": "4917",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Eichenberger, Meier und Zbinden",
+        "address": "Knoblauchweg 28c",
+        "zipCode": "3550",
+        "city": "Renens"
+    },
+    {
+        "company": "Meyer-Rey",
+        "address": "Columbusstrasse 21c",
+        "zipCode": "0451",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Erni-Maurer",
+        "address": "Endingerstrasse 63",
+        "zipCode": "2393",
+        "city": "Cham"
+    },
+    {
+        "company": "Kaiser und Söhne",
+        "address": "Sihlfeldstrasse 34a",
+        "zipCode": "0071",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Hafner, Albrecht und Spörri",
+        "address": "Vorstadt 95c",
+        "zipCode": "9089",
+        "city": "Kloten"
+    },
+    {
+        "company": "Hotz & Co.",
+        "address": "Amthausstrasse 29c",
+        "zipCode": "2339",
+        "city": "Riehen"
+    },
+    {
+        "company": "Lüscher LLC",
+        "address": "Industriestrasse 156",
+        "zipCode": "3041",
+        "city": "Bern"
+    },
+    {
+        "company": "Roth, Roth und Ackermann",
+        "address": "Amthausstrasse 678",
+        "zipCode": "0609",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Lang und Partner",
+        "address": "Kirchweg 42a",
+        "zipCode": "2244",
+        "city": "Zürich"
+    },
+    {
+        "company": "Maurer, Sidler und Roth",
+        "address": "Kirchweg 61c",
+        "zipCode": "2675",
+        "city": "Zürich"
+    },
+    {
+        "company": "Zürcher-Lanz",
+        "address": "Kirchweg 87b",
+        "zipCode": "4792",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Scherrer, Blaser und Bianchi",
+        "address": "Ogimatte 68",
+        "zipCode": "9072",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Ferrari, Lanz und Bernasconi",
+        "address": "Bierkellerweg 83",
+        "zipCode": "7181",
+        "city": "Chur"
+    },
+    {
+        "company": "Hess, Michel und Kern",
+        "address": "Rennweg 84a",
+        "zipCode": "0187",
+        "city": "La Chaux-de-Fonds"
+    },
+    {
+        "company": "Brun LLC",
+        "address": "Ödhus 71b",
+        "zipCode": "7076",
+        "city": "Morges"
+    },
+    {
+        "company": "Weber & Co.",
+        "address": "Sihlfeldstrasse 62b",
+        "zipCode": "7829",
+        "city": "Bulle"
+    },
+    {
+        "company": "Ritter Gruppe",
+        "address": "Endingerstrasse 3",
+        "zipCode": "6437",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Koch GmbH",
+        "address": "Sihlfeldstrasse 2",
+        "zipCode": "2273",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Lutz und Söhne",
+        "address": "Sihlfeldstrasse 60",
+        "zipCode": "2088",
+        "city": "Lugano"
+    },
+    {
+        "company": "Aebi-Kern",
+        "address": "Ogimatte 96c",
+        "zipCode": "0178",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Schmid-Ernst",
+        "address": "Birkenweg 12c",
+        "zipCode": "9169",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Bühlmann, Scherrer und Frei",
+        "address": "Amthausstrasse 80",
+        "zipCode": "7089",
+        "city": "Horw"
+    },
+    {
+        "company": "Sutter Gruppe",
+        "address": "Endingerstrasse 1",
+        "zipCode": "6958",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Hasler AG",
+        "address": "Oberdorfstrasse 31c",
+        "zipCode": "4507",
+        "city": "Locarno"
+    },
+    {
+        "company": "Zingg, Koch und Bauer",
+        "address": "Sihlfeldstrasse 66c",
+        "zipCode": "2758",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Gloor Gruppe",
+        "address": "Vorstadt 36b",
+        "zipCode": "7483",
+        "city": "Vevey"
+    },
+    {
+        "company": "Bär, Fischer und Stocker",
+        "address": "Hauptstrasse 38c",
+        "zipCode": "4008",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Felder Inc.",
+        "address": "Bahnhofstrasse 977",
+        "zipCode": "6726",
+        "city": "Olten"
+    },
+    {
+        "company": "Schlatter-Schweizer",
+        "address": "Columbusstrasse 77c",
+        "zipCode": "8558",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Bucher LLC",
+        "address": "Elefantenbach 340",
+        "zipCode": "8737",
+        "city": "Vernier"
+    },
+    {
+        "company": "Geiger, Forster und Wolf",
+        "address": "Schulstrasse 34",
+        "zipCode": "0455",
+        "city": "Cham"
+    },
+    {
+        "company": "Michel, Blaser und Walder",
+        "address": "Augustinergasse 73a",
+        "zipCode": "0395",
+        "city": "Nyon"
+    },
+    {
+        "company": "Kuhn GmbH",
+        "address": "Katzenplatz 67c",
+        "zipCode": "7324",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Kohler-Wettstein",
+        "address": "Hirschengraben 97",
+        "zipCode": "7450",
+        "city": "Baar"
+    },
+    {
+        "company": "Kaiser, Gross und Beck",
+        "address": "Sihlfeldstrasse 94b",
+        "zipCode": "7712",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Ammann und Partner",
+        "address": "Kirchweg 47",
+        "zipCode": "7684",
+        "city": "Bern"
+    },
+    {
+        "company": "Moser GmbH",
+        "address": "Schulstrasse 501",
+        "zipCode": "0942",
+        "city": "Muri bei Bern"
+    },
+    {
+        "company": "Wirth-Hess",
+        "address": "Melonenstrasse 7",
+        "zipCode": "0424",
+        "city": "Montreux"
+    },
+    {
+        "company": "Schneider LLC",
+        "address": "Kirchweg 27",
+        "zipCode": "7240",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Gut AG",
+        "address": "Oberdorfstrasse 934",
+        "zipCode": "7722",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Meister-Frick",
+        "address": "Uraniastrasse 44c",
+        "zipCode": "9475",
+        "city": "Thônex"
+    },
+    {
+        "company": "Huber, Favre und Wolf",
+        "address": "Columbusstrasse 756",
+        "zipCode": "3623",
+        "city": "Cham"
+    },
+    {
+        "company": "Bucher-Scherrer",
+        "address": "Bahnhofstrasse 7",
+        "zipCode": "1077",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Zbinden LLC",
+        "address": "Hauptstrasse 87",
+        "zipCode": "1192",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Gfeller-Küng",
+        "address": "Augustinergasse 643",
+        "zipCode": "5944",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Baumann und Partner",
+        "address": "Rämistrasse 94b",
+        "zipCode": "3913",
+        "city": "Lugano"
+    },
+    {
+        "company": "Wagner, Friedli und Schürch",
+        "address": "Endingerstrasse 19a",
+        "zipCode": "3842",
+        "city": "Gossau"
+    },
+    {
+        "company": "Kaiser-Tobler",
+        "address": "Kirchweg 54a",
+        "zipCode": "8199",
+        "city": "Horgen"
+    },
+    {
+        "company": "Lang, Hafner und Haas",
+        "address": "Sihlfeldstrasse 63c",
+        "zipCode": "4863",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Bättig Gruppe",
+        "address": "Hauptstrasse 38c",
+        "zipCode": "7336",
+        "city": "Bülach"
+    },
+    {
+        "company": "Ernst, Meyer und Berger",
+        "address": "Endingerstrasse 931",
+        "zipCode": "5141",
+        "city": "Versoix"
+    },
+    {
+        "company": "Schaller, Felber und Vogt",
+        "address": "Ödhus 599",
+        "zipCode": "8936",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Stettler, Lang und Furrer",
+        "address": "Kirchweg 5",
+        "zipCode": "2375",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Haas-Bieri",
+        "address": "Birkenweg 62",
+        "zipCode": "9574",
+        "city": "Renens"
+    },
+    {
+        "company": "Scherrer GmbH",
+        "address": "Oberdorfstrasse 4",
+        "zipCode": "8267",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Wenger, Herzog und Hafner",
+        "address": "Trittligasse 28b",
+        "zipCode": "8480",
+        "city": "Monthey"
+    },
+    {
+        "company": "Amrein-Wagner",
+        "address": "Melonenstrasse 5",
+        "zipCode": "7209",
+        "city": "Nyon"
+    },
+    {
+        "company": "Näf, Furrer und Vogt",
+        "address": "Oberdorfstrasse 57b",
+        "zipCode": "9294",
+        "city": "Morges"
+    },
+    {
+        "company": "Wegmann und Söhne",
+        "address": "Columbusstrasse 804",
+        "zipCode": "1688",
+        "city": "Onex"
+    },
+    {
+        "company": "Michel-Stalder",
+        "address": "Uraniastrasse 61b",
+        "zipCode": "9764",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Frei-Hess",
+        "address": "Melonenstrasse 13b",
+        "zipCode": "4958",
+        "city": "Aarau"
+    },
+    {
+        "company": "Ammann, Hess und Wüthrich",
+        "address": "Bahnhofstrasse 52a",
+        "zipCode": "0799",
+        "city": "Bulle"
+    },
+    {
+        "company": "Felder und Söhne",
+        "address": "Katzenplatz 705",
+        "zipCode": "9664",
+        "city": "Olten"
+    },
+    {
+        "company": "Steffen, Müller und Senn",
+        "address": "Elefantenbach 17a",
+        "zipCode": "4049",
+        "city": "Gossau"
+    },
+    {
+        "company": "Martin-Baumgartner",
+        "address": "Honiggasse 82a",
+        "zipCode": "5348",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Schlatter-Schuler",
+        "address": "Knoblauchweg 892",
+        "zipCode": "2371",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Gerber-Suter",
+        "address": "Amthausstrasse 87",
+        "zipCode": "2310",
+        "city": "Langenthal"
+    },
+    {
+        "company": "Brun, Maurer und Bolliger",
+        "address": "Hirschengraben 72b",
+        "zipCode": "1820",
+        "city": "Zürich"
+    },
+    {
+        "company": "Bär & Co.",
+        "address": "Hirschengraben 449",
+        "zipCode": "3680",
+        "city": "Aarau"
+    },
+    {
+        "company": "Baumann, Knecht und Kunz",
+        "address": "Ödhus 55a",
+        "zipCode": "9029",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Forster LLC",
+        "address": "Birkenweg 34",
+        "zipCode": "7053",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Wüthrich, Scherrer und Staub",
+        "address": "Rennweg 56b",
+        "zipCode": "6018",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Fischer, Weibel und Schürch",
+        "address": "Rämistrasse 39b",
+        "zipCode": "7239",
+        "city": "Lyss"
+    },
+    {
+        "company": "Hermann-Egger",
+        "address": "Schulstrasse 17c",
+        "zipCode": "9764",
+        "city": "Zug"
+    },
+    {
+        "company": "Imhof-Zollinger",
+        "address": "Industriestrasse 44",
+        "zipCode": "7173",
+        "city": "Thun"
+    },
+    {
+        "company": "Wenger-Lang",
+        "address": "Vorstadt 236",
+        "zipCode": "4524",
+        "city": "Riehen"
+    },
+    {
+        "company": "Bieri-Amrein",
+        "address": "Ogimatte 12",
+        "zipCode": "0752",
+        "city": "Pully"
+    },
+    {
+        "company": "Bucher GmbH",
+        "address": "Bahnhofstrasse 971",
+        "zipCode": "8824",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Schlatter-Kaiser",
+        "address": "Amthausstrasse 99b",
+        "zipCode": "0445",
+        "city": "Zürich"
+    },
+    {
+        "company": "Schaller-Ernst",
+        "address": "Honiggasse 82",
+        "zipCode": "7372",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Baumann, Steinmann und Merz",
+        "address": "Schulhausstrasse 1",
+        "zipCode": "4080",
+        "city": "Bülach"
+    },
+    {
+        "company": "Amrein, Imhof und Kessler",
+        "address": "Schulstrasse 18a",
+        "zipCode": "5373",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Felder-Meister",
+        "address": "Knoblauchweg 4",
+        "zipCode": "3836",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Bernasconi, Maier und Erni",
+        "address": "Schulhausstrasse 65b",
+        "zipCode": "9866",
+        "city": "Reinach"
+    },
+    {
+        "company": "Kaufmann GmbH",
+        "address": "Augustinergasse 65a",
+        "zipCode": "6097",
+        "city": "Chur"
+    },
+    {
+        "company": "Kuhn-Schäfer",
+        "address": "Hirschengraben 84c",
+        "zipCode": "3831",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Stocker-Bader",
+        "address": "Elefantenbach 1",
+        "zipCode": "1901",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Schnyder, Kunz und Studer",
+        "address": "Katzenplatz 315",
+        "zipCode": "5832",
+        "city": "Liestal"
+    },
+    {
+        "company": "Schwarz-Schweizer",
+        "address": "Amthausstrasse 873",
+        "zipCode": "6645",
+        "city": "Ostermundigen"
+    },
+    {
+        "company": "Keller, Rüegg und Häfliger",
+        "address": "Katzenplatz 5",
+        "zipCode": "8030",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Hofer, Meyer und Schumacher",
+        "address": "Hauptstrasse 26b",
+        "zipCode": "2761",
+        "city": "Horgen"
+    },
+    {
+        "company": "Huber-Ammann",
+        "address": "Birkenweg 83a",
+        "zipCode": "9184",
+        "city": "Pully"
+    },
+    {
+        "company": "Herzog-Eugster",
+        "address": "Sihlfeldstrasse 9",
+        "zipCode": "4959",
+        "city": "Lyss"
+    },
+    {
+        "company": "Steffen-Roos",
+        "address": "Trittligasse 4",
+        "zipCode": "0939",
+        "city": "Reinach"
+    },
+    {
+        "company": "Hofer-Arnold",
+        "address": "Endingerstrasse 86a",
+        "zipCode": "3299",
+        "city": "Köniz"
+    },
+    {
+        "company": "Leunberger und Partner",
+        "address": "Schulstrasse 21a",
+        "zipCode": "6760",
+        "city": "Gossau"
+    },
+    {
+        "company": "Lustenberger-Siegrist",
+        "address": "Elefantenbach 55b",
+        "zipCode": "2630",
+        "city": "Luzern"
+    },
+    {
+        "company": "Giger-Iten",
+        "address": "Vorstadt 502",
+        "zipCode": "4708",
+        "city": "Allschwil"
+    },
+    {
+        "company": "Roth & Co.",
+        "address": "Birkenweg 159",
+        "zipCode": "9368",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Schlatter-Wirth",
+        "address": "Bierkellerweg 7",
+        "zipCode": "1021",
+        "city": "Sitten"
+    },
+    {
+        "company": "Hasler-Schmid",
+        "address": "Oberdorfstrasse 11c",
+        "zipCode": "5736",
+        "city": "Renens"
+    },
+    {
+        "company": "Schäfer GmbH",
+        "address": "Bierkellerweg 50",
+        "zipCode": "3156",
+        "city": "Arbon"
+    },
+    {
+        "company": "Jäggi, Stutz und Gfeller",
+        "address": "Hauptstrasse 432",
+        "zipCode": "1443",
+        "city": "Cham"
+    },
+    {
+        "company": "Fankhauser Gruppe",
+        "address": "Endingerstrasse 76",
+        "zipCode": "8119",
+        "city": "Versoix"
+    },
+    {
+        "company": "Kessler-Stauffer",
+        "address": "Knoblauchweg 321",
+        "zipCode": "6967",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Koch-Winkler",
+        "address": "Uraniastrasse 761",
+        "zipCode": "1775",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Fankhauser-Schoch",
+        "address": "Uraniastrasse 64b",
+        "zipCode": "8086",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Hunziker, Meier und Baur",
+        "address": "Hauptstrasse 48b",
+        "zipCode": "4985",
+        "city": "Morges"
+    },
+    {
+        "company": "Schwab-Stalder",
+        "address": "Elefantenbach 20a",
+        "zipCode": "2864",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Bühlmann, Wolf und Schäfer",
+        "address": "Hauptstrasse 63a",
+        "zipCode": "7683",
+        "city": "Renens"
+    },
+    {
+        "company": "Näf, Stöckli und Zürcher",
+        "address": "Hauptstrasse 4",
+        "zipCode": "2515",
+        "city": "Allschwil"
+    },
+    {
+        "company": "Sigrist LLC",
+        "address": "Schulstrasse 28b",
+        "zipCode": "0450",
+        "city": "Bülach"
+    },
+    {
+        "company": "Kohler, Hirt und Schärer",
+        "address": "Knoblauchweg 715",
+        "zipCode": "8022",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Schmidt GmbH",
+        "address": "Uraniastrasse 323",
+        "zipCode": "3171",
+        "city": "Langenthal"
+    },
+    {
+        "company": "Wyss Inc.",
+        "address": "Katzenplatz 61b",
+        "zipCode": "6977",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Steiner, Kuhn und Schuler",
+        "address": "Sihlfeldstrasse 3",
+        "zipCode": "2506",
+        "city": "Sitten"
+    },
+    {
+        "company": "Senn-Stocker",
+        "address": "Sihlfeldstrasse 51c",
+        "zipCode": "1085",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Forster-Wagner",
+        "address": "Ogimatte 400",
+        "zipCode": "1730",
+        "city": "Herisau"
+    },
+    {
+        "company": "Hafner, Tanner und Stöckli",
+        "address": "Hauptstrasse 77",
+        "zipCode": "5455",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Giger und Partner",
+        "address": "Trittligasse 90",
+        "zipCode": "4863",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Wettstein Gruppe",
+        "address": "Trittligasse 45c",
+        "zipCode": "5989",
+        "city": "Kriens"
+    },
+    {
+        "company": "Erni-Wenger",
+        "address": "Schulstrasse 58c",
+        "zipCode": "9662",
+        "city": "Meyrin"
+    },
+    {
+        "company": "Schnyder-Felder",
+        "address": "Ogimatte 57a",
+        "zipCode": "0418",
+        "city": "Thun"
+    },
+    {
+        "company": "Schenk, Ackermann und Fankhauser",
+        "address": "Melonenstrasse 212",
+        "zipCode": "1299",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Jäggi, Burri und Erni",
+        "address": "Ogimatte 16a",
+        "zipCode": "9331",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Wolf und Partner",
+        "address": "Katzenplatz 27",
+        "zipCode": "1624",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Lanz-Betschart",
+        "address": "Endingerstrasse 62b",
+        "zipCode": "3193",
+        "city": "Sitten"
+    },
+    {
+        "company": "Zingg GmbH",
+        "address": "Schulhausstrasse 16b",
+        "zipCode": "6344",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Betschart-Kuhn",
+        "address": "Hauptstrasse 85b",
+        "zipCode": "0950",
+        "city": "Chur"
+    },
+    {
+        "company": "Egger, Schürch und Felber",
+        "address": "Schulhausstrasse 6",
+        "zipCode": "2264",
+        "city": "Riehen"
+    },
+    {
+        "company": "Marti-Tanner",
+        "address": "Vorstadt 2",
+        "zipCode": "8750",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Eugster Inc.",
+        "address": "Lindenhofweg 72b",
+        "zipCode": "1317",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Studer-Roth",
+        "address": "Bierkellerweg 13a",
+        "zipCode": "0449",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Arnold Gruppe",
+        "address": "Bierkellerweg 12a",
+        "zipCode": "1459",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Hess, Scherrer und Winkler",
+        "address": "Industriestrasse 75a",
+        "zipCode": "8681",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Jäggi-Gross",
+        "address": "Hauptstrasse 4",
+        "zipCode": "3408",
+        "city": "Kreuzlingen"
+    },
+    {
+        "company": "Gross, Hasler und Schenk",
+        "address": "Birkenweg 64c",
+        "zipCode": "3542",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Zollinger, Gfeller und Martin",
+        "address": "Hirschengraben 80b",
+        "zipCode": "4527",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Käser Gruppe",
+        "address": "Rennweg 838",
+        "zipCode": "2716",
+        "city": "Bern"
+    },
+    {
+        "company": "Hürlimann-Vogel",
+        "address": "Oberdorfstrasse 635",
+        "zipCode": "1881",
+        "city": "Versoix"
+    },
+    {
+        "company": "Bianchi-Sigrist",
+        "address": "Hirschengraben 43a",
+        "zipCode": "6506",
+        "city": "Sitten"
+    },
+    {
+        "company": "Knecht und Partner",
+        "address": "Glockengasse 85a",
+        "zipCode": "4686",
+        "city": "Genf"
+    },
+    {
+        "company": "Gross, Berger und Bär",
+        "address": "Hauptstrasse 14",
+        "zipCode": "1877",
+        "city": "Thônex"
+    },
+    {
+        "company": "Schnyder-Kaiser",
+        "address": "Trittligasse 825",
+        "zipCode": "2466",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Wirth, Portmann und Wettstein",
+        "address": "Ödhus 93",
+        "zipCode": "8659",
+        "city": "Cham"
+    },
+    {
+        "company": "Lüthi-Stöckli",
+        "address": "Rämistrasse 599",
+        "zipCode": "9707",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Mettler Gruppe",
+        "address": "Hirschengraben 41c",
+        "zipCode": "7789",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Furrer-Roth",
+        "address": "Glockengasse 669",
+        "zipCode": "8219",
+        "city": "Nyon"
+    },
+    {
+        "company": "Sigrist LLC",
+        "address": "Augustinergasse 88c",
+        "zipCode": "5176",
+        "city": "Bülach"
+    },
+    {
+        "company": "Hodel Gruppe",
+        "address": "Vorstadt 896",
+        "zipCode": "8047",
+        "city": "Martigny"
+    },
+    {
+        "company": "Rüegg, Felder und Frey",
+        "address": "Augustinergasse 42c",
+        "zipCode": "6504",
+        "city": "Bülach"
+    },
+    {
+        "company": "Burri Gruppe",
+        "address": "Schulhausstrasse 33c",
+        "zipCode": "0683",
+        "city": "Riehen"
+    },
+    {
+        "company": "Sigrist LLC",
+        "address": "Bahnhofstrasse 28b",
+        "zipCode": "5285",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Keller und Söhne",
+        "address": "Honiggasse 97a",
+        "zipCode": "0184",
+        "city": "Thônex"
+    },
+    {
+        "company": "Eichenberger & Co.",
+        "address": "Rämistrasse 53b",
+        "zipCode": "3853",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Rüegg, Hunziker und Senn",
+        "address": "Amthausstrasse 30b",
+        "zipCode": "1627",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Gross Gruppe",
+        "address": "Ödhus 72",
+        "zipCode": "5105",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Arnold, Meyer und Leunberger",
+        "address": "Bierkellerweg 935",
+        "zipCode": "2944",
+        "city": "Bülach"
+    },
+    {
+        "company": "Bianchi AG",
+        "address": "Uraniastrasse 27a",
+        "zipCode": "7451",
+        "city": "Sitten"
+    },
+    {
+        "company": "Haas, Portmann und Bucher",
+        "address": "Elefantenbach 32a",
+        "zipCode": "9264",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Wagner LLC",
+        "address": "Augustinergasse 36",
+        "zipCode": "7573",
+        "city": "Reinach"
+    },
+    {
+        "company": "Walter, Wegmann und Schneider",
+        "address": "Dorfstrasse 10a",
+        "zipCode": "0532",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Probst Inc.",
+        "address": "Endingerstrasse 97b",
+        "zipCode": "0137",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Schärer, Fehr und Kessler",
+        "address": "Schulhausstrasse 95a",
+        "zipCode": "0254",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Egger, Gut und Egli",
+        "address": "Schulhausstrasse 55b",
+        "zipCode": "6395",
+        "city": "Herisau"
+    },
+    {
+        "company": "Albrecht, Frei und Schnyder",
+        "address": "Rämistrasse 60",
+        "zipCode": "2342",
+        "city": "Basel"
+    },
+    {
+        "company": "Schwarz, Lüthi und Gfeller",
+        "address": "Rosenweg 32a",
+        "zipCode": "6376",
+        "city": "Genf"
+    },
+    {
+        "company": "Schlatter, Portmann und Iten",
+        "address": "Kirchweg 1",
+        "zipCode": "7292",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Gasser-Stettler",
+        "address": "Schulhausstrasse 16c",
+        "zipCode": "1666",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Moser, Kuhn und Iten",
+        "address": "Hauptstrasse 79c",
+        "zipCode": "2738",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Egger-Zehnder",
+        "address": "Oberdorfstrasse 926",
+        "zipCode": "8379",
+        "city": "Siders"
+    },
+    {
+        "company": "Wirth, Berger und Staub",
+        "address": "Industriestrasse 49b",
+        "zipCode": "6894",
+        "city": "Carouge"
+    },
+    {
+        "company": "Schmid AG",
+        "address": "Vorstadt 84c",
+        "zipCode": "0338",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Schmidt, Hotz und Lüscher",
+        "address": "Glockengasse 92",
+        "zipCode": "1795",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Ritter AG",
+        "address": "Schulstrasse 2",
+        "zipCode": "8102",
+        "city": "Versoix"
+    },
+    {
+        "company": "Schaub, Rüegg und Bucher",
+        "address": "Rämistrasse 50",
+        "zipCode": "2420",
+        "city": "Onex"
+    },
+    {
+        "company": "Zehnder, Steiner und Weibel",
+        "address": "Vorstadt 96c",
+        "zipCode": "4145",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Bieri-Furrer",
+        "address": "Rosenweg 69b",
+        "zipCode": "7184",
+        "city": "Basel"
+    },
+    {
+        "company": "Scherrer Inc.",
+        "address": "Vorstadt 68a",
+        "zipCode": "8750",
+        "city": "Kloten"
+    },
+    {
+        "company": "Egger-Weibel",
+        "address": "Knoblauchweg 568",
+        "zipCode": "9829",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Bär-Grob",
+        "address": "Dorfstrasse 46c",
+        "zipCode": "3125",
+        "city": "Cham"
+    },
+    {
+        "company": "Gerber, Wenger und Scherrer",
+        "address": "Glockengasse 5",
+        "zipCode": "4218",
+        "city": "Riehen"
+    },
+    {
+        "company": "Schäfer & Co.",
+        "address": "Sihlfeldstrasse 413",
+        "zipCode": "1514",
+        "city": "Kloten"
+    },
+    {
+        "company": "Ritter-Bauer",
+        "address": "Bahnhofstrasse 35b",
+        "zipCode": "7602",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Bosshard-Tanner",
+        "address": "Schulhausstrasse 1",
+        "zipCode": "3331",
+        "city": "Thun"
+    },
+    {
+        "company": "Mayer und Söhne",
+        "address": "Katzenplatz 15a",
+        "zipCode": "5167",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Wolf, Hirt und Peter",
+        "address": "Bierkellerweg 25a",
+        "zipCode": "1307",
+        "city": "Wil"
+    },
+    {
+        "company": "Ritter & Co.",
+        "address": "Glockengasse 56a",
+        "zipCode": "2458",
+        "city": "Bulle"
+    },
+    {
+        "company": "Stöckli, Benz und Zollinger",
+        "address": "Katzenplatz 70c",
+        "zipCode": "2492",
+        "city": "Renens"
+    },
+    {
+        "company": "Friedli-Steiger",
+        "address": "Schulhausstrasse 89c",
+        "zipCode": "2714",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Hess-Hofer",
+        "address": "Bahnhofstrasse 591",
+        "zipCode": "1953",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Senn, Gasser und Baumgartner",
+        "address": "Oberdorfstrasse 19",
+        "zipCode": "9840",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Huber-Haas",
+        "address": "Trittligasse 89",
+        "zipCode": "0270",
+        "city": "Olten"
+    },
+    {
+        "company": "Rüegg & Co.",
+        "address": "Lindenhofweg 8",
+        "zipCode": "7562",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Gut, Hirt und Sidler",
+        "address": "Rämistrasse 108",
+        "zipCode": "3129",
+        "city": "Chur"
+    },
+    {
+        "company": "Favre-Aebi",
+        "address": "Oberdorfstrasse 92c",
+        "zipCode": "9854",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Stadelmann und Partner",
+        "address": "Rennweg 66a",
+        "zipCode": "1471",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Wolf, Stettler und Hartmann",
+        "address": "Lindenhofweg 39c",
+        "zipCode": "9658",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Weber LLC",
+        "address": "Melonenstrasse 3",
+        "zipCode": "2300",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Gut Inc.",
+        "address": "Industriestrasse 39",
+        "zipCode": "0543",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Wehrli, Schenk und Bieri",
+        "address": "Augustinergasse 81c",
+        "zipCode": "2922",
+        "city": "Renens"
+    },
+    {
+        "company": "Bosshard & Co.",
+        "address": "Schulstrasse 2",
+        "zipCode": "7317",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Hug-Schoch",
+        "address": "Schulstrasse 803",
+        "zipCode": "1497",
+        "city": "Muri bei Bern"
+    },
+    {
+        "company": "Stauffer und Söhne",
+        "address": "Kirchweg 880",
+        "zipCode": "4448",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Lustenberger AG",
+        "address": "Glockengasse 121",
+        "zipCode": "9570",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Gfeller, Egger und Bauer",
+        "address": "Honiggasse 23",
+        "zipCode": "9237",
+        "city": "Bülach"
+    },
+    {
+        "company": "Käser, Baur und Kälin",
+        "address": "Melonenstrasse 189",
+        "zipCode": "6663",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Jost Gruppe",
+        "address": "Kirchweg 42",
+        "zipCode": "4613",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Sutter AG",
+        "address": "Kirchweg 785",
+        "zipCode": "7966",
+        "city": "Reinach"
+    },
+    {
+        "company": "Wolf, Gross und Kern",
+        "address": "Rosenweg 5",
+        "zipCode": "6612",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Tobler Gruppe",
+        "address": "Augustinergasse 78a",
+        "zipCode": "3155",
+        "city": "Cham"
+    },
+    {
+        "company": "Rüegg, Betschart und Zingg",
+        "address": "Honiggasse 98",
+        "zipCode": "7777",
+        "city": "Morges"
+    },
+    {
+        "company": "Kägi AG",
+        "address": "Industriestrasse 376",
+        "zipCode": "9779",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Kessler, Weibel und Grob",
+        "address": "Rosenweg 7",
+        "zipCode": "0428",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Hofmann-Steinmann",
+        "address": "Bahnhofstrasse 92a",
+        "zipCode": "9022",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Braun AG",
+        "address": "Bierkellerweg 13a",
+        "zipCode": "9845",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Wehrli Gruppe",
+        "address": "Sihlfeldstrasse 434",
+        "zipCode": "0949",
+        "city": "Lyss"
+    },
+    {
+        "company": "Winkler, Gfeller und Ott",
+        "address": "Melonenstrasse 15a",
+        "zipCode": "6573",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Jost LLC",
+        "address": "Hauptstrasse 55b",
+        "zipCode": "9354",
+        "city": "Langenthal"
+    },
+    {
+        "company": "Zingg, Egger und Jenni",
+        "address": "Bahnhofstrasse 442",
+        "zipCode": "2867",
+        "city": "Lyss"
+    },
+    {
+        "company": "Hofer und Partner",
+        "address": "Glockengasse 9",
+        "zipCode": "5757",
+        "city": "Zug"
+    },
+    {
+        "company": "Schär, Favre und Brun",
+        "address": "Bierkellerweg 51",
+        "zipCode": "7547",
+        "city": "Cham"
+    },
+    {
+        "company": "Baumgartner Gruppe",
+        "address": "Schulstrasse 664",
+        "zipCode": "5301",
+        "city": "Morges"
+    },
+    {
+        "company": "Leunberger, Schnyder und Schweizer",
+        "address": "Oberdorfstrasse 350",
+        "zipCode": "1009",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Stocker-Baumann",
+        "address": "Hirschengraben 22a",
+        "zipCode": "6047",
+        "city": "Bulle"
+    },
+    {
+        "company": "Bauer-Jost",
+        "address": "Rosenweg 98b",
+        "zipCode": "7888",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Gfeller und Söhne",
+        "address": "Birkenweg 9",
+        "zipCode": "4338",
+        "city": "Carouge"
+    },
+    {
+        "company": "Knecht, Hodel und Ackermann",
+        "address": "Hauptstrasse 8",
+        "zipCode": "0593",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Bühler-Ferrari",
+        "address": "Glockengasse 857",
+        "zipCode": "5690",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Siegrist-Pfister",
+        "address": "Honiggasse 74a",
+        "zipCode": "9201",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Gfeller Gruppe",
+        "address": "Bahnhofstrasse 449",
+        "zipCode": "7434",
+        "city": "Pully"
+    },
+    {
+        "company": "Grob, Widmer und Beck",
+        "address": "Rosenweg 89c",
+        "zipCode": "1436",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Ammann und Partner",
+        "address": "Rennweg 6",
+        "zipCode": "1155",
+        "city": "Lyss"
+    },
+    {
+        "company": "Moser und Söhne",
+        "address": "Hauptstrasse 56b",
+        "zipCode": "5462",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Flückiger-Schär",
+        "address": "Schulhausstrasse 511",
+        "zipCode": "0071",
+        "city": "Ostermundigen"
+    },
+    {
+        "company": "Albrecht-Fankhauser",
+        "address": "Endingerstrasse 1",
+        "zipCode": "8574",
+        "city": "Thun"
+    },
+    {
+        "company": "Friedli-Hirt",
+        "address": "Katzenplatz 80",
+        "zipCode": "4738",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Brunner-Bättig",
+        "address": "Vorstadt 169",
+        "zipCode": "3460",
+        "city": "Stäfa"
+    },
+    {
+        "company": "Wenger Inc.",
+        "address": "Dorfstrasse 550",
+        "zipCode": "1479",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Schmid-Ritter",
+        "address": "Kirchweg 38b",
+        "zipCode": "7844",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Schaller-Frey",
+        "address": "Honiggasse 16a",
+        "zipCode": "3696",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Stucki-Brunner",
+        "address": "Katzenplatz 52b",
+        "zipCode": "1508",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Maier Gruppe",
+        "address": "Bierkellerweg 94b",
+        "zipCode": "3144",
+        "city": "Kloten"
+    },
+    {
+        "company": "Wegmann, Jäggi und Leunberger",
+        "address": "Hauptstrasse 41b",
+        "zipCode": "3509",
+        "city": "Zug"
+    },
+    {
+        "company": "Grob, Näf und Keller",
+        "address": "Bierkellerweg 4",
+        "zipCode": "3438",
+        "city": "Lyss"
+    },
+    {
+        "company": "Ferrari, Steiner und Isler",
+        "address": "Katzenplatz 62c",
+        "zipCode": "0874",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Schär-Häfliger",
+        "address": "Rosenweg 44b",
+        "zipCode": "2598",
+        "city": "Morges"
+    },
+    {
+        "company": "Hafner und Partner",
+        "address": "Augustinergasse 61a",
+        "zipCode": "7480",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Hürlimann, Spörri und Kuhn",
+        "address": "Industriestrasse 49b",
+        "zipCode": "9097",
+        "city": "Martigny"
+    },
+    {
+        "company": "Michel-Keller",
+        "address": "Honiggasse 280",
+        "zipCode": "5267",
+        "city": "Carouge"
+    },
+    {
+        "company": "Felder-Peter",
+        "address": "Schulhausstrasse 95b",
+        "zipCode": "7111",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Baumann & Co.",
+        "address": "Sihlfeldstrasse 86c",
+        "zipCode": "5589",
+        "city": "Luzern"
+    },
+    {
+        "company": "Winkler, Friedli und Stauffer",
+        "address": "Hirschengraben 89b",
+        "zipCode": "7019",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Meyer, Stöckli und Hodel",
+        "address": "Schulstrasse 620",
+        "zipCode": "9153",
+        "city": "Bern"
+    },
+    {
+        "company": "Kunz AG",
+        "address": "Amthausstrasse 77",
+        "zipCode": "5743",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Keller-Mettler",
+        "address": "Melonenstrasse 88c",
+        "zipCode": "7823",
+        "city": "Muri bei Bern"
+    },
+    {
+        "company": "Rüegg-Erni",
+        "address": "Rämistrasse 659",
+        "zipCode": "9998",
+        "city": "Binningen"
+    },
+    {
+        "company": "Burri-Hürlimann",
+        "address": "Rennweg 6",
+        "zipCode": "7066",
+        "city": "Aarau"
+    },
+    {
+        "company": "Kaiser, Kern und Hofmann",
+        "address": "Hauptstrasse 65a",
+        "zipCode": "3665",
+        "city": "Versoix"
+    },
+    {
+        "company": "Ackermann-Ackermann",
+        "address": "Kirchweg 14a",
+        "zipCode": "8462",
+        "city": "Volketswil"
+    },
+    {
+        "company": "Eugster-Schärer",
+        "address": "Bierkellerweg 574",
+        "zipCode": "9808",
+        "city": "Bulle"
+    },
+    {
+        "company": "Peter LLC",
+        "address": "Columbusstrasse 47a",
+        "zipCode": "7693",
+        "city": "Thun"
+    },
+    {
+        "company": "Isler & Co.",
+        "address": "Schulstrasse 59b",
+        "zipCode": "3769",
+        "city": "Riehen"
+    },
+    {
+        "company": "Kern-Stucki",
+        "address": "Ogimatte 24a",
+        "zipCode": "4036",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Baumann und Partner",
+        "address": "Industriestrasse 61a",
+        "zipCode": "4667",
+        "city": "Basel"
+    },
+    {
+        "company": "Braun, Weber und Berger",
+        "address": "Knoblauchweg 66",
+        "zipCode": "6858",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Furrer, Schärer und Kälin",
+        "address": "Lindenhofweg 21a",
+        "zipCode": "7042",
+        "city": "Basel"
+    },
+    {
+        "company": "Zingg, Kälin und Bär",
+        "address": "Katzenplatz 87a",
+        "zipCode": "9786",
+        "city": "Meyrin"
+    },
+    {
+        "company": "Schenk und Partner",
+        "address": "Hauptstrasse 529",
+        "zipCode": "4577",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Frei-Widmer",
+        "address": "Amthausstrasse 68c",
+        "zipCode": "9699",
+        "city": "Kriens"
+    },
+    {
+        "company": "Schoch-Jost",
+        "address": "Glockengasse 78c",
+        "zipCode": "9309",
+        "city": "Olten"
+    },
+    {
+        "company": "Stadelmann, Hirt und Blum",
+        "address": "Knoblauchweg 66b",
+        "zipCode": "4983",
+        "city": "Muri bei Bern"
+    },
+    {
+        "company": "Hofmann-Albrecht",
+        "address": "Vorstadt 93a",
+        "zipCode": "1962",
+        "city": "Vevey"
+    },
+    {
+        "company": "Schoch Gruppe",
+        "address": "Kirchweg 904",
+        "zipCode": "9306",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Beck AG",
+        "address": "Birkenweg 46c",
+        "zipCode": "7562",
+        "city": "Volketswil"
+    },
+    {
+        "company": "Jenni-Bieri",
+        "address": "Endingerstrasse 30b",
+        "zipCode": "2439",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Koch-Stöckli",
+        "address": "Birkenweg 562",
+        "zipCode": "2835",
+        "city": "Volketswil"
+    },
+    {
+        "company": "Schäfer, Bader und Roos",
+        "address": "Rämistrasse 63b",
+        "zipCode": "6274",
+        "city": "Monthey"
+    },
+    {
+        "company": "Egli-Vogel",
+        "address": "Augustinergasse 34",
+        "zipCode": "3839",
+        "city": "Genf"
+    },
+    {
+        "company": "Friedli-Vogt",
+        "address": "Ogimatte 8",
+        "zipCode": "3458",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Friedli-Albrecht",
+        "address": "Oberdorfstrasse 17c",
+        "zipCode": "2145",
+        "city": "Baar"
+    },
+    {
+        "company": "Flückiger, Lüthi und Flückiger",
+        "address": "Ödhus 89c",
+        "zipCode": "7745",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Egli, Seiler und Hürlimann",
+        "address": "Rosenweg 986",
+        "zipCode": "9476",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Tobler, Herzog und Wüthrich",
+        "address": "Rosenweg 889",
+        "zipCode": "3166",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Friedli, Hofer und Peter",
+        "address": "Ogimatte 76",
+        "zipCode": "6835",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Isler, Hess und Egger",
+        "address": "Glockengasse 57a",
+        "zipCode": "6071",
+        "city": "Stäfa"
+    },
+    {
+        "company": "Bernasconi, Meyer und Michel",
+        "address": "Elefantenbach 602",
+        "zipCode": "0268",
+        "city": "Vevey"
+    },
+    {
+        "company": "Käser, Jenni und Bär",
+        "address": "Ogimatte 96a",
+        "zipCode": "0031",
+        "city": "Carouge"
+    },
+    {
+        "company": "Lüthi-Stadelmann",
+        "address": "Bahnhofstrasse 55a",
+        "zipCode": "7341",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Steiger-Gfeller",
+        "address": "Amthausstrasse 692",
+        "zipCode": "4067",
+        "city": "Pully"
+    },
+    {
+        "company": "Wirth und Partner",
+        "address": "Lindenhofweg 64c",
+        "zipCode": "9261",
+        "city": "Pully"
+    },
+    {
+        "company": "Schärer-Kägi",
+        "address": "Schulhausstrasse 66c",
+        "zipCode": "1831",
+        "city": "Renens"
+    },
+    {
+        "company": "Berger, Felder und Ernst",
+        "address": "Hauptstrasse 169",
+        "zipCode": "3540",
+        "city": "Vevey"
+    },
+    {
+        "company": "Hofmann, Ernst und Stöckli",
+        "address": "Columbusstrasse 32a",
+        "zipCode": "7380",
+        "city": "Cham"
+    },
+    {
+        "company": "Isler, Ferrari und Wegmann",
+        "address": "Bierkellerweg 80",
+        "zipCode": "6409",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Scheidegger, Kuhn und Schneider",
+        "address": "Hauptstrasse 37c",
+        "zipCode": "2787",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Baumann, Merz und Scheidegger",
+        "address": "Schulstrasse 28",
+        "zipCode": "5512",
+        "city": "Zürich"
+    },
+    {
+        "company": "Fuchs und Söhne",
+        "address": "Kirchweg 170",
+        "zipCode": "1754",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Schaub & Co.",
+        "address": "Katzenplatz 18a",
+        "zipCode": "6105",
+        "city": "Vernier"
+    },
+    {
+        "company": "Ziegler-Friedli",
+        "address": "Bahnhofstrasse 3",
+        "zipCode": "4501",
+        "city": "Monthey"
+    },
+    {
+        "company": "Fuchs-Probst",
+        "address": "Endingerstrasse 53a",
+        "zipCode": "2068",
+        "city": "Meilen"
+    },
+    {
+        "company": "Hodel und Partner",
+        "address": "Trittligasse 927",
+        "zipCode": "6738",
+        "city": "Chur"
+    },
+    {
+        "company": "Giger-Braun",
+        "address": "Amthausstrasse 4",
+        "zipCode": "4951",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Leu-Kohler",
+        "address": "Kirchweg 63",
+        "zipCode": "7962",
+        "city": "Olten"
+    },
+    {
+        "company": "Bucher und Partner",
+        "address": "Amthausstrasse 71a",
+        "zipCode": "2569",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Vogel-Probst",
+        "address": "Trittligasse 19a",
+        "zipCode": "7961",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Haas, Betschart und Hoffmann",
+        "address": "Bierkellerweg 90a",
+        "zipCode": "4982",
+        "city": "Siders"
+    },
+    {
+        "company": "Eichenberger, Bühler und Wettstein",
+        "address": "Trittligasse 577",
+        "zipCode": "6402",
+        "city": "Olten"
+    },
+    {
+        "company": "Flückiger, Steiger und Hunziker",
+        "address": "Rämistrasse 33",
+        "zipCode": "8882",
+        "city": "Siders"
+    },
+    {
+        "company": "Lüthi-Zingg",
+        "address": "Augustinergasse 28",
+        "zipCode": "0518",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Kuhn LLC",
+        "address": "Hauptstrasse 89a",
+        "zipCode": "4121",
+        "city": "Stäfa"
+    },
+    {
+        "company": "Felder, Schneider und Häfliger",
+        "address": "Industriestrasse 4",
+        "zipCode": "3562",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Zimmermann, Meier und Meyer",
+        "address": "Birkenweg 60",
+        "zipCode": "5506",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Hofmann, Giger und Fankhauser",
+        "address": "Hirschengraben 9",
+        "zipCode": "1037",
+        "city": "Muri bei Bern"
+    },
+    {
+        "company": "Schneider, Ackermann und Felber",
+        "address": "Rennweg 89b",
+        "zipCode": "8128",
+        "city": "Sitten"
+    },
+    {
+        "company": "Hug, Bucher und Hürlimann",
+        "address": "Knoblauchweg 9",
+        "zipCode": "3121",
+        "city": "Bulle"
+    },
+    {
+        "company": "Baur Inc.",
+        "address": "Dorfstrasse 56b",
+        "zipCode": "2610",
+        "city": "Montreux"
+    },
+    {
+        "company": "Baur, Lehmann und Roos",
+        "address": "Sihlfeldstrasse 72c",
+        "zipCode": "6169",
+        "city": "Horw"
+    },
+    {
+        "company": "Senn-Wolf",
+        "address": "Vorstadt 26c",
+        "zipCode": "8327",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Blum-Schmid",
+        "address": "Hauptstrasse 464",
+        "zipCode": "1722",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Baumann LLC",
+        "address": "Melonenstrasse 89a",
+        "zipCode": "0242",
+        "city": "Aarau"
+    },
+    {
+        "company": "Iten, Baumann und Wüthrich",
+        "address": "Industriestrasse 8",
+        "zipCode": "8435",
+        "city": "Pully"
+    },
+    {
+        "company": "Stutz, Hofmann und Fehr",
+        "address": "Katzenplatz 14",
+        "zipCode": "9001",
+        "city": "Versoix"
+    },
+    {
+        "company": "Frick, Egger und Ammann",
+        "address": "Ogimatte 712",
+        "zipCode": "8632",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Amrein LLC",
+        "address": "Industriestrasse 87c",
+        "zipCode": "6585",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Blaser-Ferrari",
+        "address": "Industriestrasse 18c",
+        "zipCode": "5724",
+        "city": "Sitten"
+    },
+    {
+        "company": "Schwarz, Roth und Stauffer",
+        "address": "Bahnhofstrasse 941",
+        "zipCode": "6645",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Stöckli & Co.",
+        "address": "Dorfstrasse 1",
+        "zipCode": "5663",
+        "city": "Langenthal"
+    },
+    {
+        "company": "Roth und Söhne",
+        "address": "Rennweg 86a",
+        "zipCode": "0076",
+        "city": "Sitten"
+    },
+    {
+        "company": "Egli Gruppe",
+        "address": "Industriestrasse 6",
+        "zipCode": "6328",
+        "city": "Bülach"
+    },
+    {
+        "company": "Schmid, Wolf und Wirz",
+        "address": "Birkenweg 35",
+        "zipCode": "7075",
+        "city": "Meilen"
+    },
+    {
+        "company": "Fankhauser, Fehr und Siegrist",
+        "address": "Vorstadt 58b",
+        "zipCode": "7853",
+        "city": "Liestal"
+    },
+    {
+        "company": "Schwab-Blum",
+        "address": "Ogimatte 677",
+        "zipCode": "5127",
+        "city": "Lyss"
+    },
+    {
+        "company": "Arnold-Ziegler",
+        "address": "Rämistrasse 671",
+        "zipCode": "0187",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Kaufmann Inc.",
+        "address": "Honiggasse 25b",
+        "zipCode": "6408",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Egger-Egger",
+        "address": "Columbusstrasse 13a",
+        "zipCode": "7787",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Benz, Ziegler und Baumann",
+        "address": "Ödhus 2",
+        "zipCode": "6577",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Lehmann Gruppe",
+        "address": "Amthausstrasse 678",
+        "zipCode": "0588",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Eugster-Peter",
+        "address": "Kirchweg 73",
+        "zipCode": "0313",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Huber GmbH",
+        "address": "Rämistrasse 77b",
+        "zipCode": "3074",
+        "city": "Gossau"
+    },
+    {
+        "company": "Näf, Vogel und Zollinger",
+        "address": "Ödhus 293",
+        "zipCode": "0780",
+        "city": "Zürich"
+    },
+    {
+        "company": "Lustenberger, Stöckli und Favre",
+        "address": "Katzenplatz 949",
+        "zipCode": "3510",
+        "city": "Basel"
+    },
+    {
+        "company": "Meier GmbH",
+        "address": "Rennweg 85b",
+        "zipCode": "4654",
+        "city": "Martigny"
+    },
+    {
+        "company": "Ackermann-Vogt",
+        "address": "Augustinergasse 89c",
+        "zipCode": "8414",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Eichenberger und Söhne",
+        "address": "Industriestrasse 86b",
+        "zipCode": "2620",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Küng-Frei",
+        "address": "Rennweg 57",
+        "zipCode": "9417",
+        "city": "Onex"
+    },
+    {
+        "company": "Steffen, Eugster und Ritter",
+        "address": "Ogimatte 99c",
+        "zipCode": "8780",
+        "city": "Montreux"
+    },
+    {
+        "company": "Schärer-Schumacher",
+        "address": "Ogimatte 38b",
+        "zipCode": "8057",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Hirt-Stöckli",
+        "address": "Rosenweg 50b",
+        "zipCode": "2892",
+        "city": "Siders"
+    },
+    {
+        "company": "Baumgartner AG",
+        "address": "Glockengasse 87b",
+        "zipCode": "8929",
+        "city": "Onex"
+    },
+    {
+        "company": "Bolliger-Rey",
+        "address": "Hirschengraben 99c",
+        "zipCode": "9015",
+        "city": "Monthey"
+    },
+    {
+        "company": "Sidler-Fehr",
+        "address": "Rosenweg 54a",
+        "zipCode": "7636",
+        "city": "Liestal"
+    },
+    {
+        "company": "Schneider, Wüthrich und Bär",
+        "address": "Augustinergasse 548",
+        "zipCode": "4931",
+        "city": "Nyon"
+    },
+    {
+        "company": "Gross-Hodel",
+        "address": "Augustinergasse 43a",
+        "zipCode": "2677",
+        "city": "Luzern"
+    },
+    {
+        "company": "Moser, Steiger und Zbinden",
+        "address": "Glockengasse 6",
+        "zipCode": "3021",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Kaiser und Partner",
+        "address": "Knoblauchweg 796",
+        "zipCode": "7066",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Marti, Lüscher und Felder",
+        "address": "Katzenplatz 58",
+        "zipCode": "7390",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Peter Gruppe",
+        "address": "Vorstadt 60c",
+        "zipCode": "0881",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Ritter, Isler und Brunner",
+        "address": "Uraniastrasse 39",
+        "zipCode": "8797",
+        "city": "Lugano"
+    },
+    {
+        "company": "Scheidegger-Eichenberger",
+        "address": "Schulstrasse 9",
+        "zipCode": "5413",
+        "city": "Onex"
+    },
+    {
+        "company": "Bühler GmbH",
+        "address": "Columbusstrasse 77b",
+        "zipCode": "0147",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Wegmann-Näf",
+        "address": "Melonenstrasse 6",
+        "zipCode": "6245",
+        "city": "Herisau"
+    },
+    {
+        "company": "Hofstetter GmbH",
+        "address": "Katzenplatz 767",
+        "zipCode": "2546",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Käser, Ott und Schaub",
+        "address": "Glockengasse 29",
+        "zipCode": "1661",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Kaufmann & Co.",
+        "address": "Hirschengraben 829",
+        "zipCode": "4798",
+        "city": "Genf"
+    },
+    {
+        "company": "Gasser, Lehmann und Jost",
+        "address": "Kirchweg 24b",
+        "zipCode": "0824",
+        "city": "Renens"
+    },
+    {
+        "company": "Merz und Partner",
+        "address": "Knoblauchweg 91b",
+        "zipCode": "3408",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Zingg-Bachmann",
+        "address": "Bierkellerweg 23b",
+        "zipCode": "5569",
+        "city": "Morges"
+    },
+    {
+        "company": "Geiger Inc.",
+        "address": "Dorfstrasse 75",
+        "zipCode": "2694",
+        "city": "Cham"
+    },
+    {
+        "company": "Stalder-Merz",
+        "address": "Hauptstrasse 11a",
+        "zipCode": "1445",
+        "city": "Bulle"
+    },
+    {
+        "company": "Schoch Gruppe",
+        "address": "Bierkellerweg 337",
+        "zipCode": "3367",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Steiner und Söhne",
+        "address": "Ödhus 9",
+        "zipCode": "1417",
+        "city": "Meilen"
+    },
+    {
+        "company": "Stalder, Winkler und Stadelmann",
+        "address": "Kirchweg 55c",
+        "zipCode": "4487",
+        "city": "Locarno"
+    },
+    {
+        "company": "Friedli, Egger und Sigrist",
+        "address": "Sihlfeldstrasse 24",
+        "zipCode": "7548",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Gasser-Siegrist",
+        "address": "Augustinergasse 94c",
+        "zipCode": "8386",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Jäggi-Kägi",
+        "address": "Schulstrasse 20",
+        "zipCode": "3912",
+        "city": "Onex"
+    },
+    {
+        "company": "Martin, Egli und Hasler",
+        "address": "Ogimatte 5",
+        "zipCode": "4224",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Näf und Söhne",
+        "address": "Schulhausstrasse 6",
+        "zipCode": "0365",
+        "city": "Versoix"
+    },
+    {
+        "company": "Pfister, Walder und Staub",
+        "address": "Uraniastrasse 2",
+        "zipCode": "5598",
+        "city": "Thun"
+    },
+    {
+        "company": "Gloor, Seiler und Schäfer",
+        "address": "Bierkellerweg 89c",
+        "zipCode": "5121",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Schenk-Zingg",
+        "address": "Schulstrasse 11a",
+        "zipCode": "3455",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Zürcher-Sutter",
+        "address": "Elefantenbach 43a",
+        "zipCode": "4017",
+        "city": "Horw"
+    },
+    {
+        "company": "Bianchi & Co.",
+        "address": "Sihlfeldstrasse 60c",
+        "zipCode": "8400",
+        "city": "Sitten"
+    },
+    {
+        "company": "Kaufmann-Roos",
+        "address": "Birkenweg 30a",
+        "zipCode": "8303",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Eichenberger-Stutz",
+        "address": "Sihlfeldstrasse 84a",
+        "zipCode": "3630",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Sutter & Co.",
+        "address": "Schulstrasse 50b",
+        "zipCode": "3407",
+        "city": "Emmen"
+    },
+    {
+        "company": "Geiger, Baur und Meister",
+        "address": "Oberdorfstrasse 866",
+        "zipCode": "1810",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Scheidegger, Kälin und Schäfer",
+        "address": "Trittligasse 53b",
+        "zipCode": "2032",
+        "city": "Arbon"
+    },
+    {
+        "company": "Lustenberger, Weibel und Portmann",
+        "address": "Ödhus 34c",
+        "zipCode": "2539",
+        "city": "Köniz"
+    },
+    {
+        "company": "Fehr-Friedli",
+        "address": "Melonenstrasse 56b",
+        "zipCode": "3897",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Wirth Gruppe",
+        "address": "Knoblauchweg 459",
+        "zipCode": "7605",
+        "city": "Lugano"
+    },
+    {
+        "company": "Lutz, Probst und Lüthi",
+        "address": "Honiggasse 95b",
+        "zipCode": "1504",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Frick-Brunner",
+        "address": "Lindenhofweg 2",
+        "zipCode": "4360",
+        "city": "Vevey"
+    },
+    {
+        "company": "Fehr-Bär",
+        "address": "Amthausstrasse 329",
+        "zipCode": "4076",
+        "city": "Bulle"
+    },
+    {
+        "company": "Schmid, Marti und Meili",
+        "address": "Hauptstrasse 1",
+        "zipCode": "3654",
+        "city": "Meyrin"
+    },
+    {
+        "company": "Koch Inc.",
+        "address": "Ogimatte 64b",
+        "zipCode": "5342",
+        "city": "Carouge"
+    },
+    {
+        "company": "Studer, Kaiser und Egger",
+        "address": "Schulhausstrasse 94b",
+        "zipCode": "1959",
+        "city": "Montreux"
+    },
+    {
+        "company": "Frey, Keller und Sutter",
+        "address": "Endingerstrasse 52c",
+        "zipCode": "4470",
+        "city": "Emmen"
+    },
+    {
+        "company": "Friedli, Frick und Suter",
+        "address": "Vorstadt 55a",
+        "zipCode": "1478",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Marti, Giger und Ritter",
+        "address": "Hauptstrasse 39c",
+        "zipCode": "1548",
+        "city": "Horgen"
+    },
+    {
+        "company": "Wolf, Schürch und Kuhn",
+        "address": "Endingerstrasse 82a",
+        "zipCode": "4672",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Kaiser-Vogel",
+        "address": "Hauptstrasse 68c",
+        "zipCode": "2541",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Lustenberger, Müller und Michel",
+        "address": "Rämistrasse 701",
+        "zipCode": "6897",
+        "city": "Emmen"
+    },
+    {
+        "company": "Giger, Rey und Roth",
+        "address": "Honiggasse 65c",
+        "zipCode": "5265",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Hofstetter-Meister",
+        "address": "Knoblauchweg 32a",
+        "zipCode": "3070",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Hauser-Haas",
+        "address": "Rennweg 95b",
+        "zipCode": "8239",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Bernasconi, Burri und Stadelmann",
+        "address": "Ödhus 4",
+        "zipCode": "1262",
+        "city": "Meilen"
+    },
+    {
+        "company": "Kunz, Gasser und Tanner",
+        "address": "Ogimatte 37a",
+        "zipCode": "0661",
+        "city": "Zug"
+    },
+    {
+        "company": "Koch-Peter",
+        "address": "Columbusstrasse 35b",
+        "zipCode": "5292",
+        "city": "Köniz"
+    },
+    {
+        "company": "Schuler Gruppe",
+        "address": "Ödhus 16c",
+        "zipCode": "5379",
+        "city": "Bern"
+    },
+    {
+        "company": "Suter und Söhne",
+        "address": "Ogimatte 12b",
+        "zipCode": "2267",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Lehmann-Schär",
+        "address": "Bahnhofstrasse 95a",
+        "zipCode": "2811",
+        "city": "Uster"
+    },
+    {
+        "company": "Tanner AG",
+        "address": "Dorfstrasse 97c",
+        "zipCode": "3713",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Kaiser-Winkler",
+        "address": "Hauptstrasse 59a",
+        "zipCode": "6975",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Stutz Gruppe",
+        "address": "Elefantenbach 8",
+        "zipCode": "8781",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Schaub, Siegrist und Bär",
+        "address": "Bahnhofstrasse 89a",
+        "zipCode": "4435",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Meier, Wagner und Wyss",
+        "address": "Bahnhofstrasse 870",
+        "zipCode": "3959",
+        "city": "Kreuzlingen"
+    },
+    {
+        "company": "Kälin, Schoch und Lang",
+        "address": "Katzenplatz 9",
+        "zipCode": "5954",
+        "city": "Basel"
+    },
+    {
+        "company": "Frick, Rey und Meili",
+        "address": "Dorfstrasse 66",
+        "zipCode": "3401",
+        "city": "Onex"
+    },
+    {
+        "company": "Fuchs, Wirz und Walder",
+        "address": "Augustinergasse 19c",
+        "zipCode": "5660",
+        "city": "Herisau"
+    },
+    {
+        "company": "Iten-Kälin",
+        "address": "Ödhus 76a",
+        "zipCode": "7101",
+        "city": "Bern"
+    },
+    {
+        "company": "Walder AG",
+        "address": "Lindenhofweg 912",
+        "zipCode": "9957",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Michel und Söhne",
+        "address": "Hauptstrasse 367",
+        "zipCode": "5972",
+        "city": "Liestal"
+    },
+    {
+        "company": "Schmid, Hasler und Hofmann",
+        "address": "Rämistrasse 83c",
+        "zipCode": "1366",
+        "city": "Pully"
+    },
+    {
+        "company": "Stöckli und Söhne",
+        "address": "Vorstadt 32a",
+        "zipCode": "8692",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Vogel Inc.",
+        "address": "Industriestrasse 92",
+        "zipCode": "2513",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Friedli, Bianchi und Fankhauser",
+        "address": "Trittligasse 38b",
+        "zipCode": "6618",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Walder-Grob",
+        "address": "Glockengasse 5",
+        "zipCode": "2032",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Tobler AG",
+        "address": "Industriestrasse 8",
+        "zipCode": "0625",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Betschart-Sutter",
+        "address": "Bierkellerweg 5",
+        "zipCode": "2061",
+        "city": "Herisau"
+    },
+    {
+        "company": "Roth-Bosshard",
+        "address": "Kirchweg 31b",
+        "zipCode": "0226",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Kuhn-Käser",
+        "address": "Rennweg 51a",
+        "zipCode": "9950",
+        "city": "Stäfa"
+    },
+    {
+        "company": "Wyss-Baumgartner",
+        "address": "Ogimatte 395",
+        "zipCode": "6815",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Hodel, Hotz und Stadelmann",
+        "address": "Melonenstrasse 10b",
+        "zipCode": "3761",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Hofstetter-Gerber",
+        "address": "Endingerstrasse 50",
+        "zipCode": "3792",
+        "city": "Nyon"
+    },
+    {
+        "company": "Ziegler-Wyss",
+        "address": "Trittligasse 8",
+        "zipCode": "1207",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Schäfer, Lanz und Kälin",
+        "address": "Oberdorfstrasse 95",
+        "zipCode": "9353",
+        "city": "Cham"
+    },
+    {
+        "company": "Schaller, Vogel und Zimmermann",
+        "address": "Schulstrasse 182",
+        "zipCode": "6615",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Bär-Grob",
+        "address": "Ödhus 92a",
+        "zipCode": "8912",
+        "city": "Zürich"
+    },
+    {
+        "company": "Betschart Gruppe",
+        "address": "Kirchweg 357",
+        "zipCode": "5890",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Bauer, Hafner und Giger",
+        "address": "Dorfstrasse 854",
+        "zipCode": "8114",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Hunziker-Zollinger",
+        "address": "Elefantenbach 9",
+        "zipCode": "5813",
+        "city": "Thônex"
+    },
+    {
+        "company": "Baumgartner, Felder und Ackermann",
+        "address": "Katzenplatz 5",
+        "zipCode": "8106",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Senn-Eichenberger",
+        "address": "Columbusstrasse 50c",
+        "zipCode": "0432",
+        "city": "Horgen"
+    },
+    {
+        "company": "Kunz und Söhne",
+        "address": "Schulhausstrasse 70a",
+        "zipCode": "7387",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Zbinden, Moser und Wagner",
+        "address": "Rosenweg 67c",
+        "zipCode": "3397",
+        "city": "Herisau"
+    },
+    {
+        "company": "Lang, Käser und Roth",
+        "address": "Columbusstrasse 132",
+        "zipCode": "4333",
+        "city": "Luzern"
+    },
+    {
+        "company": "Betschart Inc.",
+        "address": "Elefantenbach 98c",
+        "zipCode": "4992",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Eichenberger, Schuler und Stöckli",
+        "address": "Industriestrasse 1",
+        "zipCode": "8805",
+        "city": "Liestal"
+    },
+    {
+        "company": "Aebi-Roth",
+        "address": "Schulhausstrasse 459",
+        "zipCode": "9175",
+        "city": "Morges"
+    },
+    {
+        "company": "Schumacher, Schnyder und Tobler",
+        "address": "Rämistrasse 14b",
+        "zipCode": "6269",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Wegmann, Schärer und Probst",
+        "address": "Bahnhofstrasse 20b",
+        "zipCode": "4737",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Fischer-Geiger",
+        "address": "Knoblauchweg 6",
+        "zipCode": "8287",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Pfister AG",
+        "address": "Bahnhofstrasse 215",
+        "zipCode": "7670",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Eichenberger & Co.",
+        "address": "Knoblauchweg 69a",
+        "zipCode": "9896",
+        "city": "Kriens"
+    },
+    {
+        "company": "Martin, Baur und Haas",
+        "address": "Industriestrasse 941",
+        "zipCode": "4417",
+        "city": "Uster"
+    },
+    {
+        "company": "Geiger Gruppe",
+        "address": "Bahnhofstrasse 85a",
+        "zipCode": "6238",
+        "city": "Herisau"
+    },
+    {
+        "company": "Ott & Co.",
+        "address": "Elefantenbach 13c",
+        "zipCode": "1558",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Furrer Gruppe",
+        "address": "Schulstrasse 3",
+        "zipCode": "0326",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Schweizer, Haas und Moser",
+        "address": "Amthausstrasse 36",
+        "zipCode": "8406",
+        "city": "Vernier"
+    },
+    {
+        "company": "Schmid, Flückiger und Lehmann",
+        "address": "Rosenweg 47b",
+        "zipCode": "7019",
+        "city": "Wil"
+    },
+    {
+        "company": "Hess-Wagner",
+        "address": "Birkenweg 486",
+        "zipCode": "0272",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Schärer, Walder und Frick",
+        "address": "Ödhus 1",
+        "zipCode": "5080",
+        "city": "Montreux"
+    },
+    {
+        "company": "Steffen-Roth",
+        "address": "Hirschengraben 54b",
+        "zipCode": "6118",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Beck, Hafner und Wirz",
+        "address": "Elefantenbach 32c",
+        "zipCode": "9025",
+        "city": "Carouge"
+    },
+    {
+        "company": "Küng AG",
+        "address": "Katzenplatz 6",
+        "zipCode": "0619",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Zingg, Friedli und Lehmann",
+        "address": "Ogimatte 4",
+        "zipCode": "1422",
+        "city": "Bulle"
+    },
+    {
+        "company": "Näf-Wenger",
+        "address": "Columbusstrasse 39b",
+        "zipCode": "5262",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Hoffmann, Frick und Hermann",
+        "address": "Honiggasse 30",
+        "zipCode": "6485",
+        "city": "Herisau"
+    },
+    {
+        "company": "Blaser, Stöckli und Ammann",
+        "address": "Bahnhofstrasse 21a",
+        "zipCode": "1186",
+        "city": "Allschwil"
+    },
+    {
+        "company": "Egger Inc.",
+        "address": "Bierkellerweg 98c",
+        "zipCode": "5007",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Bühler, Näf und Stadelmann",
+        "address": "Rosenweg 74c",
+        "zipCode": "7611",
+        "city": "Monthey"
+    },
+    {
+        "company": "Kälin-Jenni",
+        "address": "Ogimatte 186",
+        "zipCode": "6374",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Stadelmann GmbH",
+        "address": "Bierkellerweg 7",
+        "zipCode": "8107",
+        "city": "Bern"
+    },
+    {
+        "company": "Hunziker LLC",
+        "address": "Bierkellerweg 33",
+        "zipCode": "7288",
+        "city": "Riehen"
+    },
+    {
+        "company": "Thommen-Hodel",
+        "address": "Oberdorfstrasse 423",
+        "zipCode": "8192",
+        "city": "Emmen"
+    },
+    {
+        "company": "Hermann-Bachmann",
+        "address": "Uraniastrasse 35c",
+        "zipCode": "0655",
+        "city": "Carouge"
+    },
+    {
+        "company": "Knecht-Müller",
+        "address": "Hauptstrasse 98b",
+        "zipCode": "1030",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Schmid LLC",
+        "address": "Endingerstrasse 828",
+        "zipCode": "3432",
+        "city": "Siders"
+    },
+    {
+        "company": "Spörri & Co.",
+        "address": "Industriestrasse 66b",
+        "zipCode": "7359",
+        "city": "Reinach"
+    },
+    {
+        "company": "Gross GmbH",
+        "address": "Rämistrasse 59c",
+        "zipCode": "3733",
+        "city": "Onex"
+    },
+    {
+        "company": "Hofmann, Marti und Schärer",
+        "address": "Kirchweg 70c",
+        "zipCode": "3134",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Gross-Iten",
+        "address": "Schulhausstrasse 79c",
+        "zipCode": "7737",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Winkler-Fehr",
+        "address": "Bahnhofstrasse 84",
+        "zipCode": "6372",
+        "city": "Lancy"
+    },
+    {
+        "company": "Fuchs-Hartmann",
+        "address": "Augustinergasse 40b",
+        "zipCode": "0196",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Hoffmann-Ernst",
+        "address": "Ogimatte 71c",
+        "zipCode": "3741",
+        "city": "Zürich"
+    },
+    {
+        "company": "Stucki-Walter",
+        "address": "Ogimatte 18b",
+        "zipCode": "5249",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Steinmann Gruppe",
+        "address": "Rosenweg 61",
+        "zipCode": "2397",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Merz-Schneider",
+        "address": "Birkenweg 88c",
+        "zipCode": "0787",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Hirt Gruppe",
+        "address": "Industriestrasse 81b",
+        "zipCode": "3601",
+        "city": "Carouge"
+    },
+    {
+        "company": "Hotz, Meyer und Ott",
+        "address": "Melonenstrasse 43c",
+        "zipCode": "5567",
+        "city": "Ostermundigen"
+    },
+    {
+        "company": "Hauser Gruppe",
+        "address": "Melonenstrasse 74a",
+        "zipCode": "9033",
+        "city": "Binningen"
+    },
+    {
+        "company": "Bühler Inc.",
+        "address": "Bierkellerweg 88",
+        "zipCode": "8669",
+        "city": "Binningen"
+    },
+    {
+        "company": "Frei, Fischer und Moser",
+        "address": "Augustinergasse 28",
+        "zipCode": "4175",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Roos, Maier und Portmann",
+        "address": "Amthausstrasse 15a",
+        "zipCode": "3730",
+        "city": "Bülach"
+    },
+    {
+        "company": "Sutter, Sidler und Michel",
+        "address": "Rämistrasse 536",
+        "zipCode": "8082",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Walder GmbH",
+        "address": "Rämistrasse 13c",
+        "zipCode": "6594",
+        "city": "Ostermundigen"
+    },
+    {
+        "company": "Kaiser-Winkler",
+        "address": "Dorfstrasse 4",
+        "zipCode": "7759",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Braun Gruppe",
+        "address": "Schulhausstrasse 81b",
+        "zipCode": "6561",
+        "city": "Baden"
+    },
+    {
+        "company": "Mettler-Meier",
+        "address": "Trittligasse 888",
+        "zipCode": "1225",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Kessler AG",
+        "address": "Endingerstrasse 1",
+        "zipCode": "5431",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Mayer & Co.",
+        "address": "Honiggasse 48c",
+        "zipCode": "9082",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Fischer und Söhne",
+        "address": "Augustinergasse 61a",
+        "zipCode": "6431",
+        "city": "Zürich"
+    },
+    {
+        "company": "Lustenberger, Friedli und Bucher",
+        "address": "Oberdorfstrasse 61a",
+        "zipCode": "0019",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Rüegg & Co.",
+        "address": "Bierkellerweg 67c",
+        "zipCode": "2053",
+        "city": "Aarau"
+    },
+    {
+        "company": "Braun-Wyss",
+        "address": "Hauptstrasse 8",
+        "zipCode": "0792",
+        "city": "Horw"
+    },
+    {
+        "company": "Zehnder, Weber und Albrecht",
+        "address": "Oberdorfstrasse 415",
+        "zipCode": "2776",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Hofstetter, Schenk und Siegrist",
+        "address": "Rosenweg 265",
+        "zipCode": "9891",
+        "city": "Horgen"
+    },
+    {
+        "company": "Stadelmann und Söhne",
+        "address": "Sihlfeldstrasse 20c",
+        "zipCode": "6802",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Bühler, Sigrist und Egger",
+        "address": "Elefantenbach 39c",
+        "zipCode": "8286",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Schneider Gruppe",
+        "address": "Honiggasse 51",
+        "zipCode": "8333",
+        "city": "Langenthal"
+    },
+    {
+        "company": "Bianchi-Moser",
+        "address": "Ogimatte 60",
+        "zipCode": "0675",
+        "city": "Nyon"
+    },
+    {
+        "company": "Schmidt-Mettler",
+        "address": "Trittligasse 66",
+        "zipCode": "5076",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Stocker und Söhne",
+        "address": "Trittligasse 88a",
+        "zipCode": "8441",
+        "city": "Bulle"
+    },
+    {
+        "company": "Bianchi & Co.",
+        "address": "Schulstrasse 5",
+        "zipCode": "3262",
+        "city": "Wohlen"
+    },
+    {
+        "company": "Hasler Gruppe",
+        "address": "Vorstadt 540",
+        "zipCode": "5784",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Graf-Braun",
+        "address": "Dorfstrasse 83c",
+        "zipCode": "4470",
+        "city": "Binningen"
+    },
+    {
+        "company": "Furrer Inc.",
+        "address": "Rosenweg 99",
+        "zipCode": "8713",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Kälin-Gut",
+        "address": "Ogimatte 49b",
+        "zipCode": "6769",
+        "city": "Aarau"
+    },
+    {
+        "company": "Egli und Söhne",
+        "address": "Elefantenbach 394",
+        "zipCode": "7548",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Schürch AG",
+        "address": "Augustinergasse 22",
+        "zipCode": "3271",
+        "city": "Gossau"
+    },
+    {
+        "company": "Braun-Iten",
+        "address": "Ödhus 42a",
+        "zipCode": "0512",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Spörri-Rüegg",
+        "address": "Ödhus 94c",
+        "zipCode": "2655",
+        "city": "Sitten"
+    },
+    {
+        "company": "Häfliger & Co.",
+        "address": "Elefantenbach 764",
+        "zipCode": "5177",
+        "city": "Versoix"
+    },
+    {
+        "company": "Frei, Brunner und Huber",
+        "address": "Endingerstrasse 74c",
+        "zipCode": "6243",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Lutz und Partner",
+        "address": "Augustinergasse 6",
+        "zipCode": "8506",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Wenger-Sutter",
+        "address": "Schulhausstrasse 40a",
+        "zipCode": "6119",
+        "city": "Kriens"
+    },
+    {
+        "company": "Meili LLC",
+        "address": "Bierkellerweg 30b",
+        "zipCode": "8731",
+        "city": "Lyss"
+    },
+    {
+        "company": "Wüthrich GmbH",
+        "address": "Elefantenbach 1",
+        "zipCode": "0544",
+        "city": "Baden"
+    },
+    {
+        "company": "Spörri, Ritter und Lüthi",
+        "address": "Hauptstrasse 964",
+        "zipCode": "1263",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Ott, Portmann und Fehr",
+        "address": "Bierkellerweg 95c",
+        "zipCode": "2408",
+        "city": "Versoix"
+    },
+    {
+        "company": "Steiger, Walter und Lang",
+        "address": "Industriestrasse 154",
+        "zipCode": "0658",
+        "city": "Liestal"
+    },
+    {
+        "company": "Spörri und Söhne",
+        "address": "Trittligasse 35a",
+        "zipCode": "8643",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Bättig GmbH",
+        "address": "Oberdorfstrasse 120",
+        "zipCode": "0887",
+        "city": "Aarau"
+    },
+    {
+        "company": "Sigrist-Flückiger",
+        "address": "Sihlfeldstrasse 18b",
+        "zipCode": "9357",
+        "city": "Zug"
+    },
+    {
+        "company": "Eichenberger und Partner",
+        "address": "Trittligasse 203",
+        "zipCode": "2002",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Baumgartner, Bolliger und Iten",
+        "address": "Rosenweg 98a",
+        "zipCode": "5107",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Flückiger, Zehnder und Schär",
+        "address": "Rämistrasse 57c",
+        "zipCode": "1315",
+        "city": "Stäfa"
+    },
+    {
+        "company": "Bernasconi Inc.",
+        "address": "Endingerstrasse 310",
+        "zipCode": "3345",
+        "city": "Lyss"
+    },
+    {
+        "company": "Meier, Thommen und Christen",
+        "address": "Elefantenbach 1",
+        "zipCode": "6744",
+        "city": "Köniz"
+    },
+    {
+        "company": "Bolliger-Frick",
+        "address": "Elefantenbach 52b",
+        "zipCode": "4102",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Meister GmbH",
+        "address": "Columbusstrasse 91",
+        "zipCode": "1128",
+        "city": "Martigny"
+    },
+    {
+        "company": "Gloor, Weibel und Walder",
+        "address": "Hirschengraben 1",
+        "zipCode": "5681",
+        "city": "Renens"
+    },
+    {
+        "company": "Probst Inc.",
+        "address": "Ödhus 8",
+        "zipCode": "4616",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Schäfer, Senn und Wehrli",
+        "address": "Dorfstrasse 27c",
+        "zipCode": "9229",
+        "city": "Muri bei Bern"
+    },
+    {
+        "company": "Geiger & Co.",
+        "address": "Augustinergasse 10b",
+        "zipCode": "3280",
+        "city": "Genf"
+    },
+    {
+        "company": "Eichenberger AG",
+        "address": "Rennweg 72c",
+        "zipCode": "4545",
+        "city": "Binningen"
+    },
+    {
+        "company": "Bär, Schär und Meier",
+        "address": "Bahnhofstrasse 43a",
+        "zipCode": "9405",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Schumacher GmbH",
+        "address": "Rennweg 22",
+        "zipCode": "5033",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Sidler und Partner",
+        "address": "Industriestrasse 58b",
+        "zipCode": "1995",
+        "city": "Renens"
+    },
+    {
+        "company": "Steiger, Gloor und Ernst",
+        "address": "Glockengasse 248",
+        "zipCode": "4909",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Baumann-Friedli",
+        "address": "Schulhausstrasse 9",
+        "zipCode": "5120",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Pfister-Hofer",
+        "address": "Melonenstrasse 3",
+        "zipCode": "8373",
+        "city": "Baar"
+    },
+    {
+        "company": "Eugster & Co.",
+        "address": "Birkenweg 66b",
+        "zipCode": "9359",
+        "city": "Nyon"
+    },
+    {
+        "company": "Hodel-Hunziker",
+        "address": "Rosenweg 87",
+        "zipCode": "3382",
+        "city": "Binningen"
+    },
+    {
+        "company": "Näf-Schaller",
+        "address": "Schulhausstrasse 384",
+        "zipCode": "3236",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Egli und Söhne",
+        "address": "Glockengasse 56c",
+        "zipCode": "8457",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Lustenberger GmbH",
+        "address": "Rosenweg 10c",
+        "zipCode": "6910",
+        "city": "Uster"
+    },
+    {
+        "company": "Tobler Inc.",
+        "address": "Trittligasse 686",
+        "zipCode": "2611",
+        "city": "Renens"
+    },
+    {
+        "company": "Zbinden LLC",
+        "address": "Bierkellerweg 77",
+        "zipCode": "6553",
+        "city": "Siders"
+    },
+    {
+        "company": "Suter-Knecht",
+        "address": "Bahnhofstrasse 60c",
+        "zipCode": "9862",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Lehmann, Widmer und Ziegler",
+        "address": "Hauptstrasse 95b",
+        "zipCode": "1237",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Beck-Bachmann",
+        "address": "Katzenplatz 50",
+        "zipCode": "2915",
+        "city": "Baar"
+    },
+    {
+        "company": "Hofstetter-Bolliger",
+        "address": "Glockengasse 8",
+        "zipCode": "1165",
+        "city": "Vevey"
+    },
+    {
+        "company": "Näf, Hotz und Fankhauser",
+        "address": "Birkenweg 997",
+        "zipCode": "5408",
+        "city": "Locarno"
+    },
+    {
+        "company": "Bucher-Eichenberger",
+        "address": "Schulstrasse 49b",
+        "zipCode": "3948",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Friedli, Fehr und Scherrer",
+        "address": "Schulhausstrasse 98a",
+        "zipCode": "0476",
+        "city": "Lyss"
+    },
+    {
+        "company": "Bosshard, Tobler und Koch",
+        "address": "Rennweg 37c",
+        "zipCode": "6582",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Frey, Bühler und Hartmann",
+        "address": "Katzenplatz 69",
+        "zipCode": "4021",
+        "city": "Bern"
+    },
+    {
+        "company": "Haas Gruppe",
+        "address": "Rennweg 75",
+        "zipCode": "8410",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Bianchi AG",
+        "address": "Sihlfeldstrasse 6",
+        "zipCode": "2920",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Christen & Co.",
+        "address": "Glockengasse 84c",
+        "zipCode": "4979",
+        "city": "Luzern"
+    },
+    {
+        "company": "Gloor-Schmidt",
+        "address": "Schulstrasse 89a",
+        "zipCode": "3055",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Ernst GmbH",
+        "address": "Amthausstrasse 468",
+        "zipCode": "7136",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Friedli, Huber und Ackermann",
+        "address": "Bierkellerweg 88c",
+        "zipCode": "2952",
+        "city": "Montreux"
+    },
+    {
+        "company": "Bucher, Walder und Hafner",
+        "address": "Columbusstrasse 9",
+        "zipCode": "4034",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Seiler, Schwarz und Bauer",
+        "address": "Rosenweg 40a",
+        "zipCode": "0596",
+        "city": "Cham"
+    },
+    {
+        "company": "Wirth Inc.",
+        "address": "Rämistrasse 5",
+        "zipCode": "6626",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Rey Inc.",
+        "address": "Augustinergasse 197",
+        "zipCode": "9039",
+        "city": "Locarno"
+    },
+    {
+        "company": "Meier, Lutz und Braun",
+        "address": "Columbusstrasse 51a",
+        "zipCode": "8980",
+        "city": "Thônex"
+    },
+    {
+        "company": "Ziegler-Ernst",
+        "address": "Rennweg 9",
+        "zipCode": "3840",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Merz, Kälin und Hirt",
+        "address": "Trittligasse 575",
+        "zipCode": "8359",
+        "city": "Bulle"
+    },
+    {
+        "company": "Flückiger, Hess und Schuler",
+        "address": "Uraniastrasse 90b",
+        "zipCode": "9376",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Ernst und Partner",
+        "address": "Knoblauchweg 89",
+        "zipCode": "3748",
+        "city": "Basel"
+    },
+    {
+        "company": "Bosshard und Söhne",
+        "address": "Ogimatte 14",
+        "zipCode": "9888",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Roth-Roos",
+        "address": "Kirchweg 44c",
+        "zipCode": "7327",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Zingg-Huber",
+        "address": "Elefantenbach 65",
+        "zipCode": "2487",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Wyss-Ott",
+        "address": "Elefantenbach 5",
+        "zipCode": "3577",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Kern Gruppe",
+        "address": "Ödhus 78b",
+        "zipCode": "5775",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Pfister, Tobler und Roos",
+        "address": "Honiggasse 96",
+        "zipCode": "3252",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Wirz und Partner",
+        "address": "Hirschengraben 7",
+        "zipCode": "1885",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Kern, Ernst und Meili",
+        "address": "Hauptstrasse 97c",
+        "zipCode": "0102",
+        "city": "Zürich"
+    },
+    {
+        "company": "Blum-Egger",
+        "address": "Amthausstrasse 63b",
+        "zipCode": "0193",
+        "city": "Vernier"
+    },
+    {
+        "company": "Weibel LLC",
+        "address": "Ogimatte 79b",
+        "zipCode": "0244",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Bättig, Jäggi und Käser",
+        "address": "Dorfstrasse 17",
+        "zipCode": "0909",
+        "city": "Cham"
+    },
+    {
+        "company": "Kägi & Co.",
+        "address": "Rämistrasse 71c",
+        "zipCode": "0016",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Schnyder und Söhne",
+        "address": "Columbusstrasse 54b",
+        "zipCode": "9470",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Steiger-Wettstein",
+        "address": "Knoblauchweg 57",
+        "zipCode": "4789",
+        "city": "Kriens"
+    },
+    {
+        "company": "Schaller, Burri und Hunziker",
+        "address": "Columbusstrasse 30c",
+        "zipCode": "1437",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Zürcher-Wirth",
+        "address": "Sihlfeldstrasse 45b",
+        "zipCode": "7113",
+        "city": "Herisau"
+    },
+    {
+        "company": "Zbinden und Partner",
+        "address": "Amthausstrasse 16b",
+        "zipCode": "0311",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Kägi-Blaser",
+        "address": "Trittligasse 5",
+        "zipCode": "8248",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Gerber-Spörri",
+        "address": "Rosenweg 88b",
+        "zipCode": "7363",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Tobler, Häfliger und Wyss",
+        "address": "Endingerstrasse 83c",
+        "zipCode": "1159",
+        "city": "Horgen"
+    },
+    {
+        "company": "Schwab, Hasler und Meister",
+        "address": "Rämistrasse 15",
+        "zipCode": "4473",
+        "city": "Carouge"
+    },
+    {
+        "company": "Baumgartner, Flückiger und Schuler",
+        "address": "Rosenweg 3",
+        "zipCode": "1761",
+        "city": "Martigny"
+    },
+    {
+        "company": "Kuhn, Peter und Mäder",
+        "address": "Rennweg 7",
+        "zipCode": "2272",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Stauffer, Tanner und Frei",
+        "address": "Honiggasse 25b",
+        "zipCode": "1341",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Probst und Söhne",
+        "address": "Sihlfeldstrasse 18",
+        "zipCode": "4891",
+        "city": "Olten"
+    },
+    {
+        "company": "Häfliger, Spörri und Egger",
+        "address": "Dorfstrasse 28b",
+        "zipCode": "2220",
+        "city": "Kriens"
+    },
+    {
+        "company": "Geiger, Häfliger und Sidler",
+        "address": "Industriestrasse 772",
+        "zipCode": "0711",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Zehnder-Schärer",
+        "address": "Uraniastrasse 1",
+        "zipCode": "6824",
+        "city": "Basel"
+    },
+    {
+        "company": "Gfeller Gruppe",
+        "address": "Oberdorfstrasse 83c",
+        "zipCode": "2927",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Kaufmann Gruppe",
+        "address": "Honiggasse 34c",
+        "zipCode": "7056",
+        "city": "Meyrin"
+    },
+    {
+        "company": "Wettstein AG",
+        "address": "Melonenstrasse 85a",
+        "zipCode": "5186",
+        "city": "Chur"
+    },
+    {
+        "company": "Meyer und Partner",
+        "address": "Dorfstrasse 175",
+        "zipCode": "5653",
+        "city": "Horgen"
+    },
+    {
+        "company": "Spörri GmbH",
+        "address": "Ödhus 93",
+        "zipCode": "7767",
+        "city": "Köniz"
+    },
+    {
+        "company": "Frick, Frey und Meili",
+        "address": "Ogimatte 482",
+        "zipCode": "0243",
+        "city": "Kreuzlingen"
+    },
+    {
+        "company": "Michel, Kaufmann und Bär",
+        "address": "Birkenweg 59b",
+        "zipCode": "8822",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Herzog, Bieri und Hunziker",
+        "address": "Industriestrasse 35c",
+        "zipCode": "5658",
+        "city": "Wil"
+    },
+    {
+        "company": "Jost-Stöckli",
+        "address": "Bierkellerweg 816",
+        "zipCode": "4463",
+        "city": "Sitten"
+    },
+    {
+        "company": "Stucki, Wagner und Frei",
+        "address": "Bahnhofstrasse 44c",
+        "zipCode": "3748",
+        "city": "Allschwil"
+    },
+    {
+        "company": "Wegmann-Hotz",
+        "address": "Amthausstrasse 8",
+        "zipCode": "4936",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Bättig Inc.",
+        "address": "Endingerstrasse 46b",
+        "zipCode": "5357",
+        "city": "Onex"
+    },
+    {
+        "company": "Huber-Schlatter",
+        "address": "Rämistrasse 3",
+        "zipCode": "0121",
+        "city": "Kriens"
+    },
+    {
+        "company": "Kunz, Kuhn und Wegmann",
+        "address": "Schulhausstrasse 91a",
+        "zipCode": "8742",
+        "city": "Pully"
+    },
+    {
+        "company": "Hofstetter, Zürcher und Kessler",
+        "address": "Rämistrasse 43c",
+        "zipCode": "9016",
+        "city": "Kreuzlingen"
+    },
+    {
+        "company": "Baumann-Bucher",
+        "address": "Rennweg 24c",
+        "zipCode": "3709",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Sidler, Baumgartner und Gut",
+        "address": "Endingerstrasse 1",
+        "zipCode": "4259",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Leu-Ackermann",
+        "address": "Honiggasse 96",
+        "zipCode": "4619",
+        "city": "Volketswil"
+    },
+    {
+        "company": "Geiger AG",
+        "address": "Uraniastrasse 58c",
+        "zipCode": "9090",
+        "city": "Vernier"
+    },
+    {
+        "company": "Iten-Schärer",
+        "address": "Sihlfeldstrasse 56a",
+        "zipCode": "6936",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Friedli und Partner",
+        "address": "Endingerstrasse 709",
+        "zipCode": "5943",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Leunberger GmbH",
+        "address": "Melonenstrasse 88c",
+        "zipCode": "5854",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Schürch-Ernst",
+        "address": "Hauptstrasse 4",
+        "zipCode": "5888",
+        "city": "Herisau"
+    },
+    {
+        "company": "Huber-Steffen",
+        "address": "Kirchweg 17a",
+        "zipCode": "0486",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Gloor, Blum und Schmidt",
+        "address": "Ogimatte 54c",
+        "zipCode": "1895",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Hug, Weber und Mäder",
+        "address": "Bahnhofstrasse 33",
+        "zipCode": "6877",
+        "city": "Montreux"
+    },
+    {
+        "company": "Gloor Gruppe",
+        "address": "Hauptstrasse 4",
+        "zipCode": "2829",
+        "city": "Volketswil"
+    },
+    {
+        "company": "Lüscher, Kaufmann und Keller",
+        "address": "Vorstadt 50c",
+        "zipCode": "0713",
+        "city": "Horgen"
+    },
+    {
+        "company": "Bosshard-Senn",
+        "address": "Glockengasse 8",
+        "zipCode": "0217",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Probst-Mettler",
+        "address": "Elefantenbach 56",
+        "zipCode": "6237",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Meyer-Meili",
+        "address": "Knoblauchweg 29c",
+        "zipCode": "2307",
+        "city": "Horw"
+    },
+    {
+        "company": "Iten GmbH",
+        "address": "Hirschengraben 32a",
+        "zipCode": "2087",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Studer und Söhne",
+        "address": "Melonenstrasse 73a",
+        "zipCode": "0378",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Bühlmann, Martin und Bosshard",
+        "address": "Rosenweg 9",
+        "zipCode": "5066",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Gasser-Zbinden",
+        "address": "Dorfstrasse 41a",
+        "zipCode": "5499",
+        "city": "Horw"
+    },
+    {
+        "company": "Meier, Schweizer und Baur",
+        "address": "Honiggasse 39c",
+        "zipCode": "4338",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Ott-Steiner",
+        "address": "Katzenplatz 922",
+        "zipCode": "7812",
+        "city": "Lyss"
+    },
+    {
+        "company": "Schenk-Wüthrich",
+        "address": "Sihlfeldstrasse 6",
+        "zipCode": "3987",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Ferrari, Weibel und Wagner",
+        "address": "Uraniastrasse 53b",
+        "zipCode": "3395",
+        "city": "Cham"
+    },
+    {
+        "company": "Stadelmann-Keller",
+        "address": "Columbusstrasse 67a",
+        "zipCode": "4832",
+        "city": "Stäfa"
+    },
+    {
+        "company": "Huber-Wettstein",
+        "address": "Ogimatte 30a",
+        "zipCode": "0659",
+        "city": "Cham"
+    },
+    {
+        "company": "Betschart Inc.",
+        "address": "Ödhus 78",
+        "zipCode": "6407",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Benz AG",
+        "address": "Sihlfeldstrasse 21b",
+        "zipCode": "5808",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Tobler Inc.",
+        "address": "Bahnhofstrasse 15a",
+        "zipCode": "3058",
+        "city": "Köniz"
+    },
+    {
+        "company": "Widmer und Söhne",
+        "address": "Bierkellerweg 1",
+        "zipCode": "8076",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Schweizer-Eugster",
+        "address": "Honiggasse 98",
+        "zipCode": "6124",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Eichenberger AG",
+        "address": "Sihlfeldstrasse 60c",
+        "zipCode": "6844",
+        "city": "Locarno"
+    },
+    {
+        "company": "Studer und Partner",
+        "address": "Oberdorfstrasse 64a",
+        "zipCode": "8734",
+        "city": "Montreux"
+    },
+    {
+        "company": "Leu LLC",
+        "address": "Uraniastrasse 14b",
+        "zipCode": "2338",
+        "city": "Oftringen"
+    },
+    {
+        "company": "Hess, Stocker und Jäggi",
+        "address": "Glockengasse 12",
+        "zipCode": "0518",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Peter, Zbinden und Frick",
+        "address": "Bahnhofstrasse 94c",
+        "zipCode": "3357",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Brun-Jäggi",
+        "address": "Augustinergasse 26c",
+        "zipCode": "0911",
+        "city": "Bülach"
+    },
+    {
+        "company": "Schäfer, Meier und Kessler",
+        "address": "Lindenhofweg 17",
+        "zipCode": "8990",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Kaufmann & Co.",
+        "address": "Sihlfeldstrasse 32a",
+        "zipCode": "6417",
+        "city": "Wil"
+    },
+    {
+        "company": "Mettler-Christen",
+        "address": "Hirschengraben 67c",
+        "zipCode": "0169",
+        "city": "Aarau"
+    },
+    {
+        "company": "Aebi-Stucki",
+        "address": "Schulstrasse 24c",
+        "zipCode": "3766",
+        "city": "Gossau"
+    },
+    {
+        "company": "Schürch und Partner",
+        "address": "Dorfstrasse 71",
+        "zipCode": "7215",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Betschart, Baumann und Gerber",
+        "address": "Bierkellerweg 2",
+        "zipCode": "2625",
+        "city": "Baar"
+    },
+    {
+        "company": "Burri-Lang",
+        "address": "Rämistrasse 8",
+        "zipCode": "7099",
+        "city": "Martigny"
+    },
+    {
+        "company": "Lüthi, Steinmann und Stadelmann",
+        "address": "Elefantenbach 82b",
+        "zipCode": "1032",
+        "city": "Luzern"
+    },
+    {
+        "company": "Bosshard-Vogt",
+        "address": "Glockengasse 6",
+        "zipCode": "5739",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Hotz GmbH",
+        "address": "Uraniastrasse 11",
+        "zipCode": "9609",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Lehmann, Wyss und Ammann",
+        "address": "Birkenweg 65",
+        "zipCode": "4778",
+        "city": "Meyrin"
+    },
+    {
+        "company": "Näf, Wirz und Bianchi",
+        "address": "Amthausstrasse 32c",
+        "zipCode": "3173",
+        "city": "Cham"
+    },
+    {
+        "company": "Vogel-Brun",
+        "address": "Ödhus 33c",
+        "zipCode": "5433",
+        "city": "Basel"
+    },
+    {
+        "company": "Kohler, Bianchi und Schmid",
+        "address": "Columbusstrasse 70",
+        "zipCode": "6217",
+        "city": "Carouge"
+    },
+    {
+        "company": "Spörri und Partner",
+        "address": "Trittligasse 16a",
+        "zipCode": "6278",
+        "city": "Martigny"
+    },
+    {
+        "company": "Mettler-Hotz",
+        "address": "Schulhausstrasse 861",
+        "zipCode": "9528",
+        "city": "Olten"
+    },
+    {
+        "company": "Bianchi-Bolliger",
+        "address": "Augustinergasse 58",
+        "zipCode": "8679",
+        "city": "Morges"
+    },
+    {
+        "company": "Forster, Lüscher und Kunz",
+        "address": "Amthausstrasse 3",
+        "zipCode": "6300",
+        "city": "Horw"
+    },
+    {
+        "company": "Martin-Eugster",
+        "address": "Kirchweg 865",
+        "zipCode": "2678",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Bosshard, Egger und Tanner",
+        "address": "Vorstadt 802",
+        "zipCode": "4889",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Schlatter, Stadelmann und Küng",
+        "address": "Bierkellerweg 17c",
+        "zipCode": "0303",
+        "city": "Kreuzlingen"
+    },
+    {
+        "company": "Hofmann & Co.",
+        "address": "Katzenplatz 3",
+        "zipCode": "9607",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Bolliger, Ackermann und Giger",
+        "address": "Ödhus 83",
+        "zipCode": "1718",
+        "city": "Renens"
+    },
+    {
+        "company": "Burri, Lutz und Kohler",
+        "address": "Melonenstrasse 61",
+        "zipCode": "7145",
+        "city": "Herisau"
+    },
+    {
+        "company": "Hauser, Bachmann und Herzog",
+        "address": "Augustinergasse 4",
+        "zipCode": "8520",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Imhof-Brunner",
+        "address": "Ödhus 2",
+        "zipCode": "9500",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Wettstein-Wolf",
+        "address": "Kirchweg 95b",
+        "zipCode": "6329",
+        "city": "Horgen"
+    },
+    {
+        "company": "Maurer, Schoch und Stutz",
+        "address": "Bierkellerweg 65a",
+        "zipCode": "5270",
+        "city": "Sitten"
+    },
+    {
+        "company": "Kuhn Inc.",
+        "address": "Honiggasse 563",
+        "zipCode": "4050",
+        "city": "Reinach"
+    },
+    {
+        "company": "Kunz-Staub",
+        "address": "Dorfstrasse 27",
+        "zipCode": "0468",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Wehrli, Staub und Haas",
+        "address": "Trittligasse 59b",
+        "zipCode": "3930",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Meyer, Sidler und Blaser",
+        "address": "Augustinergasse 66b",
+        "zipCode": "7819",
+        "city": "Liestal"
+    },
+    {
+        "company": "Bolliger-Gfeller",
+        "address": "Rosenweg 492",
+        "zipCode": "5261",
+        "city": "Olten"
+    },
+    {
+        "company": "Vogel, Ammann und Gloor",
+        "address": "Rosenweg 49",
+        "zipCode": "6337",
+        "city": "Versoix"
+    },
+    {
+        "company": "Hermann, Wyss und Furrer",
+        "address": "Trittligasse 92a",
+        "zipCode": "4863",
+        "city": "Carouge"
+    },
+    {
+        "company": "Hafner-Wirz",
+        "address": "Rämistrasse 49b",
+        "zipCode": "6025",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Flückiger, Lang und Schärer",
+        "address": "Honiggasse 4",
+        "zipCode": "2400",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Betschart und Söhne",
+        "address": "Hirschengraben 98a",
+        "zipCode": "4395",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Schuler-Zbinden",
+        "address": "Endingerstrasse 85",
+        "zipCode": "9059",
+        "city": "Köniz"
+    },
+    {
+        "company": "Gross, Schneider und Jenni",
+        "address": "Ödhus 77c",
+        "zipCode": "0092",
+        "city": "Pully"
+    },
+    {
+        "company": "Stalder-Graf",
+        "address": "Melonenstrasse 80",
+        "zipCode": "9170",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Berger, Hafner und Bolliger",
+        "address": "Uraniastrasse 7",
+        "zipCode": "4226",
+        "city": "Gossau"
+    },
+    {
+        "company": "Kaufmann-Fehr",
+        "address": "Uraniastrasse 45a",
+        "zipCode": "2939",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Zürcher-Schürch",
+        "address": "Bahnhofstrasse 303",
+        "zipCode": "9488",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Felber-Roth",
+        "address": "Knoblauchweg 355",
+        "zipCode": "3697",
+        "city": "Basel"
+    },
+    {
+        "company": "Probst-Gloor",
+        "address": "Knoblauchweg 54a",
+        "zipCode": "2906",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Wagner-Kaufmann",
+        "address": "Rämistrasse 41b",
+        "zipCode": "0372",
+        "city": "Luzern"
+    },
+    {
+        "company": "Eichenberger-Jost",
+        "address": "Rämistrasse 61c",
+        "zipCode": "6890",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Betschart & Co.",
+        "address": "Vorstadt 64a",
+        "zipCode": "4875",
+        "city": "Basel"
+    },
+    {
+        "company": "Haas-Kohler",
+        "address": "Uraniastrasse 82c",
+        "zipCode": "3133",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Schneider-Seiler",
+        "address": "Glockengasse 6",
+        "zipCode": "2468",
+        "city": "Arbon"
+    },
+    {
+        "company": "Schenk LLC",
+        "address": "Ödhus 52b",
+        "zipCode": "3242",
+        "city": "Bern"
+    },
+    {
+        "company": "Furrer LLC",
+        "address": "Uraniastrasse 51c",
+        "zipCode": "1865",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Braun, Hofstetter und Weibel",
+        "address": "Schulhausstrasse 53a",
+        "zipCode": "0679",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Stettler GmbH",
+        "address": "Honiggasse 13",
+        "zipCode": "7775",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Schaub, Beck und Braun",
+        "address": "Columbusstrasse 91",
+        "zipCode": "4656",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Michel, Lehmann und Studer",
+        "address": "Ogimatte 15b",
+        "zipCode": "5565",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Merz-Stucki",
+        "address": "Sihlfeldstrasse 2",
+        "zipCode": "9755",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Zingg, Kunz und Sigrist",
+        "address": "Rämistrasse 549",
+        "zipCode": "0518",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Ammann, Schäfer und Zimmermann",
+        "address": "Hirschengraben 889",
+        "zipCode": "0498",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Gross-Fuchs",
+        "address": "Glockengasse 2",
+        "zipCode": "3881",
+        "city": "Genf"
+    },
+    {
+        "company": "Hauser, Keller und Sigrist",
+        "address": "Sihlfeldstrasse 246",
+        "zipCode": "0990",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Frey-Rüegg",
+        "address": "Oberdorfstrasse 4",
+        "zipCode": "4029",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Kuhn, Vogt und Favre",
+        "address": "Elefantenbach 15",
+        "zipCode": "3848",
+        "city": "Lugano"
+    },
+    {
+        "company": "Lehmann und Söhne",
+        "address": "Endingerstrasse 3",
+        "zipCode": "2829",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Grob, Imhof und Graf",
+        "address": "Ödhus 885",
+        "zipCode": "0488",
+        "city": "Chur"
+    },
+    {
+        "company": "Schaller Inc.",
+        "address": "Rämistrasse 13c",
+        "zipCode": "2943",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Schäfer-Weibel",
+        "address": "Columbusstrasse 47b",
+        "zipCode": "3066",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Gerber, Lang und Studer",
+        "address": "Amthausstrasse 4",
+        "zipCode": "4230",
+        "city": "Vevey"
+    },
+    {
+        "company": "Vogel Inc.",
+        "address": "Melonenstrasse 47b",
+        "zipCode": "1381",
+        "city": "Thônex"
+    },
+    {
+        "company": "Hermann-Martin",
+        "address": "Elefantenbach 65c",
+        "zipCode": "7992",
+        "city": "Emmen"
+    },
+    {
+        "company": "Jost, Christen und Schaller",
+        "address": "Oberdorfstrasse 9",
+        "zipCode": "7624",
+        "city": "Volketswil"
+    },
+    {
+        "company": "Arnold Inc.",
+        "address": "Rosenweg 269",
+        "zipCode": "5850",
+        "city": "Bern"
+    },
+    {
+        "company": "Fehr-Mayer",
+        "address": "Industriestrasse 39b",
+        "zipCode": "9711",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Ackermann, Fankhauser und Blaser",
+        "address": "Bahnhofstrasse 60",
+        "zipCode": "5686",
+        "city": "Bern"
+    },
+    {
+        "company": "Studer-Sidler",
+        "address": "Trittligasse 2",
+        "zipCode": "2403",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Hug, Walter und Haas",
+        "address": "Sihlfeldstrasse 840",
+        "zipCode": "0964",
+        "city": "Pully"
+    },
+    {
+        "company": "Probst-Thommen",
+        "address": "Ogimatte 97b",
+        "zipCode": "5903",
+        "city": "Küsnacht"
+    },
+    {
+        "company": "Vogt und Söhne",
+        "address": "Rennweg 69a",
+        "zipCode": "8320",
+        "city": "Versoix"
+    },
+    {
+        "company": "Wehrli-Kälin",
+        "address": "Ödhus 7",
+        "zipCode": "3423",
+        "city": "Thônex"
+    },
+    {
+        "company": "Hodel Inc.",
+        "address": "Dorfstrasse 141",
+        "zipCode": "2576",
+        "city": "Kloten"
+    },
+    {
+        "company": "Lang Gruppe",
+        "address": "Endingerstrasse 37b",
+        "zipCode": "2941",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Roos und Partner",
+        "address": "Birkenweg 9",
+        "zipCode": "3838",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Fuchs, Ferrari und Bernasconi",
+        "address": "Hauptstrasse 11b",
+        "zipCode": "9312",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Berger, Zürcher und Stutz",
+        "address": "Knoblauchweg 94c",
+        "zipCode": "1032",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Walder-Hunziker",
+        "address": "Vorstadt 12a",
+        "zipCode": "5941",
+        "city": "Siders"
+    },
+    {
+        "company": "Kälin, Scherrer und Hofmann",
+        "address": "Endingerstrasse 596",
+        "zipCode": "0433",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Schmidt und Partner",
+        "address": "Kirchweg 421",
+        "zipCode": "8639",
+        "city": "Morges"
+    },
+    {
+        "company": "Häfliger Gruppe",
+        "address": "Amthausstrasse 635",
+        "zipCode": "9173",
+        "city": "Herisau"
+    },
+    {
+        "company": "Zollinger, Zürcher und Bühlmann",
+        "address": "Rennweg 91c",
+        "zipCode": "1431",
+        "city": "Aarau"
+    },
+    {
+        "company": "Näf & Co.",
+        "address": "Katzenplatz 23b",
+        "zipCode": "4323",
+        "city": "Riehen"
+    },
+    {
+        "company": "Gerber-Hartmann",
+        "address": "Endingerstrasse 56c",
+        "zipCode": "1922",
+        "city": "Biel/Bienne"
+    },
+    {
+        "company": "Gerber, Mäder und Baur",
+        "address": "Knoblauchweg 70",
+        "zipCode": "9214",
+        "city": "Lyss"
+    },
+    {
+        "company": "Bühler-Wirz",
+        "address": "Elefantenbach 421",
+        "zipCode": "9694",
+        "city": "Kriens"
+    },
+    {
+        "company": "Herzog AG",
+        "address": "Birkenweg 823",
+        "zipCode": "9799",
+        "city": "Wil"
+    },
+    {
+        "company": "Bauer, Tanner und Roth",
+        "address": "Schulstrasse 7",
+        "zipCode": "6600",
+        "city": "Steffisburg"
+    },
+    {
+        "company": "Meyer Inc.",
+        "address": "Uraniastrasse 90a",
+        "zipCode": "1867",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Kälin-Mayer",
+        "address": "Bierkellerweg 47c",
+        "zipCode": "7737",
+        "city": "Luzern"
+    },
+    {
+        "company": "Schär, Amrein und Maier",
+        "address": "Kirchweg 66a",
+        "zipCode": "6564",
+        "city": "Carouge"
+    },
+    {
+        "company": "Imhof-Egli",
+        "address": "Bierkellerweg 938",
+        "zipCode": "1276",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Stettler, Portmann und Bianchi",
+        "address": "Sihlfeldstrasse 9",
+        "zipCode": "7094",
+        "city": "Köniz"
+    },
+    {
+        "company": "Lehmann Gruppe",
+        "address": "Hirschengraben 16",
+        "zipCode": "0133",
+        "city": "Sitten"
+    },
+    {
+        "company": "Zürcher-Tanner",
+        "address": "Lindenhofweg 82b",
+        "zipCode": "7128",
+        "city": "Thun"
+    },
+    {
+        "company": "Seiler Gruppe",
+        "address": "Rämistrasse 301",
+        "zipCode": "0552",
+        "city": "Wil"
+    },
+    {
+        "company": "Benz Gruppe",
+        "address": "Hauptstrasse 75",
+        "zipCode": "5130",
+        "city": "Vernier"
+    },
+    {
+        "company": "Kaiser Inc.",
+        "address": "Bahnhofstrasse 49",
+        "zipCode": "8799",
+        "city": "Basel"
+    },
+    {
+        "company": "Schlatter und Partner",
+        "address": "Bierkellerweg 20b",
+        "zipCode": "7943",
+        "city": "Renens"
+    },
+    {
+        "company": "Schlatter-Felder",
+        "address": "Bahnhofstrasse 12a",
+        "zipCode": "6103",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Fankhauser-Giger",
+        "address": "Knoblauchweg 98",
+        "zipCode": "1356",
+        "city": "Vernier"
+    },
+    {
+        "company": "Knecht-Bolliger",
+        "address": "Ogimatte 94",
+        "zipCode": "8189",
+        "city": "Gossau"
+    },
+    {
+        "company": "Scherrer, Schär und Hunziker",
+        "address": "Schulhausstrasse 90c",
+        "zipCode": "5607",
+        "city": "Bülach"
+    },
+    {
+        "company": "Bieri LLC",
+        "address": "Dorfstrasse 62b",
+        "zipCode": "4914",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Furrer & Co.",
+        "address": "Hauptstrasse 73",
+        "zipCode": "0909",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Ackermann und Söhne",
+        "address": "Rennweg 48",
+        "zipCode": "9837",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Kern-Brun",
+        "address": "Oberdorfstrasse 5",
+        "zipCode": "8892",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Bauer, Meyer und Wettstein",
+        "address": "Industriestrasse 32b",
+        "zipCode": "1924",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Kaufmann-Bär",
+        "address": "Rämistrasse 973",
+        "zipCode": "4163",
+        "city": "Horgen"
+    },
+    {
+        "company": "Fuchs-Hoffmann",
+        "address": "Industriestrasse 73",
+        "zipCode": "9622",
+        "city": "Thônex"
+    },
+    {
+        "company": "Thommen-Arnold",
+        "address": "Industriestrasse 39c",
+        "zipCode": "8988",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Lehmann, Schärer und Amrein",
+        "address": "Katzenplatz 860",
+        "zipCode": "5629",
+        "city": "Thun"
+    },
+    {
+        "company": "Jenni, Egger und Grob",
+        "address": "Lindenhofweg 93a",
+        "zipCode": "1879",
+        "city": "Gossau"
+    },
+    {
+        "company": "Brunner AG",
+        "address": "Schulhausstrasse 58c",
+        "zipCode": "7189",
+        "city": "Gossau"
+    },
+    {
+        "company": "Hartmann und Söhne",
+        "address": "Sihlfeldstrasse 34",
+        "zipCode": "4913",
+        "city": "Montreux"
+    },
+    {
+        "company": "Portmann AG",
+        "address": "Honiggasse 59a",
+        "zipCode": "0930",
+        "city": "Bülach"
+    },
+    {
+        "company": "Hug, Lanz und Bühlmann",
+        "address": "Schulstrasse 53",
+        "zipCode": "6204",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Baumann, Sutter und Iten",
+        "address": "Augustinergasse 424",
+        "zipCode": "8841",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Meili und Söhne",
+        "address": "Uraniastrasse 994",
+        "zipCode": "4725",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Sigrist, Gloor und Spörri",
+        "address": "Birkenweg 69b",
+        "zipCode": "2174",
+        "city": "Montreux"
+    },
+    {
+        "company": "Weber, Hunziker und Wehrli",
+        "address": "Hirschengraben 14c",
+        "zipCode": "6239",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Bolliger-Friedli",
+        "address": "Trittligasse 5",
+        "zipCode": "5262",
+        "city": "Versoix"
+    },
+    {
+        "company": "Braun, Gut und Stöckli",
+        "address": "Ödhus 60",
+        "zipCode": "6135",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Stocker-Stettler",
+        "address": "Industriestrasse 97",
+        "zipCode": "3932",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Fischer, Bianchi und Schlatter",
+        "address": "Katzenplatz 46",
+        "zipCode": "3435",
+        "city": "Wädenswil"
+    },
+    {
+        "company": "Gasser Gruppe",
+        "address": "Hauptstrasse 69",
+        "zipCode": "4793",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Mäder LLC",
+        "address": "Vorstadt 27c",
+        "zipCode": "9744",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Rey-Fischer",
+        "address": "Hirschengraben 190",
+        "zipCode": "9695",
+        "city": "Vevey"
+    },
+    {
+        "company": "Zingg, Rey und Jost",
+        "address": "Bierkellerweg 60a",
+        "zipCode": "4966",
+        "city": "Herisau"
+    },
+    {
+        "company": "Schuler, Vogel und Hartmann",
+        "address": "Vorstadt 5",
+        "zipCode": "9077",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Vogel-Schwarz",
+        "address": "Amthausstrasse 623",
+        "zipCode": "2235",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Albrecht, Berger und Braun",
+        "address": "Vorstadt 98b",
+        "zipCode": "0668",
+        "city": "Versoix"
+    },
+    {
+        "company": "Kern, Zollinger und Schäfer",
+        "address": "Bahnhofstrasse 43",
+        "zipCode": "6874",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Felber-Schaller",
+        "address": "Hauptstrasse 2",
+        "zipCode": "5037",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Hartmann LLC",
+        "address": "Augustinergasse 45b",
+        "zipCode": "1728",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Steiger-Huber",
+        "address": "Lindenhofweg 73b",
+        "zipCode": "6152",
+        "city": "Reinach"
+    },
+    {
+        "company": "Meister und Söhne",
+        "address": "Oberdorfstrasse 151",
+        "zipCode": "5189",
+        "city": "Frauenfeld"
+    },
+    {
+        "company": "Egger-Bühler",
+        "address": "Schulstrasse 23",
+        "zipCode": "1897",
+        "city": "Mendrisio"
+    },
+    {
+        "company": "Steffen und Partner",
+        "address": "Melonenstrasse 8",
+        "zipCode": "4726",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Kaufmann, Maier und Ritter",
+        "address": "Oberdorfstrasse 57c",
+        "zipCode": "2402",
+        "city": "Bulle"
+    },
+    {
+        "company": "Fischer, Stalder und Scheidegger",
+        "address": "Dorfstrasse 60a",
+        "zipCode": "9156",
+        "city": "Schaffhausen"
+    },
+    {
+        "company": "Schoch-Tobler",
+        "address": "Vorstadt 67b",
+        "zipCode": "0468",
+        "city": "Liestal"
+    },
+    {
+        "company": "Wolf Gruppe",
+        "address": "Rennweg 9",
+        "zipCode": "9905",
+        "city": "Meilen"
+    },
+    {
+        "company": "Schwarz-Egli",
+        "address": "Rosenweg 39a",
+        "zipCode": "9706",
+        "city": "Burgdorf"
+    },
+    {
+        "company": "Portmann, Probst und Senn",
+        "address": "Rosenweg 17a",
+        "zipCode": "9750",
+        "city": "Vernier"
+    },
+    {
+        "company": "Häfliger, Arnold und Lüthi",
+        "address": "Hauptstrasse 75c",
+        "zipCode": "4121",
+        "city": "Carouge"
+    },
+    {
+        "company": "Portmann und Partner",
+        "address": "Melonenstrasse 65",
+        "zipCode": "1478",
+        "city": "Langenthal"
+    },
+    {
+        "company": "Egger-Hofer",
+        "address": "Knoblauchweg 97b",
+        "zipCode": "8126",
+        "city": "Solothurn"
+    },
+    {
+        "company": "Isler, Schärer und Egli",
+        "address": "Glockengasse 3",
+        "zipCode": "7754",
+        "city": "Köniz"
+    },
+    {
+        "company": "Furrer Gruppe",
+        "address": "Honiggasse 676",
+        "zipCode": "8659",
+        "city": "Montreux"
+    },
+    {
+        "company": "Walder, Tanner und Wagner",
+        "address": "Birkenweg 50a",
+        "zipCode": "3592",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Peter, Steiner und Ziegler",
+        "address": "Trittligasse 93b",
+        "zipCode": "7888",
+        "city": "Luzern"
+    },
+    {
+        "company": "Arnold, Maurer und Blaser",
+        "address": "Melonenstrasse 3",
+        "zipCode": "7918",
+        "city": "Meyrin"
+    },
+    {
+        "company": "Albrecht-Kohler",
+        "address": "Elefantenbach 24c",
+        "zipCode": "9195",
+        "city": "Monthey"
+    },
+    {
+        "company": "Sidler-Graf",
+        "address": "Melonenstrasse 52c",
+        "zipCode": "3088",
+        "city": "Adliswil"
+    },
+    {
+        "company": "Suter-Koch",
+        "address": "Knoblauchweg 9",
+        "zipCode": "8211",
+        "city": "Richterswil"
+    },
+    {
+        "company": "Gross-Käser",
+        "address": "Bahnhofstrasse 63a",
+        "zipCode": "3382",
+        "city": "Martigny"
+    },
+    {
+        "company": "Weibel & Co.",
+        "address": "Uraniastrasse 32b",
+        "zipCode": "0510",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Frey, Martin und Furrer",
+        "address": "Bahnhofstrasse 78a",
+        "zipCode": "1392",
+        "city": "Cham"
+    },
+    {
+        "company": "Wenger, Stucki und Frey",
+        "address": "Bierkellerweg 811",
+        "zipCode": "2459",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Steffen, Burri und Merz",
+        "address": "Vorstadt 83b",
+        "zipCode": "9472",
+        "city": "Locarno"
+    },
+    {
+        "company": "Scherrer GmbH",
+        "address": "Bierkellerweg 884",
+        "zipCode": "5045",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Geiger & Co.",
+        "address": "Melonenstrasse 96b",
+        "zipCode": "5157",
+        "city": "Rheinfelden"
+    },
+    {
+        "company": "Sutter, Kuhn und Felder",
+        "address": "Amthausstrasse 2",
+        "zipCode": "1348",
+        "city": "Monthey"
+    },
+    {
+        "company": "Meister AG",
+        "address": "Hauptstrasse 47a",
+        "zipCode": "9016",
+        "city": "Aarau"
+    },
+    {
+        "company": "Wyss, Meyer und Gloor",
+        "address": "Hirschengraben 405",
+        "zipCode": "8738",
+        "city": "Basel"
+    },
+    {
+        "company": "Gut, Wüthrich und Schweizer",
+        "address": "Glockengasse 85c",
+        "zipCode": "6847",
+        "city": "Montreux"
+    },
+    {
+        "company": "Staub, Roos und Egger",
+        "address": "Rosenweg 854",
+        "zipCode": "1564",
+        "city": "St. Gallen"
+    },
+    {
+        "company": "Zingg, Küng und Hunziker",
+        "address": "Schulstrasse 66a",
+        "zipCode": "5997",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Staub-Müller",
+        "address": "Ödhus 3",
+        "zipCode": "2049",
+        "city": "Renens"
+    },
+    {
+        "company": "Baumann, Ackermann und Probst",
+        "address": "Ödhus 97",
+        "zipCode": "1293",
+        "city": "Kriens"
+    },
+    {
+        "company": "Lutz-Meister",
+        "address": "Melonenstrasse 83c",
+        "zipCode": "4582",
+        "city": "Einsiedeln"
+    },
+    {
+        "company": "Hug, Tobler und Bühlmann",
+        "address": "Schulstrasse 819",
+        "zipCode": "3081",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Beck-Stettler",
+        "address": "Rennweg 76a",
+        "zipCode": "1169",
+        "city": "Vernier"
+    },
+    {
+        "company": "Hofer, Ernst und Steinmann",
+        "address": "Endingerstrasse 31",
+        "zipCode": "9304",
+        "city": "Bulle"
+    },
+    {
+        "company": "Jenni, Bär und Forster",
+        "address": "Augustinergasse 10b",
+        "zipCode": "9401",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Ackermann Inc.",
+        "address": "Honiggasse 569",
+        "zipCode": "2572",
+        "city": "Thalwil"
+    },
+    {
+        "company": "Eichenberger, Isler und Schaller",
+        "address": "Augustinergasse 32",
+        "zipCode": "9274",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Bosshard-Walder",
+        "address": "Glockengasse 55b",
+        "zipCode": "3952",
+        "city": "Herisau"
+    },
+    {
+        "company": "Ammann, Schwab und Roos",
+        "address": "Lindenhofweg 55",
+        "zipCode": "2585",
+        "city": "Basel"
+    },
+    {
+        "company": "Gross-Seiler",
+        "address": "Uraniastrasse 28c",
+        "zipCode": "1391",
+        "city": "Lyss"
+    },
+    {
+        "company": "Betschart AG",
+        "address": "Endingerstrasse 862",
+        "zipCode": "0054",
+        "city": "Nyon"
+    },
+    {
+        "company": "Studer-Schweizer",
+        "address": "Katzenplatz 280",
+        "zipCode": "0320",
+        "city": "Arbon"
+    },
+    {
+        "company": "Schäfer, Hofmann und Schuler",
+        "address": "Kirchweg 7",
+        "zipCode": "3625",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Kägi-Hauser",
+        "address": "Rosenweg 2",
+        "zipCode": "6436",
+        "city": "Montreux"
+    },
+    {
+        "company": "Lanz Gruppe",
+        "address": "Industriestrasse 48c",
+        "zipCode": "3589",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Wehrli, Hunziker und Frei",
+        "address": "Amthausstrasse 26",
+        "zipCode": "5332",
+        "city": "Martigny"
+    },
+    {
+        "company": "Zürcher, Stadelmann und Albrecht",
+        "address": "Schulstrasse 49b",
+        "zipCode": "7217",
+        "city": "Volketswil"
+    },
+    {
+        "company": "Senn, Blaser und Forster",
+        "address": "Vorstadt 711",
+        "zipCode": "4509",
+        "city": "Val-de-Ruz"
+    },
+    {
+        "company": "Hofer GmbH",
+        "address": "Ödhus 769",
+        "zipCode": "6135",
+        "city": "Locarno"
+    },
+    {
+        "company": "Wegmann-Hartmann",
+        "address": "Ödhus 64",
+        "zipCode": "1512",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Frei GmbH",
+        "address": "Ogimatte 487",
+        "zipCode": "1019",
+        "city": "Bern"
+    },
+    {
+        "company": "Bernasconi, Kägi und Näf",
+        "address": "Rennweg 86b",
+        "zipCode": "1987",
+        "city": "Illnau-Effretikon"
+    },
+    {
+        "company": "Bernasconi-Hofer",
+        "address": "Bahnhofstrasse 58c",
+        "zipCode": "0622",
+        "city": "Pratteln"
+    },
+    {
+        "company": "Lustenberger und Partner",
+        "address": "Glockengasse 71c",
+        "zipCode": "3986",
+        "city": "Lausanne"
+    },
+    {
+        "company": "Kaiser-Schneider",
+        "address": "Bierkellerweg 26b",
+        "zipCode": "5073",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Hoffmann-Erni",
+        "address": "Rosenweg 86c",
+        "zipCode": "3650",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Ott & Co.",
+        "address": "Bierkellerweg 44b",
+        "zipCode": "2714",
+        "city": "La Chaux-de-Fonds"
+    },
+    {
+        "company": "Stutz-Scheidegger",
+        "address": "Industriestrasse 2",
+        "zipCode": "0633",
+        "city": "Morges"
+    },
+    {
+        "company": "Berger-Kunz",
+        "address": "Rennweg 123",
+        "zipCode": "4717",
+        "city": "Lugano"
+    },
+    {
+        "company": "Lüscher, Schoch und Lehmann",
+        "address": "Glockengasse 90a",
+        "zipCode": "4002",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Peter und Partner",
+        "address": "Ödhus 352",
+        "zipCode": "2164",
+        "city": "Freienbach"
+    },
+    {
+        "company": "Bosshard-Hoffmann",
+        "address": "Elefantenbach 34b",
+        "zipCode": "7571",
+        "city": "Carouge"
+    },
+    {
+        "company": "Eugster-Hodel",
+        "address": "Bahnhofstrasse 25",
+        "zipCode": "5201",
+        "city": "Horgen"
+    },
+    {
+        "company": "Egger-Iten",
+        "address": "Kirchweg 80c",
+        "zipCode": "2216",
+        "city": "Versoix"
+    },
+    {
+        "company": "Kessler-Wehrli",
+        "address": "Melonenstrasse 42a",
+        "zipCode": "6434",
+        "city": "Bellinzona"
+    },
+    {
+        "company": "Schnyder GmbH",
+        "address": "Melonenstrasse 97",
+        "zipCode": "7570",
+        "city": "Nyon"
+    },
+    {
+        "company": "Friedli, Winkler und Maurer",
+        "address": "Dorfstrasse 1",
+        "zipCode": "9236",
+        "city": "Lyss"
+    },
+    {
+        "company": "Berger LLC",
+        "address": "Bahnhofstrasse 26b",
+        "zipCode": "5779",
+        "city": "Yverdon-les-Bains"
+    },
+    {
+        "company": "Beck Inc.",
+        "address": "Hirschengraben 5",
+        "zipCode": "0615",
+        "city": "Zug"
+    },
+    {
+        "company": "Meier Gruppe",
+        "address": "Rosenweg 747",
+        "zipCode": "5070",
+        "city": "Opfikon"
+    },
+    {
+        "company": "Favre, Müller und Stocker",
+        "address": "Rennweg 35a",
+        "zipCode": "0474",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Probst-Weber",
+        "address": "Bahnhofstrasse 74b",
+        "zipCode": "8294",
+        "city": "Wil"
+    },
+    {
+        "company": "Meister-Amrein",
+        "address": "Bahnhofstrasse 83",
+        "zipCode": "4436",
+        "city": "Carouge"
+    },
+    {
+        "company": "Tobler-Schmidt",
+        "address": "Rennweg 85",
+        "zipCode": "1904",
+        "city": "Schlieren"
+    },
+    {
+        "company": "Keller-Bosshard",
+        "address": "Elefantenbach 73",
+        "zipCode": "2589",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Schneider Inc.",
+        "address": "Bahnhofstrasse 90",
+        "zipCode": "1921",
+        "city": "Ostermundigen"
+    },
+    {
+        "company": "Schuler-Schoch",
+        "address": "Honiggasse 34c",
+        "zipCode": "3331",
+        "city": "Grenchen"
+    },
+    {
+        "company": "Lehmann LLC",
+        "address": "Melonenstrasse 78a",
+        "zipCode": "5930",
+        "city": "Dübendorf"
+    },
+    {
+        "company": "Senn-Steiner",
+        "address": "Oberdorfstrasse 3",
+        "zipCode": "7696",
+        "city": "Brig-Glis"
+    },
+    {
+        "company": "Steinmann-Wenger",
+        "address": "Knoblauchweg 4",
+        "zipCode": "6204",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Wirth, Hermann und Thommen",
+        "address": "Ogimatte 83",
+        "zipCode": "2777",
+        "city": "Bern"
+    },
+    {
+        "company": "Giger, Baumgartner und Steffen",
+        "address": "Glockengasse 12c",
+        "zipCode": "9249",
+        "city": "Kriens"
+    },
+    {
+        "company": "Kessler, Lehmann und Lanz",
+        "address": "Bahnhofstrasse 59c",
+        "zipCode": "2819",
+        "city": "Montreux"
+    },
+    {
+        "company": "Burri, Leunberger und Ernst",
+        "address": "Elefantenbach 1",
+        "zipCode": "7296",
+        "city": "Lancy"
+    },
+    {
+        "company": "Wolf Inc.",
+        "address": "Oberdorfstrasse 63c",
+        "zipCode": "8494",
+        "city": "Martigny"
+    },
+    {
+        "company": "Schäfer & Co.",
+        "address": "Honiggasse 427",
+        "zipCode": "0731",
+        "city": "Carouge"
+    },
+    {
+        "company": "Schweizer-Gross",
+        "address": "Melonenstrasse 7",
+        "zipCode": "5965",
+        "city": "Wettingen"
+    },
+    {
+        "company": "Steiner-Lehmann",
+        "address": "Bierkellerweg 59",
+        "zipCode": "3187",
+        "city": "Regensdorf"
+    },
+    {
+        "company": "Hofmann GmbH",
+        "address": "Katzenplatz 51c",
+        "zipCode": "6916",
+        "city": "Pully"
+    },
+    {
+        "company": "Fehr-Hofer",
+        "address": "Schulhausstrasse 751",
+        "zipCode": "3808",
+        "city": "Zürich"
+    },
+    {
+        "company": "Rüegg-Gloor",
+        "address": "Elefantenbach 44c",
+        "zipCode": "2647",
+        "city": "Morges"
+    },
+    {
+        "company": "Graf-Schär",
+        "address": "Uraniastrasse 36",
+        "zipCode": "6031",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Lutz, Ferrari und Ziegler",
+        "address": "Oberdorfstrasse 35b",
+        "zipCode": "9458",
+        "city": "Rapperswil-Jona"
+    },
+    {
+        "company": "Kessler, Fehr und Frick",
+        "address": "Columbusstrasse 59a",
+        "zipCode": "1878",
+        "city": "Glarus Nord"
+    },
+    {
+        "company": "Schaub-Siegrist",
+        "address": "Bahnhofstrasse 10b",
+        "zipCode": "9779",
+        "city": "Muttenz"
+    },
+    {
+        "company": "Mettler Gruppe",
+        "address": "Trittligasse 63",
+        "zipCode": "7668",
+        "city": "Locarno"
+    },
+    {
+        "company": "Lanz GmbH",
+        "address": "Augustinergasse 55b",
+        "zipCode": "7147",
+        "city": "Winterthur"
+    },
+    {
+        "company": "Gfeller-Herzog",
+        "address": "Bierkellerweg 79c",
+        "zipCode": "0543",
+        "city": "Baar"
+    },
+    {
+        "company": "Stucki, Beck und Zehnder",
+        "address": "Rämistrasse 20c",
+        "zipCode": "3641",
+        "city": "Wetzikon"
+    },
+    {
+        "company": "Isler, Steiger und Scherrer",
+        "address": "Rosenweg 1",
+        "zipCode": "3246",
+        "city": "Dietikon"
+    },
+    {
+        "company": "Meier und Söhne",
+        "address": "Endingerstrasse 3",
+        "zipCode": "4264",
+        "city": "Horw"
+    },
+    {
+        "company": "Schürch, Lustenberger und Tanner",
+        "address": "Lindenhofweg 28a",
+        "zipCode": "3161",
+        "city": "Wallisellen"
+    },
+    {
+        "company": "Jenni & Co.",
+        "address": "Industriestrasse 23c",
+        "zipCode": "7960",
+        "city": "Lugano"
+    },
+    {
+        "company": "Probst-Hodel",
+        "address": "Hauptstrasse 64b",
+        "zipCode": "5303",
+        "city": "Neuenburg"
+    },
+    {
+        "company": "Bühlmann-Bosshard",
+        "address": "Rennweg 43c",
+        "zipCode": "2741",
+        "city": "Schwyz"
+    },
+    {
+        "company": "Lanz, Martin und Schaub",
+        "address": "Melonenstrasse 1",
+        "zipCode": "4118",
+        "city": "Stäfa"
+    },
+    {
+        "company": "Blum, Bühler und Sutter",
+        "address": "Augustinergasse 2",
+        "zipCode": "8342",
+        "city": "Freiburg"
+    },
+    {
+        "company": "Meili-Ammann",
+        "address": "Trittligasse 46b",
+        "zipCode": "4788",
+        "city": "Steffisburg"
+    }
+]
