@@ -5,7 +5,7 @@ import { EmployeeAutocomplete } from '@/client/domain/employee/EmployeeAutocompl
 import { type ProjectKeys, useProjectStore } from '@/client/domain/projects/ProjectStore'
 import { useRouter } from '@/client/router/useRouter'
 import type { Contact } from '@/common/models/contact'
-import { Add, Delete, Label } from '@mui/icons-material'
+import { Add, Delete } from '@mui/icons-material'
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3'
 
 import { useContactsQuery } from '@/client/domain/contacts/useContactsQuery'

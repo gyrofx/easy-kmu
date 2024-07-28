@@ -10,16 +10,16 @@ import {
   useMaterialReactTable,
 } from 'material-react-table'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { useQuery } from 'react-query'
 import { useDebounce } from 'react-use'
 import './ContactGrid.css'
 import { useSortingWithSearchParams } from '@/client/utils/dataGrid'
 import { useDialogWithData } from '@/client/utils/useDialogWithData'
 import { isLength } from '@easy-kmu/common'
 import type { Contact } from '@/common/models/contact'
+import { useContactsQuery } from '@/client/domain/contacts/useContactsQuery'
 
 export function Contacts() {
-  const query = useQuery({ queryKey: ['contacts'], queryFn: apiClient.listContacts })
+  const query = useContactsQuery()
   // const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
 
   const [showSidebar, setShowSidebar] = useState(false)
@@ -37,7 +37,7 @@ export function Contacts() {
     clearSelectionCallbackRef.current = callback
   }
 
-  if (!query.data?.body) return <div>Loading...</div>
+  if (!query.data) return <div>Loading...</div>
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -109,7 +109,7 @@ export function Contacts() {
       {query.data && (
         <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'row', gap: 2, width: 1 }}>
           <ContactGrid
-            data={query.data?.body}
+            data={query.data}
             onRowSelectionChange={setSelectedRows}
             globalFilter={globalFilterDebounced}
             registerClearSelectionCallback={registerClearSelectionCallback}

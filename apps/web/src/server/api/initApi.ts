@@ -18,6 +18,7 @@ import { listProjectObjects } from '@/server/models/projectObject/db/listProject
 import { listProjects } from '@/server/models/project/db/listProject'
 import { listEmployees } from '@/server/models/employee/db/listEmployees'
 import { createOrUpdateProject } from '@/server/models/project/db/createOrUpdateProject'
+import { findFirstProject } from '@/server/models/project/db/findFirstProject'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -138,6 +139,12 @@ export function initApi(app: Express) {
     listProjects: async () => {
       const projects = await listProjects()
       return { status: 200, body: projects }
+    },
+
+    projectById: async ({ params }) => {
+      const project = await findFirstProject(params.id)
+      if (!project) return { status: 404, body: { error: 'Not found' } }
+      return { status: 200, body: project }
     },
 
     createOrUpdateProject: async ({ body }) => {

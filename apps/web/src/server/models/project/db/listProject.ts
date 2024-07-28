@@ -4,6 +4,7 @@ import { IsoDateString } from '@easy-kmu/common'
 import { nullsToUndefined } from '@/server/models/contact/db/nullsToUndefined'
 import { dbContactToConact } from '@/server/models/contact/db/listContacts'
 import { dbEmployeeToEmployee } from '@/server/models/employee/db/listEmployees'
+import { dbObjectToObject } from '@/server/models/projectObject/db/listProjectObjects'
 
 export async function listProjects(): Promise<Project[]> {
   const projects = await listProjectInner()
@@ -28,6 +29,8 @@ export function dbProjectToProject(
 ): Project {
   return nullsToUndefined({
     ...dbProject,
+    projectNumber: dbProject.projectNumber.toString(),
+    object: dbProject.object ? dbObjectToObject(dbProject.object) : undefined,
     customer: dbProject.customer ? dbContactToConact(dbProject.customer) : undefined,
     constructionManagement: dbProject.constructionManagement
       ? dbContactToConact(dbProject.constructionManagement)

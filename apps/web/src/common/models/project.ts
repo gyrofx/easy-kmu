@@ -1,31 +1,35 @@
-import { zodContact, type ContactWithId } from '@/common/models/contact'
+import { Project } from '@/client/domain/projects/Project'
+import { zodContact, type Contact } from '@/common/models/contact'
 import { type Employee, zodEmployee } from '@/common/models/employee'
+import type { ProjectObject } from '@/common/models/projectObject'
 import type { IsoDateString } from '@easy-kmu/common'
 import { z } from 'zod'
 
 export interface Project {
-  id?: string
+  id: string
 
   name: string
+  projectNumber: string
   description: string
   notes: string
 
   customerContactId?: string
-  customer?: ContactWithId
+  customer?: Contact
   customerPersonsInCharge: string[]
 
   objectId?: string
+  object?: ProjectObject
 
   constructionManagementContactId?: string
-  constructionManagement?: ContactWithId
+  constructionManagement?: Contact
   constructionManagementPersonsInCharge: string[]
 
   architectContactId?: string
-  architect?: ContactWithId
+  architect?: Contact
   architectPersonsInCharge: string[]
 
   builderContactId?: string
-  builder?: ContactWithId
+  builder?: Contact
   builderPersonsInCharge: string[]
 
   clerkEmployeeId: string
@@ -49,7 +53,15 @@ export interface ProjectWithId extends Project {
 export interface CreateOrUpdateProject
   extends Omit<
     Project,
-    'createdAt' | 'updatedAt' | 'customer' | 'constructionManagement' | 'architect' | 'builder' | 'clerk'
+    | 'createdAt'
+    | 'updatedAt'
+    | 'projectNumber'
+    | 'object'
+    | 'customer'
+    | 'constructionManagement'
+    | 'architect'
+    | 'builder'
+    | 'clerk'
   > {}
 
 export const zodCreateOrUpdateProject = z.object({
@@ -84,23 +96,28 @@ export const zodProject = z.object({
   id: z.string(),
 
   name: z.string(),
+  projectNumber: z.string(),
   description: z.string(),
   notes: z.string(),
 
   customerContactId: z.string().optional(),
   customer: zodContact.optional(),
-  ustomerPersonsInCharge: z.array(z.string()),
+  customerPersonsInCharge: z.array(z.string()),
 
   objectId: z.string().optional(),
+  // object:
 
   constructionManagementContactId: z.string().optional(),
   constructionManagement: zodContact.optional(),
+  constructionManagementPersonsInCharge: z.array(z.string()),
 
   architectContactId: z.string().optional(),
   architect: zodContact.optional(),
+  architectPersonsInCharge: z.array(z.string()),
 
   builderContactId: z.string().optional(),
   builder: zodContact.optional(),
+  builderPersonsInCharge: z.array(z.string()),
 
   clerkEmployeeId: z.string(),
   clerk: zodEmployee,

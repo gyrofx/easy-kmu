@@ -74,8 +74,11 @@ function emptyProject(): CreateOrUpdateProject {
 
     objectId: undefined,
     constructionManagementContactId: undefined,
+    constructionManagementPersonsInCharge: [],
     architectContactId: undefined,
+    architectPersonsInCharge: [],
     builderContactId: undefined,
+    builderPersonsInCharge: [],
     clerkEmployeeId: '',
 
     material: '',

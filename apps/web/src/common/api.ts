@@ -59,6 +59,12 @@ export const api = contract.router({
     responses: { 200: z.array(zodProject) },
   },
 
+  projectById: {
+    method: 'GET',
+    path: '/api/project-by-id/:id',
+    responses: { 200: zodProject, 404: z.object({ error: z.string() }) },
+  },
+
   createOrUpdateProject: {
     method: 'POST',
     path: '/api/create-or-update-project',
