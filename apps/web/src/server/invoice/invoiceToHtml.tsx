@@ -3,13 +3,10 @@ import type { CreateInvoice } from '@/common/invoice/CreateInvoice'
 import { format } from 'date-fns'
 import { de } from 'date-fns/locale'
 import { sum } from 'lodash'
-// import { render } from 'preact-render-to-string'
-// import { h } from 'preact'
 import { marked } from 'marked'
 
 import type { CreateInvoice as CreateInvoiceFull, HtmlToPdf } from '@easy-kmu/common'
 
-// /** @jsx h */
 import { renderToStaticMarkup } from 'react-dom/server'
 import { readFile } from 'node:fs/promises'
 import { SwissQRBill } from 'swissqrbill/svg'
