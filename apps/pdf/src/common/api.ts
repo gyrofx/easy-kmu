@@ -1,4 +1,4 @@
-import { createInvoiceSchema } from '@easy-kmu/common'
+import { createInvoiceSchema, htmlToPdfSchema } from '@easy-kmu/common'
 import { initContract } from '@ts-rest/core'
 import { z } from 'zod'
 
@@ -22,5 +22,18 @@ export const api = contract.router({
       200: z.unknown(),
     },
     body: createInvoiceSchema,
+  },
+
+  htmlToPdf: {
+    method: 'POST',
+    path: '/api/html-to-pdf',
+    // headers: z.object({
+    //   'Content-Type': z.string().optional(),
+    //   'Content-disposition': z.string().optional(),
+    // }),
+    responses: {
+      200: z.unknown(),
+    },
+    body: htmlToPdfSchema,
   },
 })

@@ -19,6 +19,7 @@ import { listProjects } from '@/server/models/project/db/listProject'
 import { listEmployees } from '@/server/models/employee/db/listEmployees'
 import { createOrUpdateProject } from '@/server/models/project/db/createOrUpdateProject'
 import { findFirstProject } from '@/server/models/project/db/findFirstProject'
+import { invoiceToHtml } from '@/server/invoice/invoiceToHtml'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -26,51 +27,55 @@ export function initApi(app: Express) {
     serverInfo: async () => ({ status: 200, body: serverInfo() }),
 
     createInvoicePdf: async ({ body }) => {
-      const subtotal = sum(body.items.map((item) => item.price))
-      const mwst = subtotal * 0.081
-      const total = subtotal + mwst
+      // const subtotal = sum(body.items.map((item) => item.price))
+      // const mwst = subtotal * 0.081
+      // const total = subtotal + mwst
 
-      const fullInvoice: CreateInvoiceFull = {
-        ...body,
-        date: format(new Date(), 'PP', { locale: de }),
-        quote: { id: body.invoiceNumber },
-        project: body.project.map((project) => ({
-          key: project[0],
-          value: project[1],
-        })),
-        items: body.items.map((item) => ({
-          ...item,
-          price: toChf(item.price),
-        })),
-        total: {
-          subtotal: toChf(subtotal),
-          mwst: toChf(mwst),
-          total: toChf(total),
-        },
-        textAfterTotal: body.snippets.map((snippet) => snippet.text),
-        qrbill: {
-          amount: total,
-          creditor: {
-            account: 'CH44 3199 9123 0008 8901 2',
-            address: 'Musterstrasse',
-            buildingNumber: 7,
-            city: 'Musterstadt',
-            country: 'CH',
-            name: 'SwissQRBill',
-            zip: '1234',
-          },
-          currency: 'CHF',
-          debtor: {
-            address: body.to.address,
-            buildingNumber: '',
-            city: body.to.city,
-            country: 'CH',
-            name: body.to.name,
-            zip: body.to.zip,
-          },
-          reference: '21 00000 00003 13947 14300 09017',
-        },
-      }
+      // const fullInvoice: CreateInvoiceFull = {
+      //   ...body,
+      //   date: format(new Date(), 'PP', { locale: de }),
+      //   quote: { id: body.invoiceNumber },
+      //   project: body.project.map((project) => ({
+      //     key: project[0],
+      //     value: project[1],
+      //   })),
+      //   items: body.items.map((item) => ({
+      //     ...item,
+      //     price: toChf(item.price),
+      //   })),
+      //   total: {
+      //     subtotal: toChf(subtotal),
+      //     mwst: toChf(mwst),
+      //     total: toChf(total),
+      //   },
+      //   textAfterTotal: body.snippets.map((snippet) => snippet.text),
+      //   qrbill: {
+      //     amount: total,
+      //     creditor: {
+      //       account: 'CH44 3199 9123 0008 8901 2',
+      //       address: 'Musterstrasse',
+      //       buildingNumber: 7,
+      //       city: 'Musterstadt',
+      //       country: 'CH',
+      //       name: 'SwissQRBill',
+      //       zip: '1234',
+      //     },
+      //     currency: 'CHF',
+      //     debtor: {
+      //       address: body.to.address,
+      //       buildingNumber: '',
+      //       city: body.to.city,
+      //       country: 'CH',
+      //       name: body.to.name,
+      //       zip: body.to.zip,
+      //     },
+      //     reference: '21 00000 00003 13947 14300 09017',
+      //   },
+      // }
+
+      const htmltoPdf = await invoiceToHtml(body)
+
+      console.log('htmltoPdf', htmltoPdf)
 
       const httpsAgent = new Agent({
         connect: {
@@ -78,11 +83,11 @@ export function initApi(app: Express) {
         },
       })
 
-      const url = `${opts().pdfService.url}/api/pdf/invoice`
+      const url = `${opts().pdfService.url}/api/html-to-pdf`
       console.log('url', url)
       const responose = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify(fullInvoice),
+        body: JSON.stringify(htmltoPdf),
         headers: {
           'Content-Type': 'application/json',
         },

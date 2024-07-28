@@ -1,4 +1,14 @@
-POST https://localhost:8081/api/pdf/invoice
+POST http://localhost:8081/api/html-to-pdf
+Content-Type: application/json
+
+{
+  "entryFilePath": "index.html",
+  "files": [{"base64": "<html><body><h1>Hello World</h1></body></html>", "path": "index.html"}]
+
+}
+
+###
+POST http://localhost:8081/api/pdf/invoice
 Content-Type: application/json
 
 {

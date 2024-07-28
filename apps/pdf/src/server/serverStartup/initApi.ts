@@ -3,6 +3,7 @@ import type { Express } from 'express'
 import { createInvoice } from '@/server/pdf/createInvoice'
 import { createReadStream } from 'node:fs'
 import { api } from '@/common/api'
+import { htmlToPdf } from '@/server/pdf/htmlToPdf'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -14,6 +15,19 @@ export function initApi(app: Express) {
       console.log('CreateInvoice', { body })
 
       const filename = await createInvoice(body)
+      console.log(filename)
+      const stream = createReadStream(filename)
+      return {
+        status: 200,
+        body: stream,
+      }
+    },
+
+    htmlToPdf: async ({ body, res }) => {
+      res.setHeader('Content-type', 'application/pdf')
+      console.log('htmlToPdf', { body })
+
+      const filename = await htmlToPdf(body)
       console.log(filename)
       const stream = createReadStream(filename)
       return {
