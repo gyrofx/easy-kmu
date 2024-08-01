@@ -1,0 +1,1 @@
+ALTER TYPE "quoteState" ADD VALUE 'readyToOffer';

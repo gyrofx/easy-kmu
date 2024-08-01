@@ -1,7 +1,7 @@
 import { db } from '@/server/db/db'
 import type { Quote } from '@/common/models/quote'
 import { dbQuoteToQuote } from '@/server/models/quote/db/dbQuoteToQuote'
-import { projects } from '@/server/db/schema'
+import { quotes } from '@/server/db/schema'
 import { eq } from 'drizzle-orm'
 
 export async function listQuotesByProject(projectId: string): Promise<Quote[]> {
@@ -10,5 +10,5 @@ export async function listQuotesByProject(projectId: string): Promise<Quote[]> {
 }
 
 async function listQuoteInnerByProject(projectId: string) {
-  return await db().query.projects.findMany({ where: eq(projects.id, projectId) })
+  return await db().query.quotes.findMany({ where: eq(quotes.projectId, projectId) })
 }

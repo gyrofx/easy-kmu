@@ -18,6 +18,7 @@ import { findFirstProject } from '@/server/models/project/db/findFirstProject'
 import { invoiceToHtml } from '@/server/invoice/invoiceToHtml'
 import { listQuotesByProject } from '@/server/models/quote/db/listQuotesByProject'
 import { createOrUpdateQuote } from '@/server/models/quote/db/createOrUpdateQuote'
+import { generateQuotePdf } from '@/server/models/quote/generateQuotePdf'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -169,11 +170,12 @@ export function initApi(app: Express) {
       const quote = await createOrUpdateQuote(body)
       return { status: 200, body: quote }
     },
+
+    generateQuotePdf: async ({ params }) => {
+      const quote = await generateQuotePdf(params.quoteId)
+      return { status: 200, body: quote }
+    },
   })
 
   createExpressEndpoints(api, router, app)
-}
-
-function toChf(amount: number) {
-  return `Fr. ${amount.toFixed(2)}`
 }

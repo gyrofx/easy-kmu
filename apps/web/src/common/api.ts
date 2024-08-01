@@ -1,5 +1,5 @@
 import { createInvoiceSchema } from '@/common/invoice/CreateInvoice'
-import { initContract } from '@ts-rest/core'
+import { ContractNoBody, initContract } from '@ts-rest/core'
 import { z } from 'zod'
 import { zodProjectObject } from '@/common/models/projectObject'
 import { zodContact, zodCreateOrUpdateContact } from '@/common/models/contact'
@@ -91,6 +91,13 @@ export const api = contract.router({
     method: 'POST',
     path: '/api/create-or-update-quote',
     body: zodCreateOrUpdateQuote,
+    responses: { 200: zodQuote },
+  },
+
+  generateQuotePdf: {
+    method: 'POST',
+    path: '/api/create-quote-pdf/:quoteId',
+    body: ContractNoBody,
     responses: { 200: zodQuote },
   },
 })

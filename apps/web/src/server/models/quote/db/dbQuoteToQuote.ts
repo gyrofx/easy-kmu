@@ -3,14 +3,14 @@ import { IsoDateString } from '@easy-kmu/common'
 import { z } from 'zod'
 import type { SelectQuote } from '@/server/db/schema'
 
-export function dbQuoteToQuote(dbProject: SelectQuote): Quote {
+export function dbQuoteToQuote(dbQuote: SelectQuote): Quote {
   return {
-    ...dbProject,
-    ...zodQuoteDataToQuote.parse(dbProject.data),
-    date: IsoDateString(dbProject.date),
-    filePath: dbProject.filePath || undefined,
-    createdAt: IsoDateString(dbProject.createdAt),
-    updatedAt: IsoDateString(dbProject.updatedAt),
+    ...dbQuote,
+    ...zodQuoteDataToQuote.parse(dbQuote.data),
+    date: IsoDateString(dbQuote.date),
+    filePath: dbQuote.filePath || undefined,
+    createdAt: IsoDateString(dbQuote.createdAt),
+    updatedAt: IsoDateString(dbQuote.updatedAt),
   }
 }
 
@@ -23,8 +23,8 @@ const zodQuoteDataToQuote = z.object({
     subtotal: z.number(),
     mwst: z.number(),
     total: z.number(),
-    discount: z.object({ amount: z.number(), percent: z.number() }),
-    earlyPaymentDiscount: z.object({ amount: z.number(), percent: z.number() }),
+    discount: z.object({ type: z.enum(['percent', 'amount']), value: z.number() }),
+    earlyPaymentDiscount: z.object({ type: z.enum(['percent', 'amount']), value: z.number() }),
   }),
 
   textBlocks: z.array(z.string()),

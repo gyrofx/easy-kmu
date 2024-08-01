@@ -87,7 +87,7 @@ export const employees = pgTable('employee', {
 
 export type SelectEmployee = typeof employees.$inferSelect
 
-export const quoteState = pgEnum('quoteState', ['draft', 'offerd', 'rejected', 'accepted'])
+export const quoteState = pgEnum('quoteState', ['draft', 'readyToOffer' , 'offerd', 'rejected', 'accepted'])
 
 export const quotes = pgTable('quotes', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),

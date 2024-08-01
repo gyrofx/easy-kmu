@@ -28,6 +28,12 @@ import { useParams } from 'react-router-dom'
 
 interface QuoteState {
   quote: CreateOrUpdateQuote
+  display: {
+    discount: {
+      amount: number
+      percent: number
+    }
+  }
   // setInvoiceNumber: (project: string) => void
   addDescriptionItem: () => void
   updateDescriptionItem: (index: number, item: { key: string; value: string }) => void
@@ -50,6 +56,12 @@ const useInvoiceStore = create(
   persist<QuoteState>(
     (set) => ({
       quote: emptyQuote(),
+      display: {
+        discount: {
+          amount: 0,
+          percent: 0,
+        },
+      },
 
       setTo: (value: string) =>
         set(
@@ -132,7 +144,9 @@ const useInvoiceStore = create(
             const amount =
               type === 'amount' ? numberValue || 0 : (state.quote.total.subtotal * numberValue) / 100
             const percent = type === 'percent' ? numberValue : numberValue / state.quote.total.subtotal
-            state.quote.total.discount = { amount, percent }
+            state.quote.total.discount = { type, value: numberValue }
+            state.display.discount.amount = amount
+            state.display.discount.percent = percent
             state.quote.total.mwst = (state.quote.total.subtotal - amount) * 0.081
             state.quote.total.total = state.quote.total.subtotal - amount + state.quote.total.mwst
           }),
@@ -163,8 +177,8 @@ function emptyQuote(): CreateOrUpdateQuote {
       subtotal: 0,
       mwst: 0,
       total: 0,
-      discount: { amount: 0, percent: 0 },
-      earlyPaymentDiscount: { amount: 0, percent: 0 },
+      discount: { type: 'percent', value: 0 },
+      earlyPaymentDiscount: { type: 'percent', value: 0 },
     },
     textBlocks: [],
     notes: '',
@@ -174,6 +188,7 @@ function emptyQuote(): CreateOrUpdateQuote {
 export function CreateOrUpdateQuoteView() {
   const {
     quote,
+    display,
     // setInvoiceNumber,
     addDescriptionItem,
     updateDescriptionItem,
@@ -532,7 +547,7 @@ export function CreateOrUpdateQuoteView() {
                 label="Discount %"
                 variant="outlined"
                 onChange={(ev) => setDiscount('percent', ev.target.value)}
-                value={quote.total.discount.percent.toString()}
+                value={display.discount.percent.toString()}
               />
               <TextField
                 sx={{ flex: 1 }}
@@ -540,7 +555,7 @@ export function CreateOrUpdateQuoteView() {
                 label="Discount CHF"
                 variant="outlined"
                 onChange={(ev) => setDiscount('amount', ev.target.value)}
-                value={quote.total.discount.amount.toString()}
+                value={display.discount.amount.toString()}
               />
             </Box>
 

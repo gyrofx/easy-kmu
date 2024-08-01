@@ -2,13 +2,16 @@ import { z } from 'zod'
 import { zodIsoDateString, type IsoDateString } from '@easy-kmu/common'
 import type { AssertTrue, IsExact } from 'conditional-type-checks'
 
+export const quoteStates = ['draft', 'readyToOffer', 'offerd', 'rejected', 'accepted'] as const
+export type QuoteState = (typeof quoteStates)[number]
+
 export const zodCreateOrUpdateQuote = z.object({
   id: z.string().optional(),
 
   projectId: z.string(),
   quoteNumber: z.number(),
   date: zodIsoDateString,
-  state: z.enum(['draft', 'offerd', 'rejected', 'accepted']),
+  state: z.enum(quoteStates),
 
   to: z.string(),
   description: z.array(z.object({ key: z.string(), value: z.string() })),
@@ -18,18 +21,18 @@ export const zodCreateOrUpdateQuote = z.object({
     subtotal: z.number(),
     mwst: z.number(),
     total: z.number(),
-    discount: z.object({ amount: z.number(), percent: z.number() }),
-    earlyPaymentDiscount: z.object({ amount: z.number(), percent: z.number() }),
+    discount: z.object({ type: z.enum(['amount', 'percent']), value: z.number() }),
+    earlyPaymentDiscount: z.object({ type: z.enum(['amount', 'percent']), value: z.number() }),
   }),
 
   textBlocks: z.array(z.string()),
   notes: z.string(),
+
+  filePath: z.string().optional(),
 })
 
 export const zodQuote = zodCreateOrUpdateQuote.extend({
   id: z.string(),
-
-  filePath: z.string().optional(),
 
   createdAt: z.string(),
   updatedAt: z.string(),
@@ -37,8 +40,6 @@ export const zodQuote = zodCreateOrUpdateQuote.extend({
 
 export interface Quote extends CreateOrUpdateQuote {
   id: string
-
-  filePath?: string
 
   createdAt: string
   updatedAt: string
@@ -51,7 +52,7 @@ export interface CreateOrUpdateQuote {
 
   quoteNumber: number
   date: IsoDateString
-  state: 'draft' | 'offerd' | 'rejected' | 'accepted'
+  state: QuoteState
 
   to: string
   description: { key: string; value: string }[]
@@ -61,12 +62,14 @@ export interface CreateOrUpdateQuote {
     subtotal: number
     mwst: number
     total: number
-    discount: { amount: number; percent: number }
-    earlyPaymentDiscount: { amount: number; percent: number }
+    discount: { type: 'amount' | 'percent'; value: number }
+    earlyPaymentDiscount: { type: 'amount' | 'percent'; value: number }
   }
 
   textBlocks: string[]
   notes: string
+
+  filePath?: string
 }
 
 export type TypeTest =

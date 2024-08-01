@@ -1,19 +1,18 @@
-// import type { CreateInvoice } from '@easy-kmu/common'
-import type { CreateInvoice } from '@/common/invoice/CreateInvoice'
 import { format } from 'date-fns'
 import { de } from 'date-fns/locale'
 import { sum } from 'lodash'
 import { marked } from 'marked'
 
-import type { CreateInvoice as CreateInvoiceFull, HtmlToPdf } from '@easy-kmu/common'
+import type { HtmlToPdf } from '@easy-kmu/common'
 
 import { renderToStaticMarkup } from 'react-dom/server'
 import { readFile } from 'node:fs/promises'
-import { SwissQRBill } from 'swissqrbill/svg'
 import { toChf } from '@/common/utils/toChf'
+import type { Quote } from '@/common/models/quote'
+import type { Project } from '@/common/models/project'
 
-export async function invoiceToHtml(invoice: CreateInvoice): Promise<HtmlToPdf> {
-  const currentPreparedInvoice = await preparedInvoice(invoice)
+export async function quoteToHtml(quote: Quote, project: Project): Promise<HtmlToPdf> {
+  const currentPreparedInvoice = await preparedQuote(quote, project)
   const html = renderToStaticMarkup(await quoteTemplate(currentPreparedInvoice))
   const doc = `<!doctype html>${html}`
   const css = await readFile('src/server/templates/invoice.css', 'utf-8')
@@ -33,9 +32,8 @@ export async function invoiceToHtml(invoice: CreateInvoice): Promise<HtmlToPdf> 
   }
 }
 
-async function quoteTemplate(invoice: CreateInvoiceFull) {
-  const { to, date, quote, project, items, total, textAfterTotal } = invoice
-  const qrBillSvg = new SwissQRBill(invoice.qrbill).toString()
+async function quoteTemplate(quote: PreparedQuote) {
+  const { to, date, quoteNumber, description, items, total, textBlocks } = quote
 
   return (
     <html lang="de">
@@ -88,18 +86,14 @@ async function quoteTemplate(invoice: CreateInvoiceFull) {
           </div>
 
           <div className="to-address">
-            <div>{to.name}</div>
-            <div>{to.address}</div>
-            <div>
-              {to.zip} {to.city}
-            </div>
+            <div>{to}</div>
           </div>
 
           <div className="date">
             <div>Fällanden, {date}</div>
           </div>
 
-          <h2>Offerte {quote.id}</h2>
+          <h2>Offerte {quoteNumber}</h2>
           <hr />
           <p>
             Wir danken Ihnen für Ihre Anfrage, und gestatten uns, Ihnen nachstehende Offerte zu
@@ -107,7 +101,7 @@ async function quoteTemplate(invoice: CreateInvoiceFull) {
           </p>
 
           <div className="project">
-            {project.map(({ key, value }) => (
+            {description.map(({ key, value }) => (
               <div key={key} className="row">
                 <div className="key">
                   <div>
@@ -148,7 +142,7 @@ async function quoteTemplate(invoice: CreateInvoiceFull) {
             </div>
           </div>
 
-          {textAfterTotal.map((text, index) => (
+          {textBlocks.map((text, index) => (
             <div
               key={index}
               className="markdown no-break-inside"
@@ -173,48 +167,42 @@ async function quoteTemplate(invoice: CreateInvoiceFull) {
             </div>
           </div>
         </section>
-
-        <section id="qrbill">
-          <div className="qrcode" dangerouslySetInnerHTML={{ __html: qrBillSvg }} />
-        </section>
       </body>
     </html>
   )
 }
 
-async function preparedInvoice(invoice: CreateInvoice) {
-  const subtotal = sum(invoice.items.map((item) => item.price))
-  const earlyPaymentDiscount = invoice.earlyPaymentDiscount
-    ? invoice.earlyPaymentDiscount.type === 'percent'
-      ? {
-          amount: subtotal * invoice.earlyPaymentDiscount.value,
-          percent: invoice.earlyPaymentDiscount.value,
-        }
-      : {
-          amount: invoice.earlyPaymentDiscount.value,
-          percent: invoice.earlyPaymentDiscount.value / subtotal,
-        }
+async function preparedQuote(quote: Quote, project: Project): Promise<PreparedQuote> {
+  const subtotal = sum(quote.items.map((item) => item.price))
+  // const earlyPaymentDiscount = quote.earlyPaymentDiscount
+  //   ? quote.earlyPaymentDiscount.type === 'percent'
+  //     ? {
+  //         amount: subtotal * quote.earlyPaymentDiscount.value,
+  //         percent: quote.earlyPaymentDiscount.value,
+  //       }
+  //     : {
+  //         amount: quote.earlyPaymentDiscount.value,
+  //         percent: quote.earlyPaymentDiscount.value / subtotal,
+  //       }
+  //   : undefined
+  const discount = quote.total.discount
+    ? quote.total.discount.type === 'percent'
+      ? { amount: subtotal * quote.total.discount.value, percent: quote.total.discount.value }
+      : { amount: quote.total.discount.value, percent: quote.total.discount.value / subtotal }
     : undefined
-  const discount = invoice.discount
-    ? invoice.discount.type === 'percent'
-      ? { amount: subtotal * invoice.discount.value, percent: invoice.discount.value }
-      : { amount: invoice.discount.value, percent: invoice.discount.value / subtotal }
-    : undefined
-  const subtotalAfterDiscount = subtotal - (discount?.amount ?? 0) - (earlyPaymentDiscount?.amount ?? 0)
+  const subtotalAfterDiscount = subtotal - (discount?.amount ?? 0) //- (earlyPaymentDiscount?.amount ?? 0)
   const mwst = subtotalAfterDiscount * 0.081
   const total = subtotalAfterDiscount + mwst
 
-  // biome-ignore lint/style/useSingleVarDeclarator: <explanation>
-  const fullInvoice: CreateInvoiceFull = {
-    ...invoice,
+  console.log('preparedQuote', quote, total, mwst, subtotalAfterDiscount)
+
+  return {
+    ...quote,
     date: format(new Date(), 'PP', { locale: de }),
-    quote: { id: invoice.invoiceNumber },
-    project: invoice.project.map((project) => ({
-      key: project[0],
-      value: project[1],
-    })),
+    quoteNumber: `${project.projectNumber}-${quote.quoteNumber}`,
+
     items: await Promise.all(
-      invoice.items.map(async (item) => ({
+      quote.items.map(async (item) => ({
         ...item,
         price: toChf(item.price),
         text: await marked.parse(item.text),
@@ -222,44 +210,35 @@ async function preparedInvoice(invoice: CreateInvoice) {
     ),
     total: {
       subtotal: toChf(subtotal),
-      earlyPaymentDiscount: earlyPaymentDiscount
-        ? {
-            amount: toChf(earlyPaymentDiscount.amount),
-            percent: earlyPaymentDiscount.percent.toString(),
-          }
-        : undefined,
+      // earlyPaymentDiscount: earlyPaymentDiscount
+      //   ? {
+      //       amount: toChf(earlyPaymentDiscount.amount),
+      //       percent: earlyPaymentDiscount.percent.toString(),
+      //     }
+      //   : undefined,
+      earlyPaymentDiscount: undefined,
       discount: discount
         ? { amount: toChf(discount.amount), percent: discount.percent.toString() }
         : undefined,
       mwst: toChf(mwst),
       total: toChf(total),
     },
-    textAfterTotal: await Promise.all(
-      invoice.snippets.map(async (snippet) => await marked.parse(snippet.text)),
-    ),
-    qrbill: {
-      amount: total,
-      creditor: {
-        account: 'CH44 3199 9123 0008 8901 2',
-        address: 'Musterstrasse',
-        buildingNumber: 7,
-        city: 'Musterstadt',
-        country: 'CH',
-        name: 'SwissQRBill',
-        zip: '1234',
-      },
-      currency: 'CHF',
-      debtor: {
-        address: invoice.to.address,
-        buildingNumber: '',
-        city: invoice.to.city,
-        country: 'CH',
-        name: invoice.to.name,
-        zip: invoice.to.zip,
-      },
-      reference: '21 00000 00003 13947 14300 09017',
-    },
+    textBlocks: await Promise.all(quote.textBlocks.map(async (text) => await marked.parse(text))),
   }
+}
 
-  return fullInvoice
+interface PreparedQuote {
+  to: string
+  date: string
+  quoteNumber: string
+  description: Array<{ key: string; value: string }>
+  items: Array<{ pos: string; text: string; price: string }>
+  total: {
+    subtotal: string
+    mwst: string
+    total: string
+    discount: { amount: string; percent: string } | undefined
+    earlyPaymentDiscount: { amount: string; percent: string } | undefined
+  }
+  textBlocks: string[]
 }

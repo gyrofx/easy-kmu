@@ -1,5 +1,17 @@
 DO $$ BEGIN
+ CREATE TYPE "public"."invoiceState" AS ENUM('draft', 'sent', 'rejected', 'canceled', 'payed');
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
+DO $$ BEGIN
  CREATE TYPE "public"."projectState" AS ENUM('draft', 'offerd', 'rejected', 'accepted', 'done');
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
+DO $$ BEGIN
+ CREATE TYPE "public"."quoteState" AS ENUM('draft', 'offerd', 'rejected', 'accepted');
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;
@@ -36,17 +48,29 @@ CREATE TABLE IF NOT EXISTS "employee" (
 	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
+CREATE TABLE IF NOT EXISTS "invoices" (
+	"id" text PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"invoiceNumber" text NOT NULL,
+	"projectId" text NOT NULL,
+	"state" "invoiceState" DEFAULT 'draft' NOT NULL,
+	"data" jsonb NOT NULL,
+	"notes" text DEFAULT '' NOT NULL,
+	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
+	"updatedAt" timestamp (3) DEFAULT now() NOT NULL,
+	CONSTRAINT "invoices_invoiceNumber_unique" UNIQUE("invoiceNumber")
+);
+--> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "projectObject" (
 	"id" text PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
 	"address" text NOT NULL,
 	"zipCode" text NOT NULL,
 	"city" text NOT NULL,
-	"country" text DEFAULT '',
-	"floor" text DEFAULT '',
-	"type" text DEFAULT '',
-	"appartement" text DEFAULT '',
-	"workshopOrder" text DEFAULT '',
-	"notes" text DEFAULT '',
+	"country" text DEFAULT '' NOT NULL,
+	"floor" text DEFAULT '' NOT NULL,
+	"type" text DEFAULT '' NOT NULL,
+	"appartement" text DEFAULT '' NOT NULL,
+	"workshopOrder" text DEFAULT '' NOT NULL,
+	"notes" text DEFAULT '' NOT NULL,
 	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
 	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
 );
@@ -73,6 +97,25 @@ CREATE TABLE IF NOT EXISTS "project" (
 	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
 	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
 );
+--> statement-breakpoint
+CREATE TABLE IF NOT EXISTS "quotes" (
+	"id" text PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"quoteNumber" integer NOT NULL,
+	"projectId" text NOT NULL,
+	"date" timestamp DEFAULT now() NOT NULL,
+	"state" "quoteState" DEFAULT 'draft' NOT NULL,
+	"data" jsonb NOT NULL,
+	"filePath" text,
+	"notes" text DEFAULT '' NOT NULL,
+	"createdAt" timestamp (3) DEFAULT now() NOT NULL,
+	"updatedAt" timestamp (3) DEFAULT now() NOT NULL
+);
+--> statement-breakpoint
+DO $$ BEGIN
+ ALTER TABLE "invoices" ADD CONSTRAINT "invoices_projectId_project_id_fk" FOREIGN KEY ("projectId") REFERENCES "public"."project"("id") ON DELETE no action ON UPDATE no action;
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
 --> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "project" ADD CONSTRAINT "project_customerContactId_contact_id_fk" FOREIGN KEY ("customerContactId") REFERENCES "public"."contact"("id") ON DELETE no action ON UPDATE no action;
@@ -106,6 +149,12 @@ END $$;
 --> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "project" ADD CONSTRAINT "project_clerkEmployeeId_employee_id_fk" FOREIGN KEY ("clerkEmployeeId") REFERENCES "public"."employee"("id") ON DELETE no action ON UPDATE no action;
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
+DO $$ BEGIN
+ ALTER TABLE "quotes" ADD CONSTRAINT "quotes_projectId_project_id_fk" FOREIGN KEY ("projectId") REFERENCES "public"."project"("id") ON DELETE no action ON UPDATE no action;
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;

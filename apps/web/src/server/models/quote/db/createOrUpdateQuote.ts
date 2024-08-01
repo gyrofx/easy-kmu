@@ -1,23 +1,25 @@
 import { db } from '@/server/db/db'
 import { quotes } from '@/server/db/schema'
 import { eq, desc } from 'drizzle-orm'
-import type { CreateOrUpdateQuote } from '@/common/models/quote'
+import { zodCreateOrUpdateQuote, type CreateOrUpdateQuote } from '@/common/models/quote'
 import { findQuoteById } from '@/server/models/quote/db/findQuoteById'
 import { parseISO } from 'date-fns'
+import { zodParse } from '@easy-kmu/common'
 
 export async function createOrUpdateQuote(quote: CreateOrUpdateQuote) {
   const { to, description, items, total, textBlocks, date, ...dbProps } = quote
 
-  // TODO: naiv implementation
-  const quoteNumber = await nextQuoteNumber(dbProps.projectId)
+  // TODO: replace naiv implementation
+  const quoteNumber = dbProps.id ? dbProps.quoteNumber : await nextQuoteNumber(dbProps.projectId)
 
   const dbQuote = {
-    ...dbProps,
+    ...zodParse(zodCreateOrUpdateQuote, quote),
     quoteNumber,
     date: parseISO(date),
     data: { to, description, items, total, textBlocks },
   }
 
+  console.log('dbQuote', dbQuote)
   const ids = dbQuote.id
     ? await db()
         .update(quotes)

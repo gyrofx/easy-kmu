@@ -5,22 +5,15 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1722067428737,
-      "tag": "0000_absent_gravity",
+      "when": 1722520054504,
+      "tag": "0000_friendly_penance",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "7",
-      "when": 1722071576066,
-      "tag": "0001_massive_black_knight",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1722199172214,
-      "tag": "0002_worthless_phalanx",
+      "when": 1722524078022,
+      "tag": "0001_crazy_black_bird",
       "breakpoints": true
     }
   ]
