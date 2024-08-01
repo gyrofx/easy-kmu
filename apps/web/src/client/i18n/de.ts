@@ -9,6 +9,8 @@ export const de = {
     projects: 'Projekte',
     contacts: 'Kontakte',
     objects: 'Objekte',
+    quotes: 'Angebote',
+    addQuote: 'Angebot erstellen',
     about: 'Technische Informationen',
     settings: 'Settings',
     signIn: 'Anmelden',

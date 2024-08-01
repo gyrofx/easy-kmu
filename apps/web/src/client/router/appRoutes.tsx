@@ -11,6 +11,8 @@ import { Projects } from '@/client/domain/projects/Projects'
 import { AddProjects } from '@/client/domain/projects/AddProjects'
 import { ProjectView } from '@/client/domain/projects/Project'
 import { Typography } from '@mui/material'
+import { Quotes } from '@/client/domain/quotes/Quotes'
+import { CreateOrUpdateQuoteView } from '@/client/domain/quotes/CreateOrUpdateQuote'
 
 export function appRoutes() {
   return [
@@ -54,6 +56,22 @@ export function appRoutes() {
           handle: {
             crumb: () => <Link to={routes.projects.path}>Projekte</Link>,
           },
+          children: [
+            {
+              path: 'overview',
+              element: <div>Overview</div>,
+              id: 'project-overview',
+            },
+            {
+              id: 'project-quotes',
+              ...routes.quotes,
+              element: <Quotes />,
+            },
+          ],
+        },
+        {
+          ...routes.addQuote,
+          element: <CreateOrUpdateQuoteView />,
         },
         {
           ...routes.addProjects,

@@ -14,194 +14,187 @@ import {
   Link,
   Tooltip,
 } from '@mui/material'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { KeyboardArrowUp, KeyboardArrowDown, DeleteOutline, Add, Delete } from '@mui/icons-material'
 import { LoadingButton } from '@mui/lab'
 import { produce } from 'immer'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import type { Snippet, CreateInvoice } from '@/common/invoice/CreateInvoice'
-import { move } from '@easy-kmu/common'
+import { IsoDateString, move } from '@easy-kmu/common'
 import { apiClient } from '@/client/api/client'
+import type { CreateOrUpdateQuote } from '@/common/models/quote'
+import { useParams } from 'react-router-dom'
 
-interface InvoiceState {
-  invoice: CreateInvoice
-  setInvoiceNumber: (project: string) => void
-  addProjectItem: () => void
-  updateProjectItem: (index: number, item: [string, string]) => void
-  removeProjectItem: (index: number) => void
-  moveProjectItem: (fromIndex: number, toIndex: number) => void
-  setCompany: (value: string) => void
-  setName: (value: string) => void
-  setAddress: (value: string) => void
-  setZip: (value: string) => void
-  setCity: (value: string) => void
+interface QuoteState {
+  quote: CreateOrUpdateQuote
+  // setInvoiceNumber: (project: string) => void
+  addDescriptionItem: () => void
+  updateDescriptionItem: (index: number, item: { key: string; value: string }) => void
+  removeDescriptionItem: (index: number) => void
+  moveDescriptionItem: (fromIndex: number, toIndex: number) => void
+  setTo: (value: string) => void
   addItem: () => void
   updateItem: (item: { pos: string; text: string; price: number }, index: number) => void
   removeItem: (index: number) => void
   moveItem: (fromIndex: number, toIndex: number) => void
-  addSnippet: (snippet: Snippet) => void
-  removeSnippet: (index: number) => void
-  updateSnippet: (snippet: Snippet, index: number) => void
-  moveSnippet: (fromIndex: number, toIndex: number) => void
+  addTextblock: (value: string) => void
+  removeTextblock: (index: number) => void
+  updateTextblock: (value: string, index: number) => void
+  moveTextblock: (fromIndex: number, toIndex: number) => void
+  setDiscount: (type: 'amount' | 'percent', value: string) => void
   clearInvoice: () => void
 }
 
 const useInvoiceStore = create(
-  persist<InvoiceState>(
+  persist<QuoteState>(
     (set) => ({
-      invoice: emptyInvoice(),
-      setInvoiceNumber: (invoiceNumber: string) =>
-        set((state) => ({ invoice: { ...state.invoice, invoiceNumber } })),
-      addProjectItem: () =>
+      quote: emptyQuote(),
+
+      setTo: (value: string) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.project.push(['Neu', ''])
-          }),
-        ),
-      updateProjectItem: (index: number, item: [string, string]) =>
-        set(
-          produce((state: InvoiceState) => {
-            state.invoice.project[index] = item
+          produce((state: QuoteState) => {
+            state.quote.to = value
           }),
         ),
 
-      removeProjectItem: (index: number) =>
+      addDescriptionItem: () =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.project = state.invoice.project.filter((_, i) => i !== index)
+          produce((state: QuoteState) => {
+            state.quote.description.push({ key: 'Neu', value: '' })
           }),
         ),
-      moveProjectItem: (fromIndex: number, toIndex: number) =>
+      updateDescriptionItem: (index: number, item: { key: string; value: string }) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.project = move(state.invoice.project, fromIndex, toIndex)
+          produce((state: QuoteState) => {
+            state.quote.description[index] = item
           }),
         ),
-      setCompany: (value: string) =>
+
+      removeDescriptionItem: (index: number) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.to.company = value
+          produce((state: QuoteState) => {
+            state.quote.description = state.quote.description.filter((_, i) => i !== index)
           }),
         ),
-      setName: (value: string) =>
+      moveDescriptionItem: (fromIndex: number, toIndex: number) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.to.name = value
-          }),
-        ),
-      setAddress: (value: string) =>
-        set(
-          produce((state: InvoiceState) => {
-            state.invoice.to.address = value
-          }),
-        ),
-      setZip: (value: string) =>
-        set(
-          produce((state: InvoiceState) => {
-            state.invoice.to.zip = value
-          }),
-        ),
-      setCity: (value: string) =>
-        set(
-          produce((state: InvoiceState) => {
-            state.invoice.to.city = value
+          produce((state: QuoteState) => {
+            state.quote.description = move(state.quote.description, fromIndex, toIndex)
           }),
         ),
 
       addItem: () =>
         set(
-          produce(
-            (state: InvoiceState) => void state.invoice.items.push({ pos: '', text: '', price: 0.0 }),
-          ),
+          produce((state: QuoteState) => void state.quote.items.push({ pos: '', text: '', price: 0.0 })),
         ),
       updateItem: (item: { pos: string; text: string; price: number }, index: number) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.items[index] = item
+          produce((state: QuoteState) => {
+            state.quote.items[index] = item
+            state.quote.total.subtotal = state.quote.items.reduce((acc, item) => acc + item.price, 0)
+            state.quote.total.mwst = state.quote.total.subtotal * 0.081
+            state.quote.total.total = state.quote.total.subtotal + state.quote.total.mwst
           }),
         ),
       removeItem: (index: number) =>
-        set(produce((state: InvoiceState) => void state.invoice.items.splice(index, 1))),
+        set(produce((state: QuoteState) => void state.quote.items.splice(index, 1))),
       moveItem: (fromIndex: number, toIndex: number) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.items = move(state.invoice.items, fromIndex, toIndex)
+          produce((state: QuoteState) => {
+            state.quote.items = move(state.quote.items, fromIndex, toIndex)
           }),
         ),
-      addSnippet: (snippet: Snippet) =>
-        set(produce((state: InvoiceState) => void state.invoice.snippets.push(snippet))),
-      updateSnippet: (snippet: Snippet, index: number) =>
+      addTextblock: (value: string) =>
+        set(produce((state: QuoteState) => void state.quote.textBlocks.push(value))),
+      updateTextblock: (value: string, index: number) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.snippets[index] = snippet
+          produce((state: QuoteState) => {
+            state.quote.textBlocks[index] = value
           }),
         ),
-      removeSnippet: (index: number) =>
-        set(produce((state: InvoiceState) => void state.invoice.snippets.splice(index, 1))),
+      removeTextblock: (index: number) =>
+        set(produce((state: QuoteState) => void state.quote.textBlocks.splice(index, 1))),
 
-      moveSnippet: (fromIndex: number, toIndex: number) =>
+      moveTextblock: (fromIndex: number, toIndex: number) =>
         set(
-          produce((state: InvoiceState) => {
-            state.invoice.snippets = move(state.invoice.snippets, fromIndex, toIndex)
+          produce((state: QuoteState) => {
+            state.quote.textBlocks = move(state.quote.textBlocks, fromIndex, toIndex)
           }),
         ),
-      clearInvoice: () => set({ invoice: emptyInvoice() }),
+      setDiscount: (type: 'amount' | 'percent', value: string) =>
+        set(
+          produce((state: QuoteState) => {
+            const numberValue = Number.parseFloat(value) || 0
+
+            console.log('discount', type, value, numberValue, typeof value)
+
+            const amount =
+              type === 'amount' ? numberValue || 0 : (state.quote.total.subtotal * numberValue) / 100
+            const percent = type === 'percent' ? numberValue : numberValue / state.quote.total.subtotal
+            state.quote.total.discount = { amount, percent }
+            state.quote.total.mwst = (state.quote.total.subtotal - amount) * 0.081
+            state.quote.total.total = state.quote.total.subtotal - amount + state.quote.total.mwst
+          }),
+        ),
+      clearInvoice: () => set({ quote: emptyQuote() }),
     }),
     {
-      name: 'invoice-store',
+      name: 'quote-store',
       // storage: createJSONStorage(() => localStorage),
     },
   ),
 )
 
-function emptyInvoice(): CreateInvoice {
+function emptyQuote(): CreateOrUpdateQuote {
   return {
-    invoiceNumber: '',
-    project: [
-      ['Projekt', ''],
-      ['Objekt', ''],
-      ['Kontakt', ''],
+    projectId: '',
+    quoteNumber: 0,
+    date: IsoDateString(new Date()),
+    state: 'draft',
+    description: [
+      { key: 'Projekt', value: '' },
+      { key: 'Objekt', value: '' },
+      { key: 'Kontakt', value: '' },
     ],
-    to: {
-      company: '',
-      name: '',
-      address: '',
-      city: '',
-      state: '',
-      zip: '',
+    to: '',
+    items: [],
+    total: {
+      subtotal: 0,
+      mwst: 0,
+      total: 0,
+      discount: { amount: 0, percent: 0 },
+      earlyPaymentDiscount: { amount: 0, percent: 0 },
     },
-    items: [] as { pos: string; text: string; price: number }[],
-    snippets: [],
+    textBlocks: [],
+    notes: '',
   }
 }
 
-export function CreateInvoiceForm() {
+export function CreateOrUpdateQuoteView() {
   const {
-    invoice,
-    setInvoiceNumber,
-    addProjectItem,
-    updateProjectItem,
-    removeProjectItem,
-    moveProjectItem,
-    setCompany,
-    setName,
-    setAddress,
-    setZip,
-    setCity,
+    quote,
+    // setInvoiceNumber,
+    addDescriptionItem,
+    updateDescriptionItem,
+    removeDescriptionItem,
+    moveDescriptionItem,
+    setTo,
     addItem,
     updateItem,
     removeItem,
     moveItem,
-    addSnippet,
-    updateSnippet,
-    removeSnippet,
-    moveSnippet,
+    addTextblock,
+    updateTextblock,
+    removeTextblock,
+    moveTextblock,
+    setDiscount,
     clearInvoice,
   } = useInvoiceStore((state) => state)
 
   const [createLink, setLink] = useState<string | undefined>(undefined)
+
+  const { projectId } = useParams()
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const open = Boolean(anchorEl)
@@ -214,22 +207,22 @@ export function CreateInvoiceForm() {
 
   const createInvoice = async () => {
     setLink('creating')
-    console.log('invoice', invoice)
-    const response = await apiClient.createInvoicePdf({
-      body: invoice,
+    console.log('invoice', { ...quote, projectId })
+    const response = await apiClient.createOrUpdateQuote({
+      body: { ...quote, projectId },
     })
     if (response.status !== 200) {
       setLink(undefined)
       throw new Error('Failed to create invoice')
     }
     console.log('data', response.body)
-    setLink(response.body.url)
+    // setLink(response.body.url)
   }
 
   return (
     <Container maxWidth="lg">
       <Box sx={{ my: 2, display: 'flex', justifyContent: 'space-between' }}>
-        <Typography variant="h4">Rechnung erstellen</Typography>
+        <Typography variant="h4">Angebot erstellen</Typography>
         <Box sx={{ my: 2, display: 'flex', gap: 1 }}>
           <Button
             sx={{
@@ -275,44 +268,45 @@ export function CreateInvoiceForm() {
               }}
             >
               <TextField
-                label="Rechnungsnummer"
+                label="Angebotsnummer"
                 variant="outlined"
-                onChange={(ev) => setInvoiceNumber(ev.target.value)}
-                value={invoice.invoiceNumber}
+                // onChange={(ev) => setInvoiceNumber(ev.target.value)}
+                value={quote.quoteNumber}
+                disabled
               />
 
-              {invoice.project.map(([key, value], index) => (
+              {quote.description.map(({ key, value }, index) => (
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                 <Box key={index} sx={{ display: 'flex', flexDirection: 'row' }}>
                   <Box sx={{ display: 'flex', gap: 2 }}>
                     <TextField
                       sx={{ width: '30%' }}
                       variant="outlined"
-                      onChange={(ev) => updateProjectItem(index, [ev.target.value, value])}
+                      onChange={(ev) => updateDescriptionItem(index, { key: ev.target.value, value })}
                       value={key}
                     />
 
                     <TextField
                       sx={{ flexGrow: 1 }}
                       variant="outlined"
-                      onChange={(ev) => updateProjectItem(index, [key, ev.target.value])}
+                      onChange={(ev) => updateDescriptionItem(index, { key, value: ev.target.value })}
                       value={value}
                     />
                   </Box>
 
                   <Box sx={{ display: 'flex', gap: 0 }}>
                     <Box>
-                      <IconButton onClick={() => removeProjectItem(index)}>
+                      <IconButton onClick={() => removeDescriptionItem(index)}>
                         <DeleteOutline />
                       </IconButton>
                     </Box>
                     <Box>
-                      <IconButton onClick={() => moveProjectItem(index, index - 1)}>
+                      <IconButton onClick={() => moveDescriptionItem(index, index - 1)}>
                         <KeyboardArrowUp />
                       </IconButton>
                     </Box>
                     <Box>
-                      <IconButton onClick={() => moveProjectItem(index, index + 1)}>
+                      <IconButton onClick={() => moveDescriptionItem(index, index + 1)}>
                         <KeyboardArrowDown />
                       </IconButton>
                     </Box>
@@ -320,7 +314,7 @@ export function CreateInvoiceForm() {
                 </Box>
               ))}
               <Box>
-                <IconButton onClick={() => addProjectItem()}>
+                <IconButton onClick={() => addDescriptionItem()}>
                   <Add />
                 </IconButton>
               </Box>
@@ -331,50 +325,23 @@ export function CreateInvoiceForm() {
         <Card sx={{ flex: 1 }}>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Rechnungsadresse
+              Adresse
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, flex: 1 }}>
               <TextField
-                label="Firma"
-                variant="outlined"
-                onChange={(ev) => setCompany(ev.target.value)}
-                value={invoice.to.company}
-              />
-
-              <TextField
-                label="Name"
-                variant="outlined"
-                onChange={(ev) => setName(ev.target.value)}
-                value={invoice.to.name}
-              />
-              <TextField
                 label="Adresse"
                 variant="outlined"
-                onChange={(ev) => setAddress(ev.target.value)}
-                value={invoice.to.address}
+                onChange={(ev) => setTo(ev.target.value)}
+                value={quote.to}
+                multiline
+                rows={6}
               />
-
-              <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
-                <TextField
-                  label="PLZ"
-                  variant="outlined"
-                  onChange={(ev) => setZip(ev.target.value)}
-                  value={invoice.to.zip}
-                />
-
-                <TextField
-                  label="Ort"
-                  variant="outlined"
-                  onChange={(ev) => setCity(ev.target.value)}
-                  value={invoice.to.city}
-                />
-              </Box>
             </Box>
           </CardContent>
         </Card>
       </Box>
 
-      {invoice.items.map((item, index) => (
+      {quote.items.map((item, index) => (
         // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
         <Card sx={{ flex: 1, my: 1 }} key={index}>
           <CardContent>
@@ -460,7 +427,7 @@ export function CreateInvoiceForm() {
 
       <Card sx={{ flex: 1, my: 1 }}>
         <CardContent>
-          {invoice.items.length === 0 && (
+          {quote.items.length === 0 && (
             <>
               <Typography gutterBottom variant="h5" component="div">
                 Positionen
@@ -477,7 +444,7 @@ export function CreateInvoiceForm() {
         </CardContent>
       </Card>
 
-      {invoice.snippets.map((item, index) => (
+      {quote.textBlocks.map((item, index) => (
         // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
         <Card sx={{ flex: 1, my: 1 }} key={index}>
           <CardContent>
@@ -489,21 +456,21 @@ export function CreateInvoiceForm() {
                 sx={{ flex: 1 }}
                 label="Position "
                 variant="outlined"
-                onChange={(ev) => updateSnippet({ ...item, text: ev.target.value }, index)}
+                onChange={(ev) => updateTextblock(ev.target.value, index)}
                 multiline
                 rows={10}
-                value={item.text}
+                value={item}
               />
             </Box>
           </CardContent>
           <CardActions>
-            <IconButton onClick={() => removeSnippet(index)}>
+            <IconButton onClick={() => removeTextblock(index)}>
               <DeleteOutline />
             </IconButton>
-            <IconButton onClick={() => moveSnippet(index, index - 1)}>
+            <IconButton onClick={() => moveTextblock(index, index - 1)}>
               <KeyboardArrowUp />
             </IconButton>
-            <IconButton onClick={() => moveSnippet(index, index + 1)}>
+            <IconButton onClick={() => moveTextblock(index, index + 1)}>
               <KeyboardArrowDown />
             </IconButton>
           </CardActions>
@@ -512,7 +479,7 @@ export function CreateInvoiceForm() {
 
       <Card sx={{ flex: 1 }}>
         <CardContent>
-          {invoice.snippets.length === 0 && (
+          {quote.textBlocks.length === 0 && (
             <>
               <Typography gutterBottom variant="h5" component="div">
                 Textbausteine
@@ -537,7 +504,7 @@ export function CreateInvoiceForm() {
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                 key={index}
                 onClick={() => {
-                  addSnippet(snippet)
+                  addTextblock(snippet.text)
                   handleClose()
                 }}
               >
@@ -545,6 +512,41 @@ export function CreateInvoiceForm() {
               </MenuItem>
             ))}
           </Menu>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ flex: 1 }}>
+        <CardContent>
+          <>
+            <Typography gutterBottom variant="h5" component="div">
+              Total
+            </Typography>
+          </>
+
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+            <TextField label="Subtotal" variant="outlined" value={quote.total.subtotal} disabled />
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+              <TextField
+                sx={{ flex: 1 }}
+                type="number"
+                label="Discount %"
+                variant="outlined"
+                onChange={(ev) => setDiscount('percent', ev.target.value)}
+                value={quote.total.discount.percent.toString()}
+              />
+              <TextField
+                sx={{ flex: 1 }}
+                type="number"
+                label="Discount CHF"
+                variant="outlined"
+                onChange={(ev) => setDiscount('amount', ev.target.value)}
+                value={quote.total.discount.amount.toString()}
+              />
+            </Box>
+
+            <TextField label="Mwst" variant="outlined" value={quote.total.mwst.toFixed(2)} disabled />
+            <TextField label="Total" variant="outlined" value={quote.total.total.toFixed(2)} disabled />
+          </Box>
         </CardContent>
       </Card>
     </Container>

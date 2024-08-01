@@ -13,6 +13,10 @@ export interface CreateInvoice {
     zip: string
   }
   items: { pos: string; text: string; price: number }[]
+
+  discount: { type: 'percent' | 'amount'; value: number } | undefined
+  earlyPaymentDiscount: { type: 'percent' | 'amount'; value: number } | undefined
+
   snippets: Snippet[]
 }
 
@@ -33,6 +37,12 @@ export const createInvoiceSchema = z.object({
     zip: z.string(),
   }),
   items: z.array(z.object({ pos: z.string(), text: z.string(), price: z.number() })),
+  total: z.object({
+    discount: z.object({ type: z.enum(['percent', 'amount']), value: z.number() }).optional(),
+    earlyPaymentDiscount: z
+      .object({ type: z.enum(['percent', 'amount']), value: z.number() })
+      .optional(),
+  }),
   snippets: z.array(z.object({ label: z.string(), text: z.string() })),
 })
 

@@ -12,8 +12,8 @@ import { readFile } from 'node:fs/promises'
 import { SwissQRBill } from 'swissqrbill/svg'
 
 export async function invoiceToHtml(invoice: CreateInvoice): Promise<HtmlToPdf> {
-  const preparedInvoice = await enrichInvoice(invoice)
-  const html = renderToStaticMarkup(await quoteTemplate(preparedInvoice))
+  const currentPreparedInvoice = await preparedInvoice(invoice)
+  const html = renderToStaticMarkup(await quoteTemplate(currentPreparedInvoice))
   const doc = `<!doctype html>${html}`
   const css = await readFile('src/server/templates/invoice.css', 'utf-8')
   const signature = await readFile('src/server/templates/signature.jpg', 'binary')
@@ -181,10 +181,27 @@ async function quoteTemplate(invoice: CreateInvoiceFull) {
   )
 }
 
-async function enrichInvoice(invoice: CreateInvoice) {
+async function preparedInvoice(invoice: CreateInvoice) {
   const subtotal = sum(invoice.items.map((item) => item.price))
-  const mwst = subtotal * 0.081
-  const total = subtotal + mwst
+  const earlyPaymentDiscount = invoice.earlyPaymentDiscount
+    ? invoice.earlyPaymentDiscount.type === 'percent'
+      ? {
+          amount: subtotal * invoice.earlyPaymentDiscount.value,
+          percent: invoice.earlyPaymentDiscount.value,
+        }
+      : {
+          amount: invoice.earlyPaymentDiscount.value,
+          percent: invoice.earlyPaymentDiscount.value / subtotal,
+        }
+    : undefined
+  const discount = invoice.discount
+    ? invoice.discount.type === 'percent'
+      ? { amount: subtotal * invoice.discount.value, percent: invoice.discount.value }
+      : { amount: invoice.discount.value, percent: invoice.discount.value / subtotal }
+    : undefined
+  const subtotalAfterDiscount = subtotal - (discount?.amount ?? 0) - (earlyPaymentDiscount?.amount ?? 0)
+  const mwst = subtotalAfterDiscount * 0.081
+  const total = subtotalAfterDiscount + mwst
 
   // biome-ignore lint/style/useSingleVarDeclarator: <explanation>
   const fullInvoice: CreateInvoiceFull = {
@@ -204,6 +221,15 @@ async function enrichInvoice(invoice: CreateInvoice) {
     ),
     total: {
       subtotal: toChf(subtotal),
+      earlyPaymentDiscount: earlyPaymentDiscount
+        ? {
+            amount: toChf(earlyPaymentDiscount.amount),
+            percent: earlyPaymentDiscount.percent.toString(),
+          }
+        : undefined,
+      discount: discount
+        ? { amount: toChf(discount.amount), percent: discount.percent.toString() }
+        : undefined,
       mwst: toChf(mwst),
       total: toChf(total),
     },

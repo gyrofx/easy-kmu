@@ -1,0 +1,57 @@
+[
+  {
+    "id": "00cd4094-977c-440e-a228-d0032df024f0",
+    "firstName": "Erika",
+    "lastName": "Ziegler",
+    "phone1": "+41(31) 435 75 33",
+    "phone2": "+41(30) 778 05 82",
+    "email": "David_Marti@example.com",
+    "notes": "",
+    "createdAt": "2024-07-27T07:18:08.240Z",
+    "updatedAt": "2024-07-27T07:18:08.240Z"
+  },
+  {
+    "id": "0e1d5eb2-ba3d-40e7-a1d3-bab56daaa4d8",
+    "firstName": "Doris",
+    "lastName": "Stöckli",
+    "phone1": "+41(14) 263 07 38",
+    "phone2": "+41(97) 861 71 63",
+    "email": "Klaus_Stockli@example.net",
+    "notes": "",
+    "createdAt": "2024-07-27T07:18:08.216Z",
+    "updatedAt": "2024-07-27T07:18:08.216Z"
+  },
+  {
+    "id": "574e73e4-4e82-4102-84e9-53d75a1b30f9",
+    "firstName": "Johann",
+    "lastName": "Vogel",
+    "phone1": "+41(19) 920 67 73",
+    "phone2": "+41(04) 856 83 61",
+    "email": "Barbara1@example.org",
+    "notes": "",
+    "createdAt": "2024-07-27T07:18:08.221Z",
+    "updatedAt": "2024-07-27T07:18:08.221Z"
+  },
+  {
+    "id": "685f80b7-a417-47ae-8968-688025c5ca37",
+    "firstName": "Massimo",
+    "lastName": "Fuchs",
+    "phone1": "+41(00) 655 91 50",
+    "phone2": "+41(05) 074 13 75",
+    "email": "Francois81@example.net",
+    "notes": "",
+    "createdAt": "2024-07-27T07:18:08.231Z",
+    "updatedAt": "2024-07-27T07:18:08.231Z"
+  },
+  {
+    "id": "6ef35b29-6690-4c2c-92c9-b2dcda2141c4",
+    "firstName": "Joseph",
+    "lastName": "Kessler",
+    "phone1": "+41(39) 534 51 70",
+    "phone2": "+41(90) 766 53 07",
+    "email": "Verena_Kaufmann29@example.net",
+    "notes": "",
+    "createdAt": "2024-07-27T07:18:08.210Z",
+    "updatedAt": "2024-07-27T07:18:08.210Z"
+  }
+]

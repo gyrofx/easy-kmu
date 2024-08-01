@@ -1,0 +1,24 @@
+[
+  {
+    "id": "daba0f21-f148-415f-9e33-73fb5826fe8f",
+    "projectNumber": 1000,
+    "state": "draft",
+    "name": "Kellertreppe Flix",
+    "description": "Eine schoene Kellertreppe",
+    "notes": "Komplizierter Kunde",
+    "customerContactId": "f40cd055-7736-4ae6-8fd3-e1a116ea2996",
+    "objectId": "e629d7b8-360e-4c1a-adfc-165c53d82f9d",
+    "constructionManagementContactId": null,
+    "architectContactId": "6c9b38e1-2204-4acc-bb3d-43156ca5b33c",
+    "builderContactId": "f40cd055-7736-4ae6-8fd3-e1a116ea2996",
+    "material": "Holz und Metall",
+    "assembly": "",
+    "surface": "Holz",
+    "fireProtection": "",
+    "en1090": "Keine Ahnung",
+    "deadline": "2024-07-18T20:00:00.000Z",
+    "clerkEmployeeId": "574e73e4-4e82-4102-84e9-53d75a1b30f9",
+    "createdAt": "2024-07-27T07:20:12.322Z",
+    "updatedAt": "2024-07-27T07:20:12.322Z"
+  }
+]

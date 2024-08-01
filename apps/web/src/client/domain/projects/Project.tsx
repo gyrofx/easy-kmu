@@ -13,12 +13,23 @@ import {
   Typography,
 } from '@mui/material'
 import { type SyntheticEvent, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, matchPath, Outlet, useLocation, useMatches, useParams } from 'react-router-dom'
 import type { Project } from '@/common/models/project'
+import { last } from 'lodash'
+
+function useRouteId() {
+  const matches = useMatches()
+  if (!matches || !matches.length) return undefined
+  return last(matches)?.id
+}
 
 export function ProjectView() {
-  const { id } = useParams()
-  const projectQuery = useProjectQuery(id ? id : '')
+  const { projectId } = useParams()
+  const projectQuery = useProjectQuery(projectId ? projectId : '')
+
+  // console.log('matches', matches)
+
+  const currentTab = useRouteId()
 
   const [value, setValue] = useState(1)
 
@@ -47,23 +58,48 @@ export function ProjectView() {
       </Box>
 
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <TabContext value={value}>
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="Übersicht" value="1" />
-              <Tab label="Offerten" value="2" />
-              <Tab label="Rechnungen" value="3" />
-              <Tab label="Kalkulation" value="4" />
-            </TabList>
-          </Box>
-          <TabPanel value="1">
-            <ProjectOverview project={project} />
-          </TabPanel>
-          <TabPanel value="2">Item Two</TabPanel>
-          <TabPanel value="3">Item Three</TabPanel>
-          <TabPanel value="4">Item Three</TabPanel>
-        </TabContext>
+        <Tabs value={currentTab}>
+          <Tab
+            label="Übersicht"
+            value="/project/:id/overview"
+            to={`/project/${project.id}/overview`}
+            component={Link}
+          />
+          <Tab
+            label="Offerten"
+            value="/project/:id/quotes"
+            to={`/project/${project.id}/quotes`}
+            component={Link}
+          />
+          <Tab
+            label="Rechnungen"
+            value="/project/:id/invoices"
+            to={`/project/${project.id}/overview`}
+            component={Link}
+          />
+        </Tabs>
+
+        {false && (
+          <TabContext value={value}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+              <TabList onChange={handleChange} aria-label="lab API tabs example">
+                <Tab label="Übersicht" value="1" />
+                <Tab label="Offerten" value="2" />
+                <Tab label="Rechnungen" value="3" />
+                <Tab label="Kalkulation" value="4" />
+              </TabList>
+            </Box>
+            <TabPanel value="1">
+              <ProjectOverview project={project} />
+            </TabPanel>
+            <TabPanel value="2">Item Two</TabPanel>
+            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="4">Item Three</TabPanel>
+          </TabContext>
+        )}
       </Box>
+
+      <Outlet />
     </Box>
   )
 }

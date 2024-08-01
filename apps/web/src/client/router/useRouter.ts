@@ -6,9 +6,12 @@ export function useRouter() {
   const navigate = useNavigate()
 
   return {
-    navigateToProject: ({ id }: { id: string }) => navigate(generatePath(routes.project.path, { id })),
+    navigateToProject: ({ id }: { id: string }) =>
+      navigate(generatePath(routes.project.path, { projectId: id })),
     navigateToProjects: () => navigate(routes.projects.path),
     navigateToAddProjects: () => navigate(routes.addProjects.path),
+    navigateToAddQuote: ({ projectId }: { projectId: string }) =>
+      navigate(generatePath(routes.addQuote.path, { projectId })),
     navigateToHome: () => navigate(routes.home.path),
     navigateToAbout: () => navigate(routes.about.path),
     navigateToSettings: () => navigate(routes.settings.path),

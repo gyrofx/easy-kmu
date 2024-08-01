@@ -1,5 +1,5 @@
 import { relations, sql } from 'drizzle-orm'
-import { integer, jsonb, pgEnum, pgSequence, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
+import { integer, integer, jsonb, pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
 
 export const contacts = pgTable('contact', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
@@ -49,6 +49,7 @@ export const projects = pgTable('project', {
   clerkEmployeeId: text('clerkEmployeeId')
     .references(() => employees.id)
     .notNull(),
+
   createdAt: timestamp('createdAt', { precision: 3 }).notNull().defaultNow(),
   updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
 })
@@ -86,6 +87,45 @@ export const employees = pgTable('employee', {
 
 export type SelectEmployee = typeof employees.$inferSelect
 
+export const quoteState = pgEnum('quoteState', ['draft', 'offerd', 'rejected', 'accepted'])
+
+export const quotes = pgTable('quotes', {
+  id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
+  quoteNumber: integer('quoteNumber').notNull(),
+  projectId: text('projectId')
+    .notNull()
+    .references(() => projects.id),
+
+  date: timestamp('date').notNull().defaultNow(),
+  state: quoteState('state').notNull().default('draft'),
+  data: jsonb('data').notNull(),
+
+  filePath: text('filePath'),
+
+  notes: text('notes').notNull().default(''),
+  createdAt: timestamp('createdAt', { precision: 3 }).notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
+})
+
+export type SelectQuote = typeof quotes.$inferSelect
+
+export const invoiceState = pgEnum('invoiceState', ['draft', 'sent', 'rejected', 'canceled', 'payed'])
+
+export const invoices = pgTable('invoices', {
+  id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
+  quoteNumber: text('invoiceNumber').notNull().unique(),
+  projectId: text('projectId')
+    .notNull()
+    .references(() => projects.id),
+
+  state: invoiceState('state').notNull().default('draft'),
+  data: jsonb('data').notNull(),
+
+  notes: text('notes').notNull().default(''),
+  createdAt: timestamp('createdAt', { precision: 3 }).notNull().defaultNow(),
+  updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
+})
+
 export const contactRelations = relations(contacts, ({ many }) => ({
   customers: many(projects, {
     relationName: 'customers',
@@ -101,7 +141,7 @@ export const contactRelations = relations(contacts, ({ many }) => ({
   }),
 }))
 
-export const projectRelations = relations(projects, ({ one }) => ({
+export const projectRelations = relations(projects, ({ one, many }) => ({
   customer: one(contacts, {
     relationName: 'customers',
     fields: [projects.customerContactId],
@@ -132,6 +172,12 @@ export const projectRelations = relations(projects, ({ one }) => ({
     fields: [projects.clerkEmployeeId],
     references: [employees.id],
   }),
+  quotes: many(quotes, {
+    relationName: 'qutoesToProject',
+  }),
+  invoices: many(invoices, {
+    relationName: 'invoicesToProject',
+  }),
 }))
 
 export const projectObjectRelations = relations(projectObjects, ({ many }) => ({
@@ -143,5 +189,21 @@ export const projectObjectRelations = relations(projectObjects, ({ many }) => ({
 export const employeesRelations = relations(employees, ({ many }) => ({
   projects: many(projects, {
     relationName: 'projectClerkToEmployee',
+  }),
+}))
+
+export const quoteRelations = relations(quotes, ({ one }) => ({
+  project: one(projects, {
+    relationName: 'qutoesToProject',
+    fields: [quotes.projectId],
+    references: [projects.id],
+  }),
+}))
+
+export const invoiceRelations = relations(invoices, ({ one }) => ({
+  project: one(projects, {
+    relationName: 'invoicesToProject',
+    fields: [invoices.projectId],
+    references: [projects.id],
   }),
 }))

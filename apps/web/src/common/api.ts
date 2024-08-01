@@ -5,6 +5,8 @@ import { zodProjectObject } from '@/common/models/projectObject'
 import { zodContact, zodCreateOrUpdateContact } from '@/common/models/contact'
 import { zodCreateOrUpdateProject, zodProject } from '@/common/models/project'
 import { zodEmployee } from '@/common/models/employee'
+import { createOrUpdateQuote } from '@/server/models/quote/db/createOrUpdateQuote'
+import { zodCreateOrUpdateQuote, zodQuote } from '@/common/models/quote'
 
 export const contract = initContract()
 
@@ -76,5 +78,19 @@ export const api = contract.router({
     method: 'GET',
     path: '/api/list-employees',
     responses: { 200: z.array(zodEmployee) },
+  },
+
+  listQuotesByProject: {
+    method: 'GET',
+    path: '/api/list-quotes-by-project',
+    query: z.object({ projectId: z.string() }),
+    responses: { 200: z.array(zodQuote) },
+  },
+
+  createOrUpdateQuote: {
+    method: 'POST',
+    path: '/api/create-or-update-quote',
+    body: zodCreateOrUpdateQuote,
+    responses: { 200: zodQuote },
   },
 })

@@ -34,7 +34,7 @@ export const routes = {
   },
 
   project: {
-    path: '/project/:id' as const,
+    path: '/project/:projectId' as const,
     icon: <Info />,
     text: t().routes.projects,
     maxWidth: 'md' as const,
@@ -47,6 +47,22 @@ export const routes = {
     text: t().routes.projects,
     maxWidth: 'md' as const,
     title: t().routes.projects,
+  },
+
+  quotes: {
+    path: 'quotes' as const,
+    icon: <Info />,
+    text: t().routes.addQuote,
+    maxWidth: 'md' as const,
+    title: t().routes.addQuote,
+  },
+
+  addQuote: {
+    path: '/project/:projectId/add-quote' as const,
+    icon: <Info />,
+    text: t().routes.addQuote,
+    maxWidth: 'md' as const,
+    title: t().routes.addQuote,
   },
 
   contacts: {

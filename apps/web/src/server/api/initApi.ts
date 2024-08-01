@@ -6,10 +6,6 @@ import { createReadStream } from 'node:fs'
 import { randomUUID } from 'node:crypto'
 import { writeFile } from 'node:fs/promises'
 import { Agent } from 'undici'
-import type { CreateInvoice as CreateInvoiceFull } from '@easy-kmu/common'
-import { sum } from 'lodash'
-import { format } from 'date-fns'
-import { de } from 'date-fns/locale'
 import { opts } from '@/server/config/opts'
 import { join } from 'node:path'
 import { createOrUpdateContact } from '../models/contact/db/createOrUpdateContact'
@@ -20,6 +16,8 @@ import { listEmployees } from '@/server/models/employee/db/listEmployees'
 import { createOrUpdateProject } from '@/server/models/project/db/createOrUpdateProject'
 import { findFirstProject } from '@/server/models/project/db/findFirstProject'
 import { invoiceToHtml } from '@/server/invoice/invoiceToHtml'
+import { listQuotesByProject } from '@/server/models/quote/db/listQuotesByProject'
+import { createOrUpdateQuote } from '@/server/models/quote/db/createOrUpdateQuote'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -160,6 +158,16 @@ export function initApi(app: Express) {
     listEmployees: async () => {
       const employees = await listEmployees()
       return { status: 200, body: employees }
+    },
+
+    listQuotesByProject: async ({ query }) => {
+      const quotes = await listQuotesByProject(query.projectId)
+      return { status: 200, body: quotes }
+    },
+
+    createOrUpdateQuote: async ({ body }) => {
+      const quote = await createOrUpdateQuote(body)
+      return { status: 200, body: quote }
     },
   })
 

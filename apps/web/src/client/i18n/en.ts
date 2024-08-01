@@ -11,6 +11,8 @@ export const en: I18n = {
     invoice: 'Invoices',
     contacts: 'Contacts',
     objects: 'Objects',
+    quotes: 'Quotes',
+    addQuote: 'Create quote',
     settings: 'Settings',
     signIn: 'Anmelden',
   },

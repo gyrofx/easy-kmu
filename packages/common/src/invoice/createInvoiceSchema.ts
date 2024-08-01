@@ -46,6 +46,8 @@ export interface CreateInvoice {
     subtotal: string
     mwst: string
     total: string
+    // discount: { amount: string; percent: string } | undefined
+    // earlyPaymentDiscount: { amount: string; percent: string } | undefined
   }
   textAfterTotal: Array<string>
   qrbill: Data
