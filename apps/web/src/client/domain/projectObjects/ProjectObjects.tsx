@@ -1,6 +1,5 @@
 import { apiClient } from '@/client/api/client'
-import { AddContactDialog } from '@/client/domain/contacts/CreateOrUpdateContactDialog'
-import { Add, Close, ContentCopy, Delete, Edit, Info } from '@mui/icons-material'
+import { Add, Close, ContentCopy, Delete, Edit } from '@mui/icons-material'
 import { Box, Button, IconButton, Paper, TextField, Typography } from '@mui/material'
 import {
   type MRT_ColumnDef,
@@ -29,7 +28,7 @@ export function ProjectObjects() {
   })
   // const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
 
-  const [showSidebar, setShowSidebar] = useState(false)
+  const [showSidebar] = useState(false)
   const dialog = useDialogWithData<ProjectObject>()
 
   const [selectedRows, setSelectedRows] = useState<ProjectObject[]>([])
@@ -65,7 +64,7 @@ export function ProjectObjects() {
           </IconButton> */}
         </Box>
       </Box>
-      {dialog.isOpen && <AddContactDialog dialog={dialog} />}
+
       <Paper sx={{ display: 'flex', flexDirection: 'row', height: '70px', my: 2, p: 2 }}>
         {isLength(selectedRows, 1) && (
           <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
@@ -120,7 +119,7 @@ export function ProjectObjects() {
       {query.data && (
         <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'row', gap: 2, width: 1 }}>
           <ContactGrid
-            data={query.data?.body}
+            data={query.data}
             onRowSelectionChange={setSelectedRows}
             globalFilter={globalFilterDebounced}
             registerClearSelectionCallback={registerClearSelectionCallback}
@@ -145,6 +144,7 @@ export function ProjectObjects() {
 
 function defaultProjectObject(): ProjectObject {
   return {
+    id: '',
     address: '',
     zipCode: '',
     city: '',

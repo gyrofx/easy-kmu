@@ -64,7 +64,7 @@ export function ProjectView() {
   )
 }
 
-function ProjectOverview({ project }: { project: Project }) {
+export function ProjectOverview({ project }: { project: Project }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>

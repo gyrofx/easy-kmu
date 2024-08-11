@@ -1,15 +1,28 @@
 import type { Employee } from '@/common/models/employee'
 import { Autocomplete, Box, TextField, Typography } from '@mui/material'
+import { useEffect, useState } from 'react'
 
 export function EmployeeAutocomplete({
   employees,
   label,
   onChange,
+  value,
 }: {
   employees: Employee[]
   label: string
   onChange: (employee: Employee | undefined) => void
+  value: string | undefined
 }) {
+  const [selcetedEmployee, setSelcetedEmployee] = useState<Employee | null>(null)
+
+  useEffect(() => {
+    if (value) {
+      const obj = employees.find((obj) => obj.id === value) || null
+      setSelcetedEmployee(obj)
+      console.log('setSelectedContact', obj)
+    }
+  }, [value, employees])
+
   return (
     <Autocomplete
       options={employees}
@@ -28,6 +41,7 @@ export function EmployeeAutocomplete({
       onChange={(_event, empployee) => {
         onChange(empployee ? empployee : undefined)
       }}
+      value={selcetedEmployee}
       renderInput={(params) => (
         <TextField
           {...params}

@@ -1,4 +1,4 @@
-import { zodPersons, type Contact, type ContactWithId } from '@/common/models/contact'
+import { zodPersons, type Contact } from '@/common/models/contact'
 import { db } from '@/server/db/db'
 import type { SelectContact } from '@/server/db/schema'
 import { nullsToUndefined } from '@/server/models/contact/db/nullsToUndefined'
@@ -10,7 +10,7 @@ export async function listContacts(): Promise<Contact[]> {
   return contacts.map(dbContactToConact)
 }
 
-export function dbContactToConact(dbContact: SelectContact): ContactWithId {
+export function dbContactToConact(dbContact: SelectContact): Contact {
   return nullsToUndefined({
     ...dbContact,
     persons: zodParse(zodPersons, dbContact.persons),

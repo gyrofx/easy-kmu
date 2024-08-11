@@ -20,7 +20,7 @@ export function db() {
 }
 
 export function endDbConnection() {
-  clientInternal?.end()
+  if (clientInternal && 'end' in clientInternal) clientInternal?.end()
 }
 
 let dbInternal: NodePgDatabase<typeof schema> | undefined

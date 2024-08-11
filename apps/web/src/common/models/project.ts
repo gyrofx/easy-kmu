@@ -3,7 +3,7 @@ import { type Employee, zodEmployee } from '@/common/models/employee'
 import { zodProjectObject, type ProjectObject } from '@/common/models/projectObject'
 import { zodIsoDateString, type IsoDateString } from '@easy-kmu/common'
 import type { AssertTrue, IsExact } from 'conditional-type-checks'
-import { object, z } from 'zod'
+import { z } from 'zod'
 
 export interface CreateOrUpdateProject {
   id?: string

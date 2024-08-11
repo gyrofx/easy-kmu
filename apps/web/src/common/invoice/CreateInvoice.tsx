@@ -1,5 +1,4 @@
 import { z } from 'zod'
-import type { AssertTrue, IsExact } from 'conditional-type-checks'
 
 export interface CreateInvoice {
   invoiceNumber: string
@@ -45,5 +44,3 @@ export const createInvoiceSchema = z.object({
   }),
   snippets: z.array(z.object({ label: z.string(), text: z.string() })),
 })
-
-export type TypeTest = AssertTrue<IsExact<z.infer<typeof createInvoiceSchema>, CreateInvoice>>

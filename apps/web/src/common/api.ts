@@ -1,4 +1,3 @@
-import { createInvoiceSchema } from '@/common/invoice/CreateInvoice'
 import { ContractNoBody, initContract } from '@ts-rest/core'
 import { z } from 'zod'
 import { zodProjectObject } from '@/common/models/projectObject'

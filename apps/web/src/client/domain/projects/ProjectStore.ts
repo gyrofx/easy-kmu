@@ -1,4 +1,4 @@
-import type { CreateOrUpdateProject, Project } from '@/common/models/project'
+import type { CreateOrUpdateProject } from '@/common/models/project'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { produce } from 'immer'

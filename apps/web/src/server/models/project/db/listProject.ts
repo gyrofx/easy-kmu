@@ -32,12 +32,16 @@ export function dbProjectToProject(
     projectNumber: dbProject.projectNumber.toString(),
     object: dbProject.object ? dbObjectToObject(dbProject.object) : undefined,
     customer: dbProject.customer ? dbContactToConact(dbProject.customer) : undefined,
+    customerPersonsInCharge: [],
     constructionManagement: dbProject.constructionManagement
       ? dbContactToConact(dbProject.constructionManagement)
       : undefined,
+    constructionManagementPersonsInCharge: [],
     architect: dbProject.architect ? dbContactToConact(dbProject.architect) : undefined,
+    architectPersonsInCharge: [],
     builder: dbProject.builder ? dbContactToConact(dbProject.builder) : undefined,
-    clerk: dbProject.clerk ? dbEmployeeToEmployee(dbProject.clerk) : undefined,
+    builderPersonsInCharge: [],
+    clerk: dbEmployeeToEmployee(dbProject.clerk),
 
     deadline: dbProject.deadline ? IsoDateString(dbProject.deadline) : undefined,
     createdAt: IsoDateString(dbProject.createdAt),

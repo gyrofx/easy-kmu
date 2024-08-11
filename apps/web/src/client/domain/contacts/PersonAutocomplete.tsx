@@ -51,14 +51,6 @@ export function PersonAutocomplete({
   )
 }
 
-function Option({ person }: { person: Person }) {
-  return (
-    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-      <Typography variant="body1">{optionLabel(person)}</Typography>
-    </Box>
-  )
-}
-
 function optionLabel(person: Person) {
   const { name, role, email, phone1, phone2 } = person
 
