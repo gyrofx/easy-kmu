@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "yarn start",
     "start": "TZ=UTC yarn run dev:server",

@@ -29,5 +29,9 @@ COPY --from=build /app/apps/web/build-server /app
 COPY --from=build /app/apps/web/build /app/build
 COPY --from=build /app/node_modules/@easy-kmu/common node_modules/@easy-kmu/common
 COPY ./apps/web/docker/entrypoint.sh /app/docker/
+COPY ./apps/web/drizzle.config.ts /app/
+COPY ./apps/web/drizzle /app/drizzle/
+RUN mkdir -p /app/src/server/templates
+COPY ./apps/web/src/server/templates /app/src/server/templates/
 
 ENTRYPOINT [ "/app/docker/entrypoint.sh" ]
