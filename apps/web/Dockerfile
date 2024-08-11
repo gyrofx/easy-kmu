@@ -27,16 +27,7 @@ WORKDIR /app
 COPY --from=install-prod /app/node_modules node_modules
 COPY --from=build /app/apps/web/build-server /app
 COPY --from=build /app/apps/web/build /app/build
-RUN mv index.js index.mjs
-RUN mv index.js.map index.mjs.map
-# COPY ./src/server /app/src/server
-# COPY ./src/common /app/src/common
-# COPY ./src/scripts /app/src/scripts
-# COPY ./prisma /app/prisma
-# COPY ./package.json /app
-# COPY ./tsconfig.json /app
-# COPY ./tsconfig.node.json /app
+COPY --from=build /app/node_modules/@easy-kmu/common node_modules/@easy-kmu/common
 COPY ./apps/web/docker/entrypoint.sh /app/docker/
-# COPY ./prisma /app/
 
 ENTRYPOINT [ "/app/docker/entrypoint.sh" ]

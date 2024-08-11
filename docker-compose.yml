@@ -16,6 +16,7 @@ services:
       EKMU_WEB_REDIS_URL: redis://redis:6379
       EKMU_PDF_SERVICE_URL: http://pdf:8081
       EKMU_FILE_STORAGE_PATH: /files
+      EKMU_WEB_DATABASE_URL: postgresql://ekmu:ekmu@db:5432/ekmu
 
       EKMU_WEB_AUTH_SECRET: xzy
       EKMU_WEB_AUTH0_DOMAIN: xzy.auth0.com

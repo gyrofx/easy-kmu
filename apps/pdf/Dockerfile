@@ -39,23 +39,13 @@ WORKDIR /app
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome
 
 
-
-
 COPY --from=install-prod /app/node_modules node_modules
 COPY --from=build /app/apps/pdf/dist /app
 COPY --from=build /app/node_modules/@easy-kmu/common node_modules/@easy-kmu/common
+
 COPY apps/pdf/templates/ /app/templates
 COPY apps/pdf/bin /app/bin
 RUN mkdir -p /app/templates/common/ && cp -r /app/node_modules/@fontsource/* /app/templates/common/
-RUN mv index.js index.mjs
-RUN mv index.js.map index.mjs.map
-# COPY ./src/server /app/src/server
-# COPY ./src/common /app/src/common
-# COPY ./src/scripts /app/src/scripts
-# COPY ./prisma /app/prisma
-# COPY ./package.json /app
-# COPY ./tsconfig.json /app
-# COPY ./tsconfig.node.json /app
 COPY ./apps/pdf/docker/entrypoint.sh /app/docker/
 
 
