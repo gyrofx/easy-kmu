@@ -1,21 +1,9 @@
 import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
-import { Add, Info } from '@mui/icons-material'
-import { TabContext, TabList, TabPanel } from '@mui/lab'
-import {
-  Box,
-  Card,
-  CardContent,
-  Grid,
-  IconButton,
-  LinearProgress,
-  Tab,
-  Tabs,
-  Typography,
-} from '@mui/material'
-import { type SyntheticEvent, useState } from 'react'
-import { Link, matchPath, Outlet, useLocation, useMatches, useParams } from 'react-router-dom'
+import { Box, Card, CardContent, Grid, LinearProgress, Tab, Tabs, Typography } from '@mui/material'
+import { Link, Outlet, useMatches, useParams } from 'react-router-dom'
 import type { Project } from '@/common/models/project'
 import { last } from 'lodash'
+import { routes } from '@/client/router/routes'
 
 function useRouteId() {
   const matches = useMatches()
@@ -27,15 +15,7 @@ export function ProjectView() {
   const { projectId } = useParams()
   const projectQuery = useProjectQuery(projectId ? projectId : '')
 
-  // console.log('matches', matches)
-
   const currentTab = useRouteId()
-
-  const [value, setValue] = useState(1)
-
-  const handleChange = (event: SyntheticEvent, newValue: number) => {
-    setValue(newValue)
-  }
 
   if (projectQuery.isLoading) return <LinearProgress />
   if (projectQuery.isError) return <div>Error</div>
@@ -54,49 +34,29 @@ export function ProjectView() {
             {project.description}
           </Typography>
         </Box>
-        {/* <Box sx={{ display: 'flex', alignItems: 'center' }}></Box> */}
       </Box>
 
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={currentTab}>
           <Tab
             label="Übersicht"
-            value="/project/:id/overview"
+            value={routes.projectOverview.id}
             to={`/project/${project.id}/overview`}
             component={Link}
           />
           <Tab
             label="Offerten"
-            value="/project/:id/quotes"
+            value={routes.projectQuotes.id}
             to={`/project/${project.id}/quotes`}
             component={Link}
           />
           <Tab
             label="Rechnungen"
-            value="/project/:id/invoices"
-            to={`/project/${project.id}/overview`}
+            value={routes.projectInvoices.id}
+            to={`/project/${project.id}/invoices`}
             component={Link}
           />
         </Tabs>
-
-        {false && (
-          <TabContext value={value}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <TabList onChange={handleChange} aria-label="lab API tabs example">
-                <Tab label="Übersicht" value="1" />
-                <Tab label="Offerten" value="2" />
-                <Tab label="Rechnungen" value="3" />
-                <Tab label="Kalkulation" value="4" />
-              </TabList>
-            </Box>
-            <TabPanel value="1">
-              <ProjectOverview project={project} />
-            </TabPanel>
-            <TabPanel value="2">Item Two</TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
-            <TabPanel value="4">Item Three</TabPanel>
-          </TabContext>
-        )}
       </Box>
 
       <Outlet />

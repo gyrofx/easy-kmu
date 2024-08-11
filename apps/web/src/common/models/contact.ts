@@ -1,3 +1,4 @@
+import type { AssertTrue, IsExact } from 'conditional-type-checks'
 import { z } from 'zod'
 
 export const zodPersons = z.array(
@@ -74,4 +75,6 @@ export interface Person {
   notes: string
 }
 
-// export const TypeTest = Assert
+export type TypeTest =
+  | AssertTrue<IsExact<z.infer<typeof zodContact>, Contact>>
+  | AssertTrue<IsExact<z.infer<typeof zodCreateOrUpdateContact>, CreateOrUpdateContact>>

@@ -5,13 +5,15 @@ import type { AssertTrue, IsExact } from 'conditional-type-checks'
 export const quoteStates = ['draft', 'readyToOffer', 'offerd', 'rejected', 'accepted'] as const
 export type QuoteState = (typeof quoteStates)[number]
 
+export const zodQuoteState = z.enum(quoteStates)
+
 export const zodCreateOrUpdateQuote = z.object({
   id: z.string().optional(),
 
   projectId: z.string(),
   quoteNumber: z.number(),
   date: zodIsoDateString,
-  state: z.enum(quoteStates),
+  state: zodQuoteState,
 
   to: z.string(),
   description: z.array(z.object({ key: z.string(), value: z.string() })),
@@ -21,8 +23,14 @@ export const zodCreateOrUpdateQuote = z.object({
     subtotal: z.number(),
     mwst: z.number(),
     total: z.number(),
-    discount: z.object({ type: z.enum(['amount', 'percent']), value: z.number() }),
-    earlyPaymentDiscount: z.object({ type: z.enum(['amount', 'percent']), value: z.number() }),
+    discount: z.object({ type: z.enum(['amount', 'percent']), amount: z.number(), percent: z.number() }),
+    earlyPaymentDiscount: z
+      .object({
+        type: z.enum(['amount', 'percent']),
+        amount: z.number(),
+        percent: z.number(),
+      })
+      .optional(),
   }),
 
   textBlocks: z.array(z.string()),
@@ -62,8 +70,8 @@ export interface CreateOrUpdateQuote {
     subtotal: number
     mwst: number
     total: number
-    discount: { type: 'amount' | 'percent'; value: number }
-    earlyPaymentDiscount: { type: 'amount' | 'percent'; value: number }
+    discount: { type: 'amount' | 'percent'; amount: number; percent: number }
+    earlyPaymentDiscount?: { type: 'amount' | 'percent'; amount: number; percent: number }
   }
 
   textBlocks: string[]

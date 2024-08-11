@@ -1,4 +1,3 @@
-import { apiClient } from '@/client/api/client'
 import { AddContactDialog } from '@/client/domain/contacts/CreateOrUpdateContactDialog'
 import { Add, Close, ContentCopy, Delete, Edit, Info } from '@mui/icons-material'
 import { Box, Button, IconButton, Paper, TextField, Typography } from '@mui/material'
@@ -15,7 +14,7 @@ import './ContactGrid.css'
 import { useSortingWithSearchParams } from '@/client/utils/dataGrid'
 import { useDialogWithData } from '@/client/utils/useDialogWithData'
 import { isLength } from '@easy-kmu/common'
-import type { Contact } from '@/common/models/contact'
+import type { Contact, CreateOrUpdateContact } from '@/common/models/contact'
 import { useContactsQuery } from '@/client/domain/contacts/useContactsQuery'
 
 export function Contacts() {
@@ -23,7 +22,7 @@ export function Contacts() {
   // const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
 
   const [showSidebar, setShowSidebar] = useState(false)
-  const dialog = useDialogWithData<Contact | undefined>()
+  const dialog = useDialogWithData<CreateOrUpdateContact | undefined>()
 
   const [selectedRows, setSelectedRows] = useState<Contact[]>([])
   const [globalFilter, setGlobalFilter] = useState<string>('')
@@ -223,7 +222,7 @@ function ContactGrid({
       density: 'compact',
       rowSelection,
       globalFilter,
-      columnPinning: { left: ['company', 'firstName', 'lastName'], right: [] },
+      // columnPinning: { left: ['company', 'firstName', 'lastName'], right: [] },
     },
 
     layoutMode: 'grid',

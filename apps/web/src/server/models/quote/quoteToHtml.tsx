@@ -86,7 +86,8 @@ async function quoteTemplate(quote: PreparedQuote) {
           </div>
 
           <div className="to-address">
-            <div>{to}</div>
+            {/* biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
+            <div className="markdown" dangerouslySetInnerHTML={{ __html: to }} />
           </div>
 
           <div className="date">
@@ -120,6 +121,7 @@ async function quoteTemplate(quote: PreparedQuote) {
                   <strong>
                     Pos. {index} - {pos}
                   </strong>
+                  {/* biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
                   <div className="markdown" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
                 <div className="price">{price}</div>
@@ -144,8 +146,10 @@ async function quoteTemplate(quote: PreparedQuote) {
 
           {textBlocks.map((text, index) => (
             <div
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
               className="markdown no-break-inside"
+              // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
               dangerouslySetInnerHTML={{ __html: text }}
             />
           ))}
@@ -187,8 +191,8 @@ async function preparedQuote(quote: Quote, project: Project): Promise<PreparedQu
   //   : undefined
   const discount = quote.total.discount
     ? quote.total.discount.type === 'percent'
-      ? { amount: subtotal * quote.total.discount.value, percent: quote.total.discount.value }
-      : { amount: quote.total.discount.value, percent: quote.total.discount.value / subtotal }
+      ? { amount: subtotal * quote.total.discount.percent, percent: quote.total.discount.percent }
+      : { amount: quote.total.discount.amount, percent: quote.total.discount.amount / subtotal }
     : undefined
   const subtotalAfterDiscount = subtotal - (discount?.amount ?? 0) //- (earlyPaymentDiscount?.amount ?? 0)
   const mwst = subtotalAfterDiscount * 0.081
@@ -198,6 +202,7 @@ async function preparedQuote(quote: Quote, project: Project): Promise<PreparedQu
 
   return {
     ...quote,
+    to: await marked.parse(quote.to),
     date: format(new Date(), 'PP', { locale: de }),
     quoteNumber: `${project.projectNumber}-${quote.quoteNumber}`,
 

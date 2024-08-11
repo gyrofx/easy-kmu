@@ -23,8 +23,12 @@ const zodQuoteDataToQuote = z.object({
     subtotal: z.number(),
     mwst: z.number(),
     total: z.number(),
-    discount: z.object({ type: z.enum(['percent', 'amount']), value: z.number() }),
-    earlyPaymentDiscount: z.object({ type: z.enum(['percent', 'amount']), value: z.number() }),
+    discount: z.object({ type: z.enum(['percent', 'amount']), amount: z.number(), percent: z.number() }),
+    earlyPaymentDiscount: z.object({
+      type: z.enum(['percent', 'amount']),
+      amount: z.number(),
+      percent: z.number(),
+    }),
   }),
 
   textBlocks: z.array(z.string()),

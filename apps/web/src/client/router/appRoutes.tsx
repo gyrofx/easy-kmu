@@ -1,5 +1,4 @@
 import { AppRoot } from '@/client/AppRoot'
-import { CreateInvoiceForm } from '@/client/domain/invoice/CreateInvoice'
 import { routes } from '@/client/router/routes'
 import { ErrorBoundary } from '@/client/utils/ErrorBoundary'
 import { Link, Navigate } from 'react-router-dom'
@@ -12,7 +11,7 @@ import { AddProjects } from '@/client/domain/projects/AddProjects'
 import { ProjectView } from '@/client/domain/projects/Project'
 import { Typography } from '@mui/material'
 import { Quotes } from '@/client/domain/quotes/Quotes'
-import { CreateOrUpdateQuoteView } from '@/client/domain/quotes/CreateOrUpdateQuote'
+import { CreateQuoteView, UpdateQuoteView } from '@/client/domain/quotes/CreateOrUpdateQuote'
 
 export function appRoutes() {
   return [
@@ -31,10 +30,6 @@ export function appRoutes() {
         crumb: () => <Link to="/">Home</Link>,
       },
       children: [
-        {
-          ...routes.invoice,
-          element: <CreateInvoiceForm />,
-        },
         {
           ...routes.contacts,
           element: <Contacts />,
@@ -58,20 +53,26 @@ export function appRoutes() {
           },
           children: [
             {
-              path: 'overview',
+              ...routes.projectOverview,
               element: <div>Overview</div>,
-              id: 'project-overview',
             },
             {
-              id: 'project-quotes',
-              ...routes.quotes,
+              ...routes.projectQuotes,
               element: <Quotes />,
+            },
+            {
+              ...routes.projectInvoices,
+              element: <div>Rechnungen</div>,
             },
           ],
         },
         {
           ...routes.addQuote,
-          element: <CreateOrUpdateQuoteView />,
+          element: <CreateQuoteView />,
+        },
+        {
+          ...routes.updateQuote,
+          element: <UpdateQuoteView />,
         },
         {
           ...routes.addProjects,

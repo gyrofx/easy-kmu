@@ -1,3 +1,4 @@
+import type { AssertTrue, IsExact } from 'conditional-type-checks'
 import { z } from 'zod'
 
 export interface CreateOrUpdateObject {
@@ -14,7 +15,7 @@ export interface CreateOrUpdateObject {
 }
 
 export interface ProjectObject extends CreateOrUpdateObject {
-  id?: string
+  id: string
 
   createdAt: string
   updatedAt: string
@@ -39,3 +40,7 @@ export const zodProjectObject = zodCreateOrUpdateObject.extend({
   createdAt: z.string(),
   updatedAt: z.string(),
 })
+
+export type TypeTest =
+  | AssertTrue<IsExact<z.infer<typeof zodProjectObject>, ProjectObject>>
+  | AssertTrue<IsExact<z.infer<typeof zodCreateOrUpdateObject>, CreateOrUpdateObject>>

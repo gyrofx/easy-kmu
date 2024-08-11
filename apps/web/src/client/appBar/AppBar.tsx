@@ -23,7 +23,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { routes } from '@/client/router/routes'
 import { useSession } from '@/client/auth/AuthProvider'
 
-const pages = [routes.projects, routes.invoice, routes.contacts, routes.objects]
+const pages = [routes.projects, routes.contacts, routes.objects]
 
 export function AppBar() {
   return (

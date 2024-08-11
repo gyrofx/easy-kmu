@@ -13,17 +13,18 @@ import {
   IconButton,
   TextField,
 } from '@mui/material'
-import { useEffect } from 'react'
 import { useMutation, useQueryClient } from 'react-query'
+import { useEffectOnce } from 'react-use'
 
-export function AddContactDialog({ dialog }: { dialog: UseDialogWithData<CreateOrUpdateContact> }) {
+export function AddContactDialog({
+  dialog,
+}: { dialog: UseDialogWithData<CreateOrUpdateContact | undefined> }) {
   const { contact, setInitialContact, setValue, clear } = useContactStore()
-  console.log('AddContactDialog', dialog.data)
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-  useEffect(() => {
-    console.log('dialog.data', dialog.data)
+
+  useEffectOnce(() => {
     if (dialog.data) setInitialContact(dialog.data)
-  }, [])
+    else clear()
+  })
 
   const queryClient = useQueryClient()
   const mutation = useMutation({

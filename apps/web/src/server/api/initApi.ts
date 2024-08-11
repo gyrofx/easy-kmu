@@ -3,9 +3,6 @@ import type { Express } from 'express'
 import { api } from '@/common/api'
 import { serverInfo } from '@/server/serverInfo/serverInfo'
 import { createReadStream } from 'node:fs'
-import { randomUUID } from 'node:crypto'
-import { writeFile } from 'node:fs/promises'
-import { Agent } from 'undici'
 import { opts } from '@/server/config/opts'
 import { join } from 'node:path'
 import { createOrUpdateContact } from '../models/contact/db/createOrUpdateContact'
@@ -15,100 +12,17 @@ import { listProjects } from '@/server/models/project/db/listProject'
 import { listEmployees } from '@/server/models/employee/db/listEmployees'
 import { createOrUpdateProject } from '@/server/models/project/db/createOrUpdateProject'
 import { findFirstProject } from '@/server/models/project/db/findFirstProject'
-import { invoiceToHtml } from '@/server/invoice/invoiceToHtml'
 import { listQuotesByProject } from '@/server/models/quote/db/listQuotesByProject'
 import { createOrUpdateQuote } from '@/server/models/quote/db/createOrUpdateQuote'
 import { generateQuotePdf } from '@/server/models/quote/generateQuotePdf'
+import { deleteQuote } from '@/server/models/quote/deleteQuote'
+import { findQuoteById } from '@/server/models/quote/db/findQuoteById'
+import { updateQuoteState } from '@/server/models/quote/updateQuoteState'
 
 export function initApi(app: Express) {
   const server = initServer()
   const router = server.router(api, {
     serverInfo: async () => ({ status: 200, body: serverInfo() }),
-
-    createInvoicePdf: async ({ body }) => {
-      // const subtotal = sum(body.items.map((item) => item.price))
-      // const mwst = subtotal * 0.081
-      // const total = subtotal + mwst
-
-      // const fullInvoice: CreateInvoiceFull = {
-      //   ...body,
-      //   date: format(new Date(), 'PP', { locale: de }),
-      //   quote: { id: body.invoiceNumber },
-      //   project: body.project.map((project) => ({
-      //     key: project[0],
-      //     value: project[1],
-      //   })),
-      //   items: body.items.map((item) => ({
-      //     ...item,
-      //     price: toChf(item.price),
-      //   })),
-      //   total: {
-      //     subtotal: toChf(subtotal),
-      //     mwst: toChf(mwst),
-      //     total: toChf(total),
-      //   },
-      //   textAfterTotal: body.snippets.map((snippet) => snippet.text),
-      //   qrbill: {
-      //     amount: total,
-      //     creditor: {
-      //       account: 'CH44 3199 9123 0008 8901 2',
-      //       address: 'Musterstrasse',
-      //       buildingNumber: 7,
-      //       city: 'Musterstadt',
-      //       country: 'CH',
-      //       name: 'SwissQRBill',
-      //       zip: '1234',
-      //     },
-      //     currency: 'CHF',
-      //     debtor: {
-      //       address: body.to.address,
-      //       buildingNumber: '',
-      //       city: body.to.city,
-      //       country: 'CH',
-      //       name: body.to.name,
-      //       zip: body.to.zip,
-      //     },
-      //     reference: '21 00000 00003 13947 14300 09017',
-      //   },
-      // }
-
-      const htmltoPdf = await invoiceToHtml(body)
-
-      console.log('htmltoPdf', htmltoPdf)
-
-      const httpsAgent = new Agent({
-        connect: {
-          rejectUnauthorized: false,
-        },
-      })
-
-      const url = `${opts().pdfService.url}/api/html-to-pdf`
-      console.log('url', url)
-      const responose = await fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(htmltoPdf),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        dispatcher: httpsAgent,
-      } as any)
-
-      if (responose.status !== 200) {
-        return { status: 500, body: await responose.json() }
-      }
-
-      const file = await responose.blob()
-      const fileID = randomUUID()
-      const filename = join(opts().fileStorage.path, `${fileID}.pdf`)
-      await writeFile(filename, Buffer.from(await file.arrayBuffer()))
-
-      return {
-        status: 200,
-        body: {
-          url: `/files/${fileID}.pdf`,
-        },
-      }
-    },
 
     downloadFile: async ({ res, params }) => {
       try {
@@ -132,7 +46,8 @@ export function initApi(app: Express) {
     },
 
     createOrUpdateContact: async ({ body }) => {
-      return { status: 200, body: await createOrUpdateContact(body) }
+      const contact = await createOrUpdateContact(body)
+      return { status: 200, body: contact }
     },
 
     listProjectObjects: async () => {
@@ -153,6 +68,7 @@ export function initApi(app: Express) {
 
     createOrUpdateProject: async ({ body }) => {
       const project = await createOrUpdateProject(body)
+      if (!project) return { status: 404, body: { error: 'Not found' } }
       return { status: 200, body: project }
     },
 
@@ -166,14 +82,33 @@ export function initApi(app: Express) {
       return { status: 200, body: quotes }
     },
 
+    quoteById: async ({ query }) => {
+      const quote = await findQuoteById(query.quoteId)
+      if (quote) return { status: 200, body: quote }
+      return { status: 404, body: { error: 'Not found' } }
+    },
+
     createOrUpdateQuote: async ({ body }) => {
       const quote = await createOrUpdateQuote(body)
+      if (!quote) return { status: 404, body: { error: 'Not found' } }
+      return { status: 200, body: quote }
+    },
+
+    updateQuoteState: async ({ body, params }) => {
+      const quote = await updateQuoteState(params.quoteId, body.state)
+      if (!quote) return { status: 404, body: { error: 'Not found' } }
       return { status: 200, body: quote }
     },
 
     generateQuotePdf: async ({ params }) => {
       const quote = await generateQuotePdf(params.quoteId)
+      if (!quote) return { status: 404, body: { error: 'Not found' } }
       return { status: 200, body: quote }
+    },
+
+    deleteQuote: async ({ params }) => {
+      await deleteQuote(params.quoteId)
+      return { status: 200, body: { success: true } }
     },
   })
 

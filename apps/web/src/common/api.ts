@@ -5,8 +5,7 @@ import { zodProjectObject } from '@/common/models/projectObject'
 import { zodContact, zodCreateOrUpdateContact } from '@/common/models/contact'
 import { zodCreateOrUpdateProject, zodProject } from '@/common/models/project'
 import { zodEmployee } from '@/common/models/employee'
-import { createOrUpdateQuote } from '@/server/models/quote/db/createOrUpdateQuote'
-import { zodCreateOrUpdateQuote, zodQuote } from '@/common/models/quote'
+import { zodCreateOrUpdateQuote, zodQuote, zodQuoteState } from '@/common/models/quote'
 
 export const contract = initContract()
 
@@ -21,13 +20,6 @@ export const api = contract.router({
     method: 'GET',
     path: '/api/server-info',
     responses: { 200: serverInfoSchema },
-  },
-
-  createInvoicePdf: {
-    method: 'POST',
-    path: '/api/invoice/pdf',
-    body: createInvoiceSchema,
-    responses: { 200: z.object({ url: z.string() }), 500: z.unknown() },
   },
 
   downloadFile: {
@@ -87,11 +79,33 @@ export const api = contract.router({
     responses: { 200: z.array(zodQuote) },
   },
 
+  quoteById: {
+    method: 'GET',
+    path: '/api/quote-by-id',
+    query: z.object({ quoteId: z.string() }),
+    responses: { 200: zodQuote },
+  },
+
+  updateQuoteState: {
+    method: 'POST',
+    path: '/api/quote/:quoteId/update-quote-state',
+    // query: z.object({ quoteId: z.string() }),
+    body: z.object({ state: zodQuoteState }),
+    responses: { 200: zodQuote },
+  },
+
   createOrUpdateQuote: {
     method: 'POST',
     path: '/api/create-or-update-quote',
     body: zodCreateOrUpdateQuote,
     responses: { 200: zodQuote },
+  },
+
+  deleteQuote: {
+    method: 'DELETE',
+    path: '/api/delete-quote/:quoteId',
+    body: ContractNoBody,
+    responses: { 200: z.object({ success: z.boolean() }) },
   },
 
   generateQuotePdf: {

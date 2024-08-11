@@ -49,8 +49,27 @@ export const routes = {
     title: t().routes.projects,
   },
 
-  quotes: {
-    path: 'quotes' as const,
+  projectOverview: {
+    id: 'project-overview',
+    path: '/project/:projectId/overview' as const,
+    icon: <Info />,
+    text: t().routes.projectOverview,
+    maxWidth: 'md' as const,
+    title: t().routes.projectOverview,
+  },
+
+  projectQuotes: {
+    id: 'project-quotes',
+    path: '/project/:projectId/quotes' as const,
+    icon: <Info />,
+    text: t().routes.addQuote,
+    maxWidth: 'md' as const,
+    title: t().routes.addQuote,
+  },
+
+  projectInvoices: {
+    id: 'project-invoices',
+    path: 'invoices' as const,
     icon: <Info />,
     text: t().routes.addQuote,
     maxWidth: 'md' as const,
@@ -63,6 +82,14 @@ export const routes = {
     text: t().routes.addQuote,
     maxWidth: 'md' as const,
     title: t().routes.addQuote,
+  },
+
+  updateQuote: {
+    path: '/edit-quote/:quoteId' as const,
+    icon: <Info />,
+    text: t().routes.updateQuote,
+    maxWidth: 'md' as const,
+    title: t().routes.updateQuote,
   },
 
   contacts: {

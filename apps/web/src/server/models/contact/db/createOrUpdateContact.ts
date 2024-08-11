@@ -1,13 +1,16 @@
-import { nullsToUndefined } from '@/server/models/contact/db/nullsToUndefined'
 import { db } from '@/server/db/db'
 import { contacts } from '@/server/db/schema'
 import { eq } from 'drizzle-orm'
-import type { Contact } from '@/common/models/contact'
+import type { CreateOrUpdateContact } from '@/common/models/contact'
+import { dbContactToContact } from '@/server/models/contact/db/dbContactToContact'
 
-export async function createOrUpdateContact(contact: Contact) {
-  const { updatedAt, createdAt, ...rest } = contact
-  if (rest.id) {
-    return await db().update(contacts).set(rest).where(eq(contacts.id, rest.id)).returning()
-  }
-  return nullsToUndefined(await db().insert(contacts).values(rest).returning())
+export async function createOrUpdateContact(contact: CreateOrUpdateContact) {
+  const returning = contact.id
+    ? await db().update(contacts).set(contact).where(eq(contacts.id, contact.id)).returning()
+    : await db().insert(contacts).values(contact).returning()
+
+  const updatedContact = returning[0]
+  if (!updatedContact) throw new Error('No contact returned from insert or update')
+
+  return dbContactToContact(updatedContact)
 }

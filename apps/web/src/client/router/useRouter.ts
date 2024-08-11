@@ -7,11 +7,15 @@ export function useRouter() {
 
   return {
     navigateToProject: ({ id }: { id: string }) =>
-      navigate(generatePath(routes.project.path, { projectId: id })),
+      navigate(generatePath(routes.projectOverview.path, { projectId: id })),
+    navigateToProjectQuotes: ({ id }: { id: string }) =>
+      navigate(generatePath(routes.projectQuotes.path, { projectId: id })),
     navigateToProjects: () => navigate(routes.projects.path),
     navigateToAddProjects: () => navigate(routes.addProjects.path),
     navigateToAddQuote: ({ projectId }: { projectId: string }) =>
       navigate(generatePath(routes.addQuote.path, { projectId })),
+    navigateToEditQuote: ({ quoteId }: { quoteId: string }) =>
+      navigate(generatePath(routes.updateQuote.path, { quoteId })),
     navigateToHome: () => navigate(routes.home.path),
     navigateToAbout: () => navigate(routes.about.path),
     navigateToSettings: () => navigate(routes.settings.path),

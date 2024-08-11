@@ -1,5 +1,5 @@
 import { relations, sql } from 'drizzle-orm'
-import { integer, integer, jsonb, pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
+import { integer, jsonb, pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
 
 export const contacts = pgTable('contact', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
@@ -87,7 +87,13 @@ export const employees = pgTable('employee', {
 
 export type SelectEmployee = typeof employees.$inferSelect
 
-export const quoteState = pgEnum('quoteState', ['draft', 'readyToOffer' , 'offerd', 'rejected', 'accepted'])
+export const quoteState = pgEnum('quoteState', [
+  'draft',
+  'readyToOffer',
+  'offerd',
+  'rejected',
+  'accepted',
+])
 
 export const quotes = pgTable('quotes', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),

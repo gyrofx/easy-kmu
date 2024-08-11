@@ -19,14 +19,16 @@ export async function createOrUpdateQuote(quote: CreateOrUpdateQuote) {
     data: { to, description, items, total, textBlocks },
   }
 
-  console.log('dbQuote', dbQuote)
   const ids = dbQuote.id
     ? await db()
         .update(quotes)
         .set(dbQuote)
         .where(eq(quotes.id, dbQuote.id))
         .returning({ id: quotes.id })
-    : await db().insert(quotes).values(dbQuote).returning({ id: quotes.id })
+    : await db()
+        .insert(quotes)
+        .values({ ...dbQuote, filePath: null })
+        .returning({ id: quotes.id })
 
   const id = ids[0]?.id
   if (!id) throw new Error('No id returned from insert or update')

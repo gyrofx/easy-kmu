@@ -15,11 +15,18 @@ import { useDebounce } from 'react-use'
 // import './ContactGrid.css'
 import { useSortingWithSearchParams } from '@/client/utils/dataGrid'
 import { useDialogWithData } from '@/client/utils/useDialogWithData'
-import { isLength } from '@easy-kmu/common'
+import { HttpError, isLength } from '@easy-kmu/common'
 import type { ProjectObject } from '@/common/models/projectObject'
 
 export function ProjectObjects() {
-  const query = useQuery({ queryKey: ['projectObjects'], queryFn: apiClient.listProjectObjects })
+  const query = useQuery({
+    queryKey: ['projectObjects'],
+    queryFn: async () => {
+      const response = await apiClient.listProjectObjects()
+      if (response.status === 200) return response.body
+      throw new HttpError('Failed to read objects', response.status)
+    },
+  })
   // const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
 
   const [showSidebar, setShowSidebar] = useState(false)
@@ -37,21 +44,25 @@ export function ProjectObjects() {
     clearSelectionCallbackRef.current = callback
   }
 
-  if (!query.data?.body) return <div>Loading...</div>
+  if (!query.data) return <div>Loading...</div>
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
         <Typography variant="h3" sx={{ my: 2 }}>
-          Kontakte
+          Objekte
         </Typography>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <IconButton color="primary" onClick={() => dialog.open(defaultProjectObject())}>
+          <IconButton
+            disabled={true}
+            color="primary"
+            onClick={() => dialog.open(defaultProjectObject())}
+          >
             <Add />
           </IconButton>
-          <IconButton color="primary" onClick={() => setShowSidebar(!showSidebar)}>
+          {/* <IconButton color="primary" onClick={() => setShowSidebar(!showSidebar)}>
             <Info />
-          </IconButton>
+          </IconButton> */}
         </Box>
       </Box>
       {dialog.isOpen && <AddContactDialog dialog={dialog} />}
@@ -167,24 +178,6 @@ function ContactGrid({
   const columns = useMemo<MRT_ColumnDef<ProjectObject>[]>(
     () => [
       {
-        accessorKey: 'company', //simple recommended way to define a column
-        header: 'Firma',
-        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
-        enableHiding: false,
-      },
-      {
-        accessorKey: 'firstName', //simple recommended way to define a column
-        header: 'Vorname',
-        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
-        enableHiding: false,
-      },
-      {
-        accessorKey: 'lastName', //simple recommended way to define a column
-        header: 'Nachname',
-        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
-        enableHiding: false,
-      },
-      {
         accessorKey: 'address', //simple recommended way to define a column
         header: 'Adrersse',
         muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
@@ -199,6 +192,18 @@ function ContactGrid({
       {
         accessorKey: 'city', //simple recommended way to define a column
         header: 'Ort',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+      {
+        accessorKey: 'appartement', //simple recommended way to define a column
+        header: 'Art',
+        muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
+        enableHiding: false,
+      },
+      {
+        accessorKey: 'floor', //simple recommended way to define a column
+        header: 'Etage',
         muiTableHeadCellProps: { style: { color: 'green' } }, //custom props
         enableHiding: false,
       },
