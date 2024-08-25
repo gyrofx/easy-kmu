@@ -7,11 +7,16 @@ import { Link, Navigate } from 'react-router-dom'
 import { Contacts } from '@/client/domain/contacts/Contacts'
 import { ProjectObjects } from '@/client/domain/projectObjects/ProjectObjects'
 import { Projects } from '@/client/domain/projects/Projects'
-import { AddProjects } from '@/client/domain/projects/AddProjects'
+import {
+  CreateOrUpdateProjectView,
+  CreateProjectView,
+  UpdateProjectView,
+} from '@/client/domain/projects/AddProjects'
 import { ProjectView } from '@/client/domain/projects/Project'
 import { Typography } from '@mui/material'
 import { Quotes } from '@/client/domain/quotes/Quotes'
 import { CreateQuoteView, UpdateQuoteView } from '@/client/domain/quotes/CreateOrUpdateQuote'
+import { ProjectOverview } from '@/client/domain/projects/ProjectOverview'
 
 export function appRoutes() {
   return [
@@ -46,6 +51,22 @@ export function appRoutes() {
           },
         },
         {
+          ...routes.addProjects,
+          element: <CreateProjectView />,
+          handle: {
+            crumb: () => [
+              // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
+              <Link to={routes.projects.path}>Projekte</Link>,
+              // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
+              <Typography variant="body1">Projekte hinzufügen</Typography>,
+            ],
+          },
+        },
+        {
+          ...routes.updateProject,
+          element: <UpdateProjectView />,
+        },
+        {
           ...routes.project,
           element: <ProjectView />,
           handle: {
@@ -54,7 +75,7 @@ export function appRoutes() {
           children: [
             {
               ...routes.projectOverview,
-              element: <div>Overview</div>,
+              element: <ProjectOverview />,
             },
             {
               ...routes.projectQuotes,
@@ -74,18 +95,7 @@ export function appRoutes() {
           ...routes.updateQuote,
           element: <UpdateQuoteView />,
         },
-        {
-          ...routes.addProjects,
-          element: <AddProjects />,
-          handle: {
-            crumb: () => [
-              // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
-              <Link to={routes.projects.path}>Projekte</Link>,
-              // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
-              <Typography variant="body1">Projekte hinzufügen</Typography>,
-            ],
-          },
-        },
+
         {
           ...routes.about,
           element: <div>About</div>,

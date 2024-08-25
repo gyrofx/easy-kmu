@@ -1,9 +1,10 @@
 import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
-import { Box, Card, CardContent, Grid, LinearProgress, Tab, Tabs, Typography } from '@mui/material'
+import { Box, IconButton, LinearProgress, Tab, Tabs, Typography } from '@mui/material'
 import { Link, Outlet, useMatches, useParams } from 'react-router-dom'
-import type { Project } from '@/common/models/project'
 import { last } from 'lodash'
 import { routes } from '@/client/router/routes'
+import { Edit } from '@mui/icons-material'
+import { useRouter } from '@/client/router/useRouter'
 
 function useRouteId() {
   const matches = useMatches()
@@ -12,6 +13,7 @@ function useRouteId() {
 }
 
 export function ProjectView() {
+  const { navigateToEditProject } = useRouter()
   const { projectId } = useParams()
   const projectQuery = useProjectQuery(projectId ? projectId : '')
 
@@ -21,7 +23,7 @@ export function ProjectView() {
   if (projectQuery.isError) return <div>Error</div>
 
   const project = projectQuery.data
-  if (!project) return <div>Project not found</div>
+  if (!project || !projectId) return <div>Project not found</div>
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -30,9 +32,11 @@ export function ProjectView() {
           <Typography variant="h3" sx={{ my: 2 }}>
             {project.projectNumber} - {project.name}
           </Typography>
-          <Typography variant="body2" sx={{ my: 2 }}>
-            {project.description}
-          </Typography>
+        </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <IconButton color="primary" onClick={() => navigateToEditProject({ projectId })}>
+            <Edit />
+          </IconButton>
         </Box>
       </Box>
 
@@ -60,93 +64,6 @@ export function ProjectView() {
       </Box>
 
       <Outlet />
-    </Box>
-  )
-}
-
-export function ProjectOverview({ project }: { project: Project }) {
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Beschreibung
-              </Typography>
-              <Typography gutterBottom variant="body1" component="div">
-                Objekt, Projektbeschreibung, Status
-              </Typography>
-              <Box>{JSON.stringify(project.object)}</Box>
-            </CardContent>
-          </Card>
-        </Grid>
-
-        <Grid item xs={4}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Status
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-
-        <Grid item xs={6}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kontakte
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={6}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Geleistete Stunden, pro Tag, Woche, Monat, Gesamt
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={6}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Offerten
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={6}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Rechnungen
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={6}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Zahlungen
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={6}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Kalkulation
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
     </Box>
   )
 }

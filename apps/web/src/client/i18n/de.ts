@@ -8,6 +8,8 @@ export const de = {
     invoice: 'Rechnungen',
     projects: 'Projekte',
     projectOverview: 'Projektübersicht',
+    addProject: 'Projekt erstellen',
+    updateProject: 'Projekt bearbeiten',
     contacts: 'Kontakte',
     objects: 'Objekte',
     quotes: 'Angebote',

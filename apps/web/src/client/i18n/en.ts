@@ -9,6 +9,8 @@ export const en: I18n = {
     about: 'About',
     projects: 'Projects',
     projectOverview: 'Project Overview',
+    addProject: 'Create project',
+    updateProject: 'Edit project',
     invoice: 'Invoices',
     contacts: 'Contacts',
     objects: 'Objects',

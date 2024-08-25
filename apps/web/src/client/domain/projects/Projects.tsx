@@ -77,7 +77,7 @@ export function Projects() {
                   if (selectedRows[0]) navigateToProject(selectedRows[0])
                 }}
               >
-                Bearbeiten
+                Öffnen
               </Button>
             </Box>
 

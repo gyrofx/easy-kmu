@@ -30,14 +30,41 @@ import {
 import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers'
 import { parseISO } from 'date-fns'
 import { useEffect, useState } from 'react'
+import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
+import type { CreateOrUpdateProject } from '@/common/models/project'
+import { useParams } from 'react-router-dom'
 
-export function AddProjects() {
+export function UpdateProjectView() {
+  const { projectId } = useParams()
+  const projectQuery = useProjectQuery(projectId || '')
+
+  if (!projectId) return <h1>Project ID is missing</h1>
+  if (projectQuery.isLoading) return <h1>Loading...</h1>
+  if (projectQuery.error) return <h1>Error</h1>
+
+  const project = projectQuery.data
+  if (!project) return <h1>Project not found</h1>
+
+  console.log('UpdateProjectView', { project, projectId })
+
+  return <CreateOrUpdateProjectView project={project} />
+}
+
+export function CreateProjectView() {
+  return <CreateOrUpdateProjectView />
+}
+
+function CreateOrUpdateProjectView({ project }: { project?: CreateOrUpdateProject }) {
   const contactsQuery = useContactsQuery()
   const objectsQuery = useQbjectsQuery()
   const employeesQuery = useEmployeesQuery()
 
-  const { navigateToProject } = useRouter()
-  const { project } = useProjectStore()
+  const { setInitialProject } = useProjectStore()
+
+  useEffect(() => {
+    if (project) setInitialProject(project)
+  }, [project, setInitialProject])
+  console.log('CreateOrUpdateProjectView', { project })
 
   if (contactsQuery.isLoading || employeesQuery.isLoading || objectsQuery.isLoading)
     return <LinearProgress />
@@ -47,13 +74,11 @@ export function AddProjects() {
   const employees = employeesQuery.data || []
   const objects = objectsQuery.data || []
 
-  console.log('project', project)
-
   return (
     <Container>
       <Box sx={{ my: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Typography gutterBottom variant="h3" component="div">
-          Neues Projekt erstellen
+          {project ? `Projekt ${project.name} bearbeiten` : 'Neues Projekt erstellen'}
         </Typography>
 
         <ProjectDescriptionCard employees={employees} />
@@ -72,17 +97,7 @@ export function AddProjects() {
         <En1090Card />
         <NotesCard />
 
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={async () => {
-            console.log('project', project)
-            const response = await apiClient.createOrUpdateProject({ body: project })
-            if (response.status === 200) navigateToProject(response.body)
-          }}
-        >
-          Speichern
-        </Button>
+        <ActionButtons />
       </Box>
     </Container>
   )
@@ -232,6 +247,25 @@ function NotesCard() {
   return <MultilineTextCard title="Notizen" propertyName="notes" rows={10} />
 }
 
+function ActionButtons() {
+  const { project } = useProjectStore()
+  const { navigateToProject } = useRouter()
+
+  return (
+    <Button
+      variant="contained"
+      color="primary"
+      onClick={async () => {
+        console.log('project', project)
+        const response = await apiClient.createOrUpdateProject({ body: project })
+        if (response.status === 200) navigateToProject(response.body)
+      }}
+    >
+      Speichern
+    </Button>
+  )
+}
+
 function MultilineTextCard({
   title,
   propertyName,
@@ -249,7 +283,7 @@ function MultilineTextCard({
         variant="standard"
         multiline
         rows={rows}
-        value={project.assembly}
+        value={project[propertyName]}
         onChange={(event) => setValue(propertyName, event.target.value)}
       />
     </CardWrapper>

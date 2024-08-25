@@ -1,5 +1,6 @@
 import { Info } from '@mui/icons-material'
 import { t } from '@/client/i18n/t'
+import { id } from 'date-fns/locale'
 
 export const routes = {
   home: {
@@ -42,11 +43,12 @@ export const routes = {
   },
 
   addProjects: {
+    id: 'add-projects',
     path: '/add-projects' as const,
     icon: <Info />,
-    text: t().routes.projects,
+    text: t().routes.addProject,
     maxWidth: 'md' as const,
-    title: t().routes.projects,
+    title: t().routes.addProject,
   },
 
   projectOverview: {
@@ -56,6 +58,15 @@ export const routes = {
     text: t().routes.projectOverview,
     maxWidth: 'md' as const,
     title: t().routes.projectOverview,
+  },
+
+  updateProject: {
+    id: 'update-project',
+    path: '/project/:projectId/edit' as const,
+    icon: <Info />,
+    text: t().routes.updateProject,
+    maxWidth: 'md' as const,
+    title: t().routes.updateProject,
   },
 
   projectQuotes: {

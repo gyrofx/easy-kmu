@@ -14,6 +14,8 @@ export function useRouter() {
     navigateToAddProjects: () => navigate(routes.addProjects.path),
     navigateToAddQuote: ({ projectId }: { projectId: string }) =>
       navigate(generatePath(routes.addQuote.path, { projectId })),
+    navigateToEditProject: ({ projectId }: { projectId: string }) =>
+      navigate(generatePath(routes.updateProject.path, { projectId })),
     navigateToEditQuote: ({ quoteId }: { quoteId: string }) =>
       navigate(generatePath(routes.updateQuote.path, { quoteId })),
     navigateToHome: () => navigate(routes.home.path),
