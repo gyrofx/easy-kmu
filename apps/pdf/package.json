@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "yarn start",
     "start": "TZ=UTC yarn run dev:server",
-    "dev:server": "yarn tsup src/server/index.ts --watch --onSuccess \"node dist/index.js\"",
+    "dev:server": "yarn tsup src/server/index.ts --watch --onSuccess \"node dist/index.mjs\"",
     "monitor:redis": "redis-cli monitor",
     "build": "yarn tsc && NODE_ENV=production INLINE_RUNTIME_CHUNK=false yarn tsup src/server/index.ts",
     "test": "TZ=UTC vitest",
