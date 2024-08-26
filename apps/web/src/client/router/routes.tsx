@@ -1,6 +1,5 @@
 import { Info } from '@mui/icons-material'
 import { t } from '@/client/i18n/t'
-import { id } from 'date-fns/locale'
 
 export const routes = {
   home: {
