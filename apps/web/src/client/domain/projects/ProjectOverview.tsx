@@ -1,6 +1,8 @@
 import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
 import type { Project } from '@/common/models/project'
-import { Box, Card, CardContent, Grid, Typography } from '@mui/material'
+import type { ProjectObject } from '@/common/models/projectObject'
+import { House, LocationOn } from '@mui/icons-material'
+import { Box, Card, CardContent, Grid, Icon, Link, Typography } from '@mui/material'
 import { useParams } from 'react-router-dom'
 
 export function ProjectOverview() {
@@ -58,13 +60,32 @@ export function ProjectOverview() {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Card>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Objekt
-                </Typography>
-                <Typography gutterBottom variant="body1" component="div">
-                  {JSON.stringify(project.object)}
-                </Typography>
-                https://www.google.com/maps/search/?api=1&query=1200%20Pennsylvania%20Ave%20SE%2C%20Washington%2C%20District%20of%20Columbia%2C%2020003
+                {project.object && (
+                  <>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Objekt
+                    </Typography>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                      <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1 }}>
+                        <Icon>
+                          <House />
+                        </Icon>
+                        <Typography variant="body1" component="div">
+                          {project.object?.address}, {project.object?.zipCode} {project.object?.city}
+                        </Typography>
+                      </Box>
+
+                      <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1 }}>
+                        <Icon>
+                          <LocationOn />
+                        </Icon>
+                        <Link target="_blank" href={googleMapsLink(project.object)}>
+                          Auf Google Maps anzeigen
+                        </Link>
+                      </Box>
+                    </Box>
+                  </>
+                )}
               </CardContent>
             </Card>
             <ContactsCard project={project} />
@@ -140,6 +161,10 @@ export function ProjectOverview() {
   )
 }
 
+function googleMapsLink(object: ProjectObject) {
+  return `https://www.google.com/maps/search/?api=1&query=${object?.address}+${object?.zipCode}+${object?.city}`
+}
+
 function ContactsCard({ project }: { project: Project }) {
   const customer = project.customer ? (
     <>
@@ -163,6 +188,29 @@ function ContactsCard({ project }: { project: Project }) {
     </>
   ) : undefined
 
+  const builder = project.builder ? (
+    <>
+      <Typography gutterBottom variant="h6" component="div">
+        Bauherr
+      </Typography>
+      <Typography gutterBottom variant="body1" component="div">
+        {project.builder.company} {project.builder.firstName} {project.builder.lastName}
+      </Typography>
+    </>
+  ) : undefined
+
+  const constructionManagement = project.constructionManagement ? (
+    <>
+      <Typography gutterBottom variant="h6" component="div">
+        Bauleiter
+      </Typography>
+      <Typography gutterBottom variant="body1" component="div">
+        {project.constructionManagement.company} {project.constructionManagement.firstName}{' '}
+        {project.constructionManagement.lastName}
+      </Typography>
+    </>
+  ) : undefined
+
   return (
     <Card>
       <CardContent>
@@ -171,7 +219,9 @@ function ContactsCard({ project }: { project: Project }) {
         </Typography>
 
         {customer}
+        {constructionManagement}
         {architect}
+        {builder}
       </CardContent>
     </Card>
   )

@@ -19,8 +19,8 @@ export function EmployeeAutocomplete({
     if (value) {
       const obj = employees.find((obj) => obj.id === value) || null
       setSelcetedEmployee(obj)
-      console.log('setSelectedContact', obj)
-    }
+      console.log('setSelcetedEmployee', obj)
+    } else setSelcetedEmployee(null)
   }, [value, employees])
 
   return (

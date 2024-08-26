@@ -53,7 +53,7 @@ export const useProjectStore = create(
       removeArrayValue: (key: ProjectArrayValueKeys, index: number) =>
         set((state) => produce(state, (draft) => void draft.project[key].splice(index, 1))),
 
-      clear: () => set((state) => ({ ...state, contact: emptyProject() })),
+      clear: () => set((state) => ({ ...state, project: emptyProject() })),
     }),
     {
       name: 'new-project-store',

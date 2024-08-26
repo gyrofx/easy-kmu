@@ -38,7 +38,7 @@ export function ContactAutocomplete({
       const contact = contacts.find((contact) => contact.id === value) || null
       setSelectedContact(contact)
       console.log('setSelectedContact', contact)
-    }
+    } else setSelectedContact(null)
   }, [value, contacts])
 
   return (

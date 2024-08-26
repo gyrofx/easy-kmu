@@ -5,7 +5,7 @@ import { EmployeeAutocomplete } from '@/client/domain/employee/EmployeeAutocompl
 import { type ProjectKeys, useProjectStore } from '@/client/domain/projects/ProjectStore'
 import { useRouter } from '@/client/router/useRouter'
 import type { Contact } from '@/common/models/contact'
-import { Add, Delete } from '@mui/icons-material'
+import { Add, Clear, Delete } from '@mui/icons-material'
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3'
 
 import { useContactsQuery } from '@/client/domain/contacts/useContactsQuery'
@@ -45,8 +45,6 @@ export function UpdateProjectView() {
   const project = projectQuery.data
   if (!project) return <h1>Project not found</h1>
 
-  console.log('UpdateProjectView', { project, projectId })
-
   return <CreateOrUpdateProjectView project={project} />
 }
 
@@ -59,12 +57,11 @@ function CreateOrUpdateProjectView({ project }: { project?: CreateOrUpdateProjec
   const objectsQuery = useQbjectsQuery()
   const employeesQuery = useEmployeesQuery()
 
-  const { setInitialProject } = useProjectStore()
+  const { setInitialProject, clear } = useProjectStore()
 
   useEffect(() => {
     if (project) setInitialProject(project)
   }, [project, setInitialProject])
-  console.log('CreateOrUpdateProjectView', { project })
 
   if (contactsQuery.isLoading || employeesQuery.isLoading || objectsQuery.isLoading)
     return <LinearProgress />
@@ -77,9 +74,17 @@ function CreateOrUpdateProjectView({ project }: { project?: CreateOrUpdateProjec
   return (
     <Container>
       <Box sx={{ my: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
-        <Typography gutterBottom variant="h3" component="div">
-          {project ? `Projekt ${project.name} bearbeiten` : 'Neues Projekt erstellen'}
-        </Typography>
+        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Typography gutterBottom variant="h3" component="div">
+            {project ? `Projekt ${project.name} bearbeiten` : 'Neues Projekt erstellen'}
+          </Typography>
+
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <IconButton color="primary" onClick={clear}>
+              <Clear />
+            </IconButton>
+          </Box>
+        </Box>
 
         <ProjectDescriptionCard employees={employees} />
 
@@ -395,7 +400,7 @@ function ContactWithPersonsInCharge(props: ContactWithPersonsInChargeProps) {
   const { contacts, label, contactIdPropertyName, personsInChargePropertyName } = props
 
   const { project, setValue, addArrayValue, setArrayValue, removeArrayValue } = useProjectStore()
-
+  console.log('ContactWithPersonsInCharge', project)
   return (
     <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
       <ContactAutocomplete
