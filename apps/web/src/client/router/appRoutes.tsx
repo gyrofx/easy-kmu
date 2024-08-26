@@ -7,11 +7,7 @@ import { Link, Navigate } from 'react-router-dom'
 import { Contacts } from '@/client/domain/contacts/Contacts'
 import { ProjectObjects } from '@/client/domain/projectObjects/ProjectObjects'
 import { Projects } from '@/client/domain/projects/Projects'
-import {
-  CreateOrUpdateProjectView,
-  CreateProjectView,
-  UpdateProjectView,
-} from '@/client/domain/projects/AddProjects'
+import { CreateProjectView, UpdateProjectView } from '@/client/domain/projects/AddProjects'
 import { ProjectView } from '@/client/domain/projects/Project'
 import { Typography } from '@mui/material'
 import { Quotes } from '@/client/domain/quotes/Quotes'
