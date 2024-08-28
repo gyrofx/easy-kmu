@@ -1,7 +1,7 @@
 import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
 import type { Project } from '@/common/models/project'
 import type { ProjectObject } from '@/common/models/projectObject'
-import { House, LocationOn } from '@mui/icons-material'
+import { Check, House, LocationOn } from '@mui/icons-material'
 import { Box, Card, CardContent, Grid, Icon, Link, Typography } from '@mui/material'
 import { useParams } from 'react-router-dom'
 
@@ -122,7 +122,12 @@ export function ProjectOverview() {
                 <Typography gutterBottom variant="h5" component="div">
                   Brandschutz
                 </Typography>
-                <Box>{project.fireProtection}</Box>
+                {project.fireProtection && (
+                  <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+                    <Check />
+                    <Typography variant="body1">{project.fireProtectionOption}</Typography>
+                  </Box>
+                )}
               </CardContent>
             </Card>
 
@@ -131,7 +136,12 @@ export function ProjectOverview() {
                 <Typography gutterBottom variant="h5" component="div">
                   EN 1090
                 </Typography>
-                <Box>{project.en1090}</Box>
+                {project.en1090 && (
+                  <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+                    <Check />
+                    <Typography variant="body1">{project.en1090Option}</Typography>
+                  </Box>
+                )}
               </CardContent>
             </Card>
           </Box>
