@@ -1,13 +1,10 @@
 import { apiClient } from '@/client/api/client'
 import { ContactAutocomplete } from '@/client/domain/contacts/ContactAutocomplete'
-import { PersonAutocomplete } from '@/client/domain/contacts/PersonAutocomplete'
 import { EmployeeAutocomplete } from '@/client/domain/employee/EmployeeAutocomplete'
 import { type ProjectKeys, useProjectStore } from '@/client/domain/projects/ProjectStore'
 import { useRouter } from '@/client/router/useRouter'
 import type { Contact } from '@/common/models/contact'
-import { Add, Clear, Delete } from '@mui/icons-material'
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3'
-
+import { Clear } from '@mui/icons-material'
 import { useContactsQuery } from '@/client/domain/contacts/useContactsQuery'
 import { useEmployeesQuery } from '@/client/domain/employee/useEmployeesQuery'
 import { ObjectAutocomplete } from '@/client/domain/projectObjects/ObjectAutocomplete'
@@ -19,20 +16,27 @@ import {
   Button,
   Card,
   CardContent,
+  Checkbox,
   Container,
+  FormControl,
+  FormControlLabel,
   IconButton,
   LinearProgress,
-  type SxProps,
+  Radio,
+  RadioGroup,
   TextField,
-  type Theme,
   Typography,
 } from '@mui/material'
-import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers'
-import { parseISO } from 'date-fns'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
-import type { CreateOrUpdateProject } from '@/common/models/project'
+import {
+  asEN1090Option,
+  asFireProtectionOption,
+  type CreateOrUpdateProject,
+} from '@/common/models/project'
 import { useParams } from 'react-router-dom'
+import { RalAutocomplete } from '@/client/domain/projects/RalAutocomplete'
+import { projectById } from '@/client/domain/projects/projectById'
 
 export function UpdateProjectView() {
   const { projectId } = useParams()
@@ -90,10 +94,7 @@ function CreateOrUpdateProjectView({ project }: { project?: CreateOrUpdateProjec
 
         <ObjectCard objects={objects} />
 
-        <CustomrCard contacts={contacts} />
-        <ConstructionManagementCard contacts={contacts} />
-        <ArchitectCard contacts={contacts} />
-        <BuilderCard contacts={contacts} />
+        <ContactsCard contacts={contacts} />
 
         <MaterialCard />
         <AsselmblyCard />
@@ -137,13 +138,15 @@ function ProjectDescriptionCard({ employees }: { employees: Employee[] }) {
           />
         </Box>
         <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, gap: 1 }}>
-          <LocalizationProvider dateAdapter={AdapterDateFns}>
-            <DatePicker
-              label="Termin"
-              value={project.deadline ? parseISO(project.deadline) : null}
-              onChange={(value) => setValue('deadline', value?.toISOString())}
-            />
-          </LocalizationProvider>
+          <EmployeeAutocomplete
+            employees={employees}
+            label="Projektleiter"
+            onChange={(employee) => {
+              setValue('projectManagerEmployeeId', employee?.id)
+            }}
+            value={project.projectManagerEmployeeId}
+          />
+
           <EmployeeAutocomplete
             employees={employees}
             label="Sachbearbeiter"
@@ -169,61 +172,59 @@ function ObjectCard({ objects }: { objects: ProjectObject[] }) {
           objects={objects}
           label="Objekt"
           value={project.objectId}
-          onContactChange={(obj) => setValue('objectId', obj?.id)}
+          onObjectChange={(obj) => setValue('objectId', obj?.id)}
         />
       </Box>
     </CardWrapper>
   )
 }
 
-function CustomrCard({ contacts }: { contacts: Contact[] }) {
-  return (
-    <CardWrapper title="Auftraggeber">
-      <ContactWithPersonsInCharge
-        contacts={contacts}
-        label="Auftraggeber"
-        contactIdPropertyName="customerContactId"
-        personsInChargePropertyName="customerPersonsInCharge"
-      />
-    </CardWrapper>
-  )
-}
+function ContactsCard({ contacts }: { contacts: Contact[] }) {
+  const { setValue, project } = useProjectStore()
 
-function ConstructionManagementCard({ contacts }: { contacts: Contact[] }) {
   return (
-    <CardWrapper title="Bauleiter">
-      <ContactWithPersonsInCharge
-        contacts={contacts}
-        label="Bauleiter"
-        contactIdPropertyName="constructionManagementContactId"
-        personsInChargePropertyName="constructionManagementPersonsInCharge"
-      />
-    </CardWrapper>
-  )
-}
-
-function ArchitectCard({ contacts }: { contacts: Contact[] }) {
-  return (
-    <CardWrapper title="Architekt">
-      <ContactWithPersonsInCharge
-        contacts={contacts}
-        label="Architekt"
-        contactIdPropertyName="architectContactId"
-        personsInChargePropertyName="architectPersonsInCharge"
-      />
-    </CardWrapper>
-  )
-}
-
-function BuilderCard({ contacts }: { contacts: Contact[] }) {
-  return (
-    <CardWrapper title="Bauherr">
-      <ContactWithPersonsInCharge
-        contacts={contacts}
-        label="Bauherr"
-        contactIdPropertyName="builderContactId"
-        personsInChargePropertyName="builderPersonsInCharge"
-      />
+    <CardWrapper title="Kontakte">
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+        <ContactAutocomplete
+          sx={{ flexGrow: 1 }}
+          contacts={contacts}
+          label="Auftraggeber"
+          value={project.customerContactId}
+          onContactChange={(contact) => setValue('customerContactId', contact?.id)}
+        />
+        <ContactAutocomplete
+          sx={{ flexGrow: 1 }}
+          contacts={contacts}
+          label="Bauleiter"
+          value={project.constructionManagementContactId}
+          onContactChange={(contact) => setValue('constructionManagementContactId', contact?.id)}
+        />
+        <ContactAutocomplete
+          sx={{ flexGrow: 1 }}
+          contacts={contacts}
+          label="Architekt"
+          value={project.architectContactId}
+          onContactChange={(contact) => setValue('architectContactId', contact?.id)}
+        />
+        <ContactAutocomplete
+          sx={{ flexGrow: 1 }}
+          contacts={contacts}
+          label="Bauherr"
+          value={project.builderContactId}
+          onContactChange={(contact) => setValue('builderContactId', contact?.id)}
+        />
+        <TextField
+          autoFocus
+          margin="dense"
+          label="Kunden Referenz"
+          type="text"
+          fullWidth
+          variant="standard"
+          multiline
+          value={project.customerReference}
+          onChange={(event) => setValue('customerReference', event.target.value)}
+        />
+      </Box>
     </CardWrapper>
   )
 }
@@ -237,15 +238,72 @@ function AsselmblyCard() {
 }
 
 function SurfaceCard() {
-  return <MultilineTextCard title="Oberfläche" propertyName="surface" rows={4} />
+  const { project, setValue } = useProjectStore()
+
+  return (
+    <MultilineTextCard title="Oberfläche" propertyName="surface" rows={4}>
+      <RalAutocomplete
+        label="Farbe"
+        value={project.surfaceColor}
+        onChange={(c) => setValue('surfaceColor', c)}
+      />
+    </MultilineTextCard>
+  )
 }
 
 function FireProtectionCard() {
-  return <MultilineTextCard title="Brandschutz" propertyName="fireProtection" rows={4} />
+  const { project, setValue } = useProjectStore()
+
+  return (
+    <CardWrapper title="Brandschutz">
+      <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+        <Checkbox
+          onChange={(ev) => setValue('fireProtection', ev.target.checked)}
+          checked={project.fireProtection}
+        />
+
+        <FormControl sx={{ display: 'flex', flexDirection: 'row' }} disabled={!project.fireProtection}>
+          <RadioGroup
+            value={project.fireProtectionOption}
+            onChange={(ev) => {
+              setValue('fireProtectionOption', asFireProtectionOption(ev.target.value))
+            }}
+            row
+          >
+            <FormControlLabel value="level1" control={<Radio />} label="Level 1" />
+            <FormControlLabel value="level2" control={<Radio />} label="Level 2" />
+            <FormControlLabel value="level3" control={<Radio />} label="Level 3" />
+          </RadioGroup>
+        </FormControl>
+      </Box>
+    </CardWrapper>
+  )
 }
 
 function En1090Card() {
-  return <MultilineTextCard title="EN 1090" propertyName="en1090" rows={4} />
+  const { project, setValue } = useProjectStore()
+
+  return (
+    <CardWrapper title="EN1090">
+      <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+        <Checkbox onChange={(ev) => setValue('en1090', ev.target.checked)} checked={project.en1090} />
+
+        <FormControl sx={{ display: 'flex', flexDirection: 'row' }} disabled={!project.en1090}>
+          <RadioGroup
+            value={project.en1090Option}
+            onChange={(ev) => {
+              setValue('en1090Option', asEN1090Option(ev.target.value))
+            }}
+            row
+          >
+            <FormControlLabel value="ex1" control={<Radio />} label="EX 1" />
+            <FormControlLabel value="ex2" control={<Radio />} label="EX 2" />
+            <FormControlLabel value="ex3" control={<Radio />} label="EX 3" />
+          </RadioGroup>
+        </FormControl>
+      </Box>
+    </CardWrapper>
+  )
 }
 
 function NotesCard() {
@@ -275,22 +333,26 @@ function MultilineTextCard({
   title,
   propertyName,
   rows,
-}: { title: string; propertyName: ProjectKeys; rows: number }) {
+  children,
+}: { title: string; propertyName: ProjectKeys; rows: number; children?: React.ReactNode }) {
   const { project, setValue } = useProjectStore()
   return (
     <CardWrapper title={title}>
-      <TextField
-        autoFocus
-        margin="dense"
-        label=""
-        type="text"
-        fullWidth
-        variant="standard"
-        multiline
-        rows={rows}
-        value={project[propertyName]}
-        onChange={(event) => setValue(propertyName, event.target.value)}
-      />
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+        <TextField
+          autoFocus
+          margin="dense"
+          label=""
+          type="text"
+          fullWidth
+          variant="standard"
+          multiline
+          rows={rows}
+          value={project[propertyName]}
+          onChange={(event) => setValue(propertyName, event.target.value)}
+        />
+        {children}
+      </Box>
     </CardWrapper>
   )
 }
@@ -305,122 +367,5 @@ function CardWrapper({ title, children }: { title: string; children: React.React
         {children}
       </CardContent>
     </Card>
-  )
-}
-
-function PersonsInCharge({
-  contacts,
-  contactId,
-  personsInCharge,
-  setPersonInChargeValue,
-  addPersonInCharge,
-  removePersonInCharge,
-  sx,
-}: {
-  contacts: Contact[]
-  contactId: string | undefined
-  personsInCharge: string[]
-  setPersonInChargeValue: (value: string, index: number) => void
-  addPersonInCharge: () => void
-  removePersonInCharge: (index: number) => void
-  sx?: SxProps<Theme>
-}) {
-  const [selcetedContact, setSelectedContact] = useState<Contact | undefined>(undefined)
-
-  useEffect(() => {
-    setSelectedContact(contacts.find((contact) => contact.id === contactId))
-  }, [contactId, contacts])
-
-  return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, ...sx }}>
-      {personsInCharge.map((personInCharge, index) => {
-        return (
-          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-          <Box key={index} sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
-            {selcetedContact?.persons.length && (
-              <PersonAutocomplete
-                sx={{ flexGrow: 1 }}
-                persons={selcetedContact?.persons || []}
-                label="Ansprechpartner"
-                value={personInCharge}
-                onChange={(value) => {
-                  console.log('personInCharge', personInCharge)
-                  setPersonInChargeValue(value || '', index)
-                }}
-              />
-            )}
-            {!selcetedContact?.persons.length && (
-              <TextField
-                // sx={{ flexGrow: 1 }}
-                fullWidth
-                autoFocus
-                margin="dense"
-                label="Ansprechpartner (Freitext)"
-                type="text"
-                variant="standard"
-                value={personInCharge}
-                onChange={(event) => setPersonInChargeValue(event.target.value, index)}
-              />
-            )}
-
-            <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-              <IconButton onClick={() => removePersonInCharge(index)}>
-                <Delete />
-              </IconButton>
-            </Box>
-          </Box>
-        )
-      })}
-
-      <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-        <IconButton onClick={() => addPersonInCharge()}>
-          <Add />
-        </IconButton>
-      </Box>
-    </Box>
-  )
-}
-
-interface ContactWithPersonsInChargeProps {
-  contacts: Contact[]
-  label: string
-  contactIdPropertyName:
-    | 'customerContactId'
-    | 'constructionManagementContactId'
-    | 'architectContactId'
-    | 'builderContactId'
-  personsInChargePropertyName:
-    | 'customerPersonsInCharge'
-    | 'constructionManagementPersonsInCharge'
-    | 'architectPersonsInCharge'
-    | 'builderPersonsInCharge'
-}
-
-function ContactWithPersonsInCharge(props: ContactWithPersonsInChargeProps) {
-  const { contacts, label, contactIdPropertyName, personsInChargePropertyName } = props
-
-  const { project, setValue, addArrayValue, setArrayValue, removeArrayValue } = useProjectStore()
-  console.log('ContactWithPersonsInCharge', project)
-  return (
-    <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
-      <ContactAutocomplete
-        sx={{ flexGrow: 1 }}
-        contacts={contacts}
-        label={label}
-        value={project[contactIdPropertyName]}
-        onContactChange={(contact) => setValue(contactIdPropertyName, contact?.id)}
-      />
-      <PersonsInCharge
-        sx={{ flexGrow: 1 }}
-        contacts={contacts}
-        contactId={project[contactIdPropertyName]}
-        personsInCharge={project[personsInChargePropertyName] || []}
-        setPersonInChargeValue={(value, index) =>
-          setArrayValue(personsInChargePropertyName, index, value)
-        }
-        addPersonInCharge={() => addArrayValue(personsInChargePropertyName, '')}
-        removePersonInCharge={(index) => removeArrayValue(personsInChargePropertyName, index)}
-      />
-    </Box>
   )
 }

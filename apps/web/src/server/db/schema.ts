@@ -1,5 +1,5 @@
-import { relations, sql } from 'drizzle-orm'
-import { integer, jsonb, pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
+import { type InferSelectModel, relations, sql } from 'drizzle-orm'
+import { boolean, integer, jsonb, pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
 
 export const contacts = pgTable('contact', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
@@ -15,9 +15,11 @@ export const contacts = pgTable('contact', {
   city: text('city').notNull(),
   country: text('country').notNull().default(''),
   pobox: text('pobox').notNull().default(''),
+  phone1: text('phone1').notNull().default(''),
+  phone2: text('phone2').notNull().default(''),
+  email: text('email').notNull().default(''),
+  web: text('web').notNull().default(''),
   notes: text('notes').notNull().default(''),
-
-  persons: jsonb('persons').notNull().default([]),
 
   createdAt: timestamp('createdAt', { precision: 3 }).notNull().defaultNow(),
   updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
@@ -34,6 +36,7 @@ export const projects = pgTable('project', {
   name: text('name').notNull(),
   description: text('description').notNull().default(''),
   notes: text('notes').notNull().default(''),
+  customerReference: text('customerReference').notNull().default(''),
   customerContactId: text('customerContactId').references(() => contacts.id),
   objectId: text('objectId').references(() => projectObjects.id),
   constructionManagementContactId: text('constructionManagementContactId').references(() => contacts.id),
@@ -43,10 +46,15 @@ export const projects = pgTable('project', {
   material: text('material').notNull().default(''),
   assembly: text('assembly').notNull().default(''),
   surface: text('surface').notNull().default(''),
-  fireProtection: text('fireProtection').notNull().default(''),
-  en1090: text('en1090').notNull().default(''),
-  deadline: timestamp('deadline', { precision: 3 }).defaultNow(),
+  surfaceColor: text('surfaceColor').notNull().default(''),
+  fireProtection: boolean('fireProtection').notNull().default(false),
+  fireProtectionOption: text('fireProtectionOption').notNull().default(''),
+  en1090: boolean('en1090').notNull().default(false),
+  en1090Option: text('en1090Option').notNull().default(''),
   clerkEmployeeId: text('clerkEmployeeId')
+    .references(() => employees.id)
+    .notNull(),
+  projectManagerEmployeeId: text('projectManagerEmployeeId')
     .references(() => employees.id)
     .notNull(),
 
@@ -54,7 +62,15 @@ export const projects = pgTable('project', {
   updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
 })
 
-export type SelectProject = typeof projects.$inferSelect
+export type SelectProject = InferSelectModel<typeof projects> & {
+  object: SelectProjectObject | null
+  customer: SelectContact | null
+  constructionManagement: SelectContact | null
+  architect: SelectContact | null
+  builder: SelectContact | null
+  clerk: SelectEmployee
+  projectManager: SelectEmployee
+}
 
 export const projectObjects = pgTable('projectObject', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
@@ -70,6 +86,8 @@ export const projectObjects = pgTable('projectObject', {
   createdAt: timestamp('createdAt', { precision: 3 }).notNull().defaultNow(),
   updatedAt: timestamp('updatedAt', { precision: 3 }).notNull().defaultNow(),
 })
+
+export type SelectProjectObject = typeof projectObjects.$inferSelect
 
 export const employees = pgTable('employee', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
@@ -178,6 +196,11 @@ export const projectRelations = relations(projects, ({ one, many }) => ({
     fields: [projects.clerkEmployeeId],
     references: [employees.id],
   }),
+  projectManager: one(employees, {
+    relationName: 'projectManagerToEmployee',
+    fields: [projects.projectManagerEmployeeId],
+    references: [employees.id],
+  }),
   quotes: many(quotes, {
     relationName: 'qutoesToProject',
   }),
@@ -193,8 +216,11 @@ export const projectObjectRelations = relations(projectObjects, ({ many }) => ({
 }))
 
 export const employeesRelations = relations(employees, ({ many }) => ({
-  projects: many(projects, {
+  projectClerks: many(projects, {
     relationName: 'projectClerkToEmployee',
+  }),
+  projectManagers: many(projects, {
+    relationName: 'projectManagerToEmployee',
   }),
 }))
 

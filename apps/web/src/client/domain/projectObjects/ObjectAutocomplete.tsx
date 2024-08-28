@@ -6,13 +6,13 @@ export function ObjectAutocomplete({
   value,
   objects,
   label,
-  onContactChange,
+  onObjectChange,
   sx,
 }: {
   value: string | undefined
   objects: ProjectObject[]
   label: string
-  onContactChange: (contact: ProjectObject | undefined) => void
+  onObjectChange: (contact: ProjectObject | undefined) => void
   sx?: SxProps<Theme>
 }) {
   const [searchQuery, setSearchQuery] = useState('')
@@ -33,12 +33,26 @@ export function ObjectAutocomplete({
     }
   }, [objects, searchQuery])
 
+  console.log('ObjectAutocomplete.selectedObject', {
+    selcetedObject,
+    value,
+    o: objects.map(({ id }) => id).slice(0, 10),
+    o2: objects.find((obj) => obj.id === value),
+  })
+
   useEffect(() => {
+    console.log('ObjectAutocomplete.useEffect')
     if (value) {
-      const obj = objects.find((obj) => obj.id === value) || null
-      setSelectedObject(obj)
-      console.log('setSelectedContact', obj)
+      const objForValue = objects.find((obj) => obj.id === value) || null
+      setSelectedObject(objForValue)
+      console.log(
+        'ObjectAutocomplete.useEffect >>>',
+        objForValue,
+        value,
+        objects.find((obj) => obj.id === value),
+      )
     }
+    setSelectedObject(null)
   }, [value, objects])
 
   return (
@@ -63,7 +77,8 @@ export function ObjectAutocomplete({
       }}
       value={selcetedObject}
       onChange={(_event, obj) => {
-        onContactChange(obj ? obj : undefined)
+        console.log('ObjectAutocomplete.onChange', obj)
+        onObjectChange(obj ? obj : undefined)
       }}
       renderInput={(params) => (
         <TextField

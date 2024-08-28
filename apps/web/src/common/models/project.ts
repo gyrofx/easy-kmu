@@ -1,7 +1,8 @@
 import { zodContact, type Contact } from '@/common/models/contact'
 import { type Employee, zodEmployee } from '@/common/models/employee'
 import { zodProjectObject, type ProjectObject } from '@/common/models/projectObject'
-import { zodIsoDateString, type IsoDateString } from '@easy-kmu/common'
+import { zodIsoDateString, zodParse, type IsoDateString } from '@easy-kmu/common'
+import type { Nominal } from '@easy-kmu/common'
 import type { AssertTrue, IsExact } from 'conditional-type-checks'
 import { z } from 'zod'
 
@@ -12,29 +13,39 @@ export interface CreateOrUpdateProject {
   description: string
   notes: string
 
-  customerContactId?: string
-  customerPersonsInCharge: string[]
-
   objectId?: string
 
+  customerContactId?: string
   constructionManagementContactId?: string
-  constructionManagementPersonsInCharge: string[]
-
   architectContactId?: string
-  architectPersonsInCharge: string[]
-
   builderContactId?: string
-  builderPersonsInCharge: string[]
 
   clerkEmployeeId: string
+  projectManagerEmployeeId: string
+
+  customerReference: string
 
   material: string
   assembly: string
   surface: string
-  fireProtection: string
-  en1090: string
-  deadline?: IsoDateString
+  surfaceColor: string
+  fireProtection: boolean
+  fireProtectionOption: FireProtectionOption
+  en1090: boolean
+  en1090Option: EN1090Option
 }
+
+export type FireProtectionOption = Nominal<'level1' | 'level2' | 'level3', 'FireProtectionOption'>
+export function asFireProtectionOption(level: string) {
+  return zodParse(zodFireProtectionOption, level) as FireProtectionOption
+}
+const zodFireProtectionOption = z.union([z.literal('level1'), z.literal('level2'), z.literal('level3')])
+
+export type EN1090Option = Nominal<'ex1' | 'ex2' | 'ex3', 'EN1090Option'>
+export function asEN1090Option(level: string) {
+  return zodParse(zodEn1090Option, level) as EN1090Option
+}
+const zodEn1090Option = z.union([z.literal('ex1'), z.literal('ex2'), z.literal('ex3')])
 
 export interface Project extends CreateOrUpdateProject {
   id: string
@@ -45,6 +56,7 @@ export interface Project extends CreateOrUpdateProject {
   architect?: Contact
   builder?: Contact
   clerk: Employee
+  projectManager: Employee
   createdAt: IsoDateString
   updatedAt: IsoDateString
 }
@@ -56,27 +68,26 @@ export const zodCreateOrUpdateProject = z.object({
   description: z.string(),
   notes: z.string(),
 
-  customerContactId: z.string().optional(),
-  customerPersonsInCharge: z.array(z.string()),
-
   objectId: z.string().optional(),
 
+  customerContactId: z.string().optional(),
   constructionManagementContactId: z.string().optional(),
-  constructionManagementPersonsInCharge: z.array(z.string()),
-
   architectContactId: z.string().optional(),
-  architectPersonsInCharge: z.array(z.string()),
-
   builderContactId: z.string().optional(),
-  builderPersonsInCharge: z.array(z.string()),
 
   clerkEmployeeId: z.string(),
+  projectManagerEmployeeId: z.string(),
+
+  customerReference: z.string(),
 
   material: z.string(),
   assembly: z.string(),
   surface: z.string(),
-  fireProtection: z.string(),
-  en1090: z.string(),
+  surfaceColor: z.string(),
+  fireProtection: z.boolean(),
+  fireProtectionOption: z.string(),
+  en1090: z.boolean(),
+  en1090Option: z.string(),
   deadline: zodIsoDateString.optional(),
 })
 
@@ -89,6 +100,7 @@ export const zodProject = zodCreateOrUpdateProject.extend({
   architect: zodContact.optional(),
   builder: zodContact.optional(),
   clerk: zodEmployee,
+  projectManager: zodEmployee,
   createdAt: zodIsoDateString,
   updatedAt: zodIsoDateString,
 })

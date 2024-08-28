@@ -1,30 +1,18 @@
-import type { CreateOrUpdateProject } from '@/common/models/project'
+import {
+  asEN1090Option,
+  asFireProtectionOption,
+  type CreateOrUpdateProject,
+} from '@/common/models/project'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { produce } from 'immer'
 export interface ProjectState {
   project: CreateOrUpdateProject
   setInitialProject: (project: CreateOrUpdateProject) => void
   setValue: <T>(key: ProjectKeys, value: T) => void
-  addArrayValue: (key: ProjectArrayValueKeys, value: string) => void
-  setArrayValue: (key: ProjectArrayValueKeys, index: number, value: string) => void
-  removeArrayValue: (key: ProjectArrayValueKeys, index: number) => void
   clear: () => void
 }
 
-export type ProjectKeys = keyof Omit<
-  CreateOrUpdateProject,
-  | 'customerPersonsInCharge'
-  | 'constructionManagementPersonsInCharge'
-  | 'architectPersonsInCharge'
-  | 'builderPersonsInCharge'
->
-
-export type ProjectArrayValueKeys =
-  | 'customerPersonsInCharge'
-  | 'constructionManagementPersonsInCharge'
-  | 'architectPersonsInCharge'
-  | 'builderPersonsInCharge'
+export type ProjectKeys = keyof CreateOrUpdateProject
 
 export const useProjectStore = create(
   persist<ProjectState>(
@@ -34,24 +22,6 @@ export const useProjectStore = create(
 
       setValue: <T>(key: ProjectKeys, value: T) =>
         set((state) => ({ ...state, project: { ...state.project, [key]: value } })),
-
-      addArrayValue: (key: ProjectArrayValueKeys, value: string) =>
-        set((state) =>
-          produce(state, (draft) => {
-            if (!draft.project[key]) draft.project[key] = [value]
-            else draft.project[key].push(value)
-          }),
-        ),
-
-      setArrayValue: (key: ProjectArrayValueKeys, index: number, value: string) =>
-        set((state) =>
-          produce(state, (draft) => {
-            if (index < draft.project[key].length) draft.project[key][index] = value
-          }),
-        ),
-
-      removeArrayValue: (key: ProjectArrayValueKeys, index: number) =>
-        set((state) => produce(state, (draft) => void draft.project[key].splice(index, 1))),
 
       clear: () => set((state) => ({ ...state, project: emptyProject() })),
     }),
@@ -69,23 +39,24 @@ function emptyProject(): CreateOrUpdateProject {
     description: '',
     notes: '',
 
-    customerContactId: undefined,
-    customerPersonsInCharge: [],
-
     objectId: undefined,
+
+    customerContactId: undefined,
     constructionManagementContactId: undefined,
-    constructionManagementPersonsInCharge: [],
     architectContactId: undefined,
-    architectPersonsInCharge: [],
     builderContactId: undefined,
-    builderPersonsInCharge: [],
     clerkEmployeeId: '',
+    projectManagerEmployeeId: '',
+
+    customerReference: '',
 
     material: '',
     assembly: '',
     surface: '',
-    fireProtection: '',
-    en1090: '',
-    deadline: undefined,
+    surfaceColor: '',
+    fireProtection: false,
+    fireProtectionOption: asFireProtectionOption('level1'),
+    en1090: false,
+    en1090Option: asEN1090Option('ex1'),
   }
 }

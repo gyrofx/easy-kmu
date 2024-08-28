@@ -1,17 +1,6 @@
 import type { AssertTrue, IsExact } from 'conditional-type-checks'
 import { z } from 'zod'
 
-export const zodPersons = z.array(
-  z.object({
-    name: z.string(),
-    role: z.string(),
-    email: z.string(),
-    phone1: z.string(),
-    phone2: z.string(),
-    notes: z.string(),
-  }),
-)
-
 export const zodCreateOrUpdateContact = z.object({
   id: z.string().optional(),
 
@@ -27,9 +16,11 @@ export const zodCreateOrUpdateContact = z.object({
   city: z.string(),
   country: z.string(),
   pobox: z.string(),
+  phone1: z.string(),
+  phone2: z.string(),
+  email: z.string(),
+  web: z.string(),
   notes: z.string(),
-
-  persons: zodPersons,
 })
 
 export const zodContact = zodCreateOrUpdateContact.extend({
@@ -61,9 +52,11 @@ export interface CreateOrUpdateContact {
   city: string
   country: string
   pobox: string
+  phone1: string
+  phone2: string
+  email: string
+  web: string
   notes: string
-
-  persons: Person[]
 }
 
 export interface Person {

@@ -1,8 +1,8 @@
-import { zodPersons, type Contact } from '@/common/models/contact'
+import type { Contact } from '@/common/models/contact'
 import { db } from '@/server/db/db'
 import type { SelectContact } from '@/server/db/schema'
 import { nullsToUndefined } from '@/server/models/contact/db/nullsToUndefined'
-import { IsoDateString, zodParse } from '@easy-kmu/common'
+import { IsoDateString } from '@easy-kmu/common'
 
 export async function listContacts(): Promise<Contact[]> {
   const contacts = await db().query.contacts.findMany()
@@ -13,7 +13,6 @@ export async function listContacts(): Promise<Contact[]> {
 export function dbContactToConact(dbContact: SelectContact): Contact {
   return nullsToUndefined({
     ...dbContact,
-    persons: zodParse(zodPersons, dbContact.persons),
     createdAt: IsoDateString(dbContact.createdAt),
     updatedAt: IsoDateString(dbContact.updatedAt),
   })

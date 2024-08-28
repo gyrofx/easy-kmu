@@ -1,5 +1,5 @@
 import { db } from '@/server/db/db'
-import { dbProjectToProject } from '@/server/models/project/db/listProject'
+import { dbProjectToProject } from '@/server/models/project/db/dbProjectToProject'
 
 export async function findFirstProject(id: string) {
   const newOrUpdateProject = await findFirstProjectInner(id)
@@ -18,6 +18,7 @@ function findFirstProjectInner(id: string) {
       architect: true,
       builder: true,
       clerk: true,
+      projectManager: true,
     },
   })
 }

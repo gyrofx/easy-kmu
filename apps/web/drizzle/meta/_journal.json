@@ -15,6 +15,20 @@
       "when": 1722524078022,
       "tag": "0001_crazy_black_bird",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1724698547168,
+      "tag": "0002_aromatic_captain_universe",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1724698720245,
+      "tag": "0003_foamy_shiva",
+      "breakpoints": true
     }
   ]
 }
