@@ -1,7 +1,7 @@
 import { db } from '@/server/db/db'
 import type { Quote } from '@/common/models/quote'
 import { dbQuoteToQuote } from '@/server/models/quote/db/dbQuoteToQuote'
-import { quotes } from '@/server/db/schema'
+import { quotes } from '@/server/db/schema/quotes'
 import { eq } from 'drizzle-orm'
 
 export async function listQuotesByProject(projectId: string): Promise<Quote[]> {

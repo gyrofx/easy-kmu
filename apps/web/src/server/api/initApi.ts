@@ -18,6 +18,9 @@ import { generateQuotePdf } from '@/server/models/quote/generateQuotePdf'
 import { deleteQuote } from '@/server/models/quote/deleteQuote'
 import { findQuoteById } from '@/server/models/quote/db/findQuoteById'
 import { updateQuoteState } from '@/server/models/quote/updateQuoteState'
+import { listMaterial } from '@/server/models/material/listMaterial'
+import { listMaterialGroup } from '@/server/models/material/listMaterialGroup'
+import { createOrUpdateMaterial } from '@/server/models/material/createOrUpdateMaterial'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -109,6 +112,21 @@ export function initApi(app: Express) {
     deleteQuote: async ({ params }) => {
       await deleteQuote(params.quoteId)
       return { status: 200, body: { success: true } }
+    },
+
+    materials: async () => {
+      const materials = await listMaterial()
+      return { status: 200, body: materials }
+    },
+
+    createOrUpdateMaterial: async ({ body }) => {
+      const material = await createOrUpdateMaterial(body)
+      return { status: 200, body: material }
+    },
+
+    materialGroups: async () => {
+      const groups = await listMaterialGroup()
+      return { status: 200, body: groups }
     },
   })
 

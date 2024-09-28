@@ -1,8 +1,8 @@
 import { db } from '@/server/db/db'
-import { projects } from '@/server/db/schema'
 import type { CreateOrUpdateProject } from '@/common/models/project'
 import { eq } from 'drizzle-orm'
 import { findFirstProject } from '@/server/models/project/db/findFirstProject'
+import { projects } from '@/server/db/schema/projects'
 
 export async function createOrUpdateProject(project: CreateOrUpdateProject) {
   const ids = project.id

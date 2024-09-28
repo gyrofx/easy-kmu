@@ -1,0 +1,1 @@
+ALTER TABLE "materials" ALTER COLUMN "kgPerMeter" SET DATA TYPE real;

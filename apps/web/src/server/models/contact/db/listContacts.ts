@@ -1,6 +1,6 @@
 import type { Contact } from '@/common/models/contact'
 import { db } from '@/server/db/db'
-import type { SelectContact } from '@/server/db/schema'
+import type { SelectContact } from '@/server/db/schema/contacts'
 import { nullsToUndefined } from '@/server/models/contact/db/nullsToUndefined'
 import { IsoDateString } from '@easy-kmu/common'
 

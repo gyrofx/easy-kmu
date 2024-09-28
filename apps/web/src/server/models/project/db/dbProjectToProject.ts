@@ -4,7 +4,7 @@ import { nullsToUndefined } from '@/server/models/contact/db/nullsToUndefined'
 import { dbContactToConact } from '@/server/models/contact/db/listContacts'
 import { dbEmployeeToEmployee } from '@/server/models/employee/db/listEmployees'
 import { dbObjectToObject } from '@/server/models/projectObject/db/listProjectObjects'
-import type { SelectProject } from '@/server/db/schema'
+import type { SelectProject } from '@/server/db/schema/projects'
 
 export function dbProjectToProject(dbProject: SelectProject): Project {
   return nullsToUndefined({

@@ -102,6 +102,15 @@ export const routes = {
     title: t().routes.updateQuote,
   },
 
+  tasks: {
+    id: 'project-tasks',
+    path: '/project/:projectId/tasks' as const,
+    icon: <Info />,
+    text: t().routes.tasks,
+    maxWidth: 'md' as const,
+    title: t().routes.tasks,
+  },
+
   contacts: {
     path: '/contacts' as const,
     icon: <Info />,
@@ -116,6 +125,15 @@ export const routes = {
     text: t().routes.objects,
     maxWidth: 'md' as const,
     title: t().routes.objects,
+  },
+
+  materials: {
+    id: 'materials',
+    path: '/materials' as const,
+    icon: <Info />,
+    text: t().routes.materials,
+    maxWidth: 'md' as const,
+    title: t().routes.materials,
   },
 
   about: {

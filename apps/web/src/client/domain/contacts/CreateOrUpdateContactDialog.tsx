@@ -150,88 +150,69 @@ export function AddContactDialog({
             onChange={(event) => setValue('city', event.target.value)}
           />
         </Box>
-        <Persons />
+        <TextField
+          margin="dense"
+          label="Land"
+          type="text"
+          fullWidth
+          variant="standard"
+          value={contact.country}
+          onChange={(event) => setValue('country', event.target.value)}
+        />
+        <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+          <TextField
+            margin="dense"
+            label="Telefon 1"
+            type="text"
+            fullWidth
+            variant="standard"
+            value={contact.phone1}
+            onChange={(event) => setValue('phone1', event.target.value)}
+          />
+          <TextField
+            margin="dense"
+            label="Telefon 2"
+            type="text"
+            fullWidth
+            variant="standard"
+            value={contact.phone2}
+            onChange={(event) => setValue('phone2', event.target.value)}
+          />
+        </Box>
+        <TextField
+          margin="dense"
+          label="E-Mail"
+          type="text"
+          fullWidth
+          variant="standard"
+          value={contact.email}
+          onChange={(event) => setValue('email', event.target.value)}
+        />
+        <TextField
+          margin="dense"
+          label="Webseite"
+          type="text"
+          fullWidth
+          variant="standard"
+          value={contact.web}
+          onChange={(event) => setValue('web', event.target.value)}
+        />
+        <TextField
+          margin="dense"
+          label="Notizen"
+          type="text"
+          fullWidth
+          variant="standard"
+          value={contact.notes}
+          onChange={(event) => setValue('notes', event.target.value)}
+          rows={4}
+        />
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose}>Abbrechen</Button>
         <Button onClick={save}>{buttonOkText(contact)}</Button>
       </DialogActions>
     </Dialog>
-  )
-}
-
-function Persons() {
-  const { contact, setPersonValue, removePerson, movePerson, addPerson } = useContactStore()
-  console.log('contact', contact)
-  return (
-    <>
-      {contact.persons.map((person, index) => (
-        // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-        <Box key={index} sx={{ display: 'flex', flexDirection: 'column' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-            <TextField
-              margin="dense"
-              label="Name"
-              type="text"
-              fullWidth
-              variant="standard"
-              value={person.name}
-              onChange={(event) => setPersonValue(index, 'name', event.target.value)}
-            />
-            <TextField
-              margin="dense"
-              label="Rolle"
-              type="text"
-              fullWidth
-              variant="standard"
-              value={person.role}
-              onChange={(event) => setPersonValue(index, 'role', event.target.value)}
-            />
-          </Box>
-          <TextField
-            margin="dense"
-            label="E-Mail"
-            type="text"
-            fullWidth
-            variant="standard"
-            value={person.email}
-            onChange={(event) => setPersonValue(index, 'email', event.target.value)}
-          />
-          <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-            <TextField
-              margin="dense"
-              label="Telefon 1"
-              type="text"
-              fullWidth
-              variant="standard"
-              value={person.phone1}
-              onChange={(event) => setPersonValue(index, 'phone1', event.target.value)}
-            />
-            <TextField
-              margin="dense"
-              label="Telefon 2"
-              type="text"
-              fullWidth
-              variant="standard"
-              value={person.phone2}
-              onChange={(event) => setPersonValue(index, 'phone2', event.target.value)}
-            />
-          </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-            <IconButton onClick={() => removePerson(index)}>
-              <Delete />
-            </IconButton>
-            <IconButton onClick={() => movePerson(index, -1)}>
-              <KeyboardArrowUp />
-            </IconButton>
-            <IconButton onClick={() => movePerson(index, 1)}>
-              <KeyboardArrowDown />
-            </IconButton>
-          </Box>
-        </Box>
-      ))}
-      <Button onClick={() => addPerson()}>Person hinzufügen</Button>
-    </>
   )
 }
 

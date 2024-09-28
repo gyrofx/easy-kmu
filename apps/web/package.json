@@ -32,7 +32,8 @@
     "buildinfo:update": "yarn run src/scripts/updateBuildInfo.ts",
     "certs:all": "yarn run certs:server",
     "certs:server": "mkdir -p certs && mkcert -key-file certs/server-key.pem -cert-file certs/server-cert.pem ekmu.localhost localhost",
-    "scripts:importTestdata": "yarn run tsx src/scripts/importTestdata.ts"
+    "scripts:importTestdata": "yarn run tsx src/scripts/importTestdata.ts",
+    "scripts:importMaterial": "yarn run tsx src/scripts/importMaterial.ts"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
@@ -46,7 +47,7 @@
     "@mui/joy": "^5.0.0-beta.48",
     "@mui/lab": "^5.0.0-alpha.170",
     "@mui/material": "^5.16.4",
-    "@mui/x-data-grid": "^7.6.1",
+    "@mui/x-data-grid": "^7.15.0",
     "@mui/x-date-pickers": "^7.11.0",
     "@prisma/client": "^5.17.0",
     "@reduxjs/toolkit": "^2.2.5",
@@ -68,10 +69,12 @@
     "conditional-type-checks": "^1.0.6",
     "connect-redis": "^7.1.1",
     "csv": "^6.3.9",
+    "csv-parse": "^5.5.6",
     "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "drizzle-kit": "^0.23.0",
     "drizzle-orm": "^0.32.0",
+    "drizzle-zod": "^0.5.1",
     "express": "^4.19.2",
     "express-openid-connect": "^2.17.1",
     "express-session": "^1.18.0",

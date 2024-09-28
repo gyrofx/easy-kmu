@@ -11,6 +11,7 @@ export const de = {
     addProject: 'Projekt erstellen',
     updateProject: 'Projekt bearbeiten',
     contacts: 'Kontakte',
+    materials: 'Materialien',
     objects: 'Objekte',
     quotes: 'Angebote',
     addQuote: 'Angebot erstellen',
@@ -18,6 +19,7 @@ export const de = {
     about: 'Technische Informationen',
     settings: 'Settings',
     signIn: 'Anmelden',
+    tasks: 'Aufgaben',
   },
   errors: {
     restart: 'Neustart',

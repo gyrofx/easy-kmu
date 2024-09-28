@@ -55,6 +55,12 @@ export function ProjectView() {
             component={Link}
           />
           <Tab
+            label="Aufgaben"
+            value={routes.tasks.id}
+            to={`/project/${project.id}/tasks`}
+            component={Link}
+          />
+          <Tab
             label="Rechnungen"
             value={routes.projectInvoices.id}
             to={`/project/${project.id}/invoices`}

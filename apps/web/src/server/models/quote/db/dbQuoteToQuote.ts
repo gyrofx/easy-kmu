@@ -1,7 +1,7 @@
 import type { Quote } from '@/common/models/quote'
+import type { SelectQuote } from '@/server/db/schema/quotes'
 import { IsoDateString } from '@easy-kmu/common'
 import { z } from 'zod'
-import type { SelectQuote } from '@/server/db/schema'
 
 export function dbQuoteToQuote(dbQuote: SelectQuote): Quote {
   return {

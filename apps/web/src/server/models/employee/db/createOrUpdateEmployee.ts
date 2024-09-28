@@ -1,6 +1,6 @@
 import type { CreateOrupdateEmployee } from '@/common/models/employee'
 import { db } from '@/server/db/db'
-import { employees } from '@/server/db/schema'
+import { employees } from '@/server/db/schema/employees'
 import { dbEmployeeToEmployee } from '@/server/models/employee/db/listEmployees'
 import { eq } from 'drizzle-orm'
 

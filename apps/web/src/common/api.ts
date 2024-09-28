@@ -5,6 +5,8 @@ import { zodContact, zodCreateOrUpdateContact } from '@/common/models/contact'
 import { zodCreateOrUpdateProject, zodProject } from '@/common/models/project'
 import { zodEmployee } from '@/common/models/employee'
 import { zodCreateOrUpdateQuote, zodQuote, zodQuoteState } from '@/common/models/quote'
+import { zodCreateOrUpdateMaterial, zodMaterial, zodMaterialGroup } from '@/common/models/material'
+import { createOrUpdateMaterial } from '@/server/models/material/createOrUpdateMaterial'
 
 export const contract = initContract()
 
@@ -112,5 +114,24 @@ export const api = contract.router({
     path: '/api/create-quote-pdf/:quoteId',
     body: ContractNoBody,
     responses: { 200: zodQuote },
+  },
+
+  materials: {
+    method: 'GET',
+    path: '/api/materials',
+    responses: { 200: z.array(zodMaterial) },
+  },
+
+  createOrUpdateMaterial: {
+    method: 'POST',
+    path: '/api/create-or-update-material',
+    body: zodCreateOrUpdateMaterial,
+    responses: { 200: zodMaterial },
+  },
+
+  materialGroups: {
+    method: 'GET',
+    path: '/api/material-groups',
+    responses: { 200: z.array(zodMaterialGroup) },
   },
 })

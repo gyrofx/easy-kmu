@@ -1,6 +1,6 @@
 import type { CreateOrUpdateObject } from '@/common/models/projectObject'
 import { db } from '@/server/db/db'
-import { projectObjects } from '@/server/db/schema'
+import { projectObjects } from '@/server/db/schema/projectObjects'
 import { dbObjectToObject } from '@/server/models/projectObject/db/listProjectObjects'
 import { eq } from 'drizzle-orm'
 

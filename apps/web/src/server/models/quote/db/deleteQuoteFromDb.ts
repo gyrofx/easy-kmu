@@ -1,5 +1,5 @@
 import { db } from '@/server/db/db'
-import { quotes } from '@/server/db/schema'
+import { quotes } from '@/server/db/schema/quotes'
 import { eq } from 'drizzle-orm'
 
 export async function deleteQuoteFromDb(quoteId: string) {

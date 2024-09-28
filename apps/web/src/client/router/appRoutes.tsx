@@ -13,6 +13,9 @@ import { Typography } from '@mui/material'
 import { Quotes } from '@/client/domain/quotes/Quotes'
 import { CreateQuoteView, UpdateQuoteView } from '@/client/domain/quotes/CreateOrUpdateQuote'
 import { ProjectOverview } from '@/client/domain/projects/ProjectOverview'
+import { Tasks } from '@/client/domain/tasks/Tasks'
+import { Materials2 } from '@/client/domain/material/Materials2'
+import { Materials } from '@/client/domain/material/Materials'
 
 export function appRoutes() {
   return [
@@ -78,6 +81,10 @@ export function appRoutes() {
               element: <Quotes />,
             },
             {
+              ...routes.tasks,
+              element: <Tasks />,
+            },
+            {
               ...routes.projectInvoices,
               element: <div>Rechnungen</div>,
             },
@@ -91,7 +98,10 @@ export function appRoutes() {
           ...routes.updateQuote,
           element: <UpdateQuoteView />,
         },
-
+        {
+          ...routes.materials,
+          element: <Materials />,
+        },
         {
           ...routes.about,
           element: <div>About</div>,
