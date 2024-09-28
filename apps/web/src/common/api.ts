@@ -6,7 +6,7 @@ import { zodCreateOrUpdateProject, zodProject } from '@/common/models/project'
 import { zodEmployee } from '@/common/models/employee'
 import { zodCreateOrUpdateQuote, zodQuote, zodQuoteState } from '@/common/models/quote'
 import { zodCreateOrUpdateMaterial, zodMaterial, zodMaterialGroup } from '@/common/models/material'
-import { createOrUpdateMaterial } from '@/server/models/material/createOrUpdateMaterial'
+import { zodCreateOrUpdateTask, zodTask } from '@/common/models/task'
 
 export const contract = initContract()
 
@@ -133,5 +133,26 @@ export const api = contract.router({
     method: 'GET',
     path: '/api/material-groups',
     responses: { 200: z.array(zodMaterialGroup) },
+  },
+
+  listTasks: {
+    method: 'GET',
+    path: '/api/list-tasks',
+    query: z.object({ projectId: z.string() }),
+    responses: { 200: z.array(zodTask) },
+  },
+
+  createOrUpdateTask: {
+    method: 'POST',
+    path: '/api/create-or-update-task',
+    body: zodCreateOrUpdateTask,
+    responses: { 200: zodTask },
+  },
+
+  deleteTask: {
+    method: 'DELETE',
+    path: '/api/delete-task/:taskId',
+    body: ContractNoBody,
+    responses: { 200: z.object({ success: z.boolean() }) },
   },
 })

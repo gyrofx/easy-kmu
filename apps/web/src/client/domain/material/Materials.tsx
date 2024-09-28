@@ -228,8 +228,8 @@ function MaterialGrid({
       },
       {
         header: 'Fr./m',
-        // accessorKey: 'centsPerMeter',
-        accessorFn: (row) => `${row.centsPerMeter ? row.centsPerMeter / 100 : '-'}`,
+        accessorKey: 'centsPerMeter',
+        // accessorFn: (row) => `${row.centsPerMeter ? row.centsPerMeter / 100 : '-'}`,
 
         muiTableHeadCellProps: { style: { color: 'green' } },
         enableHiding: false,
@@ -242,11 +242,13 @@ function MaterialGrid({
           onFocus: () => setValidationErrors({ ...validationErrors, pricePerMeter: undefined }),
           //optionally add validation checking for onBlur or onChange
         },
+        // Cell: ({ cell }) => <Box component="span">{toFixedNumber(cell.getValue<number>())}</Box>,
+        // Edit: ({ cell }) => <Box component="span">{toFixedNumber(cell.getValue<number>())}</Box>,
       },
       {
         header: 'Fr./kg',
-        // accessorKey: 'centsPerKg',
-        accessorFn: (row) => `${row.centsPerKg ? row.centsPerKg / 100 : '-'}`,
+        accessorKey: 'centsPerKg',
+        // accessorFn: (row) => `${row.centsPerKg ? row.centsPerKg / 100 : '-'}`,
         muiTableHeadCellProps: { style: { color: 'green' } },
         enableHiding: false,
         muiEditTextFieldProps: {
@@ -258,6 +260,8 @@ function MaterialGrid({
           onFocus: () => setValidationErrors({ ...validationErrors, pricePerKg: undefined }),
           //optionally add validation checking for onBlur or onChange
         },
+        Cell: ({ cell }) => <Box component="span">{toFixedNumber(cell.getValue<number>())}</Box>,
+        // Edit: ({ cell }) => <Box component="span">{toFixedNumber(cell.getValue<number>())}</Box>,
       },
       {
         header: 'Länge Einheit',
@@ -381,3 +385,7 @@ const zodCreateOrUpdateMaterial = z.object({
     ),
   length: z.number().default(0).or(z.string().default('0').transform(Number)),
 })
+
+function toFixedNumber(value: number) {
+  return value ? (value / 100).toFixed(2) : '-'
+}

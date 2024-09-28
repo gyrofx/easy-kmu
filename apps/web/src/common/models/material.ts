@@ -8,10 +8,10 @@ export interface CreateOrUpdateMaterial {
   materialGroupId: string
 
   name: string
-  kgPerMeter: number
+  kgPerMeter?: number
   centsPerMeter?: number
   centsPerKg?: number
-  length: number
+  meterPerUnit?: number
 }
 
 export interface Material extends CreateOrUpdateMaterial {
@@ -25,10 +25,10 @@ export const zodCreateOrUpdateMaterial = z.object({
   id: z.string().optional(),
   materialGroupId: z.string(),
   name: z.string(),
-  kgPerMeter: z.number(),
+  kgPerMeter: z.number().optional(),
   centsPerMeter: z.number().optional(),
   centsPerKg: z.number().optional(),
-  length: z.number(),
+  meterPerUnit: z.number().optional(),
 })
 
 export const zodMaterial = zodCreateOrUpdateMaterial.extend({

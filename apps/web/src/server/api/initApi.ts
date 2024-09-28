@@ -21,6 +21,9 @@ import { updateQuoteState } from '@/server/models/quote/updateQuoteState'
 import { listMaterial } from '@/server/models/material/listMaterial'
 import { listMaterialGroup } from '@/server/models/material/listMaterialGroup'
 import { createOrUpdateMaterial } from '@/server/models/material/createOrUpdateMaterial'
+import { listTasks } from '@/server/models/task/listTasks'
+import { createOrUpdateTask } from '@/server/models/task/createOrUpdateTask'
+import { deleteTask } from '@/server/models/task/deleteTask'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -127,6 +130,21 @@ export function initApi(app: Express) {
     materialGroups: async () => {
       const groups = await listMaterialGroup()
       return { status: 200, body: groups }
+    },
+
+    listTasks: async ({ query }) => {
+      const tasks = await listTasks(query.projectId)
+      return { status: 200, body: tasks }
+    },
+
+    createOrUpdateTask: async ({ body }) => {
+      const task = await createOrUpdateTask(body)
+      return { status: 200, body: task }
+    },
+
+    deleteTask: async ({ params }) => {
+      await deleteTask(params.taskId)
+      return { status: 200, body: { success: true } }
     },
   })
 
