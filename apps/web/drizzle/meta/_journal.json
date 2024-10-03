@@ -57,6 +57,13 @@
       "when": 1727460370484,
       "tag": "0007_lyrical_wendell_vaughn",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1727960934622,
+      "tag": "0008_icy_overlord",
+      "breakpoints": true
     }
   ]
 }

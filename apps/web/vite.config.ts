@@ -74,6 +74,11 @@ function apiProxy(): Record<string, ProxyOptions> {
       secure: false,
       changeOrigin: true,
     },
+    '/file': {
+      target: 'https://ekmu.localhost:8080',
+      secure: false,
+      changeOrigin: true,
+    },
     '/auth': {
       target: 'https://ekmu.localhost:8080',
       secure: false,

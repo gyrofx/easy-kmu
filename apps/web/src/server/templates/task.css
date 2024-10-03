@@ -1,0 +1,102 @@
+@page taskPage {
+  margin: 2cm;
+  margin-top: 0.5cm;
+  margin-bottom: 1cm;
+
+  @bottom-right {
+    content: "Unsere AGB finden Sie auf unserer Website: www.stoopmetallbau.ch";
+    font-size: 8pt;
+  }
+
+  @bottom-left {
+    content: "Auftragskarte";
+    font-size: 8pt;
+  }
+}
+
+#task {
+  page: taskPage;
+}
+
+html {
+  color: #14213d;
+  font-family: Source Sans Pro;
+  font-size: 10pt;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.title {
+  font-size: 30pt;
+  font-family: Roboto Slab;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 10pt;
+  font-family: Roboto Slab;
+}
+
+.task {
+  font-size: 24pt;
+  font-family: Roboto Slab;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-manager {
+  font-size: 12pt;
+  font-family: Roboto Slab;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.notes {
+  min-height: 5cm;
+}
+
+.col3 {
+  width: 3cm;
+}
+
+.col6 {
+  width: 6cm;
+}
+
+.col15 {
+  width: 15cm;
+}
+
+.section {
+  width: 100%;
+
+  padding: 0.1cm;
+  font-size: 11pt;
+  font-family: Roboto Slab;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-margin {
+  margin-bottom: 0.2cm;
+}
+
+.center {
+  text-align: center;
+}
+
+.border {
+  border: solid 1px;
+}
+
+.font-bold {
+  font-weight: bold;
+}

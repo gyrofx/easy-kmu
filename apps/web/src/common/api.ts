@@ -29,6 +29,12 @@ export const api = contract.router({
     responses: { 200: z.unknown() },
   },
 
+  file: {
+    method: 'GET',
+    path: '/file/:id',
+    responses: { 200: z.unknown() },
+  },
+
   createOrUpdateContact: {
     method: 'POST',
     path: '/api/create-or-update-contact',
@@ -154,5 +160,12 @@ export const api = contract.router({
     path: '/api/delete-task/:taskId',
     body: ContractNoBody,
     responses: { 200: z.object({ success: z.boolean() }) },
+  },
+
+  generateTaskCardPdf: {
+    method: 'POST',
+    path: '/api/create-task-card-pdf/:taskId',
+    body: ContractNoBody,
+    responses: { 200: zodTask },
   },
 })

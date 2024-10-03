@@ -33,7 +33,8 @@
     "certs:all": "yarn run certs:server",
     "certs:server": "mkdir -p certs && mkcert -key-file certs/server-key.pem -cert-file certs/server-cert.pem ekmu.localhost localhost",
     "scripts:importTestdata": "yarn run tsx src/scripts/importTestdata.ts",
-    "scripts:importMaterial": "yarn run tsx src/scripts/importMaterial.ts"
+    "scripts:importMaterial": "yarn run tsx src/scripts/importMaterial.ts",
+    "scripts:renderTaskCard": "yarn run tsx src/scripts/renderTaskCard.ts"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",

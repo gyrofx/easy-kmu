@@ -14,5 +14,6 @@ export {
   materialListItemsRelations,
   materialLists,
 } from '@/server/db/schema/materialListItems'
-export { tasks } from '@/server/db/schema/tasks'
+export { taskRelations, tasks } from '@/server/db/schema/tasks'
 export { projectObjectRelations, projectObjects } from '@/server/db/schema/projectObjects'
+export { files } from '@/server/db/schema/files'

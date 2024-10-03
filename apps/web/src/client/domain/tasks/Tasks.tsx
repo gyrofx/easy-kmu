@@ -3,7 +3,7 @@ import { CreateOrUpdateTasksDialog } from '@/client/domain/tasks/CreateOrUpdateT
 import { useTaskQuery } from '@/client/domain/tasks/useTaskQuery'
 import { useDialogWithData } from '@/client/utils/useDialogWithData'
 import type { CreateOrUpdateTask, Task } from '@/common/models/task'
-import { Add, Delete, Edit, PictureAsPdf } from '@mui/icons-material'
+import { Add, Delete, Edit, FilePresent, PictureAsPdf } from '@mui/icons-material'
 import {
   Box,
   Card,
@@ -34,7 +34,10 @@ export function Tasks() {
     queryClient.invalidateQueries(['tasks', task.projectId])
   }
 
-  async function downloadTaskCard(task: Task) {}
+  async function downloadTaskCard(task: Task) {
+    await apiClient.generateTaskCardPdf({ params: { taskId: task.id } })
+    queryClient.invalidateQueries(['tasks', task.projectId])
+  }
 
   return (
     <Box>
@@ -56,6 +59,13 @@ export function Tasks() {
                     <Typography variant="h5">{task.name}</Typography>
                     <Typography variant="body1">{task.description}</Typography>
                   </Box>
+                  <IconButton
+                    size="large"
+                    href={`/file/${task.cardFile?.id}`}
+                    sx={{ visibility: task.cardFile ? 'visible' : 'hidden' }}
+                  >
+                    <FilePresent style={{ fontSize: 60 }} />
+                  </IconButton>
                 </Box>
               </CardContent>
               <CardActions>

@@ -4,7 +4,7 @@ import { api } from '@/common/api'
 import { serverInfo } from '@/server/serverInfo/serverInfo'
 import { createReadStream } from 'node:fs'
 import { opts } from '@/server/config/opts'
-import { join } from 'node:path'
+import { basename, join } from 'node:path'
 import { createOrUpdateContact } from '../models/contact/db/createOrUpdateContact'
 import { listContacts } from '../models/contact/db/listContacts'
 import { listProjectObjects } from '@/server/models/projectObject/db/listProjectObjects'
@@ -21,9 +21,12 @@ import { updateQuoteState } from '@/server/models/quote/updateQuoteState'
 import { listMaterial } from '@/server/models/material/listMaterial'
 import { listMaterialGroup } from '@/server/models/material/listMaterialGroup'
 import { createOrUpdateMaterial } from '@/server/models/material/createOrUpdateMaterial'
-import { listTasks } from '@/server/models/task/listTasks'
-import { createOrUpdateTask } from '@/server/models/task/createOrUpdateTask'
+import { listTasks } from '@/server/models/task/db/listTasks'
+import { createOrUpdateTaskInDb } from '@/server/models/task/db/createOrUpdateTaskInDb'
 import { deleteTask } from '@/server/models/task/deleteTask'
+import { generateTaskCardPdf } from '@/server/models/task/generateTaskCardPdf'
+import { findFileById } from '@/server/models/file/db/findFileById'
+import { createOrUpdateTask } from '@/server/models/task/createOrUpdateTask'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -37,8 +40,27 @@ export function initApi(app: Express) {
         const s = createReadStream(filename)
 
         res.setHeader('Access-Control-Expose-Headers', 'Content-Disposition')
-        res.setHeader('Content-Disposition', `attachment; ${params.id}`)
-        res.setHeader('Content-type', 'application/pdf')
+        res.setHeader('Content-Disposition', `attachment; filename=${params.id}.pdf`)
+        res.setHeader('Content-Type', 'application/pdf')
+
+        return { status: 200, body: s }
+      } catch (error) {
+        return { status: 404, body: { error: 'Not found' } }
+      }
+    },
+
+    file: async ({ res, params }) => {
+      try {
+        const file = await findFileById(params.id)
+        if (!file) throw new Error('not found')
+        const path = join(opts().fileStorage.path, file.path)
+        const filename = basename(path)
+        console.log('filename', { filename, file })
+        const s = createReadStream(path)
+
+        res.setHeader('Access-Control-Expose-Headers', 'Content-Disposition')
+        res.setHeader('Content-Disposition', `inline; filename=${filename}`)
+        res.setHeader('Content-Type', file.mimeType)
 
         return { status: 200, body: s }
       } catch (error) {
@@ -145,6 +167,11 @@ export function initApi(app: Express) {
     deleteTask: async ({ params }) => {
       await deleteTask(params.taskId)
       return { status: 200, body: { success: true } }
+    },
+
+    generateTaskCardPdf: async ({ params }) => {
+      const task = await generateTaskCardPdf(params.taskId)
+      return { status: 200, body: task }
     },
   })
 

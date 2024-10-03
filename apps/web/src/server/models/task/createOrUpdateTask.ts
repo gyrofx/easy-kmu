@@ -1,15 +1,12 @@
-import type { CreateOrUpdateTask } from '@/common/models/task'
-import { db } from '@/server/db/db'
-import { tasks } from '@/server/db/schema'
-import { dbTaskToTask } from '@/server/models/task/listTasks'
-import { eq } from 'drizzle-orm'
+import type { Task } from '@/common/models/task'
+import { deleteFile } from '@/server/models/file/deleteFile'
+import { createOrUpdateTaskInDb } from '@/server/models/task/db/createOrUpdateTaskInDb'
 
-export async function createOrUpdateTask(task: CreateOrUpdateTask) {
-  const newTask = task.id
-    ? await db().update(tasks).set(task).where(eq(tasks.id, task.id)).returning()
-    : await db().insert(tasks).values(task).returning()
+export async function createOrUpdateTask(task: Task) {
+  console.log('createOrUpdateTask', { task })
 
-  if (!newTask[0]) throw new Error('No id returned from insert or update')
-
-  return dbTaskToTask(newTask[0])
+  const updatedTask = await createOrUpdateTaskInDb({ ...task, cardFileId: undefined })
+  console.log('createOrUpdateTask', { updatedTask })
+  if (task.cardFile) await deleteFile(task.cardFile)
+  return updatedTask
 }
