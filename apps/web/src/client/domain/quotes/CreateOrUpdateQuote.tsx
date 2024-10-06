@@ -492,7 +492,9 @@ function Actions({ project, creating }: { project: Project; creating: boolean })
 }
 
 function toSingleLineContact(contact: Contact) {
-  return `${contact.company}, ${contact.firstName} ${contact.lastName}, ${contact.persons[0]?.phone1}, ${contact.persons[0]?.email}`
+  return [contact.company, `${contact.firstName} ${contact.lastName}`, contact.phone1, contact.email]
+    .filter(truthy)
+    .join(', ')
 }
 
 function toAddress(contact: Contact) {
@@ -503,7 +505,7 @@ function toAddress(contact: Contact) {
     `${contact.zipCode} ${contact.city}`,
   ]
     .map((v) => v.trim())
-    .filter((v) => v)
+    .filter(truthy)
     .join('\n')
 }
 
