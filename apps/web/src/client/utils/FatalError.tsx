@@ -1,4 +1,5 @@
-import { Container, Typography, useTheme } from '@mui/material'
+import { Container, Typography } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import { DisplayError } from '@/client/utils/DisplayError'
 
 interface FatalErrorProps {

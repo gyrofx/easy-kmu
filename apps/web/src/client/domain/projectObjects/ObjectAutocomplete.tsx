@@ -1,5 +1,6 @@
 import type { ProjectObject } from '@/common/models/projectObject'
-import { Autocomplete, Box, type SxProps, TextField, type Theme, Typography } from '@mui/material'
+import { Autocomplete, Box, TextField, type Theme, Typography } from '@mui/material'
+import type { SxProps } from '@mui/material/styles'
 import { useEffect, useState } from 'react'
 
 export function ObjectAutocomplete({

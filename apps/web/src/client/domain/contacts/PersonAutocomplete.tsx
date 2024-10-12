@@ -1,6 +1,7 @@
 import type { Person } from '@/common/models/contact'
 import { truthy } from '@easy-kmu/common'
-import { Autocomplete, Box, type SxProps, TextField, type Theme, Typography } from '@mui/material'
+import { Autocomplete, Box, TextField, type Theme, Typography } from '@mui/material'
+import type { SxProps } from '@mui/material/styles'
 
 export function PersonAutocomplete({
   value,
