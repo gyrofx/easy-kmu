@@ -1,6 +1,6 @@
 import { createExpressEndpoints, initServer } from '@ts-rest/express'
 import type { Express } from 'express'
-import { api } from '@/common/api'
+import { api } from '@/common/api/api'
 import { serverInfo } from '@/server/serverInfo/serverInfo'
 import { createReadStream } from 'node:fs'
 import { opts } from '@/server/config/opts'
@@ -22,11 +22,15 @@ import { listMaterial } from '@/server/models/material/listMaterial'
 import { listMaterialGroup } from '@/server/models/material/listMaterialGroup'
 import { createOrUpdateMaterial } from '@/server/models/material/createOrUpdateMaterial'
 import { listTasks } from '@/server/models/task/db/listTasks'
-import { createOrUpdateTaskInDb } from '@/server/models/task/db/createOrUpdateTaskInDb'
 import { deleteTask } from '@/server/models/task/deleteTask'
 import { generateTaskCardPdf } from '@/server/models/task/generateTaskCardPdf'
 import { findFileById } from '@/server/models/file/db/findFileById'
 import { createOrUpdateTask } from '@/server/models/task/createOrUpdateTask'
+import { ensureHasPermission, ensureAuthenticated } from '@/server/auth/authMiddleware'
+import { userFromRes } from '@/server/auth/userFromRes'
+import { specialDays } from '@/server/models/workTimes/specialDays'
+import { listMyWorkTimes } from '@/server/models/workTimes/listMyWorkTimes'
+import { createOrUpdateMyWorkTime } from '@/server/models/workTimes/createOrUpdateMyWorkTime'
 
 export function initApi(app: Express) {
   const server = initServer()
@@ -83,9 +87,12 @@ export function initApi(app: Express) {
       return { status: 200, body: objects }
     },
 
-    listProjects: async () => {
-      const projects = await listProjects()
-      return { status: 200, body: projects }
+    listProjects: {
+      handler: async () => {
+        const projects = await listProjects()
+        return { status: 200, body: projects }
+      },
+      middleware: [ensureHasPermission('ReadProjects')],
     },
 
     projectById: async ({ params }) => {
@@ -155,7 +162,7 @@ export function initApi(app: Express) {
     },
 
     listTasks: async ({ query }) => {
-      const tasks = await listTasks(query.projectId)
+      const tasks = await listTasks(query)
       return { status: 200, body: tasks }
     },
 
@@ -172,6 +179,41 @@ export function initApi(app: Express) {
     generateTaskCardPdf: async ({ params }) => {
       const task = await generateTaskCardPdf(params.taskId)
       return { status: 200, body: task }
+    },
+
+    listMyWorkTimes: {
+      handler: async ({ query, res }) => {
+        const user = userFromRes(res)
+        const body = await listMyWorkTimes(query, user.id)
+        return { status: 200, body }
+      },
+      middleware: [ensureHasPermission('ManageMyWorkTime')],
+    },
+
+    createOrUpdateMyWorkTime: {
+      handler: async ({ body, res }) => {
+        const user = userFromRes(res)
+        const task = await createOrUpdateMyWorkTime(body, user.id)
+        return { status: 200, body: task }
+      },
+      middleware: [ensureHasPermission('ManageMyWorkTime')],
+    },
+
+    deleteMyWorkTime: {
+      handler: async ({ params, res }) => {
+        const user = userFromRes(res)
+        const task = await deleteMyWorkTime(params.id, user)
+        return { status: 200, body: task }
+      },
+      middleware: [ensureHasPermission('ManageMyWorkTime')],
+    },
+
+    specialDays: {
+      handler: async ({ query }) => {
+        const body = await specialDays(query)
+        return { status: 200, body }
+      },
+      middleware: [ensureAuthenticated],
     },
   })
 

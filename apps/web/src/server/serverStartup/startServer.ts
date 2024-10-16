@@ -16,6 +16,7 @@ import { serverInitRedis } from '@/server/redis/initRedis'
 // import { initOpenIdConnect } from '@/server/auth/initOpenIdConnect'
 import { initApi } from '@/server/api/initApi'
 import { initDatabase } from '@/server/db/db'
+import { initAuthAuth0 } from '@/server/auth/initAuthAuth0'
 
 export async function startServer() {
   initConfiguredLogger()
@@ -34,11 +35,12 @@ async function startServerInner() {
   const httpServer = createServer(app, opts())
 
   serverInitRedis(opts().redisUrl)
-  initHelmet(app)
+  // initHelmet(app)
   initBodyParserMiddleware(app)
   // initOpenIdConnect(app)
-  initApi(app)
   await initDatabase()
+  initAuthAuth0(app)
+  initApi(app)
   // initSessionManager(app)
   // initServerInfo(app)
   initStaticFiles(app)

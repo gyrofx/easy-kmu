@@ -14,6 +14,14 @@ export {
   materialListItemsRelations,
   materialLists,
 } from '@/server/db/schema/materialListItems'
-export { taskRelations, tasks } from '@/server/db/schema/tasks'
+export { taskRelations, tasks, taskState } from '@/server/db/schema/tasks'
 export { projectObjectRelations, projectObjects } from '@/server/db/schema/projectObjects'
 export { files } from '@/server/db/schema/files'
+export {
+  specialDays,
+  workingTimeTable,
+  workType,
+  workingTimeEntry,
+  workingTimeOfUsersRelations,
+} from '@/server/db/schema/workingTimes'
+export { users, accounts, sessions } from '@/server/db/schema/user'

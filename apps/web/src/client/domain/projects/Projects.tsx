@@ -1,5 +1,5 @@
 import { Add, Close, ContentCopy, Delete, Edit, Info } from '@mui/icons-material'
-import { Box, Button, IconButton, Paper, TextField, Typography } from '@mui/material'
+import { Box, Button, IconButton, LinearProgress, Paper, TextField, Typography } from '@mui/material'
 import {
   type MRT_ColumnDef,
   type MRT_RowSelectionState,
@@ -16,13 +16,33 @@ import type { Project } from '@/common/models/project'
 import { useProjectsQuery } from '@/client/domain/projects/useProjectsQuery'
 import type { Contact } from '@/common/models/contact'
 import { useRouter } from '@/client/router/useRouter'
+import { PageContainer, PageContainerToolbar } from '@toolpad/core'
+
+function ProjectsToolbar() {
+  const { navigateToAddProjects } = useRouter()
+
+  return (
+    <PageContainerToolbar>
+      <IconButton color="primary" onClick={navigateToAddProjects}>
+        <Add />
+      </IconButton>
+    </PageContainerToolbar>
+  )
+}
 
 export function Projects() {
+  return (
+    <PageContainer slots={{ toolbar: ProjectsToolbar }}>
+      <ProjectsInner />
+    </PageContainer>
+  )
+}
+
+function ProjectsInner() {
   const query = useProjectsQuery()
   // const [sortColumns, setSortColumns] = useState<readonly SortColumn[]>([])
-  const { navigateToAddProjects, navigateToProject } = useRouter()
+  const { navigateToProject } = useRouter()
 
-  const [showSidebar, setShowSidebar] = useState(false)
   // const dialog = useDialogWithData<Contact | undefined>()
 
   const [selectedRows, setSelectedRows] = useState<Project[]>([])
@@ -37,22 +57,22 @@ export function Projects() {
     clearSelectionCallbackRef.current = callback
   }
 
-  if (!query.data) return <div>Loading...</div>
+  if (!query.data) return <LinearProgress />
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <Typography variant="h3" sx={{ my: 2 }}>
+        {/* <Typography variant="h3" sx={{ my: 2 }}>
           Projekte
-        </Typography>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        </Typography> */}
+        {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <IconButton color="primary" onClick={navigateToAddProjects}>
             <Add />
           </IconButton>
           <IconButton color="primary" onClick={() => setShowSidebar(!showSidebar)}>
             <Info />
           </IconButton>
-        </Box>
+        </Box> */}
       </Box>
       {/* {dialog.isOpen && <AddContactDialog dialog={dialog} />} */}
       <Paper sx={{ display: 'flex', flexDirection: 'row', height: '70px', my: 2, p: 2 }}>
@@ -114,18 +134,6 @@ export function Projects() {
             globalFilter={globalFilterDebounced}
             registerClearSelectionCallback={registerClearSelectionCallback}
           />
-          {showSidebar && (
-            <Paper sx={{ display: 'flex', flexDirection: 'row', my: 0, p: 2, width: '500px' }}>
-              {selectedRows.length > 0 && (
-                <Typography variant="h4">
-                  {selectedRows[0]?.projectNumber} {selectedRows[0]?.name}
-                </Typography>
-              )}
-              {selectedRows.length === 0 && (
-                <Typography variant="h4">Kein Projekt ausgewählt</Typography>
-              )}
-            </Paper>
-          )}
         </Box>
       )}
     </Box>

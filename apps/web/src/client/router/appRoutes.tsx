@@ -1,7 +1,7 @@
 import { AppRoot } from '@/client/AppRoot'
 import { routes } from '@/client/router/routes'
 import { ErrorBoundary } from '@/client/utils/ErrorBoundary'
-import { Link, Navigate } from 'react-router-dom'
+import { Link, Navigate, type RouteObject } from 'react-router-dom'
 // import { useAuth0 } from '@auth0/auth0-react'
 // import { LinearProgress } from '@mui/material'
 import { Contacts } from '@/client/domain/contacts/Contacts'
@@ -14,16 +14,18 @@ import { Quotes } from '@/client/domain/quotes/Quotes'
 import { CreateQuoteView, UpdateQuoteView } from '@/client/domain/quotes/CreateOrUpdateQuote'
 import { ProjectOverview } from '@/client/domain/projects/ProjectOverview'
 import { Tasks } from '@/client/domain/tasks/Tasks'
-import { Materials2 } from '@/client/domain/material/Materials2'
 import { Materials } from '@/client/domain/material/Materials'
+import { RootRoute } from '@/client/App'
+import { SignIn } from '@/client/auth/SignIn'
+import { MyWorkingTimes } from '@/client/domain/workingTimes/MyWorkingTimes'
 
-export function appRoutes() {
+export function appRoutes(): RouteObject[] {
   return [
     {
       ...routes.home,
       element: (
         <ErrorBoundary>
-          <AppRoot />
+          <RootRoute />
         </ErrorBoundary>
       ),
       handle: {
@@ -98,10 +100,9 @@ export function appRoutes() {
           ...routes.updateQuote,
           element: <UpdateQuoteView />,
         },
-        {
-          ...routes.materials,
-          element: <Materials />,
-        },
+        { ...routes.materials, element: <Materials /> },
+        { ...routes.myWorkingTimes, element: <MyWorkingTimes /> },
+
         {
           ...routes.about,
           element: <div>About</div>,
@@ -113,5 +114,6 @@ export function appRoutes() {
       ],
     },
     { path: '*', element: <Navigate to="/summary" /> },
+    { ...routes.signIn, element: <SignIn /> },
   ]
 }

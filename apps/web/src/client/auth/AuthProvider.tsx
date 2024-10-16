@@ -1,23 +1,39 @@
-import { Login } from '@/client/auth/Login'
-import { type ReactNode, createContext, useContext } from 'react'
+import { SignIn } from '@/client/auth/SignIn'
+import { type Session, useSessionStore, zodSession } from '@/client/auth/useSessionStore'
+import { zodParse } from '@easy-kmu/common'
+import { LinearProgress } from '@mui/material'
+import { type ReactNode, createContext } from 'react'
+import { useQuery } from 'react-query'
 // import { useAsync } from 'react-use'
 
 export const SessionContext = createContext(undefined as any | undefined)
 
 export function AuthProvider(props: { children: ReactNode }) {
   const { children } = props
-  const session = { error: null, value: {} } // useAsync(clientVanilla['current-session'].query)
+  const { session, setSession, clearSession } = useSessionStore()
 
-  if (session.error) {
-    return <Login />
-  }
-  if (session.value) {
-    return <SessionContext.Provider value={session.value}>{children}</SessionContext.Provider>
-  }
-  return null
+  const { isLoading } = useQuery('session', getSession, {
+    onSuccess: (data) => {
+      if (data) setSession(data)
+      else clearSession()
+    },
+    onError: () => {
+      console.log('on error')
+      clearSession()
+    },
+  })
+
+  if (session) return children
+  if (isLoading) return <LinearProgress />
+  return <SignIn />
 }
 
-export function useSession() {
-  const session = useContext(SessionContext)
-  return { session, isAuthenticated: !!session }
+async function getSession(): Promise<Session | undefined> {
+  const response = await fetch('/auth/session')
+  if (response.ok) {
+    const data = await response.json()
+    console.log('data', data)
+    return zodSession.safeParse(data).data
+  }
+  return undefined
 }

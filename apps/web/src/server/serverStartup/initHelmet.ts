@@ -10,12 +10,15 @@ export function initHelmet(app: Express) {
 function helmetConfiguration() {
   const { auth } = opts()
 
-  return {
-    contentSecurityPolicy: {
-      directives: {
-        connectSrc: ["'self'", auth.auth0.domain],
-        scriptSrc: ["'self'", 'unsafe-inline'],
-      },
-    },
+  const defaults = helmet.contentSecurityPolicy.getDefaultDirectives()
+  console.log('defaults', defaults)
+  const directives = {
+    ...defaults,
+    'connect-src': ["'self'", auth.auth0.domain],
+    'script-src': ["'self'", 'unsafe-inline'],
+    'img-src': ["'self'", 'data:', 'https://authjs.dev'],
   }
+  console.log('directives', directives)
+
+  return { contentSecurityPolicy: { directives } }
 }

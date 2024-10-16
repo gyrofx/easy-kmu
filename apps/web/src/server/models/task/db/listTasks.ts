@@ -1,18 +1,23 @@
-import type { Task } from '@/common/models/task'
+import type { Task, TaskStatus } from '@/common/models/task'
 import { db } from '@/server/db/db'
 import { tasks } from '@/server/db/schema'
 import { dbFileToFile } from '@/server/models/file/db/dbFileToFile'
 import { IsoDateString } from '@easy-kmu/common'
-import { eq } from 'drizzle-orm'
+import { and, eq } from 'drizzle-orm'
 
-export async function listTasks(projectId: string): Promise<Task[]> {
-  const tasks = await listTasksInner(projectId)
+export async function listTasks(query: { projectId?: string; state?: TaskStatus }): Promise<Task[]> {
+  const tasks = await listTasksInner(query)
   return tasks.map(dbTaskToTask)
 }
 
-async function listTasksInner(projectId: string) {
+async function listTasksInner(query: { projectId?: string; state?: TaskStatus }) {
+  const { projectId, state } = query
   return await db().query.tasks.findMany({
-    where: eq(tasks.projectId, projectId),
+    where: and(
+      projectId ? eq(tasks.projectId, projectId) : undefined,
+      state ? eq(tasks.state, state) : undefined,
+    ),
+
     with: { cardFile: true },
   })
 }

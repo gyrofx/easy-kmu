@@ -4,7 +4,7 @@ import { EmployeeAutocomplete } from '@/client/domain/employee/EmployeeAutocompl
 import { type ProjectKeys, useProjectStore } from '@/client/domain/projects/ProjectStore'
 import { useRouter } from '@/client/router/useRouter'
 import type { Contact } from '@/common/models/contact'
-import { Clear } from '@mui/icons-material'
+import { Add, Clear } from '@mui/icons-material'
 import { useContactsQuery } from '@/client/domain/contacts/useContactsQuery'
 import { useEmployeesQuery } from '@/client/domain/employee/useEmployeesQuery'
 import { ObjectAutocomplete } from '@/client/domain/projectObjects/ObjectAutocomplete'
@@ -36,9 +36,29 @@ import {
 } from '@/common/models/project'
 import { useParams } from 'react-router-dom'
 import { RalAutocomplete } from '@/client/domain/projects/RalAutocomplete'
-import { projectById } from '@/client/domain/projects/projectById'
+import { PageContainer, PageContainerToolbar } from '@toolpad/core'
+
+function ProjectsToolbar() {
+  const { navigateToAddProjects } = useRouter()
+
+  return (
+    <PageContainerToolbar>
+      <IconButton color="primary" onClick={navigateToAddProjects}>
+        <Add />
+      </IconButton>
+    </PageContainerToolbar>
+  )
+}
 
 export function UpdateProjectView() {
+  return (
+    <PageContainer slots={{ toolbar: ProjectsToolbar }}>
+      <UpdateProjectViewInner />
+    </PageContainer>
+  )
+}
+
+function UpdateProjectViewInner() {
   const { projectId } = useParams()
   const projectQuery = useProjectQuery(projectId || '')
 
@@ -53,6 +73,21 @@ export function UpdateProjectView() {
 }
 
 export function CreateProjectView() {
+  return (
+    <PageContainer
+      breadCrumbs={[
+        { title: 'Home', path: '/' },
+        { title: 'Neues Projekt', path: '' },
+      ]}
+      title="Neues Projekt"
+      slots={{ toolbar: ProjectsToolbar }}
+    >
+      <CreateProjectViewInner />
+    </PageContainer>
+  )
+}
+
+export function CreateProjectViewInner() {
   return <CreateOrUpdateProjectView />
 }
 
@@ -76,9 +111,9 @@ function CreateOrUpdateProjectView({ project }: { project?: CreateOrUpdateProjec
   const objects = objectsQuery.data || []
 
   return (
-    <Container>
-      <Box sx={{ my: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
-        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+    // <Container>
+    <Box sx={{ my: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
+      {/* <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
           <Typography gutterBottom variant="h3" component="div">
             {project ? `Projekt ${project.name} bearbeiten` : 'Neues Projekt erstellen'}
           </Typography>
@@ -88,24 +123,24 @@ function CreateOrUpdateProjectView({ project }: { project?: CreateOrUpdateProjec
               <Clear />
             </IconButton>
           </Box>
-        </Box>
+        </Box> */}
 
-        <ProjectDescriptionCard employees={employees} />
+      <ProjectDescriptionCard employees={employees} />
 
-        <ObjectCard objects={objects} />
+      <ObjectCard objects={objects} />
 
-        <ContactsCard contacts={contacts} />
+      <ContactsCard contacts={contacts} />
 
-        <MaterialCard />
-        <AsselmblyCard />
-        <SurfaceCard />
-        <FireProtectionCard />
-        <En1090Card />
-        <NotesCard />
+      <MaterialCard />
+      <AsselmblyCard />
+      <SurfaceCard />
+      <FireProtectionCard />
+      <En1090Card />
+      <NotesCard />
 
-        <ActionButtons />
-      </Box>
-    </Container>
+      <ActionButtons />
+    </Box>
+    // </Container>
   )
 }
 

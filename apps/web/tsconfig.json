@@ -35,7 +35,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "drizzle.config.js", "../../packages/common/src/nominal.ts"],
+  "include": ["src", "drizzle.config.js"],
   "exclude": ["build", "build-server"], // "src/server"
   "references": [{ "path": "./tsconfig.node.json" }]
 }

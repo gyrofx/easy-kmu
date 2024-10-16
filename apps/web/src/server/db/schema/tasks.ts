@@ -1,7 +1,9 @@
 import { files, type SelectFile } from '@/server/db/schema/files'
 import { projects } from '@/server/db/schema/projects'
 import { relations, sql } from 'drizzle-orm'
-import { pgTable, text, timestamp } from 'drizzle-orm/pg-core'
+import { pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
+
+export const taskState = pgEnum('taskState', ['todo', 'inProgress', 'done'])
 
 export const tasks = pgTable('tasks', {
   id: text('id').notNull().primaryKey().default(sql`gen_random_uuid()`),
@@ -11,6 +13,8 @@ export const tasks = pgTable('tasks', {
   name: text('name').notNull(),
   description: text('description').notNull().default(''),
   notes: text('notes').notNull().default(''),
+
+  state: taskState('state').notNull().default('todo'),
 
   cardFileId: text('cardFileId').references(() => files.id),
 

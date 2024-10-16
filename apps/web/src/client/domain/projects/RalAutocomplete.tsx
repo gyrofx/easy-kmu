@@ -1,13 +1,5 @@
-import {
-  Autocomplete,
-  Box,
-  createFilterOptions,
-  type SxProps,
-  TextField,
-  type Theme,
-  Typography,
-} from '@mui/material'
-
+import { Autocomplete, Box, createFilterOptions, TextField, type Theme, Typography } from '@mui/material'
+import type { SxProps } from '@mui/material/styles'
 import { ralList } from './ral'
 import { useEffect, useState } from 'react'
 import { Circle } from '@mui/icons-material'

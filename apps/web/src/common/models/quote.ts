@@ -3,6 +3,7 @@ import { zodIsoDateString, type IsoDateString } from '@easy-kmu/common'
 import type { AssertTrue, IsExact } from 'conditional-type-checks'
 
 export const quoteStates = ['draft', 'readyToOffer', 'offerd', 'rejected', 'accepted'] as const
+export const quoteDraftStates: QuoteState[] = ['draft', 'readyToOffer']
 export type QuoteState = (typeof quoteStates)[number]
 
 export const zodQuoteState = z.enum(quoteStates)

@@ -136,6 +136,24 @@ export const routes = {
     title: t().routes.materials,
   },
 
+  workingTimes: {
+    id: 'workingTimes',
+    path: '/working-times' as const,
+    icon: <Info />,
+    text: t().routes.materials,
+    maxWidth: 'md' as const,
+    title: t().routes.materials,
+  },
+
+  myWorkingTimes: {
+    id: 'myWorkingTimes',
+    path: '/my-working-times' as const,
+    icon: <Info />,
+    text: t().routes.materials,
+    maxWidth: 'md' as const,
+    title: t().routes.materials,
+  },
+
   about: {
     path: '/about' as const,
     icon: <Info />,

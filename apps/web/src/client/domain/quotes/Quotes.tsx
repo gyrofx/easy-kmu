@@ -12,22 +12,29 @@ import {
   Select,
   Tooltip,
   Typography,
-  useTheme,
 } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import { useParams } from 'react-router-dom'
 
 import { useQuotesQuery } from '@/client/domain/quotes/useQuotesQuery'
-import { quoteStates, zodQuoteState, type Quote, type QuoteState } from '@/common/models/quote'
+import {
+  quoteDraftStates,
+  quoteStates,
+  zodQuoteState,
+  type Quote,
+  type QuoteState,
+} from '@/common/models/quote'
 import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
 import { format } from 'date-fns'
 import { toChf } from '@/common/utils/toChf'
 import { apiClient } from '@/client/api/client'
 import { Add, ContentCopy, Delete, Edit, FilePresent, PictureAsPdf } from '@mui/icons-material'
-import { useQueryClient } from 'react-query'
+import { QueryClient, useQueryClient } from 'react-query'
 import { IsoDateString, zodParse } from '@easy-kmu/common'
 import { sortBy } from 'lodash'
 import { lighten } from '@mui/material/styles'
 import { useState } from 'react'
+import { confirm } from '@/client/dialog/confirm'
 
 export function Quotes() {
   const { navigateToAddQuote, navigateToEditQuote } = useRouter()
@@ -113,13 +120,7 @@ export function Quotes() {
                     <FormControl fullWidth>
                       <Select
                         value={quote.state}
-                        onChange={async (ev) => {
-                          await apiClient.updateQuoteState({
-                            params: { quoteId: quote.id },
-                            body: { state: zodParse(zodQuoteState, ev.target.value) },
-                          })
-                          queryClient.invalidateQueries('quotes')
-                        }}
+                        onChange={(ev) => changeQuoteState(ev.target.value, quote, queryClient)}
                       >
                         {quoteStates.map((state) => (
                           <MenuItem key={state} value={state} disabled={isDisabled(quote.state, state)}>
@@ -173,6 +174,18 @@ export function Quotes() {
       </Grid>
     </Box>
   )
+}
+
+async function changeQuoteState(value: string, quote: Quote, queryClient: QueryClient) {
+  const state = zodParse(zodQuoteState, value)
+  const confirmRequired = quoteDraftStates.includes(quote.state) && !quoteDraftStates.includes(state)
+  if (!confirmRequired || (await confirm({ description: 'This action is permanent!' })) === 'ok') {
+    await apiClient.updateQuoteState({
+      params: { quoteId: quote.id },
+      body: { state },
+    })
+    queryClient.invalidateQueries('quotes')
+  }
 }
 
 function isDisabled(currentState: QuoteState, state: QuoteState): boolean {

@@ -82,7 +82,7 @@ function apiProxy(): Record<string, ProxyOptions> {
     '/auth': {
       target: 'https://ekmu.localhost:8080',
       secure: false,
-      changeOrigin: true,
+      changeOrigin: false,
     },
   }
 }

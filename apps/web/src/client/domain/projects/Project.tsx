@@ -1,10 +1,13 @@
-import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
-import { Box, IconButton, LinearProgress, Tab, Tabs, Typography } from '@mui/material'
+import { Box, IconButton, LinearProgress, Tab, Tabs } from '@mui/material'
 import { Link, Outlet, useMatches, useParams } from 'react-router-dom'
 import { last } from 'lodash'
 import { routes } from '@/client/router/routes'
 import { Edit } from '@mui/icons-material'
 import { useRouter } from '@/client/router/useRouter'
+import { Suspense } from 'react'
+import { PageContainer, PageContainerToolbar } from '@toolpad/core'
+import type { Project } from '@/common/models/project'
+import { useProjectQuery } from '@/client/domain/projects/useProjectQuery'
 
 function useRouteId() {
   const matches = useMatches()
@@ -13,33 +16,50 @@ function useRouteId() {
 }
 
 export function ProjectView() {
-  const { navigateToEditProject } = useRouter()
   const { projectId } = useParams()
-  const projectQuery = useProjectQuery(projectId ? projectId : '')
+  if (!projectId) throw new Error('missing projectId')
 
-  const currentTab = useRouteId()
-
-  if (projectQuery.isLoading) return <LinearProgress />
-  if (projectQuery.isError) return <div>Error</div>
-
-  const project = projectQuery.data
-  if (!project || !projectId) return <div>Project not found</div>
+  const query = useProjectQuery(projectId)
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <Box>
-          <Typography variant="h3" sx={{ my: 2 }}>
-            {project.projectNumber} - {project.name}
-          </Typography>
-        </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <IconButton color="primary" onClick={() => navigateToEditProject({ projectId })}>
-            <Edit />
-          </IconButton>
-        </Box>
-      </Box>
+    <Suspense fallback={<LinearProgress />}>
+      {query.data && (
+        <PageContainer
+          breadCrumbs={[
+            { title: 'Home', path: '/' },
+            { title: 'Projekte', path: '/projects' },
+            { title: query.data.name, path: '' },
+          ]}
+          title={`${query.data.projectNumber} - ${query.data.name}`}
+          slots={{ toolbar: ProjectToolbar }}
+        >
+          <ProjectViewInner project={query.data} />
+        </PageContainer>
+      )}
+    </Suspense>
+  )
+}
 
+function ProjectToolbar() {
+  const { navigateToEditProject } = useRouter()
+  const { projectId } = useParams()
+  if (!projectId) throw new Error('missing projectId')
+
+  return (
+    <PageContainerToolbar>
+      <IconButton color="primary" onClick={() => navigateToEditProject({ projectId })}>
+        <Edit />
+      </IconButton>
+    </PageContainerToolbar>
+  )
+}
+
+function ProjectViewInner(props: { project: Project }) {
+  const { project } = props
+
+  const currentTab = useRouteId()
+  return (
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={currentTab}>
           <Tab
